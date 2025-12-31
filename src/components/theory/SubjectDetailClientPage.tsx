@@ -4,16 +4,14 @@ import React from 'react';
 import type { Subject, Book, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
-import { Separator } from '../ui/separator';
 import { isBook } from '@/lib/types';
-import { BookCarousel } from '../shared/BookCarousel';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { MaterialSection } from './MaterialSection';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
 }
 
-const SECTIONS = [
+const SECTIONS_CONFIG = [
   { key: 'textbooks', title: 'Textbooks' },
   { key: 'clinical-books', title: 'Clinical Books' },
   { key: 'study-materials', title: 'Study Materials' },
@@ -37,7 +35,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     }
   };
   
-  const sectionsWithContent = SECTIONS.map(section => ({
+  const sectionsWithContent = SECTIONS_CONFIG.map(section => ({
     ...section,
     materials: subject.materials[section.key as keyof typeof subject.materials] || [],
   })).filter(section => section.materials.length > 0);
@@ -54,36 +52,13 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
       </header>
 
       <div className="space-y-8">
-        {sectionsWithContent.map((section, index) => (
-          <Card key={section.key} className="overflow-hidden">
-            <CardHeader>
-              <CardTitle>{section.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <BookCarousel
-                items={section.materials}
-                getItemProps={(item: Material) => {
-                  if (isBook(item)) {
-                    return {
-                      id: item.id,
-                      title: item.title,
-                      subtitle: item.author,
-                      href: item.downloadUrl || '#',
-                      coverImageId: item.coverImageId,
-                    };
-                  }
-                  // Handle StudyMaterial
-                  return {
-                    id: item.id,
-                    title: item.title,
-                    subtitle: item.description,
-                    href: item.downloadUrl || '#',
-                  };
-                }}
-                onItemClick={handleItemClick}
-              />
-            </CardContent>
-          </Card>
+        {sectionsWithContent.map((section) => (
+          <MaterialSection
+            key={section.key}
+            title={section.title}
+            materials={section.materials}
+            onItemClick={handleItemClick}
+          />
         ))}
       </div>
     </div>
