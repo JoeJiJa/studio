@@ -9,13 +9,13 @@ export default function Home() {
     <div className="flex flex-col gap-8">
       <HomeHero />
       
+      <ParetoBanner />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <StudyStreak />
         <QuestionOfTheDay />
       </div>
       
-      <ParetoBanner />
-
       <RecentlyViewed />
     </div>
   );
