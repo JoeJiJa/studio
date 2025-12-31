@@ -1,4 +1,3 @@
-
 {
   "inspirationalQuotes": [
     {
@@ -6,35 +5,29 @@
       "author": "William Osler"
     },
     {
-      "text": "Wherever the art of medicine is loved, there is also a love of humanity.",
+      "text": "Wherever the art of Medicine is loved, there is also a love of Humanity.",
       "author": "Hippocrates"
     },
     {
-      "text": "The art of medicine consists of amusing the patient while nature cures the disease.",
-      "author": "Voltaire"
+      "text": "The chapter you are learning today is going to save someone's life tomorrow. Pay attention.",
+      "author": "Unknown"
     }
   ],
   "paretoBanner": {
-    "title": "Master the 80/20 Rule",
-    "description": "Focus on the 20% of topics that will likely cover 80% of your exam questions. Study smarter, not just harder."
+    "title": "Master the 20%",
+    "description": "Focus on the 20% of topics that appear in 80% of your exams. Let's conquer them together."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with crushing chest pain radiating to his left arm. An ECG shows ST-segment elevation in leads V1-V4. Which coronary artery is most likely occluded?",
+    "question": "A 55-year-old male presents with crushing chest pain. ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
     "options": [
+      "Left Anterior Descending (LAD)",
       "Right Coronary Artery (RCA)",
-      "Left Anterior Descending (LAD) Artery",
-      "Left Circumflex (LCX) Artery",
+      "Left Circumflex (LCX)",
       "Posterior Descending Artery (PDA)"
     ],
     "answerIndex": 1
   },
-  "suggestedModules": [
-    "anatomy",
-    "physiology",
-    "biochemistry",
-    "pathology",
-    "pharmacology"
-  ],
+  "suggestedModules": ["anatomy", "physiology", "biochemistry"],
   "subjects": [
     {
       "id": "anatomy",
@@ -44,7 +37,7 @@
       "materials": {
         "general-anatomy": [
           {
-            "id": "bdc-general-anatomy-4e",
+            "id": "bdc-general-anatomy",
             "title": "BDC General Anatomy",
             "author": "4th Edition",
             "coverImageId": "bdc-general-anatomy-4e",
@@ -54,7 +47,7 @@
             "id": "vishram-general-anatomy",
             "title": "Vishram General Anatomy",
             "author": "",
-            "coverImageId": "vishram-general-anatomy",
+            "coverImageId": "vishram-singh-general-anatomy",
             "downloadUrl": "https://www.febbox.com/share/HbUqwQK5"
           }
         ],
@@ -103,7 +96,7 @@
           }
         ],
         "dissection-manual": [
-           {
+          {
             "id": "cunningham-head-neck",
             "title": "Cunnigham's Head & Neck",
             "author": "14th Edition",
@@ -126,68 +119,83 @@
           }
         ],
         "clinical-books": [
-            {
-            "id": "moores-clinically-oriented-detailed",
+          {
+            "id": "moore-clinically-oriented",
             "title": "MOORE’S CLINICALLY ORIENTED",
             "author": "",
             "coverImageId": "moores-clinically-oriented-detailed",
             "downloadUrl": "https://www.febbox.com/share/SwJhLNBL"
           }
         ],
-        "study-materials": [
+        "embryology": [
           {
-            "id": "selective-anatomy-prep-manual",
-            "title": "Selective Anatomy: Prep Manual",
-            "description": "A focused manual for exam preparation.",
-            "downloadUrl": "https://www.febbox.com/share/zM464nEu"
+            "id": "vishram-embryology",
+            "title": "Vishram's Embryology",
+            "author": "",
+            "coverImageId": "vishrams-embryology",
+            "downloadUrl": "https://www.febbox.com/share/mXLoBdUu"
           },
           {
-            "id": "marrow-anatomy-8th",
-            "title": "Marrow Anatomy",
-            "description": "8th Edition notes.",
-            "downloadUrl": "https://www.febbox.com/share/n899b8X7"
+            "id": "embryology-notes-download",
+            "title": "Embryology Notes",
+            "author": "",
+            "coverImageId": "embryology-notes",
+            "downloadUrl": "https://www.febbox.com/share/az6meS80"
+          }
+        ],
+        "histology": [
+          {
+            "id": "ib-singh-histology-book",
+            "title": "IB Singh Histology",
+            "author": "",
+            "coverImageId": "ib-singh-histology",
+            "downloadUrl": "https://www.febbox.com/share/p4ynoHwa"
+          },
+          {
+            "id": "pawlina-histology-atlas",
+            "title": "Histology: A Text and Atlas With Correlated Cell and Molecular Biology",
+            "author": "6th Edition",
+            "coverImageId": "pawlina-histology-atlas",
+            "downloadUrl": "https://www.febbox.com/share/vxfQYPw5"
           }
         ],
         "atlases": [
           {
-            "id": "netter-atlas",
+            "id": "netter-atlas-human-anatomy",
             "title": "Netter's Atlas of Human Anatomy",
             "author": "Frank H. Netter",
-            "coverImageId": "netter-atlas",
-            "downloadUrl": "https://www.febbox.com/share/iNq5nNAK"
+            "coverImageId": "netter-atlas"
           },
           {
-            "id": "difiore-histology",
-            "title": "diFiore's Atlas of Histology",
-            "author": "Victor P. Eroschenko",
-            "coverImageId": "difiore-histology",
-            "downloadUrl": "https://www.febbox.com/share/2sX3Lw9g"
-          }
-        ],
-        "embryology": [
-          {
-            "id": "ib-singh-embryology",
-            "title": "IB Singh's Human Embryology",
-            "author": "V Subhadra Devi",
-            "coverImageId": "vishrams-embryology",
-            "downloadUrl": "https://www.febbox.com/share/E6aW3yqI"
+            "id": "rohen-color-atlas-anatomy",
+            "title": "Rohen's Color Atlas of Anatomy",
+            "author": "Johannes W. Rohen",
+            "coverImageId": "rohen-atlas"
           },
           {
-            "id": "langman-embryology",
-            "title": "Langman's Medical Embryology",
-            "author": "T.W. Sadler",
-            "coverImageId": "embryology-notes"
+            "id": "anatomy-360-guide-download",
+            "title": "Anatomy 360 - The Ultimate Visual Guide to the Human Body",
+            "author": "",
+            "coverImageId": "anatomy-360-guide",
+            "downloadUrl": "https://www.febbox.com/share/2GOSwZaq"
+          },
+          {
+            "id": "anatomy-cadaveric-atlas-download",
+            "title": "Anatomy Cadaveric Atlas",
+            "author": "",
+            "coverImageId": "anatomy-cadaveric-atlas",
+            "downloadUrl": "https://www.febbox.com/share/3qypmZxF"
+          },
+          {
+            "id": "clinical-atlas-human-anatomy-download",
+            "title": "Clinical Atlas of Human Anatomy",
+            "author": "7th Edition",
+            "coverImageId": "clinical-atlas-human-anatomy",
+            "downloadUrl": "https://www.febbox.com/share/oTzT668X"
           }
         ],
-        "histology": [
-           {
-            "id": "ib-singh-histology",
-            "title": "IB Singh's Textbook of Histology",
-            "author": "IB Singh",
-            "coverImageId": "ib-singh-histology",
-            "downloadUrl": "https://www.febbox.com/share/Y1kGRf4r"
-          }
-        ]
+        "study-materials": [],
+        "question-bank": []
       }
     },
     {
@@ -229,7 +237,7 @@
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
       "year": [2],
-      "description": "Forensic medicine is the application of medical knowledge to establish facts in civil or criminal legal cases.",
+      "description": "Forensic medicine is a branch of medicine that applies medical knowledge to legal questions.",
       "materials": {}
     },
     {
@@ -243,14 +251,14 @@
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology (ENT) is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
+      "description": "Otorhinolaryngology is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
       "materials": {}
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis and treatment of eye disorders.",
+      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis, treatment, and prevention of diseases of the eye and visual system.",
       "materials": {}
     },
     {
@@ -269,9 +277,9 @@
     },
     {
       "id": "obg",
-      "name": "Obstetrics & Gynecology",
+      "name": "OBG",
       "year": [4],
-      "description": "Obstetrics and gynecology (OB/GYN) is the medical specialty that encompasses the two subspecialties of obstetrics and gynecology.",
+      "description": "Obstetrics and gynaecology is the medical specialty that encompasses the two subspecialties of obstetrics and gynaecology.",
       "materials": {}
     },
     {
@@ -315,50 +323,6 @@
       "year": [4],
       "description": "Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.",
       "materials": {}
-    },
-    {
-      "id": "oncology",
-      "name": "Oncology",
-      "year": [1, 2, 3, 4],
-      "description": "Oncology is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "devita-cancer",
-            "title": "DeVita, Hellman, and Rosenberg's Cancer",
-            "author": "DeVita",
-            "coverImageId": "devita-cancer"
-          },
-          {
-            "id": "abeloff-oncology",
-            "title": "Abeloff's Clinical Oncology",
-            "author": "Abeloff",
-            "coverImageId": "abeloff-oncology"
-          }
-        ]
-      }
-    },
-    {
-      "id": "cardiology",
-      "name": "Cardiology",
-      "year": [3, 4],
-      "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "braunwald-heart",
-            "title": "Braunwald's Heart Disease",
-            "author": "Braunwald",
-            "coverImageId": "braunwald-heart"
-          },
-          {
-            "id": "harrisons-cardiology",
-            "title": "Harrison's Cardiology",
-            "author": "Harrison",
-            "coverImageId": "harrisons-cardiology"
-          }
-        ]
-      }
     }
   ]
 }

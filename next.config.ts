@@ -119,6 +119,18 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'imgv2-2-f.scribdassets.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.kenhub.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

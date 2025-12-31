@@ -297,26 +297,44 @@
     {
       "id": "vishrams-embryology",
       "description": "Vishram's Embryology",
-      "imageUrl": "https://images.unsplash.com/photo-1724649969752-e97a688449ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbWJyeW9sb2d5JTIwYm9va3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://m.media-amazon.com/images/I/516GZXQju+L._UF1000,1000_QL80_.jpg",
       "imageHint": "embryology book"
     },
     {
       "id": "embryology-notes",
       "description": "Embryology Notes",
-      "imageUrl": "https://images.unsplash.com/photo-1674509036252-5a517959a3b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub3RlcyUyMGRpYWdyYW18ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://imgv2-2-f.scribdassets.com/img/document/697515802/original/ed7f418732/1?v=1",
       "imageHint": "notes diagram"
     },
     {
       "id": "ib-singh-histology",
       "description": "IB Singh's Histology",
-      "imageUrl": "https://images.unsplash.com/photo-1636959865743-f3999844bdff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b2xvZ3klMjB0ZXh0Ym9va3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://d45jl3w9libvn.cloudfront.net/jaypee/static/books/9789351523222/9789351523222.png",
       "imageHint": "histology textbook"
     },
     {
-      "id": "difiore-histology",
-      "description": "diFiore's Atlas of Histology with Functional Correlations",
-      "imageUrl": "https://images.unsplash.com/photo-1747769610584-485fedd104de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b2xvZ3klMjBhdGxhc3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "id": "pawlina-histology-atlas",
+      "description": "Histology: A Text and Atlas With Correlated Cell and Molecular Biology",
+      "imageUrl": "https://m.media-amazon.com/images/I/61raBu9HfhL._UF1000,1000_QL80_.jpg",
       "imageHint": "histology atlas"
+    },
+    {
+      "id": "anatomy-360-guide",
+      "description": "Anatomy 360 - The Ultimate Visual Guide to the Human Body",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJyyaItbw8sO6Eyx7MTAnL8Y5xQXqFMWdqNA&s",
+      "imageHint": "anatomy guide"
+    },
+    {
+      "id": "anatomy-cadaveric-atlas",
+      "description": "Anatomy Cadaveric Atlas",
+      "imageUrl": "https://www.kenhub.com/thumbor/KstJrZKjPGZFC1nDFTPcmOm9TKc=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/library/6939/Color_Atlas_of_Anatomy_-_A_Photog._Study_of_the_Human_Body_.pdf__page_1_of_548__2018-03-18_23-32-38.jpg",
+      "imageHint": "cadaveric atlas"
+    },
+    {
+      "id": "clinical-atlas-human-anatomy",
+      "description": "Clinical Atlas of Human Anatomy 7th Edition",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZknEE8GodW2w1oCTjPU4UP1SrrzCzfcEhg&s",
+      "imageHint": "clinical atlas"
     },
     {
       "id": "devita-cancer",
@@ -327,7 +345,7 @@
     {
       "id": "abeloff-oncology",
       "description": "Cover of Abeloff's Clinical Oncology",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
@@ -339,25 +357,25 @@
     {
       "id": "harrisons-cardiology",
       "description": "Cover of Harrison's Cardiology",
-      "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
       "id": "katzung-pharma",
       "description": "Cover of Basic and Clinical Pharmacology",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
       "id": "goodman-gilman-pharma",
       "description": "Cover of Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
-      "imageUrl": "https://images.unsplash.com/photo-1528459105426-b9548367069b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1528459105426-b9548367069b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
       "id": "inspirational-banner",
       "description": "An abstract, inspiring medical background image",
-      "imageUrl": "https://images.unsplash.com/photo-1650897492422-1a939d83e4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY3MTg4NzcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650897492422-1a939d83e4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY3MTg4NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "medical abstract"
     },
     {

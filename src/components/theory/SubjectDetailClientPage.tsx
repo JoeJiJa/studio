@@ -23,6 +23,8 @@ const SECTIONS_CONFIG = [
   { key: 'textbooks', title: 'Gross Anatomy' },
   { key: 'dissection-manual', title: 'Dissection Manual' },
   { key: 'clinical-books', title: 'Clinical Books' },
+  { key: 'embryology', title: 'Embryology' },
+  { key: 'histology', title: 'Histology' },
   { key: 'study-materials', title: 'Study Materials' },
   { key: 'question-bank', title: 'Question Banks' },
   { key: 'atlases', title: 'Atlases' },
