@@ -611,6 +611,30 @@
       "description": "Rajesh - Principles of FM",
       "imageUrl": "https://0.academia-photos.com/attachment_thumbnails/57595499/mini_magick20201005-19341-1tl4og0.png?1601942398",
       "imageHint": "forensic medicine"
+    },
+    {
+      "id": "microbiology-clinical-cases",
+      "description": "Microbiology Clinical Cases",
+      "imageUrl": "https://m.media-amazon.com/images/I/710Z1si7VBL._UF1000,1000_QL80_.jpg",
+      "imageHint": "microbiology textbook"
+    },
+    {
+      "id": "sastry-parasitology",
+      "description": "Apurba Sankar Sastry Essentials of Medical Parasitology",
+      "imageUrl": "https://rukminim2.flixcart.com/image/480/480/kndi4y80/book/7/q/l/essentials-of-medical-parasitology-original-imag22phgbnvjkhz.jpeg?q=90",
+      "imageHint": "parasitology textbook"
+    },
+    {
+      "id": "sastry-microbiology",
+      "description": "Apurba Sankar Sastry - 3rd Essentials of Microbiology",
+      "imageUrl": "https://m.media-amazon.com/images/I/81BNmVuMulL._UF1000,1000_QL80_.jpg",
+      "imageHint": "microbiology textbook"
+    },
+    {
+      "id": "micro-mcqs",
+      "description": "Micro MCQs",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZpxiOInp4Isghi7zlq8r1AGkMCB5Ka34-Q&s",
+      "imageHint": "microbiology questions"
     }
   ]
 }
