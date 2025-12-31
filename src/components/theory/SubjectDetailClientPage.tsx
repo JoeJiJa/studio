@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import React, { useState } from 'react';
@@ -25,6 +26,8 @@ const SECTIONS_CONFIG = [
   { key: 'clinical-books', title: 'Clinical Books' },
   { key: 'embryology', title: 'Embryology' },
   { key: 'histology', title: 'Histology' },
+  { key: 'obstetrics-textbooks', title: 'Obstetrics Textbooks' },
+  { key: 'gynecology-textbooks', title: 'Gynecology Textbooks' },
   { key: 'study-materials', title: 'Study Materials' },
   { key: 'question-bank', title: 'Question Banks' },
   { key: 'atlases', title: 'Atlases' },
