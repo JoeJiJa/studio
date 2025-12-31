@@ -331,6 +331,12 @@
       "imageHint": "obstetrics textbook"
     },
     {
+      "id": "marrow-gen-surgery-8th",
+      "description": "Marrow Gen Surgery 8th Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/eq5ViOdbQ9QedFfZMKHu.jpeg",
+      "imageHint": "surgery notes"
+    },
+    {
       "id": "marrow-obg-8th",
       "description": "Marrow OBG 8th Edition",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/gm6xDxpZ44keKdoTTFMW.webp",
@@ -383,12 +389,6 @@
       "description": "Marrow Pathology 8th Edition",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/irWcjZYoq0DcGrCo4tTC.png",
       "imageHint": "pathology notes"
-    },
-    {
-      "id": "marrow-microbiology-8th",
-      "description": "Marrow Microbiology 8th Edition",
-      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/1P9X9RRKwVxczXAOahUW.png",
-      "imageHint": "microbiology notes"
     },
     {
       "id": "marrow-community-medicine-8th",
