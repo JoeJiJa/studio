@@ -30,18 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function SubjectDetailPage({ params }: Props) {
-  let subject = getSubject(params.subjectSlug);
+  const subject = getSubject(params.subjectSlug);
 
   if (!subject) {
     notFound();
-  }
-
-  // If it's the anatomy page, we'll inject the detailed dummy data
-  if (params.subjectSlug === 'anatomy') {
-    subject = {
-      ...subject,
-      materials: getAnatomyMaterials(),
-    }
   }
 
   return <SubjectDetailClientPage subject={subject} />;
