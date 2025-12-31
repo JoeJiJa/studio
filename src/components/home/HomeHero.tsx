@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 export function HomeHero() {
   return (
-    <div className="text-center bg-card p-8 rounded-lg">
+    <div className="text-center bg-card p-6 md:p-8 rounded-lg">
       <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
         Welcome Back, Doctor!
       </h1>
       <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
         Your journey to medical mastery continues. What will you learn today?
       </p>
-      <div className="mt-6 flex gap-4 justify-center">
+      <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
         <Button asChild size="lg">
           <Link href="/theory">Explore Subjects</Link>
         </Button>
