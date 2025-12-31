@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -8,12 +9,18 @@ export function InspirationalQuote() {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % data.inspirationalQuotes.length);
-    }, 5 * 60 * 1000); // 5 minutes
+    if (data.inspirationalQuotes && data.inspirationalQuotes.length > 0) {
+      const interval = setInterval(() => {
+        setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % data.inspirationalQuotes.length);
+      }, 5 * 60 * 1000); // 5 minutes
 
-    return () => clearInterval(interval);
+      return () => clearInterval(interval);
+    }
   }, []);
+
+  if (!data.inspirationalQuotes || data.inspirationalQuotes.length === 0) {
+    return null; 
+  }
 
   const { text, author } = data.inspirationalQuotes[currentQuoteIndex];
 
