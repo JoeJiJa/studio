@@ -259,6 +259,30 @@
       "imageHint": "anatomy textbook"
     },
     {
+      "id": "moores-clinically-oriented-detailed",
+      "description": "Moore's Clinically Oriented Anatomy Detailed",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNVbVxeptBmAF0HPTquI-riRJS6R67W0xSw&s",
+      "imageHint": "clinical anatomy"
+    },
+    {
+      "id": "cunningham-head-neck",
+      "description": "Cunningham's Manual of Practical Anatomy: Head & Neck",
+      "imageUrl": "https://m.media-amazon.com/images/I/81Abkn0-sXL._UF1000,1000_QL80_.jpg",
+      "imageHint": "dissection manual"
+    },
+    {
+      "id": "cunningham-thorax-abdomen",
+      "description": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuASM_l596FYGOr5kobKUfFP3tBk4PpqYTbvYpF8Ez1MDUXf9Q-TBNCE5aRsvjTPHByI&usqp=CAU",
+      "imageHint": "dissection manual"
+    },
+    {
+      "id": "cunningham-limbs",
+      "description": "Cunningham's Manual of Practical Anatomy: Limbs",
+      "imageUrl": "https://m.media-amazon.com/images/I/51DXvHxoXJL._UF350,350_QL50_.jpg",
+      "imageHint": "dissection manual"
+    },
+    {
       "id": "moores-clinically-oriented",
       "description": "Moore's Clinically Oriented Anatomy",
       "imageUrl": "https://images.unsplash.com/photo-1565090567123-922c648b1adf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGluaWNhbCUyMGFuYXRvbXl8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -291,26 +315,8 @@
     {
       "id": "difiore-histology",
       "description": "diFiore's Atlas of Histology with Functional Correlations",
-      "imageUrl": "https://images.unsplash.com/photo-1747769610584-485fedd104de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b2xvZ3klMjBhdGxhc3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1747769610584-485fedd104de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b2xvZ3klMjBhdGxhc3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "histology atlas"
-    },
-    {
-      "id": "cunningham-head-neck",
-      "description": "Cunningham's Manual of Practical Anatomy: Head & Neck",
-      "imageUrl": "https://images.unsplash.com/photo-1715523520552-8cf691334a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaXNzZWN0aW9uJTIwbWFudWFsfGVufDB8fHx8MTc2NzE5MzAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dissection manual"
-    },
-    {
-      "id": "cunningham-thorax-abdomen",
-      "description": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen",
-      "imageUrl": "https://images.unsplash.com/photo-1725399634168-c6d53638b212?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaXNzZWN0aW9uJTIwbWFudWFsfGVufDB8fHx8MTc2NzE5MzAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dissection manual"
-    },
-    {
-      "id": "cunningham-limbs",
-      "description": "Cunningham's Manual of Practical Anatomy: Limbs",
-      "imageUrl": "https://images.unsplash.com/photo-1729856980965-5ed327b9a949?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGlzc2VjdGlvbiUyMG1hbnVhbHxlbnwwfHx8fDE3NjcxOTMwMDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dissection manual"
     },
     {
       "id": "devita-cancer",
@@ -321,7 +327,7 @@
     {
       "id": "abeloff-oncology",
       "description": "Cover of Abeloff's Clinical Oncology",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
@@ -333,25 +339,25 @@
     {
       "id": "harrisons-cardiology",
       "description": "Cover of Harrison's Cardiology",
-      "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
       "id": "katzung-pharma",
       "description": "Cover of Basic and Clinical Pharmacology",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
       "id": "goodman-gilman-pharma",
       "description": "Cover of Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
-      "imageUrl": "https://images.unsplash.com/photo-1528459105426-b9548367069b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1528459105426-b9548367069b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "book cover"
     },
     {
       "id": "inspirational-banner",
       "description": "An abstract, inspiring medical background image",
-      "imageUrl": "https://images.unsplash.com/photo-1650897492422-1a939d83e4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY3MTg4NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650897492422-1a939d83e4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY3MTg4NzcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "medical abstract"
     },
     {
