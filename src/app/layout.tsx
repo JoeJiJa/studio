@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import { BottomNav } from '@/components/layout/BottomNav';
+import { BottomNav, SideNav } from '@/components/layout/BottomNav';
 import { Toaster } from '@/components/ui/toaster';
 import { AIChat } from '@/components/layout/AIChat';
 
@@ -23,9 +23,12 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased", "min-h-screen bg-background")}>
-        <main className="pb-16 md:pb-0">
-          {children}
-        </main>
+        <div className="flex min-h-screen">
+          <SideNav />
+          <main className="flex-grow pb-16 md:pb-0 md:pl-64">
+            {children}
+          </main>
+        </div>
         <BottomNav />
         <AIChat />
         <Toaster />

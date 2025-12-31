@@ -78,7 +78,7 @@ export function AIChat() {
       <DialogTrigger asChild>
         <Button
           size="icon"
-          className="fixed bottom-20 right-4 md:bottom-6 md:right-6 rounded-full w-14 h-14 shadow-lg"
+          className="fixed bottom-20 right-4 md:bottom-6 md:right-6 rounded-full w-14 h-14 shadow-lg z-50"
         >
           <Bot className="h-6 w-6" />
           <span className="sr-only">Open AI Assistant</span>
