@@ -677,6 +677,42 @@
       "description": "Prepladder Dermatology X Edition",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/l9Jmt0PxC4nDMFkPehnA.png",
       "imageHint": "dermatology notes"
+    },
+    {
+      "id": "gk-pal-physiology",
+      "description": "G K Pal Physiology",
+      "imageUrl": "https://d45jl3w9libvn.cloudfront.net/jaypee/static/books/9789386056979/9789386056979.png",
+      "imageHint": "physiology textbook"
+    },
+    {
+      "id": "senthamilselvi-physiology",
+      "description": "Senthamilselvi Physiology Notes",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3QUur0j4_VXGz9dJeJQrFRRNB-VBEQoD-g&s",
+      "imageHint": "physiology notes"
+    },
+    {
+      "id": "sembulingam-physiology",
+      "description": "K Sembulingam - Essentials of Medical Physiology",
+      "imageUrl": "https://m.media-amazon.com/images/I/8151ww8COEL._UF1000,1000_QL80_.jpg",
+      "imageHint": "physiology textbook"
+    },
+    {
+      "id": "ganongs-physiology",
+      "description": "Ganongs Review of Medical Physiology",
+      "imageUrl": "https://m.media-amazon.com/images/I/71ZoZrkuKmL._UF1000,1000_QL80_.jpg",
+      "imageHint": "physiology textbook"
+    },
+    {
+      "id": "guyton-hall-physiology",
+      "description": "Guyton and Hall Textbook of Medical Physiology",
+      "imageUrl": "https://m.media-amazon.com/images/I/71n6+bDeUjL._UF1000,1000_QL80_.jpg",
+      "imageHint": "physiology textbook"
+    },
+    {
+      "id": "guyton-human-physiology",
+      "description": "Guyton - Human Physiology and Mechanisms of Disease",
+      "imageUrl": "https://secure-ecsd.elsevier.com/covers/80/Tango2/largest/9780323597128.jpg",
+      "imageHint": "physiology textbook"
     }
   ]
 }
