@@ -12,6 +12,7 @@ import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import type { Subject, Material, Book } from '@/lib/types';
 import { isBook } from '@/lib/types';
 import { BookCarousel } from '../shared/BookCarousel';
+import { BackButton } from '../shared/BackButton';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
@@ -30,6 +31,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <BackButton />
       <header className="mb-8">
         <h1 className="text-4xl font-headline font-bold">{subject.name}</h1>
         <p className="text-muted-foreground mt-2 max-w-2xl">{subject.description}</p>
