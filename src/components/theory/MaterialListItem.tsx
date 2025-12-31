@@ -7,13 +7,13 @@ import { ChevronRight } from 'lucide-react';
 
 interface MaterialListItemProps {
   item: Material;
-  onBookClick?: (book: Book) => void;
+  onItemClick?: (item: Material) => void;
 }
 
-export function MaterialListItem({ item, onBookClick }: MaterialListItemProps) {
+export function MaterialListItem({ item, onItemClick }: MaterialListItemProps) {
   const handleClick = () => {
-    if (isBook(item) && onBookClick) {
-      onBookClick(item);
+    if (onItemClick) {
+      onItemClick(item);
     }
   };
 
@@ -31,13 +31,14 @@ export function MaterialListItem({ item, onBookClick }: MaterialListItemProps) {
                 fill
                 sizes="64px"
                 className="object-cover rounded-md"
+                data-ai-hint={placeholder.imageHint}
               />
             ) : (
               <div className="w-full h-full bg-secondary rounded-md" />
             )}
           </div>
-          <div>
-            <h3 className="font-semibold">{item.title}</h3>
+          <div className="flex-1">
+            <h3 className="font-semibold leading-tight">{item.title}</h3>
             <p className="text-sm text-muted-foreground">{item.author}</p>
           </div>
         </>
@@ -47,11 +48,11 @@ export function MaterialListItem({ item, onBookClick }: MaterialListItemProps) {
     const studyMaterial = item as StudyMaterial;
     return (
         <>
-            <div className="w-16 h-20 relative mr-4 flex-shrink-0 bg-secondary rounded-md flex items-center justify-center">
-               <span className="text-3xl font-bold text-primary">M</span>
+            <div className="w-16 h-20 relative mr-4 flex-shrink-0 bg-secondary rounded-md flex items-center justify-center p-2">
+               <span className="text-3xl font-bold text-primary text-center leading-none">Q</span>
             </div>
-            <div>
-                <h3 className="font-semibold">{studyMaterial.title}</h3>
+            <div className="flex-1">
+                <h3 className="font-semibold leading-tight">{studyMaterial.title}</h3>
                 <p className="text-sm text-muted-foreground">{studyMaterial.description}</p>
             </div>
         </>
@@ -61,12 +62,12 @@ export function MaterialListItem({ item, onBookClick }: MaterialListItemProps) {
   return (
     <Card 
       onClick={handleClick}
-      className="p-3 flex items-center justify-between transition-colors hover:bg-card/60 cursor-pointer"
+      className="p-3 flex items-center justify-between transition-shadow hover:shadow-md cursor-pointer"
     >
-      <div className="flex items-center">
+      <div className="flex items-center min-w-0 flex-1">
         {renderContent()}
       </div>
-      <ChevronRight className="h-5 w-5 text-muted-foreground" />
+      <ChevronRight className="h-5 w-5 text-muted-foreground ml-2 flex-shrink-0" />
     </Card>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Book, Material, isBook } from '@/lib/types';
-import { BookCarousel } from '../shared/BookCarousel';
+import { Material, isBook, Book } from '@/lib/types';
 import { Button } from '../ui/button';
+import { MaterialListItem } from './MaterialListItem';
 
 interface MaterialSectionProps {
   title: string;
@@ -10,37 +10,25 @@ interface MaterialSectionProps {
 }
 
 export function MaterialSection({ title, materials, onItemClick }: MaterialSectionProps) {
-  // Convert all material types to a structure that BookCarousel can handle
-  const carouselItems = materials.map(item => {
-    if (isBook(item)) {
-      return item;
-    }
-    // Convert StudyMaterial or other types to a Book-like structure for the carousel
-    return {
-      id: item.id,
-      title: item.title,
-      author: (item as any).description || '',
-      coverImageId: 'study-material-placeholder', // Use a generic placeholder
-      downloadUrl: item.downloadUrl,
-    };
-  });
+  if (materials.length === 0) {
+    return null;
+  }
 
   return (
     <section>
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold font-headline">{title}</h2>
-        <Button variant="link">See all</Button>
+        {materials.length > 4 && <Button variant="link">See all</Button>}
       </div>
-      <BookCarousel
-        items={carouselItems}
-        getItemProps={(item) => ({
-          id: item.id,
-          title: item.title,
-          href: item.downloadUrl || '#',
-          coverImageId: (item as Book).coverImageId
-        })}
-        onItemClick={onItemClick}
-      />
+      <div className="space-y-3">
+        {materials.map(item => (
+          <MaterialListItem 
+            key={item.id}
+            item={item} 
+            onItemClick={() => onItemClick(item)} 
+          />
+        ))}
+      </div>
     </section>
   );
 }

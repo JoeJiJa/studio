@@ -1,11 +1,12 @@
 "use client";
 
 import React from 'react';
-import type { Subject, Book, Material, isBook } from '@/lib/types';
+import type { Subject, Book, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
 import { MaterialSection } from './MaterialSection';
 import { Separator } from '../ui/separator';
+import { isBook } from '@/lib/types';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
@@ -25,15 +26,15 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     if (item.downloadUrl) {
       window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
     }
-    // We can still add books to recently viewed even if they are opened externally
-    if ('coverImageId' in item) {
-       addRecentlyViewed(item as Book);
+    
+    if (isBook(item)) {
+       addRecentlyViewed(item);
     }
   };
   
   const sectionsWithContent = SECTIONS.map(section => ({
     ...section,
-    materials: subject.materials[section.key] || [],
+    materials: subject.materials[section.key as keyof typeof subject.materials] || [],
   })).filter(section => section.materials.length > 0);
 
   return (
