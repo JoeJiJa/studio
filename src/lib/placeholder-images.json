@@ -635,6 +635,48 @@
       "description": "Micro MCQs",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZpxiOInp4Isghi7zlq8r1AGkMCB5Ka34-Q&s",
       "imageHint": "microbiology questions"
+    },
+    {
+      "id": "pathology-clinical-cases",
+      "description": "Pathology Clinical Cases",
+      "imageUrl": "https://m.media-amazon.com/images/I/71Vb3q1dpFL._UF1000,1000_QL80_.jpg",
+      "imageHint": "pathology textbook"
+    },
+    {
+      "id": "geetika-khanna-pathology",
+      "description": "Geetika Khanna Pathology",
+      "imageUrl": "https://m.media-amazon.com/images/I/81FriBx-rGL._UF1000,1000_QL80_.jpg",
+      "imageHint": "pathology textbook"
+    },
+    {
+      "id": "harsh-mohan-7th",
+      "description": "Harsh Mohan Textbook of pathology 7th Ed",
+      "imageUrl": "https://booksjugaad.com/wp-content/uploads/2020/12/Textbook-of-Pathology-By-Harsh-Mohan-1.png",
+      "imageHint": "pathology textbook"
+    },
+    {
+      "id": "tejindar-singh-hematology",
+      "description": "Tejindar Singh Hematology - Atlas",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqJViYDlJD-nUROKD1mGS_xy2dGj6EjoFbQ&s",
+      "imageHint": "hematology atlas"
+    },
+    {
+      "id": "harsh-mohan-6th",
+      "description": "Harsh Mohan - Textbook of Pathology 6th Ed",
+      "imageUrl": "https://m.media-amazon.com/images/I/71owLs+t70L._UF1000,1000_QL80_.jpg",
+      "imageHint": "pathology textbook"
+    },
+    {
+      "id": "robbins-10th",
+      "description": "Robbins 10th Ed",
+      "imageUrl": "https://www.aibh.in/backend/images/products/cover-9780323531139.jpg",
+      "imageHint": "pathology textbook"
+    },
+    {
+      "id": "ramdas-nayak-pathology",
+      "description": "Ramdas Nayak Pathology 4th Edition",
+      "imageUrl": "https://m.media-amazon.com/images/I/91ZjUUTWTcL._UF1000,1000_QL80_.jpg",
+      "imageHint": "pathology textbook"
     }
   ]
 }
