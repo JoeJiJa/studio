@@ -1,4 +1,3 @@
-import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 import React from 'react';
 
 export default function MenuPage() {
@@ -6,9 +5,8 @@ export default function MenuPage() {
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-4xl font-headline font-bold">Profile</h1>
-        <ThemeSwitcher />
       </div>
-      <p className="text-muted-foreground mt-2">This is the profile page. Use the switch above to toggle between light and dark mode.</p>
+      <p className="text-muted-foreground mt-2">This is the profile page. Use the switch in the top right to toggle between light and dark mode.</p>
     </div>
   );
 }

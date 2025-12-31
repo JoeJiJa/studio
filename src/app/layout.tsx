@@ -5,6 +5,7 @@ import { BottomNav } from '@/components/layout/BottomNav';
 import { Toaster } from '@/components/ui/toaster';
 import { AIChat } from '@/components/layout/AIChat';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
+import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 
 export const metadata: Metadata = {
   title: 'AstroMed',
@@ -30,6 +31,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="fixed top-4 right-4 z-50">
+            <ThemeSwitcher />
+          </div>
           <div className="flex min-h-screen">
             <main className="flex-grow pb-16">
               {children}
