@@ -1,0 +1,77 @@
+diff --git a/node_modules/next-themes/dist/index.js b/node_modules/next-themes/dist/index.js
+index 4b79b6c..9c12b6f 100644
+--- a/node_modules/next-themes/dist/index.js
++++ b/node_modules/next-themes/dist/index.js
+@@ -1,5 +1,6 @@
+ 'use client';
+-import React, { createContext, useContext, useEffect, useState, useMemo, useCallback } from 'react';
++import React, { createContext, useContext, useEffect, useState, useMemo, useCallback, startTransition } from 'react';
++import { useSyncExternalStore } from 'react';
+ 
+ const colorSchemes = ['light', 'dark'];
+ const MEDIA = '(prefers-color-scheme: dark)';
+@@ -49,6 +50,7 @@ const ThemeProvider = props => {
+   const { forcedTheme, storageKey = 'theme', defaultTheme = 'system', enableSystem = true, disableTransitionOnChange = false, attribute = 'data-theme', value, children, nonce } = props;
+   const [theme, setThemeState] = useState(() => getTheme(storageKey, defaultTheme));
+   const [resolvedTheme, setResolvedTheme] = useState(() => getTheme(storageKey));
++  const [mounted, setMounted] = useState(false);
+   const attrs = !value ? themes : Object.values(value);
+   const applyTheme = useCallback(theme => {
+     let resolved = theme;
+@@ -87,6 +89,10 @@ const ThemeProvider = props => {
+     }
+   }, []);
+   const setTheme = useCallback(theme => {
++    startTransition(() => {
++      setThemeState(theme);
++    });
++
+     // Save to storage
+     try {
+       localStorage.setItem(storageKey, theme);
+@@ -95,6 +101,11 @@ const ThemeProvider = props => {
+     }
+   }, [forcedTheme]);
+ 
++  // useSyncExternalStore is used to ensure that the theme is updated correctly across all tabs
++  useSyncExternalStore(useCallback(onStoreChange => {
++    window.addEventListener('storage', onStoreChange);
++    return () => window.removeEventListener('storage', onStoreChange);
++  }, []), () => getTheme(storageKey, defaultTheme));
+   const providerValue = useMemo(() => ({
+     theme,
+     setTheme,
+@@ -107,10 +118,11 @@ const ThemeProvider = props => {
+     attrs
+   }), [theme, setTheme, forcedTheme, resolvedTheme, systemTheme, themes, attrs]);
+   useEffect(() => {
++    setMounted(true);
+     setTheme(getTheme(storageKey, defaultTheme));
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+   }, []);
+-  return /*#__PURE__*/React.createElement(ThemeContext.Provider, {
++  return mounted ? /*#__PURE__*/React.createElement(ThemeContext.Provider, {
+     value: providerValue
+   }, /*#__PURE__*/React.createElement(ThemeScript, {
+     forcedTheme,
+@@ -121,7 +133,7 @@ const ThemeProvider = props => {
+     value,
+     nonce
+   }), children) : /*#__PURE__*/React.createElement(ThemeContext.Provider, {
+-    value: undefined
++    value: providerValue
+   }, /*#__PURE__*/React.createElement(ThemeScript, {
+     forcedTheme,
+     storageKey,
+diff --git a/node_modules/next-themes/package.json b/node_modules/next-themes/package.json
+index 5427d1a..93e43a8 100644
+--- a/node_modules/next-themes/package.json
++++ b/node_modules/next-themes/package.json
+@@ -37,6 +37,6 @@
+     "access": "public"
+   },
+   "peerDependencies": {
+-    "react": "^16.8 || ^17 || ^18"
++    "react": "^16.8 || ^17 || ^18 || ^19"
+   }
+ }
