@@ -64,7 +64,7 @@ export function BookCarousel({
       <CarouselContent>
         {items.map((item) => {
           const { id, title, href, coverImageId } = getItemProps(item);
-          const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : null;
+          const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
 
           const handleItemClick = () => {
             if (onItemClick && 'coverImageId' in item && 'author' in item) {

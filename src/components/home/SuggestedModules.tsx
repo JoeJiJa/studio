@@ -14,7 +14,12 @@ interface SuggestedModulesProps {
 export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
   const modules = moduleIds
     .map(id => getSubject(id))
-    .filter((s): s is Subject => s !== undefined);
+    .filter((s): s is Subject => {
+      if (!s) return false;
+      // Ensure the subject has some materials to be displayed.
+      const hasMaterials = s.materials && Object.values(s.materials).some(m => m.length > 0);
+      return hasMaterials;
+    });
 
   return (
     <Card className="h-full">
@@ -29,11 +34,12 @@ export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
             items={modules}
             getItemProps={(item) => {
               const subject = item as Subject;
-              // Safely access materials and provide a fallback
+              
               const firstTextbook = subject.materials?.textbooks?.[0] as any;
               const firstAtlas = subject.materials?.atlases?.[0] as any;
-              const coverImageId = firstTextbook?.coverImageId || firstAtlas?.coverImageId || 'study-material-placeholder';
-              
+
+              const coverImageId = firstTextbook?.coverImageId || firstAtlas?.coverImageId;
+
               return {
                   id: subject.id,
                   title: subject.name,
