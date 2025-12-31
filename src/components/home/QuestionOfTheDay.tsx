@@ -40,7 +40,7 @@ export function QuestionOfTheDay() {
           <HelpCircle className="text-primary h-4 w-4" />
           Question of the Day
         </CardTitle>
-        <CardDescription className="text-xs">{question}</CardDescription>
+        <CardDescription className="text-sm">{question}</CardDescription>
       </CardHeader>
       <CardContent className="p-2 pt-0">
         <div className="flex flex-col space-y-1.5">
@@ -49,7 +49,7 @@ export function QuestionOfTheDay() {
               key={index}
               variant={getButtonVariant(index)}
               size="sm"
-              className={cn("justify-start h-auto whitespace-normal text-left text-xs", getButtonClass(index))}
+              className={cn("justify-start h-auto whitespace-normal text-left text-sm", getButtonClass(index))}
               onClick={() => handleOptionSelect(index)}
               disabled={isAnswered}
             >

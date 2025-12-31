@@ -37,8 +37,8 @@ export function InspirationalQuote() {
           <Quote className="h-3 w-3 text-accent mr-2" />
         </div>
         <div>
-          <p className="text-xs font-semibold font-headline">{`"${text}"`}</p>
-          <p className="text-[10px] text-right w-full mt-0.5">- {author}</p>
+          <p className="text-sm font-semibold font-headline">{`"${text}"`}</p>
+          <p className="text-xs text-right w-full mt-0.5">- {author}</p>
         </div>
       </div>
     </div>

@@ -72,7 +72,7 @@ export function StudyStreak() {
                         <Skeleton className="h-6 w-20" />
                         <Skeleton className="h-3 w-28 mt-1" />
                     </div>
-                    <Skeleton className="h-20 w-full max-w-xs" />
+                    <Skeleton className="h-16 w-full max-w-xs" />
                 </div>
             </CardContent>
       </Card>
@@ -84,12 +84,12 @@ export function StudyStreak() {
         <CardHeader className="p-2">
             <div className="flex flex-row items-center justify-between space-y-0">
                 <CardTitle className="text-base">Your Progress</CardTitle>
-                <div className="flex items-center text-amber-500 font-bold text-xs">
+                <div className="flex items-center text-amber-500 font-bold text-sm">
                     <Flame className="h-3 w-3 mr-1" />
                     <span>{streak} Day Streak</span>
                 </div>
             </div>
-            <CardDescription className="text-xs">
+            <CardDescription className="text-sm">
                 {streak > 1 ? 'Keep up the great work!' : 'Keep coming back to build your streak!'}
             </CardDescription>
         </CardHeader>

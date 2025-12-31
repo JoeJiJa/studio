@@ -46,7 +46,7 @@ export function BookCarousel({
         {[...Array(loadingSkeletons)].map((_, i) => (
           <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/4 md:basis-1/6 lg:basis-1/8">
             <div className="p-1">
-              <Skeleton className="aspect-[3/4] w-full rounded-md" />
+              <Skeleton className="aspect-[2/3] w-full rounded-md" />
               <Skeleton className="h-4 mt-2 w-3/4" />
               <Skeleton className="h-3 mt-1 w-1/2" />
             </div>
@@ -90,7 +90,7 @@ export function BookCarousel({
                 >
                   <Card className="overflow-hidden transition-shadow duration-200 group-hover:shadow-lg group-hover:-translate-y-0.5">
                     <CardContent className="p-0">
-                      <div className="aspect-[3/4] w-full relative bg-secondary">
+                      <div className="aspect-[2/3] w-full relative bg-secondary">
                         {placeholder ? (
                           <Image
                             src={placeholder.imageUrl}
@@ -108,11 +108,11 @@ export function BookCarousel({
                       </div>
                     </CardContent>
                   </Card>
-                  <p className="text-[11px] font-medium mt-1 truncate group-hover:text-primary" title={title}>
+                  <p className="text-xs font-medium mt-1 truncate group-hover:text-primary" title={title}>
                     {title}
                   </p>
                   {subtitle && (
-                     <p className="text-[10px] text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
+                     <p className="text-[11px] text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
                   )}
                 </Link>
               </div>
