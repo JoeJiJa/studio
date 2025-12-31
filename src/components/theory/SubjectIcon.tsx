@@ -64,10 +64,10 @@ const PetriDishIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 const subjectIcons: { [key: string]: React.ElementType } = {
-  anatomy: (props: any) => <div className="flex items-center justify-center gap-1"><Heart {...props} /><Brain {...props} /></div>,
+  anatomy: Bone,
   physiology: LungsIcon,
   biochemistry: Dna,
-  pathology: CellIcon,
+  pathology: Microscope,
   microbiology: PetriDishIcon,
   pharmacology: MortarPestleIcon,
   'community-medicine': HeartHandshake,
@@ -81,7 +81,7 @@ const subjectIcons: { [key: string]: React.ElementType } = {
   orthopedics: Bone,
   radiology: Activity,
   anesthesiology: Pill,
-  psychiatry: User,
+  psychiatry: Brain,
   dermatology: User,
   default: BookOpen,
 };
