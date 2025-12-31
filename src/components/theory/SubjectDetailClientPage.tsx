@@ -1,16 +1,22 @@
 
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import type { Subject, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
 import { isBook } from '@/lib/types';
 import { MaterialSection } from './MaterialSection';
+import { MaterialSheet } from './MaterialSheet';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
 }
+
+type SheetData = {
+  title: string;
+  materials: Material[];
+} | null;
 
 const SECTIONS_CONFIG = [
   { key: 'textbooks', title: 'Textbooks' },
@@ -25,6 +31,8 @@ const SECTIONS_CONFIG = [
 
 export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProps) {
   const { addItem: addRecentlyViewed } = useRecentlyViewed();
+  const [sheetData, setSheetData] = useState<SheetData>(null);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const handleItemClick = (item: Material) => {
     if (item.downloadUrl) {
@@ -40,6 +48,19 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     ...section,
     materials: subject.materials[section.key as keyof typeof subject.materials] || [],
   })).filter(section => section.materials.length > 0);
+
+  const handleSeeAllClick = (title: string, materials: Material[]) => {
+    setSheetData({ title, materials });
+    setIsSheetOpen(true);
+  };
+
+  const handleSheetOpenChange = (isOpen: boolean) => {
+    setIsSheetOpen(isOpen);
+    if (!isOpen) {
+      // Give a small delay for the sheet to close before clearing data
+      setTimeout(() => setSheetData(null), 150);
+    }
+  };
 
   return (
     <div>
@@ -59,9 +80,20 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
                 title={section.title}
                 materials={section.materials}
                 onItemClick={handleItemClick}
+                onSeeAllClick={() => handleSeeAllClick(section.title, section.materials)}
             />
         ))}
       </div>
+      
+      {sheetData && (
+        <MaterialSheet
+          isOpen={isSheetOpen}
+          onOpenChange={handleSheetOpenChange}
+          title={sheetData.title}
+          materials={sheetData.materials}
+          onItemClick={handleItemClick}
+        />
+      )}
     </div>
   );
 }
