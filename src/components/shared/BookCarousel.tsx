@@ -40,7 +40,7 @@ export function BookCarousel({
   
   if (!isLoaded) {
     return (
-      <div className="flex space-x-4 pb-1 -ml-4 pl-4">
+      <div className="flex space-x-4 pb-1">
         {[...Array(loadingSkeletons)].map((_, i) => (
           <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/2 md:basis-1/4 lg:basis-1/5">
             <div className="p-1">
@@ -59,7 +59,7 @@ export function BookCarousel({
         align: 'start',
         dragFree: true,
       }}
-      className="w-full -ml-4 pl-4"
+      className="w-full"
     >
       <CarouselContent className="-ml-1">
         {items.map((item) => {
