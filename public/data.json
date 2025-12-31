@@ -4,50 +4,56 @@
     "author": "William Osler"
   },
   "paretoBanner": {
-    "title": "The Pareto Principle (80/20 Rule)",
-    "description": "Focus on the 20% of study materials that will yield 80% of the results. Prioritize high-yield topics and concepts to maximize your learning efficiency."
+    "title": "The 80/20 Rule in Medical Studies",
+    "description": "Focus on the 20% of topics that appear in 80% of exams. Prioritize high-yield subjects to maximize your learning efficiency and exam scores."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with sudden-onset chest pain radiating to his left arm. An ECG shows ST-segment elevation in the anterior leads. What is the most likely diagnosis?",
+    "question": "A 55-year-old male presents with sudden-onset chest pain radiating to his left arm. An ECG shows ST-segment elevation in leads V1-V4. Which coronary artery is most likely occluded?",
     "options": [
-      "Pericarditis",
-      "Aortic Dissection",
-      "Acute Myocardial Infarction",
-      "Pulmonary Embolism"
+      "Right Coronary Artery (RCA)",
+      "Left Anterior Descending (LAD) Artery",
+      "Left Circumflex (LCx) Artery",
+      "Posterior Descending Artery (PDA)"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   "subjects": [
     {
       "id": "anatomy",
       "name": "Anatomy",
-      "year": [1],
+      "year": [
+        1
+      ],
       "description": "The study of the structure of the human body.",
       "materials": {
         "textbooks": [
           {
             "id": "bd-chaurasia-1",
-            "title": "BD Chaurasia's Human Anatomy, Volume 1",
+            "title": "BD Chaurasia's Human Anatomy, Volume 1: Upper Limb and Thorax",
             "author": "8th Edition",
-            "coverImageId": "bd-chaurasia-1"
+            "coverImageId": "bd-chaurasia-1",
+            "downloadUrl": "https://www.febbox.com/share/gR0uYvVb"
           },
           {
             "id": "bd-chaurasia-2",
-            "title": "BD Chaurasia's Human Anatomy, Volume 2",
+            "title": "BD Chaurasia's Human Anatomy, Volume 2: Lower Limb, Abdomen, and Pelvis",
             "author": "8th Edition",
-            "coverImageId": "bd-chaurasia-2"
+            "coverImageId": "bd-chaurasia-2",
+            "downloadUrl": "https://www.febbox.com/share/r36N824f"
           },
           {
             "id": "bd-chaurasia-3",
-            "title": "BD Chaurasia's Human Anatomy, Volume 3",
+            "title": "BD Chaurasia's Human Anatomy, Volume 3: Head, Neck, and Brain",
             "author": "8th Edition",
-            "coverImageId": "bd-chaurasia-3"
+            "coverImageId": "bd-chaurasia-3",
+            "downloadUrl": "https://www.febbox.com/share/Y6Cgoa6u"
           },
           {
             "id": "vishram-singh-anatomy",
-            "title": "Vishram Singh's Anatomy",
+            "title": "Vishram Singh Anatomy Set",
             "author": "3rd Edition",
-            "coverImageId": "vishram-singh-anatomy"
+            "coverImageId": "vishram-singh-anatomy",
+            "downloadUrl": "https://www.febbox.com/share/OczzDqxD"
           }
         ],
         "general-anatomy": [
@@ -55,27 +61,15 @@
             "id": "sbd-general-anatomy",
             "title": "SBD General Anatomy",
             "author": "9th Edition",
-            "coverImageId": "sbd-general-anatomy"
+            "coverImageId": "sbd-general-anatomy",
+            "downloadUrl": "https://www.febbox.com/share/H7p1bIeX"
           },
           {
             "id": "vishram-general-anatomy",
             "title": "Vishram General Anatomy",
-            "author": "3rd Edition",
-            "coverImageId": "vishram-general-anatomy"
-          }
-        ],
-        "atlases": [
-          {
-            "id": "netter-atlas",
-            "title": "Netter's Atlas of Human Anatomy",
-            "author": "8th Edition",
-            "coverImageId": "netter-atlas"
-          },
-          {
-            "id": "rohen-atlas",
-            "title": "Rohen's Color Atlas of Anatomy",
-            "author": "9th Edition",
-            "coverImageId": "rohen-atlas"
+            "author": "4th Edition",
+            "coverImageId": "vishram-general-anatomy",
+            "downloadUrl": "https://www.febbox.com/share/k8A0z4wB"
           }
         ],
         "clinical-books": [
@@ -83,52 +77,69 @@
             "id": "moores-clinically-oriented",
             "title": "Moore's Clinically Oriented Anatomy",
             "author": "9th Edition",
-            "coverImageId": "moores-clinically-oriented"
+            "coverImageId": "moores-clinically-oriented",
+            "downloadUrl": "https://www.febbox.com/share/lR2D7E0P"
           }
         ],
         "study-materials": [
           {
-            "id": "embryology-notes",
-            "title": "Embryology Notes",
-            "description": "Comprehensive notes on human embryology."
-          },
-          {
             "id": "vishrams-embryology",
             "title": "Vishram's Embryology",
-            "author": "3rd Edition",
-            "coverImageId": "vishrams-embryology"
+            "author": "4th edition",
+            "coverImageId": "vishrams-embryology",
+            "downloadUrl": "https://www.febbox.com/share/C4kX7593"
+          },
+          {
+            "id": "embryology-notes",
+            "title": "Embryology Notes",
+            "description": "Handwritten notes for quick revision.",
+            "downloadUrl": "https://www.febbox.com/share/3aCgB49S"
+          }
+        ],
+        "atlases": [
+          {
+            "id": "netter-atlas",
+            "title": "Netter's Atlas of Human Anatomy",
+            "author": "8th Edition",
+            "coverImageId": "netter-atlas",
+            "downloadUrl": "https://www.febbox.com/share/QeEIXpD1"
           },
           {
             "id": "ib-singh-histology",
             "title": "IB Singh's Histology",
-            "author": "12th Edition",
-            "coverImageId": "ib-singh-histology"
+            "author": "10th Edition",
+            "coverImageId": "ib-singh-histology",
+            "downloadUrl": "https://www.febbox.com/share/5iG7A3kZ"
           },
           {
             "id": "difiore-histology",
             "title": "diFiore's Atlas of Histology",
-            "author": "14th Edition",
-            "coverImageId": "difiore-histology"
+            "author": "13th Edition",
+            "coverImageId": "difiore-histology",
+            "downloadUrl": "https://www.febbox.com/share/uX38X2gI"
           }
         ],
         "dissection-manual": [
           {
             "id": "cunningham-head-neck",
-            "title": "Cunningham's Manual: Head & Neck",
+            "title": "Cunningham's Manual of Practical Anatomy: Head & Neck",
             "author": "16th Edition",
-            "coverImageId": "cunningham-head-neck"
+            "coverImageId": "cunningham-head-neck",
+            "downloadUrl": "https://www.febbox.com/share/46gBw6lP"
           },
           {
             "id": "cunningham-thorax-abdomen",
-            "title": "Cunningham's Manual: Thorax & Abdomen",
+            "title": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen",
             "author": "16th Edition",
-            "coverImageId": "cunningham-thorax-abdomen"
+            "coverImageId": "cunningham-thorax-abdomen",
+            "downloadUrl": "https://www.febbox.com/share/M4c73V3M"
           },
           {
             "id": "cunningham-limbs",
-            "title": "Cunningham's Manual: Limbs",
+            "title": "Cunningham's Manual of Practical Anatomy: Limbs",
             "author": "16th Edition",
-            "coverImageId": "cunningham-limbs"
+            "coverImageId": "cunningham-limbs",
+            "downloadUrl": "https://www.febbox.com/share/3aY2e5XN"
           }
         ]
       }
@@ -136,145 +147,172 @@
     {
       "id": "physiology",
       "name": "Physiology",
-      "year": [1],
-      "description": "The study of the function of the human body.",
+      "year": [
+        1
+      ],
+      "description": "The study of how the human body functions.",
       "materials": {}
     },
     {
       "id": "biochemistry",
       "name": "Biochemistry",
-      "year": [1],
-      "description": "The study of the chemical processes within and relating to living organisms.",
+      "year": [
+        1
+      ],
+      "description": "The study of chemical processes within and relating to living organisms.",
       "materials": {}
     },
     {
       "id": "pathology",
       "name": "Pathology",
-      "year": [2],
-      "description": "The study of the causes and effects of disease or injury.",
+      "year": [
+        2
+      ],
+      "description": "The study of the causes and effects of disease.",
       "materials": {}
     },
     {
       "id": "microbiology",
       "name": "Microbiology",
-      "year": [2],
-      "description": "The study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa.",
+      "year": [
+        2
+      ],
+      "description": "The study of microscopic organisms.",
       "materials": {}
     },
     {
       "id": "pharmacology",
       "name": "Pharmacology",
-      "year": [2],
-      "description": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "katzung-pharma",
-            "title": "Basic and Clinical Pharmacology",
-            "author": "15th Edition",
-            "coverImageId": "katzung-pharma"
-          },
-          {
-            "id": "goodman-gilman-pharma",
-            "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
-            "author": "14th Edition",
-            "coverImageId": "goodman-gilman-pharma"
-          }
-        ]
-      }
-    },
-    {
-      "id": "community-medicine",
-      "name": "Community Medicine",
-      "year": [3],
-      "description": "A branch of medicine that deals with the health of populations.",
+      "year": [
+        2
+      ],
+      "description": "The study of drugs and their effects.",
       "materials": {}
     },
     {
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
-      "year": [3],
-      "description": "The application of medical knowledge to the investigation of crime, particularly in establishing the causes of injury or death.",
+      "year": [
+        2
+      ],
+      "description": "The application of medical knowledge to legal questions.",
+      "materials": {}
+    },
+    {
+      "id": "community-medicine",
+      "name": "Community Medicine",
+      "year": [
+        3
+      ],
+      "description": "A branch of medicine dealing with the health of populations.",
       "materials": {}
     },
     {
       "id": "ent",
       "name": "ENT",
-      "year": [3],
-      "description": "The branch of medicine and surgery specializing in the diagnosis and treatment of disorders of the head and neck.",
-      "materials": {}
-    },
-    {
-      "id": "ophthalmology",
-      "name": "Ophthalmology",
-      "year": [3],
-      "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
-      "materials": {}
-    },
-    {
-      "id": "general-medicine",
-      "name": "General Medicine",
-      "year": [4],
-      "description": "The medical specialty dedicated to the diagnosis and medical treatment of adults.",
+      "year": [
+        3
+      ],
+      "description": "The branch of medicine that specializes in the diagnosis and treatment of ear, nose, and throat disorders.",
       "materials": {
         "textbooks": [
           {
-            "id": "davidsons-medicine",
-            "title": "Davidson's Principles and Practice of Medicine",
-            "author": "24th Edition",
-            "coverImageId": "davidsons-medicine"
+            "id": "dhingra-ent",
+            "title": "Diseases of Ear, Nose and Throat",
+            "author": "Dhingra",
+            "coverImageId": "dhingra-ent",
+            "downloadUrl": "https://www.febbox.com/share/FPJrbZta"
           },
           {
-            "id": "exam-prep-medicine",
-            "title": "Exam Prep Medicine Archith Boloor",
-            "author": "4th Edition",
-            "coverImageId": "exam-prep-medicine"
-          },
-          {
-            "id": "harrisons-medicine",
-            "title": "Harrison’s principles of internal medicine",
-            "author": "21st Edition",
-            "coverImageId": "harrisons-medicine"
-          },
-          {
-            "id": "manipal-prep-medicine",
-            "title": "Manipal Prep Manual of Medicine",
-            "author": "5th Edition",
-            "coverImageId": "manipal-prep-medicine"
+            "id": "manisha-ent-entrance",
+            "title": "ENT for Entrance Exam",
+            "author": "Manisha, 4th Edition",
+            "coverImageId": "manisha-ent-entrance",
+            "downloadUrl": "https://www.febbox.com/share/Oe4kmiTd"
           }
         ],
         "clinical-books": [
           {
-            "id": "clinical-med-boloor",
-            "title": "Clinical Med Archith Boloor",
-            "author": "1st Edition",
-            "coverImageId": "clinical-med-boloor"
-          },
-          {
-            "id": "hutchinsons-clinical",
-            "title": "Hutchinson's Clinical Methods",
-            "author": "25th Edition",
-            "coverImageId": "hutchinsons-clinical"
-          },
-          {
-            "id": "macleods-clinical",
-            "title": "Macleods clinical examination",
-            "author": "14th edition",
-            "coverImageId": "macleods-clinical"
-          },
-          {
-            "id": "alagappan-practical",
-            "title": "Alagappan Manual of Practical Medicine Book",
-            "author": "8th edition",
-            "coverImageId": "alagappan-practical"
+            "id": "neha-shah-clinical-ent",
+            "title": "Neha shah Clinical ENT",
+            "author": "",
+            "coverImageId": "neha-shah-clinical-ent",
+            "downloadUrl": "https://www.febbox.com/share/vJk1avun"
           }
         ],
-        "others": [
+        "study-materials": [
           {
-            "id": "marrow-gen-med",
+            "id": "mcq-ent-dhingra",
+            "title": "MCQ in ENT",
+            "description": "Dhingra",
+            "downloadUrl": "https://www.febbox.com/share/uifrPRMo"
+          },
+          {
+            "id": "ent-agam-notes",
+            "title": "ENT Agam Notes",
+            "description": "",
+            "downloadUrl": "https://www.febbox.com/share/0eVWUIb8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ophthalmology",
+      "name": "Ophthalmology",
+      "year": [
+        3
+      ],
+      "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "khurana-ophthalmology",
+            "title": "Comprehensive Ophthalmology",
+            "author": "Ak Khurana",
+            "coverImageId": "khurana-ophthalmology",
+            "downloadUrl": "https://www.febbox.com/share/d4ZjJmeB"
+          },
+          {
+            "id": "parsons-eye-disease",
+            "title": "Parsons' Diseases of the Eye",
+            "author": "",
+            "coverImageId": "parsons-eye-disease",
+            "downloadUrl": "https://www.febbox.com/share/n2qtb2X3"
+          },
+          {
+            "id": "soch-simplified-ophthalmology",
+            "title": "SOCH SIMPLIFIED OPHTHALMOLOGY",
+            "author": "",
+            "coverImageId": "soch-simplified-ophthalmology",
+            "downloadUrl": "https://www.febbox.com/share/CNMyeai0"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "ophthalmology-agam-notes",
+            "title": "Ophthalmology Agam Notes",
+            "description": "",
+            "downloadUrl": "https://www.febbox.com/share/pr0Z4Ky6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "general-medicine",
+      "name": "General Medicine",
+      "year": [
+        4
+      ],
+      "description": "The medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases.",
+      "materials": {
+        "textbooks": [],
+        "clinical-books": [],
+        "study-materials": [
+          {
+            "id": "marrow-gen-med-8th",
             "title": "Marrow Gen Medicine",
-            "author": "8.5 Edition",
-            "coverImageId": "marrow-gen-med"
+            "description": "8th Edition",
+            "downloadUrl": "https://www.febbox.com/share/dmeATGGH"
           }
         ]
       }
@@ -282,14 +320,16 @@
     {
       "id": "general-surgery",
       "name": "General Surgery",
-      "year": [4],
-      "description": "A surgical specialty that focuses on abdominal contents.",
+      "year": [
+        4
+      ],
+      "description": "A surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
       "materials": {
         "textbooks": [
           {
             "id": "bailey-love-surgery",
             "title": "Bailey & Love's Short Practice of Surgery",
-            "author": "28th Edition",
+            "author": "",
             "coverImageId": "bailey-love-surgery",
             "downloadUrl": "https://www.febbox.com/share/wK0dkVg3"
           },
@@ -337,30 +377,56 @@
             "coverImageId": "short-cases-surgery",
             "downloadUrl": "https://www.febbox.com/share/Bd4pG5GD"
           }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-gen-surgery-8th",
+            "title": "Marrow Gen Surgery",
+            "description": "8th Edition",
+            "downloadUrl": "https://www.febbox.com/share/Emhi8CW0"
+          }
         ]
       }
     },
     {
       "id": "obg",
       "name": "OBG",
-      "year": [4],
-      "description": "Obstetrics and gynaecology.",
+      "year": [
+        4
+      ],
+      "description": "Obstetrics and Gynecology: The two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
       "materials": {
         "textbooks": [
           {
             "id": "dc-dutta-obstetrics",
             "title": "DC Dutta Textbook of Obstetrics",
-            "author": "10th Edition",
+            "author": "",
             "coverImageId": "dc-dutta-obstetrics",
             "downloadUrl": "https://www.febbox.com/share/aHhCKpo6"
           },
           {
             "id": "dc-dutta-gynecology",
             "title": "Dc Dutta Textbook Of Gynecology",
-            "author": "8th Edition",
+            "author": "",
             "coverImageId": "dc-dutta-gynecology",
             "downloadUrl": "https://www.febbox.com/share/OXJAQiJT"
           },
+          {
+            "id": "shaws-gynecology",
+            "title": "Shaw's Textbook of Gynecology",
+            "author": "",
+            "coverImageId": "shaws-gynecology",
+            "downloadUrl": "https://www.febbox.com/share/y6QEi7FS"
+          },
+          {
+            "id": "lakshmi-seshadri-gynecology",
+            "title": "Essentials of Gynecology: Lakshmi Seshadri",
+            "author": "",
+            "coverImageId": "lakshmi-seshadri-gynecology",
+            "downloadUrl": "https://www.febbox.com/share/UormZyrW"
+          }
+        ],
+        "clinical-books": [
           {
             "id": "mudaliar-menon-obstetrics",
             "title": "Mudaliar And Menon's Clinical Obstetrics",
@@ -369,18 +435,11 @@
             "downloadUrl": "https://www.febbox.com/share/3zrD2Qxm"
           },
           {
-            "id": "shaws-gynecology",
-            "title": "Shaw's Textbook of Gynecology",
-            "author": "18th Edition",
-            "coverImageId": "shaws-gynecology",
-            "downloadUrl": "https://www.febbox.com/share/y6QEi7FS"
-          },
-          {
-            "id": "lakshmi-seshadri-gynecology",
-            "title": "Essentials of Gynecology: Lakshmi Seshadri",
-            "author": "3rd Edition",
-            "coverImageId": "lakshmi-seshadri-gynecology",
-            "downloadUrl": "https://www.febbox.com/share/UormZyrW"
+            "id": "clinical-obg-sharmila-babu",
+            "title": "Clinical Obstetrics and Gynecology",
+            "author": "Sharmila Arun Babu",
+            "coverImageId": "clinical-obg-sharmila-babu",
+            "downloadUrl": "https://www.febbox.com/share/mwbdzob3"
           }
         ]
       }
@@ -388,63 +447,115 @@
     {
       "id": "pediatrics",
       "name": "Pediatrics",
-      "year": [4],
-      "description": "The branch of medicine dealing with children and their diseases.",
-      "materials": {}
+      "year": [
+        4
+      ],
+      "description": "The branch of medicine that involves the medical care of infants, children, and adolescents.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "ghai-essential-pediatrics",
+            "title": "GHAI Essential Pediatrics",
+            "author": "10th Edition",
+            "coverImageId": "ghai-essential-pediatrics",
+            "downloadUrl": "https://www.febbox.com/share/29MrB9z1"
+          },
+          {
+            "id": "pediatrics-for-medical-arun-babu",
+            "title": "Pediatrics for Medical: Arun Babu",
+            "author": "",
+            "coverImageId": "pediatrics-for-medical-arun-babu",
+            "downloadUrl": "https://www.febbox.com/share/B5LbSK1k"
+          }
+        ],
+        "clinical-books": [
+          {
+            "id": "clinical-pediatrics-aruchamy",
+            "title": "Clinical Pediatrics by Aruchamy",
+            "author": "",
+            "coverImageId": "clinical-pediatrics-aruchamy",
+            "downloadUrl": "https://www.febbox.com/share/Evzk3A8d"
+          }
+        ]
+      }
     },
     {
       "id": "orthopedics",
       "name": "Orthopedics",
-      "year": [4],
-      "description": "The branch of medicine dealing with the correction of deformities of bones or muscles.",
-      "materials": {}
+      "year": [
+        4
+      ],
+      "description": "The branch of medicine concerned with the correction or prevention of deformities, disorders, or injuries of the skeleton and associated structures.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "maheshwar-orthopaedics",
+            "title": "Essential Orthopaedics: Maheshwar",
+            "author": "",
+            "coverImageId": "maheshwar-orthopaedics",
+            "downloadUrl": "https://www.febbox.com/share/2ZIw7ss3"
+          }
+        ]
+      }
     },
     {
       "id": "radiology",
       "name": "Radiology",
-      "year": [4],
+      "year": [
+        4
+      ],
       "description": "The science dealing with X-rays and other high-energy radiation, especially the use of such radiation for the diagnosis and treatment of disease.",
       "materials": {}
     },
     {
       "id": "anesthesiology",
       "name": "Anesthesiology",
-      "year": [4],
-      "description": "The branch of medicine concerned with anaesthesia and anaesthetics.",
+      "year": [
+        4
+      ],
+      "description": "The branch of medicine concerned with anesthesia and anesthetics.",
       "materials": {}
     },
     {
       "id": "psychiatry",
       "name": "Psychiatry",
-      "year": [4],
+      "year": [
+        4
+      ],
       "description": "The study and treatment of mental illness, emotional disturbance, and abnormal behavior.",
       "materials": {}
     },
     {
       "id": "dermatology",
       "name": "Dermatology",
-      "year": [4],
+      "year": [
+        4
+      ],
       "description": "The branch of medicine concerned with the diagnosis and treatment of skin disorders.",
       "materials": {}
     },
     {
       "id": "oncology",
       "name": "Oncology",
-      "year": [4],
+      "year": [
+        4
+      ],
       "description": "The study and treatment of tumors.",
       "materials": {
         "textbooks": [
           {
             "id": "devita-cancer",
-            "title": "DeVita, Hellman, and Rosenberg's Cancer",
-            "author": "12th Edition",
-            "coverImageId": "devita-cancer"
+            "title": "DeVita, Hellman, and Rosenberg's Cancer: Principles & Practice of Oncology",
+            "author": "11th Edition",
+            "coverImageId": "devita-cancer",
+            "downloadUrl": "https://www.febbox.com/share/k8A0z4wB"
           },
           {
             "id": "abeloff-oncology",
             "title": "Abeloff's Clinical Oncology",
             "author": "6th Edition",
-            "coverImageId": "abeloff-oncology"
+            "coverImageId": "abeloff-oncology",
+            "downloadUrl": "https://www.febbox.com/share/H7p1bIeX"
           }
         ]
       }
@@ -452,25 +563,33 @@
     {
       "id": "thorax",
       "name": "Thorax",
-      "year": [1],
-      "description": "Anatomy of the thorax.",
+      "year": [
+        1,
+        2
+      ],
+      "description": "Anatomy and physiology of the thorax region.",
       "materials": {
         "textbooks": [
           {
             "id": "braunwald-heart",
-            "title": "Braunwald's Heart Disease",
+            "title": "Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine",
             "author": "12th Edition",
-            "coverImageId": "braunwald-heart"
+            "coverImageId": "braunwald-heart",
+            "downloadUrl": "https://www.febbox.com/share/Y6Cgoa6u"
           },
           {
             "id": "harrisons-cardiology",
             "title": "Harrison's Cardiology",
             "author": "4th Edition",
-            "coverImageId": "harrisons-cardiology"
+            "coverImageId": "harrisons-cardiology",
+            "downloadUrl": "https://www.febbox.com/share/r36N824f"
           }
         ]
       }
     }
   ],
-  "suggestedModules": ["oncology", "thorax", "general-medicine", "general-surgery", "obg"]
+  "suggestedModules": [
+    "oncology",
+    "thorax"
+  ]
 }

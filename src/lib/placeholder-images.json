@@ -25,6 +25,102 @@
       "imageHint": "gynecology textbook"
     },
     {
+      "id": "clinical-obg-sharmila-babu",
+      "description": "Clinical Obstetrics and Gynecology : Sharmila Arun Babu",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/beAkbYua0U9hyPUxn8sf.jpg",
+      "imageHint": "clinical obg"
+    },
+    {
+      "id": "ghai-essential-pediatrics",
+      "description": "GHAI Essential Pediatrics",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/SHPwTXsBat2AnVXsF5Tv.jpg",
+      "imageHint": "pediatrics textbook"
+    },
+    {
+      "id": "pediatrics-for-medical-arun-babu",
+      "description": "Pediatrics for Medical: Arun Babu",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/cKIpG4AhTZbYbghF3IuW.jpg",
+      "imageHint": "pediatrics textbook"
+    },
+    {
+      "id": "clinical-pediatrics-aruchamy",
+      "description": "Clinical Pediatrics by Aruchamy",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/GAp6q9UQS6NTvxSVI1In.jpg",
+      "imageHint": "clinical pediatrics"
+    },
+    {
+      "id": "dhingra-ent",
+      "description": "Diseases of Ear, Nose and Throat: Dhingra",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/J40VGKCiuBITUz5uGHVX.jpg",
+      "imageHint": "ent textbook"
+    },
+    {
+      "id": "manisha-ent-entrance",
+      "description": "ENT for Entrance Exam: Manisha",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/hjnRHuoufIDIhCdsdF1t.jpg",
+      "imageHint": "ent textbook"
+    },
+    {
+      "id": "mcq-ent-dhingra",
+      "description": "MCQ in ENT: Dhingra",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/90YnixDSZAfLizbf0xJ8.jpg",
+      "imageHint": "ent mcq"
+    },
+    {
+      "id": "neha-shah-clinical-ent",
+      "description": "Neha shah Clinical ENT",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/LowiB35xko5toKaY6DvV.webp",
+      "imageHint": "clinical ent"
+    },
+    {
+      "id": "ent-agam-notes",
+      "description": "ENT Agam Notes",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/pDouUh5kEmp5mriYIIOM.png",
+      "imageHint": "ent notes"
+    },
+    {
+      "id": "khurana-ophthalmology",
+      "description": "Comprehensive Ophthalmology: Ak Khurana",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/5ZWffexykUftNOFpb1fB.jpg",
+      "imageHint": "ophthalmology textbook"
+    },
+    {
+      "id": "parsons-eye-disease",
+      "description": "Parsons' Diseases of the Eye",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/37jDPlTnTkWV8DB7vjJO.jpg",
+      "imageHint": "ophthalmology textbook"
+    },
+    {
+      "id": "soch-simplified-ophthalmology",
+      "description": "SOCH SIMPLIFIED OPHTHALMOLOGY",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/leke7jKYwalkWpZ14zVu.jpg",
+      "imageHint": "ophthalmology textbook"
+    },
+    {
+      "id": "ophthalmology-agam-notes",
+      "description": "Ophthalmology Agam Notes",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/kscKtPcDyKuORrcefJOy.png",
+      "imageHint": "ophthalmology notes"
+    },
+    {
+      "id": "maheshwar-orthopaedics",
+      "description": "Essential Orthopaedics: Maheshwar",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/ybkaKYsedFXpTiGsTDSt.jpg",
+      "imageHint": "orthopaedics textbook"
+    },
+    {
+      "id": "marrow-gen-med-8th",
+      "description": "Marrow Gen Medicine 8th Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/GqBFXEbqoIvscsgSRjta.png",
+      "imageHint": "medicine notes"
+    },
+    {
+      "id": "marrow-gen-surgery-8th",
+      "description": "Marrow Gen Surgery 8th Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/eq5ViOdbQ9QedFfZMKHu.jpeg",
+      "imageHint": "surgery notes"
+    },
+    {
       "id": "davidsons-medicine",
       "description": "Davidson's Principles and Practice of Medicine",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/Gw2bBPXe0UnmApT4ws0q.jpeg",
