@@ -108,11 +108,11 @@ export function BookCarousel({
                       </div>
                     </CardContent>
                   </Card>
-                  <p className="text-xs font-medium mt-1 truncate group-hover:text-primary" title={title}>
+                  <p className="text-sm font-medium mt-1 truncate group-hover:text-primary" title={title}>
                     {title}
                   </p>
                   {subtitle && (
-                     <p className="text-[11px] text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
+                     <p className="text-xs text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
                   )}
                 </Link>
               </div>
