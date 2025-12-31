@@ -55,11 +55,9 @@ export function MaterialSection({ title, materials, onItemClick, onSeeAllClick }
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          {materials.length > ITEMS_TO_SHOW && (
-             <Button variant="outline" onClick={onSeeAllClick}>
-              See all
-            </Button>
-          )}
+          <Button variant="outline" onClick={onSeeAllClick}>
+            See all
+          </Button>
         </div>
         <div className="space-y-3">
           {visibleMaterials.map(item => (
