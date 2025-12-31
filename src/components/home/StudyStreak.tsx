@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { Flame } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
+import { StudyChart } from './StudyChart';
 
 const STREAK_KEY = 'studyStreak';
 
@@ -59,31 +60,41 @@ export function StudyStreak() {
 
   if (!isLoaded) {
     return (
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">Study Streak</CardTitle>
-          <Flame className="h-4 w-4 text-muted-foreground" />
-        </CardHeader>
-        <CardContent>
-          <Skeleton className="h-8 w-24" />
-          <Skeleton className="h-4 w-32 mt-1" />
-        </CardContent>
+        <Card>
+            <CardHeader>
+                <Skeleton className="h-6 w-32" />
+                <Skeleton className="h-4 w-48 mt-1" />
+            </CardHeader>
+            <CardContent>
+                <div className="flex justify-between items-end">
+                    <div>
+                        <Skeleton className="h-8 w-24" />
+                        <Skeleton className="h-4 w-32 mt-1" />
+                    </div>
+                    <Skeleton className="h-24 w-full max-w-xs" />
+                </div>
+            </CardContent>
       </Card>
     );
   }
 
   return (
-    <Card>
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <CardTitle className="text-sm font-medium">Study Streak</CardTitle>
-        <Flame className="h-4 w-4 text-amber-500" />
-      </CardHeader>
-      <CardContent>
-        <div className="text-2xl font-bold">{streak} Day{streak !== 1 && 's'}</div>
-        <p className="text-xs text-muted-foreground">
-          {streak > 1 ? 'Keep up the great work!' : 'Keep coming back to build your streak!'}
-        </p>
-      </CardContent>
+    <Card className="h-full">
+        <CardHeader>
+            <div className="flex flex-row items-center justify-between space-y-0">
+                <CardTitle className="text-xl font-bold">Your Progress</CardTitle>
+                <div className="flex items-center text-amber-500 font-bold">
+                    <Flame className="h-5 w-5 mr-1" />
+                    <span>{streak} Day Streak</span>
+                </div>
+            </div>
+            <CardDescription>
+                {streak > 1 ? 'Keep up the great work!' : 'Keep coming back to build your streak!'}
+            </CardDescription>
+        </CardHeader>
+        <CardContent>
+            <StudyChart />
+        </CardContent>
     </Card>
   );
 }
