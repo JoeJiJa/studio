@@ -1,7 +1,6 @@
 import React from 'react';
-import type { Material, Book, Subject } from '@/lib/types';
-import { Button } from '../ui/button';
-import { BookCarousel } from '../shared/BookCarousel';
+import type { Material } from '@/lib/types';
+import { MaterialListItem } from './MaterialListItem';
 
 interface MaterialSectionProps {
   title: string;
@@ -16,24 +15,12 @@ export function MaterialSection({ title, materials, onItemClick }: MaterialSecti
 
   return (
     <section>
-      <div className="flex justify-between items-center mb-2">
-        <h2 className="text-2xl font-bold font-headline">{title}</h2>
-        {materials.length > 5 && <Button variant="link">See all</Button>}
+      <h2 className="text-2xl font-bold font-headline mb-4">{title}</h2>
+      <div className="space-y-3">
+        {materials.map(item => (
+          <MaterialListItem key={item.id} item={item} onItemClick={onItemClick} />
+        ))}
       </div>
-      <BookCarousel
-          items={materials}
-          getItemProps={(item) => {
-            const book = item as Book;
-            return {
-                id: book.id,
-                title: book.title,
-                subtitle: book.author,
-                href: '#',
-                coverImageId: book.coverImageId
-            };
-          }}
-          onItemClick={onItemClick}
-      />
     </section>
   );
 }
