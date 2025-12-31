@@ -90,7 +90,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'httpshttps',
+        protocol: 'https',
         hostname: '0.academia-photos.com',
         port: '',
         pathname: '/**',
