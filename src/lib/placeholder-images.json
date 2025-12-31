@@ -479,6 +479,96 @@
       "description": "Prepladder Pharmacology X Edition",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/wyOpgfFRPXR6ZJGNvfuM.png",
       "imageHint": "pharmacology notes"
+    },
+    {
+      "id": "prepladder-pathology-x",
+      "description": "Prepladder Pathology X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/9cPPoAwcFHf9IO0bFuPm.png",
+      "imageHint": "pathology notes"
+    },
+    {
+      "id": "prepladder-microbiology-x",
+      "description": "Prepladder Microbiology X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/od5eoJR93Hs4FhVpPWEf.png",
+      "imageHint": "microbiology notes"
+    },
+    {
+      "id": "prepladder-community-medicine-x",
+      "description": "Prepladder Community Medicine X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/8D1Wqbd3LDx03FnlzEUS.png",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "prepladder-forensic-medicine-x",
+      "description": "Prepladder Forensic Medicine X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/fOsOs9TxzNGYFdfnKOvz.png",
+      "imageHint": "forensic medicine"
+    },
+    {
+      "id": "prepladder-orthopedics-x",
+      "description": "Prepladder Orthopedics X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/scVrCojjgaMBWYdXEDXj.png",
+      "imageHint": "orthopedics notes"
+    },
+    {
+      "id": "prepladder-gen-medicine-x",
+      "description": "Prepladder Gen Medicine X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/tXZYPkhAMT37iukSPpZM.png",
+      "imageHint": "medicine notes"
+    },
+    {
+      "id": "prepladder-gen-surgery-x",
+      "description": "Prepladder Gen Surgery X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/JO2LfttNUcBTNEjXeI5B.png",
+      "imageHint": "surgery notes"
+    },
+    {
+      "id": "prepladder-obg-x",
+      "description": "Prepladder OBG X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/u1oABJJ9HtrrAYH3wock.png",
+      "imageHint": "obg notes"
+    },
+    {
+      "id": "prepladder-pediatrics-x",
+      "description": "Prepladder Pediatrics X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/ntgDyC4qdJNYszLkTHqN.png",
+      "imageHint": "pediatrics notes"
+    },
+    {
+      "id": "prepladder-ophthalmology-x",
+      "description": "Prepladder Ophthalmology X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/6pSZsVdW8ZDbWonmQr2k.png",
+      "imageHint": "ophthalmology notes"
+    },
+    {
+      "id": "prepladder-ent-x",
+      "description": "Prepladder ENT X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/DCt9pZ4PNZBPSh77E1ME.png",
+      "imageHint": "ent notes"
+    },
+    {
+      "id": "prepladder-psychiatry-x",
+      "description": "Prepladder Psychiatry X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/AC88UoUHwpBDpABUBwAv.png",
+      "imageHint": "psychiatry notes"
+    },
+    {
+      "id": "prepladder-radiology-x",
+      "description": "Prepladder Radiology X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/aOgLocmMmpqovc7uyzFX.png",
+      "imageHint": "radiology notes"
+    },
+    {
+      "id": "prepladder-anesthesia-x",
+      "description": "Prepladder Anesthesia X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/7g8gFBZyLKxRzFf94qle.png",
+      "imageHint": "anesthesia notes"
+    },
+    {
+      "id": "prepladder-dermatology-x",
+      "description": "Prepladder Dermatology X Edition",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/l9Jmt0PxC4nDMFkPehnA.png",
+      "imageHint": "dermatology notes"
     }
   ]
 }
