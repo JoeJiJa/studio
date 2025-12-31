@@ -1,7 +1,8 @@
 import React from 'react';
-import { Material, isBook, Book } from '@/lib/types';
+import type { Material, Book, Subject } from '@/lib/types';
 import { Button } from '../ui/button';
-import { MaterialListItem } from './MaterialListItem';
+import { BookCarousel } from '../shared/BookCarousel';
+import { isBook } from '@/lib/types';
 
 interface MaterialSectionProps {
   title: string;
@@ -20,15 +21,19 @@ export function MaterialSection({ title, materials, onItemClick }: MaterialSecti
         <h2 className="text-2xl font-bold font-headline">{title}</h2>
         {materials.length > 4 && <Button variant="link">See all</Button>}
       </div>
-      <div className="space-y-3">
-        {materials.map(item => (
-          <MaterialListItem 
-            key={item.id}
-            item={item} 
-            onItemClick={() => onItemClick(item)} 
-          />
-        ))}
-      </div>
+      <BookCarousel
+        items={materials}
+        getItemProps={(item) => {
+          const isBookItem = isBook(item);
+          return {
+            id: item.id,
+            title: item.title,
+            href: item.downloadUrl || '#',
+            coverImageId: isBookItem ? (item as Book).coverImageId : 'study-material-placeholder',
+          };
+        }}
+        onItemClick={onItemClick}
+      />
     </section>
   );
 }
