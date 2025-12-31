@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${subject.name} | AstroMed`,
+    title: `${subject.name} | Dr Astro`,
     description: `Explore learning materials for ${subject.name}.`,
   };
 }

@@ -6,7 +6,7 @@ import { getBookById } from '@/lib/data';
 
 const RECENTLY_VIEWED_KEY = 'recentlyViewed';
 const MAX_RECENTLY_VIEWED = 10;
-const STORAGE_EVENT = 'astroMed_storage';
+const STORAGE_EVENT = 'drAstro_storage';
 
 export function useRecentlyViewed() {
   const [items, setItems] = useState<Book[]>([]);

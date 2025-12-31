@@ -3,7 +3,7 @@ import { data } from '@/lib/data';
 import { TheoryClientPage } from '@/components/theory/TheoryClientPage';
 
 export const metadata = {
-  title: 'Core Subjects | AstroMed',
+  title: 'Core Subjects | Dr Astro',
   description: 'Explore all medical subjects and their learning materials.',
 };
 

@@ -8,7 +8,7 @@ import { ThemeProvider } from '@/components/shared/ThemeProvider';
 import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 
 export const metadata: Metadata = {
-  title: 'AstroMed',
+  title: 'Dr Astro',
   description: 'Your personal medical study companion.',
 };
 
