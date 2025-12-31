@@ -1,20 +1,19 @@
-
 {
   "inspirationalQuote": {
     "text": "The good physician treats the disease; the great physician treats the patient who has the disease.",
     "author": "William Osler"
   },
   "paretoBanner": {
-    "title": "Pareto Principle (80/20 Rule)",
-    "description": "Focus on the 20% of topics that will likely cover 80% of exam questions. Prioritize high-yield information."
+    "title": "Pareto Principle in Medicine",
+    "description": "Focus on the 20% of topics that appear most frequently in exams, as they will likely account for 80% of your score."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with chest pain that is relieved by rest. Which of the following is the most likely diagnosis?",
+    "question": "Which of the following is the most common cause of community-acquired pneumonia?",
     "options": [
-      "Stable Angina",
-      "Unstable Angina",
-      "Myocardial Infarction",
-      "Pericarditis"
+      "Streptococcus pneumoniae",
+      "Haemophilus influenzae",
+      "Mycoplasma pneumoniae",
+      "Staphylococcus aureus"
     ],
     "answerIndex": 0
   },
@@ -22,55 +21,176 @@
     {
       "id": "anatomy",
       "name": "Anatomy",
-      "year": [1, 2],
-      "description": "The study of the structure of the human body. It is a foundational subject for all medical sciences.",
+      "year": [
+        1
+      ],
+      "description": "The study of the structure of the human body, from macroscopic to microscopic levels.",
       "materials": {
         "textbooks": [
-          { "id": "book-1", "title": "Gray's Anatomy for Students", "author": "Richard L. Drake", "coverImageId": "grays-anatomy" },
-          { "id": "book-2", "title": "Clinically Oriented Anatomy", "author": "Keith L. Moore", "coverImageId": "moore-anatomy" }
+          {
+            "id": "grays-anatomy-book",
+            "title": "Gray's Anatomy for Students",
+            "author": "Drake, Vogl, Mitchell",
+            "coverImageId": "grays-anatomy"
+          },
+          {
+            "id": "moore-anatomy-book",
+            "title": "Clinically Oriented Anatomy",
+            "author": "Moore, Dalley, Agur",
+            "coverImageId": "moore-anatomy"
+          }
         ],
         "atlases": [
-          { "id": "book-3", "title": "Atlas of Human Anatomy", "author": "Frank H. Netter", "coverImageId": "netter-atlas" },
-          { "id": "book-4", "title": "Rohen's Color Atlas of Anatomy", "author": "Johannes W. Rohen", "coverImageId": "rohen-atlas" }
+          {
+            "id": "netter-atlas-book",
+            "title": "Atlas of Human Anatomy",
+            "author": "Frank H. Netter",
+            "coverImageId": "netter-atlas"
+          },
+          {
+            "id": "rohen-atlas-book",
+            "title": "Color Atlas of Anatomy",
+            "author": "Rohen, Yokochi, Lütjen-Drecoll",
+            "coverImageId": "rohen-atlas"
+          }
         ]
       }
     },
     {
-      "id": "oncology",
-      "name": "Oncology",
-      "year": [3, 4],
-      "description": "The study of cancer. This field covers diagnosis, treatment, and prevention of tumors.",
-      "materials": {
-        "textbooks": [
-          { "id": "book-5", "title": "DeVita, Hellman, and Rosenberg's Cancer", "author": "Vincent T. DeVita Jr.", "coverImageId": "devita-cancer" },
-          { "id": "book-6", "title": "Abeloff's Clinical Oncology", "author": "John E. Niederhuber", "coverImageId": "abeloff-oncology" }
-        ]
-      }
+      "id": "physiology",
+      "name": "Physiology",
+      "year": [
+        1
+      ],
+      "description": "The science of how the human body functions in health and disease.",
+      "materials": {}
     },
     {
-      "id": "cardiology",
-      "name": "Cardiology",
-      "year": [2, 3, 4],
-      "description": "The study of disorders of the heart and blood vessels. A core specialty in internal medicine.",
-      "materials": {
-        "textbooks": [
-          { "id": "book-7", "title": "Braunwald's Heart Disease", "author": "Peter Libby", "coverImageId": "braunwald-heart" },
-          { "id": "book-8", "title": "Harrison's Cardiology", "author": "Eugene Braunwald", "coverImageId": "harrisons-cardiology" }
-        ]
-      }
+      "id": "biochemistry",
+      "name": "Biochemistry",
+      "year": [
+        1
+      ],
+      "description": "The study of chemical processes within and relating to living organisms.",
+      "materials": {}
+    },
+    {
+      "id": "pathology",
+      "name": "Pathology",
+      "year": [
+        2
+      ],
+      "description": "The study of the causes and effects of disease or injury.",
+      "materials": {}
+    },
+    {
+      "id": "microbiology",
+      "name": "Microbiology",
+      "year": [
+        2
+      ],
+      "description": "The study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa.",
+      "materials": {}
     },
     {
       "id": "pharmacology",
       "name": "Pharmacology",
-      "year": [2],
-      "description": "The study of drug action, where a drug can be broadly defined as any man-made, natural, or endogenous molecule.",
+      "year": [
+        2
+      ],
+      "description": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
       "materials": {
         "textbooks": [
-          { "id": "book-9", "title": "Basic and Clinical Pharmacology", "author": "Bertram G. Katzung", "coverImageId": "katzung-pharma" },
-          { "id": "book-10", "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics", "author": "Laurence L. Brunton", "coverImageId": "goodman-gilman-pharma" }
+          {
+            "id": "katzung-pharma-book",
+            "title": "Basic and Clinical Pharmacology",
+            "author": "Bertram G. Katzung",
+            "coverImageId": "katzung-pharma"
+          },
+          {
+            "id": "goodman-gilman-pharma-book",
+            "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
+            "author": "Laurence Brunton",
+            "coverImageId": "goodman-gilman-pharma"
+          }
         ]
       }
+    },
+    {
+      "id": "community-medicine",
+      "name": "Community Medicine",
+      "year": [
+        3
+      ],
+      "description": "A branch of medicine that is concerned with the health of the members of a community, municipality, or region.",
+      "materials": {}
+    },
+    {
+      "id": "forensic-medicine",
+      "name": "Forensic Medicine",
+      "year": [
+        3
+      ],
+      "description": "The application of medical knowledge to the investigation of crime, particularly in establishing the causes of injury or death.",
+      "materials": {}
+    },
+    {
+      "id": "ent",
+      "name": "ENT",
+      "year": [
+        4
+      ],
+      "description": "The branch of medicine and surgery specializing in the diagnosis and treatment of disorders of the head and neck.",
+      "materials": {}
+    },
+    {
+      "id": "ophthalmology",
+      "name": "Ophthalmology",
+      "year": [
+        4
+      ],
+      "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
+      "materials": {}
+    },
+    {
+      "id": "general-medicine",
+      "name": "General Medicine",
+      "year": [
+        4
+      ],
+      "description": "Includes Psychiatry & Dermatology. The medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases.",
+      "materials": {}
+    },
+    {
+      "id": "general-surgery",
+      "name": "General Surgery",
+      "year": [
+        4
+      ],
+      "description": "Includes Orthopaedics, Radiology & Anesthesiology. A surgical specialty that focuses on abdominal contents.",
+      "materials": {}
+    },
+    {
+      "id": "obg",
+      "name": "Obstetrics & Gynaecology (OBG)",
+      "year": [
+        4
+      ],
+      "description": "The two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
+      "materials": {}
+    },
+    {
+      "id": "pediatrics",
+      "name": "Pediatrics",
+      "year": [
+        4
+      ],
+      "description": "The branch of medicine involving the medical care of infants, children, and adolescents.",
+      "materials": {}
     }
   ],
-  "suggestedModules": ["anatomy", "cardiology", "pharmacology"]
+  "suggestedModules": [
+    "anatomy",
+    "pharmacology"
+  ]
 }
