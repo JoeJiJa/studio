@@ -26,7 +26,7 @@ const SECTIONS_CONFIG = [
   { key: 'question-bank', title: 'Question Banks' },
   { key: 'atlases', title: 'Atlases' },
   { key: 'general-anatomy', title: 'General Anatomy' },
-  { key_:"others", title: 'Others' },
+  { key: 'others', title: 'Others' },
   { key: 'dissection-manual', title: 'Dissection Manual' },
 ];
 
@@ -47,7 +47,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
   
   const sectionsWithContent = SECTIONS_CONFIG.map(section => ({
     ...section,
-    materials: subject.materials[section.key as keyof typeof subject.materials] || [],
+    materials: subject.materials[(section.key || section.key_) as keyof typeof subject.materials] || [],
   })).filter(section => section.materials.length > 0);
 
   const handleSeeAllClick = (title: string, materials: Material[]) => {
@@ -77,7 +77,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
       <div className="space-y-8">
         {sectionsWithContent.map((section) => (
             <MaterialSection
-                key={section.key}
+                key={section.key || section.key_}
                 title={section.title}
                 materials={section.materials}
                 onItemClick={handleItemClick}
