@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -16,13 +17,13 @@ export function RecentlyViewed() {
 
   return (
     <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-            <History className="text-primary" />
+      <CardHeader className="p-3">
+        <CardTitle className="flex items-center gap-2 text-lg">
+            <History className="text-primary h-5 w-5" />
             Recently Viewed
         </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-3 pt-0">
         <BookCarousel
           items={items}
           getItemProps={(item) => {

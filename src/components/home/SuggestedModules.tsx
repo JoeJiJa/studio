@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -23,13 +24,13 @@ export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
 
   return (
     <Card className="h-full">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-            <BrainCircuit className="text-primary"/>
+      <CardHeader className="p-3">
+        <CardTitle className="flex items-center gap-2 text-lg">
+            <BrainCircuit className="text-primary h-5 w-5"/>
             Suggested Modules
         </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-3 pt-0">
         <BookCarousel
             items={modules}
             getItemProps={(item) => {

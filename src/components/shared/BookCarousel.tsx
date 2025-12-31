@@ -44,7 +44,7 @@ export function BookCarousel({
     return (
       <div className="flex space-x-4 pb-1">
         {[...Array(loadingSkeletons)].map((_, i) => (
-          <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/2 md:basis-1/4 lg:basis-1/5">
+          <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/3 md:basis-1/5 lg:basis-1/6">
             <div className="p-1">
               <Skeleton className="aspect-[3/4] w-full rounded-md" />
               <Skeleton className="h-4 mt-2 w-3/4" />
@@ -64,7 +64,7 @@ export function BookCarousel({
       }}
       className="w-full"
     >
-      <CarouselContent className="-ml-2 md:-ml-4">
+      <CarouselContent className="-ml-2">
         {items.map((item) => {
           const { id, title, subtitle, href, coverImageId } = getItemProps(item);
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
@@ -79,7 +79,7 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7 pl-2 md:pl-4">
+            <CarouselItem key={id} className="basis-[40%] sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/8 pl-2">
               <div className="p-1">
                 <Link 
                   href={href} 
@@ -96,7 +96,7 @@ export function BookCarousel({
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
-                            sizes="(max-width: 640px) 33vw, (max-width: 768px) 25vw, (max-width: 1024px) 20vw, (max-width: 1280px) 16vw, 14vw"
+                            sizes="(max-width: 640px) 40vw, (max-width: 768px) 25vw, (max-width: 1024px) 20vw, (max-width: 1280px) 16vw, 12vw"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
@@ -108,7 +108,7 @@ export function BookCarousel({
                       </div>
                     </CardContent>
                   </Card>
-                  <p className="text-sm font-medium mt-2 truncate group-hover:text-primary" title={title}>
+                  <p className="text-xs font-medium mt-1.5 truncate group-hover:text-primary" title={title}>
                     {title}
                   </p>
                   {subtitle && (

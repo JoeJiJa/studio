@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from 'react';
@@ -34,27 +35,28 @@ export function QuestionOfTheDay() {
 
   return (
     <Card className="h-full">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <HelpCircle className="text-primary" />
+      <CardHeader className="p-3">
+        <CardTitle className="flex items-center gap-2 text-lg">
+          <HelpCircle className="text-primary h-5 w-5" />
           Question of the Day
         </CardTitle>
-        <CardDescription>{question}</CardDescription>
+        <CardDescription className="text-xs">{question}</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-3 pt-0">
         <div className="flex flex-col space-y-2">
           {options.map((option, index) => (
             <Button
               key={index}
               variant={getButtonVariant(index)}
-              className={cn("justify-start h-auto whitespace-normal text-left", getButtonClass(index))}
+              size="sm"
+              className={cn("justify-start h-auto whitespace-normal text-left text-xs", getButtonClass(index))}
               onClick={() => handleOptionSelect(index)}
               disabled={isAnswered}
             >
               <div className="flex items-center w-full">
-                <span className="flex-1 py-2">{option}</span>
-                {isAnswered && index === answerIndex && <CheckCircle2 className="h-5 w-5 ml-2 shrink-0" />}
-                {isAnswered && index === selectedOption && index !== answerIndex && <XCircle className="h-5 w-5 ml-2 shrink-0" />}
+                <span className="flex-1 py-1.5">{option}</span>
+                {isAnswered && index === answerIndex && <CheckCircle2 className="h-4 w-4 ml-2 shrink-0" />}
+                {isAnswered && index === selectedOption && index !== answerIndex && <XCircle className="h-4 w-4 ml-2 shrink-0" />}
               </div>
             </Button>
           ))}

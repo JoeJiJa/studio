@@ -8,12 +8,12 @@ import { data } from '@/lib/data';
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-4">
       <HomeHero />
       
       <InspirationalQuote />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <StudyStreak />
         <QuestionOfTheDay />
       </div>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -61,17 +62,17 @@ export function StudyStreak() {
   if (!isLoaded) {
     return (
         <Card>
-            <CardHeader>
-                <Skeleton className="h-6 w-32" />
-                <Skeleton className="h-4 w-48 mt-1" />
+            <CardHeader className="p-3">
+                <Skeleton className="h-5 w-28" />
+                <Skeleton className="h-3 w-40 mt-1" />
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-3 pt-0">
                 <div className="flex justify-between items-end">
                     <div>
-                        <Skeleton className="h-8 w-24" />
-                        <Skeleton className="h-4 w-32 mt-1" />
+                        <Skeleton className="h-6 w-20" />
+                        <Skeleton className="h-3 w-28 mt-1" />
                     </div>
-                    <Skeleton className="h-24 w-full max-w-xs" />
+                    <Skeleton className="h-20 w-full max-w-xs" />
                 </div>
             </CardContent>
       </Card>
@@ -80,19 +81,19 @@ export function StudyStreak() {
 
   return (
     <Card className="h-full">
-        <CardHeader>
+        <CardHeader className="p-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-                <CardTitle className="text-xl font-bold">Your Progress</CardTitle>
-                <div className="flex items-center text-amber-500 font-bold">
-                    <Flame className="h-5 w-5 mr-1" />
+                <CardTitle className="text-lg">Your Progress</CardTitle>
+                <div className="flex items-center text-amber-500 font-bold text-sm">
+                    <Flame className="h-4 w-4 mr-1" />
                     <span>{streak} Day Streak</span>
                 </div>
             </div>
-            <CardDescription>
+            <CardDescription className="text-xs">
                 {streak > 1 ? 'Keep up the great work!' : 'Keep coming back to build your streak!'}
             </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-3 pt-0">
             <StudyChart />
         </CardContent>
     </Card>

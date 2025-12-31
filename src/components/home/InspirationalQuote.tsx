@@ -31,14 +31,14 @@ export function InspirationalQuote() {
   const { text, author } = quote;
 
   return (
-    <div className="bg-accent/10 border-l-4 border-accent text-accent-foreground p-3 rounded-md" role="alert">
+    <div className="bg-accent/10 border-l-4 border-accent text-accent-foreground p-2 rounded-md" role="alert">
       <div className="flex">
         <div className="py-1">
-          <Quote className="h-5 w-5 text-accent mr-4" />
+          <Quote className="h-4 w-4 text-accent mr-3" />
         </div>
         <div>
-          <p className="font-bold font-headline">{`"${text}"`}</p>
-          <p className="text-sm text-right w-full mt-1">- {author}</p>
+          <p className="text-sm font-semibold font-headline">{`"${text}"`}</p>
+          <p className="text-xs text-right w-full mt-1">- {author}</p>
         </div>
       </div>
     </div>
