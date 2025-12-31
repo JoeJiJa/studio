@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -8,7 +9,7 @@ export function HomeHero() {
   const inspirationalImage = getPlaceholderImage('inspirational-banner');
 
   return (
-    <div className="relative text-center bg-card p-6 md:p-8 rounded-lg overflow-hidden">
+    <div className="relative text-center bg-card p-6 rounded-lg overflow-hidden">
       {inspirationalImage && (
         <Image
           src={inspirationalImage.imageUrl}
