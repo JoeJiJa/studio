@@ -6,35 +6,41 @@
       "author": "William Osler"
     },
     {
-      "text": "Wherever the art of medicine is loved, there is also a love of humanity.",
+      "text": "Wherever the art of Medicine is loved, there is also a love of Humanity.",
       "author": "Hippocrates"
     },
     {
-      "text": "The chapter you are learning today is going to save someone's life tomorrow. Pay attention.",
-      "author": "Unknown"
+      "text": "The aim of medicine is to prevent disease and prolong life; the ideal of medicine is to eliminate the need for a physician.",
+      "author": "William J. Mayo"
     }
   ],
   "paretoBanner": {
-    "title": "Master the 80/20 Rule",
-    "description": "Focus on the 20% of topics that will yield 80% of your exam results. Study smarter, not just harder. Prioritize high-yield concepts to maximize your score."
+    "title": "The Pareto Principle (80/20 Rule)",
+    "description": "Focus on the 20% of topics that will yield 80% of your exam results. Prioritize high-yield subjects and concepts to study smarter, not just harder. This focused approach will maximize your learning efficiency and retention."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with sudden-onset chest pain. An ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
+    "question": "A 55-year-old man presents with sudden-onset chest pain. An ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
     "options": [
       "Left Anterior Descending (LAD)",
       "Right Coronary Artery (RCA)",
-      "Left Circumflex (LCX)",
+      "Left Circumflex (LCx)",
       "Left Main Coronary Artery"
     ],
     "answerIndex": 1
   },
-  "suggestedModules": ["anatomy", "oncology", "pharmacology", "cardiology"],
+  "suggestedModules": [
+    "anatomy",
+    "physiology",
+    "biochemistry",
+    "pathology",
+    "pharmacology"
+  ],
   "subjects": [
     {
       "id": "anatomy",
       "name": "Anatomy",
       "year": [1],
-      "description": "Anatomy is the cornerstone of medical science, exploring the intricate structure of the human body. This foundational subject provides a comprehensive map, from macroscopic organ systems to microscopic cellular details. Understanding anatomy is crucial for diagnosis, surgery, and all clinical practices.",
+      "description": "Anatomy is the branch of biology concerned with the study of the structure of organisms and their parts. It is a cornerstone of medical education, providing the foundational knowledge needed to understand physiological functions and pathological processes.",
       "materials": {
         "general-anatomy": [
           {
@@ -45,10 +51,10 @@
             "downloadUrl": "https://www.febbox.com/share/kgODmydR"
           },
           {
-            "id": "vishram-singh-general-anatomy",
+            "id": "vishram-general-anatomy",
             "title": "Vishram General Anatomy",
-            "author": "Vishram Singh",
-            "coverImageId": "vishram-singh-general-anatomy",
+            "author": "",
+            "coverImageId": "vishram-general-anatomy",
             "downloadUrl": "https://www.febbox.com/share/HbUqwQK5"
           }
         ],
@@ -77,36 +83,27 @@
           {
             "id": "vishram-singh-vol-1",
             "title": "Vishram Singh Vol 1 Gross Anatomy",
-            "author": "Vishram Singh",
+            "author": "",
             "coverImageId": "vishram-singh-vol-1-cover",
             "downloadUrl": "https://www.febbox.com/share/7fXisDdE"
           },
           {
             "id": "vishram-singh-vol-2",
             "title": "Vishram Singh Vol 2 Gross Anatomy",
-            "author": "Vishram Singh",
+            "author": "",
             "coverImageId": "vishram-singh-vol-2-cover",
             "downloadUrl": "https://www.febbox.com/share/ZiXWOrBw"
           },
           {
             "id": "vishram-singh-vol-3",
             "title": "Vishram Singh Vol 3 Gross Anatomy",
-            "author": "Vishram Singh",
+            "author": "",
             "coverImageId": "vishram-singh-vol-3-cover",
             "downloadUrl": "https://www.febbox.com/share/XCK9YUSY"
           }
         ],
-        "clinical-books": [
-           {
-            "id": "moores-clinically-oriented",
-            "title": "MOORE’S CLINICALLY ORIENTED",
-            "author": "Keith L. Moore",
-            "coverImageId": "moores-clinically-oriented-detailed",
-            "downloadUrl": "https://www.febbox.com/share/SwJhLNBL"
-          }
-        ],
         "dissection-manual": [
-           {
+          {
             "id": "cunningham-head-neck",
             "title": "Cunnigham's Head & Neck",
             "author": "14th Edition",
@@ -127,129 +124,125 @@
             "coverImageId": "cunningham-limbs",
             "downloadUrl": "https://www.febbox.com/share/Yi7QvQ7S"
           }
-        ]
+        ],
+        "clinical-books": [
+          {
+            "id": "moores-clinically-oriented-detailed",
+            "title": "MOORE’S CLINICALLY ORIENTED",
+            "author": "",
+            "coverImageId": "moores-clinically-oriented-detailed",
+            "downloadUrl": "https://www.febbox.com/share/SwJhLNBL"
+          }
+        ],
+        "study-materials": [],
+        "question-bank": [],
+        "atlases": [],
+        "others": []
       }
     },
     {
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "Physiology explains how the body works. It’s about the functions and mechanisms, from molecular to whole-body levels, that keep us alive and responding to our environment.",
+      "description": "Physiology is the scientific study of functions and mechanisms in a living system. It focuses on how organisms, organ systems, individual organs, cells, and biomolecules carry out the chemical and physical functions in a living system.",
       "materials": {}
     },
     {
       "id": "biochemistry",
       "name": "Biochemistry",
       "year": [1],
-      "description": "Biochemistry is the study of chemical processes within and relating to living organisms. It's the language of life, translating biology into chemistry to understand everything from DNA to metabolism.",
+      "description": "Biochemistry is the study of chemical processes within and relating to living organisms. It's a laboratory-based science that brings together biology and chemistry.",
       "materials": {}
     },
     {
       "id": "pathology",
       "name": "Pathology",
       "year": [2],
-      "description": "Pathology is the bridge between science and medicine. It underpins every aspect of patient care, from diagnostic testing and treatment advice to using cutting-edge genetic technologies.",
-      "materials": {}
-    },
-    {
-      "id": "microbiology",
-      "name": "Microbiology",
-      "year": [2],
-      "description": "Microbiology is the study of all living organisms that are too small to be visible with the naked eye. This includes bacteria, archaea, viruses, fungi, prions, protozoa and algae, collectively known as 'microbes'.",
+      "description": "Pathology is the medical specialty concerned with the cause, origin, and nature of disease. It involves the examination of tissues, organs, bodily fluids, and autopsies in order to study and diagnose disease.",
       "materials": {}
     },
     {
       "id": "pharmacology",
       "name": "Pharmacology",
       "year": [2],
-      "description": "Pharmacology is the science of drugs and their effects on living systems. It explores how medicines work, their side effects, and how they are used to treat diseases.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "katzung-pharma",
-            "title": "Basic and Clinical Pharmacology",
-            "author": "Bertram G. Katzung",
-            "coverImageId": "katzung-pharma",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "goodman-gilman-pharma",
-            "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
-            "author": "Laurence L. Brunton",
-            "coverImageId": "goodman-gilman-pharma",
-            "downloadUrl": "#"
-          }
-        ]
-      }
+      "description": "Pharmacology is the study of how a medicine or drug affects the body. It involves understanding the sources, chemical properties, biological effects, and therapeutic uses of drugs.",
+      "materials": {}
     },
     {
-      "id": "community-medicine",
-      "name": "Community Medicine",
-      "year": [3],
-      "description": "Community Medicine focuses on the health of populations. It aims to protect and improve the health of communities through education, policy-making, and research for disease and injury prevention.",
+      "id": "microbiology",
+      "name": "Microbiology",
+      "year": [2],
+      "description": "Microbiology is the scientific study of microorganisms, those being unicellular (single cell), multicellular (cell colony), or acellular (lacking cells).",
       "materials": {}
     },
     {
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
+      "year": [2],
+      "description": "Forensic medicine is the application of medical knowledge to legal questions. It is a key component in the investigation of crimes and is used to determine causes of injury or death.",
+      "materials": {}
+    },
+    {
+      "id": "community-medicine",
+      "name": "Community Medicine",
       "year": [3],
-      "description": "Forensic Medicine is where law and medicine intersect. It involves the application of medical knowledge to legal questions, playing a crucial role in the investigation of death, injury, and disease.",
+      "description": "Community medicine is a branch of medicine that is concerned with the health of the members of a community, municipality, or region. It focuses on the prevention of disease and the promotion of health in a population.",
       "materials": {}
     },
     {
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology (ENT) is the surgical subspecialty that deals with conditions of the ear, nose, and throat, and related structures of the head and neck. It’s a diverse field, with a wide range of procedures.",
+      "description": "Otorhinolaryngology (ENT) is the surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
       "materials": {}
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "Ophthalmology is the branch of medicine that deals with the anatomy, physiology, and diseases of the eyeball and orbit. It's a field at the forefront of medical technology and surgical innovation.",
+      "description": "Ophthalmology is the branch of medicine that deals with the diagnosis and treatment of eye disorders.",
       "materials": {}
     },
     {
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "General Medicine is the medical specialty dedicated to the diagnosis and medical treatment of adults. General physicians are skilled in managing patients with multi-system disease processes.",
+      "description": "General medicine is the medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases.",
       "materials": {}
     },
     {
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "General Surgery is a surgical specialty that focuses on abdominal contents including esophagus, stomach, small bowel, colon, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+      "description": "General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
       "materials": {}
     },
     {
       "id": "obg",
-      "name": "Obstetrics & Gynaecology",
+      "name": "OBG",
       "year": [4],
-      "description": "Obstetrics and Gynaecology (O&G) is the medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynaecology (covering the health of the female reproductive system).",
+      "description": "Obstetrics and gynaecology (or obstetrics and gynecology; often abbreviated to OB/GYN, O&G or Obs & Gynae) are the two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
       "materials": {}
     },
     {
       "id": "pediatrics",
       "name": "Pediatrics",
       "year": [4],
-      "description": "Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people be under pediatric care up to the age of 21.",
+      "description": "Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents.",
       "materials": {}
     },
     {
       "id": "orthopedics",
       "name": "Orthopedics",
       "year": [4],
-      "description": "Orthopedics is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders.",
+      "description": "Orthopedics is the branch of surgery concerned with conditions involving the musculoskeletal system.",
       "materials": {}
     },
     {
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
-      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans. A variety of imaging techniques such as X-ray radiography, ultrasound, computed tomography (CT), nuclear medicine including positron emission tomography (PET), and magnetic resonance imaging (MRI) are used to diagnose or treat diseases.",
+      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
       "materials": {}
     },
     {
@@ -259,7 +252,7 @@
       "description": "Anesthesiology, anaesthesiology, or anaesthesia is the medical specialty concerned with the total perioperative care of patients before, during and after surgery. It encompasses anesthesia, intensive care medicine, critical emergency medicine, and pain medicine.",
       "materials": {}
     },
-s    {
+    {
       "id": "psychiatry",
       "name": "Psychiatry",
       "year": [4],
@@ -270,56 +263,8 @@ s    {
       "id": "dermatology",
       "name": "Dermatology",
       "year": [4],
-      "description": "Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects. A dermatologist is a specialist medical doctor who manages diseases related to skin, hair and nails and some cosmetic problems.",
+      "description": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
       "materials": {}
-    },
-    {
-      "id": "oncology",
-      "name": "Oncology",
-      "year": [1, 2, 3, 4],
-      "description": "Oncology is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer. A medical professional who practices oncology is an oncologist.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "devita-cancer",
-            "title": "DeVita, Hellman, and Rosenberg's Cancer: Principles & Practice of Oncology",
-            "author": "Vincent T. DeVita Jr.",
-            "coverImageId": "devita-cancer",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "abeloff-oncology",
-            "title": "Abeloff's Clinical Oncology",
-            "author": "John E. Niederhuber",
-            "coverImageId": "abeloff-oncology",
-            "downloadUrl": "#"
-          }
-        ]
-      }
-    },
-    {
-      "id": "cardiology",
-      "name": "Cardiology",
-      "year": [1, 2, 3, 4],
-      "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "braunwald-heart",
-            "title": "Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine",
-            "author": "Douglas L. Mann",
-            "coverImageId": "braunwald-heart",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "harrisons-cardiology",
-            "title": "Harrison's Cardiology",
-            "author": "Joseph Loscalzo",
-            "coverImageId": "harrisons-cardiology",
-            "downloadUrl": "#"
-          }
-        ]
-      }
     }
   ]
 }
