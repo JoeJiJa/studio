@@ -3,26 +3,116 @@
     {
       "id": "grays-anatomy",
       "description": "Cover of Gray's Anatomy for Students",
-      "imageUrl": "https://images.unsplash.com/photo-1535398089889-dd807df1dfaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
+      "imageUrl": "https://images.unsplash.com/photo-1761081478943-25e4f4b6354c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy textbook"
     },
     {
       "id": "moore-anatomy",
       "description": "Cover of Clinically Oriented Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
+      "imageUrl": "https://images.unsplash.com/photo-1725398753340-aed25a0e534a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy textbook"
     },
     {
       "id": "netter-atlas",
       "description": "Cover of Atlas of Human Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
+      "imageUrl": "https://images.unsplash.com/photo-1725399459286-c13790cecf80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmF0b215JTIwYXRsYXN8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy atlas"
     },
     {
       "id": "rohen-atlas",
       "description": "Cover of Color Atlas of Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1521123845560-14093637aa7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzA3NzQ1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
+      "imageUrl": "https://images.unsplash.com/photo-1714929818864-48d3664c6c41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmF0b215JTIwYXRsYXN8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy atlas"
+    },
+    {
+      "id": "bd-chaurasia-1",
+      "description": "BD Chaurasia's Human Anatomy, Volume 1",
+      "imageUrl": "https://images.unsplash.com/photo-1714929818864-48d3664c6c41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "bd-chaurasia-2",
+      "description": "BD Chaurasia's Human Anatomy, Volume 2",
+      "imageUrl": "https://images.unsplash.com/photo-1725399459296-935c0d72f04a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "bd-chaurasia-3",
+      "description": "BD Chaurasia's Human Anatomy, Volume 3",
+      "imageUrl": "https://images.unsplash.com/photo-1761081004966-edfc933addde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "vishram-singh-anatomy",
+      "description": "Vishram Singh's Anatomy",
+      "imageUrl": "https://images.unsplash.com/photo-1725398753340-aed25a0e534a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "sbd-general-anatomy",
+      "description": "SBD General Anatomy",
+      "imageUrl": "https://images.unsplash.com/photo-1760029986477-5f25aa91ea49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmF0b215JTIwYm9va3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy book"
+    },
+    {
+      "id": "vishram-general-anatomy",
+      "description": "Vishram General Anatomy",
+      "imageUrl": "https://images.unsplash.com/photo-1761081478984-b3719cce7aed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YW5hdG9teSUyMGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anatomy book"
+    },
+    {
+      "id": "moores-clinically-oriented",
+      "description": "Moore's Clinically Oriented Anatomy",
+      "imageUrl": "https://images.unsplash.com/photo-1565090567123-922c648b1adf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGluaWNhbCUyMGFuYXRvbXl8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinical anatomy"
+    },
+    {
+      "id": "study-material-placeholder",
+      "description": "Placeholder for study material",
+      "imageUrl": "https://images.unsplash.com/photo-1748801583967-3038967d7279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkb2N1bWVudCUyMGljb258ZW58MHx8fHwxNzY3MTU2NDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document icon"
+    },
+    {
+      "id": "vishrams-embryology",
+      "description": "Vishram's Embryology",
+      "imageUrl": "https://images.unsplash.com/photo-1724649969752-e97a688449ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbWJyeW9sb2d5JTIwYm9va3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "embryology book"
+    },
+    {
+      "id": "embryology-notes",
+      "description": "Embryology Notes",
+      "imageUrl": "https://images.unsplash.com/photo-1674509036252-5a517959a3b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub3RlcyUyMGRpYWdyYW18ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "notes diagram"
+    },
+    {
+      "id": "ib-singh-histology",
+      "description": "IB Singh's Histology",
+      "imageUrl": "https://images.unsplash.com/photo-1636959865743-f3999844bdff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b2xvZ3klMjB0ZXh0Ym9va3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "histology textbook"
+    },
+    {
+      "id": "difiore-histology",
+      "description": "diFiore's Atlas of Histology with Functional Correlations",
+      "imageUrl": "https://images.unsplash.com/photo-1747769610584-485fedd104de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b2xvZ3klMjBhdGxhc3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "histology atlas"
+    },
+    {
+      "id": "cunningham-head-neck",
+      "description": "Cunningham's Manual of Practical Anatomy: Head & Neck",
+      "imageUrl": "https://images.unsplash.com/photo-1715523520552-8cf691334a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaXNzZWN0aW9uJTIwbWFudWFsfGVufDB8fHx8MTc2NzE5MzAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dissection manual"
+    },
+    {
+      "id": "cunningham-thorax-abdomen",
+      "description": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen",
+      "imageUrl": "https://images.unsplash.com/photo-1725399634168-c6d53638b212?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaXNzZWN0aW9uJTIwbWFudWFsfGVufDB8fHx8MTc2NzE5MzAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dissection manual"
+    },
+    {
+      "id": "cunningham-limbs",
+      "description": "Cunningham's Manual of Practical Anatomy: Limbs",
+      "imageUrl": "https://images.unsplash.com/photo-1729856980965-5ed327b9a949?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGlzc2VjdGlvbiUyMG1hbnVhbHxlbnwwfHx8fDE3NjcxOTMwMDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dissection manual"
     },
     {
       "id": "devita-cancer",

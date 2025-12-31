@@ -1,6 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { data, getSubject } from '@/lib/data';
+import { data, getSubject, getAnatomyMaterials } from '@/lib/data';
 import type { Metadata } from 'next';
 import { SubjectDetailClientPage } from '@/components/theory/SubjectDetailClientPage';
 
@@ -30,10 +30,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function SubjectDetailPage({ params }: Props) {
-  const subject = getSubject(params.subjectSlug);
+  let subject = getSubject(params.subjectSlug);
 
   if (!subject) {
     notFound();
+  }
+
+  // If it's the anatomy page, we'll inject the detailed dummy data
+  if (params.subjectSlug === 'anatomy') {
+    subject = {
+      ...subject,
+      materials: getAnatomyMaterials(),
+    }
   }
 
   return <SubjectDetailClientPage subject={subject} />;
