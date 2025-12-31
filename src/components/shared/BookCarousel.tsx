@@ -22,6 +22,7 @@ type BookCarouselProps = {
   getItemProps: (item: Item) => {
     id: string;
     title: string;
+    subtitle?: string;
     href: string;
     coverImageId?: string;
   };
@@ -46,6 +47,7 @@ export function BookCarousel({
             <div className="p-1">
               <Skeleton className="aspect-[3/4] w-full rounded-md" />
               <Skeleton className="h-4 mt-2 w-3/4" />
+              <Skeleton className="h-3 mt-1 w-1/2" />
             </div>
           </div>
         ))}
@@ -61,34 +63,33 @@ export function BookCarousel({
       }}
       className="w-full"
     >
-      <CarouselContent>
+      <CarouselContent className="-ml-2 md:-ml-4">
         {items.map((item) => {
-          const { id, title, href, coverImageId } = getItemProps(item);
+          const { id, title, subtitle, href, coverImageId } = getItemProps(item);
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
 
           const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
             if (onItemClick) {
-              // If there's a custom click handler, prevent default link navigation
-              // if the handler wants to take over (e.g., for external links).
+              // The click handler from SubjectDetailClientPage will handle opening the link.
+              // We prevent default to let the handler manage it.
               e.preventDefault();
               onItemClick(item);
             }
           };
           
-          // If there's no onItemClick handler, the link will work as a normal Next.js Link
-          // which is useful for internal navigation.
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-1/2 md:basis-1/4 lg:basis-1/5 pl-3">
+            <CarouselItem key={id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 pl-2 md:pl-4">
               <div className="p-1">
                 <Link 
                   href={href} 
                   onClick={handleItemClick}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
+                  className="group"
                 >
-                  <Card className="overflow-hidden transition-shadow hover:shadow-md">
+                  <Card className="overflow-hidden transition-shadow duration-200 group-hover:shadow-lg group-hover:-translate-y-1">
                     <CardContent className="p-0">
                       <div className="aspect-[3/4] w-full relative bg-secondary">
                         {placeholder ? (
@@ -96,7 +97,7 @@ export function BookCarousel({
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
-                            sizes="(max-width: 768px) 50vw, 25vw"
+                            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
@@ -108,9 +109,12 @@ export function BookCarousel({
                       </div>
                     </CardContent>
                   </Card>
-                  <p className="text-sm font-medium mt-2 truncate" title={title}>
+                  <p className="text-sm font-medium mt-2 truncate group-hover:text-primary" title={title}>
                     {title}
                   </p>
+                  {subtitle && (
+                     <p className="text-xs text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
+                  )}
                 </Link>
               </div>
             </CarouselItem>

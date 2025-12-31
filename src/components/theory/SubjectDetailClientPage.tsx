@@ -4,9 +4,10 @@ import React from 'react';
 import type { Subject, Book, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
-import { MaterialSection } from './MaterialSection';
 import { Separator } from '../ui/separator';
 import { isBook } from '@/lib/types';
+import { BookCarousel } from '../shared/BookCarousel';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
@@ -17,6 +18,10 @@ const SECTIONS = [
   { key: 'clinical-books', title: 'Clinical Books' },
   { key: 'study-materials', title: 'Study Materials' },
   { key: 'question-bank', title: 'Question Banks' },
+  { key: 'atlases', title: 'Atlases' },
+  { key: 'general-anatomy', title: 'General Anatomy' },
+  { key: 'others', title: 'Others' },
+  { key: 'dissection-manual', title: 'Dissection Manual' },
 ];
 
 export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProps) {
@@ -48,16 +53,37 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
         <p className="text-muted-foreground mt-2 max-w-3xl mx-auto">{subject.description}</p>
       </header>
 
-      <div className="space-y-12">
+      <div className="space-y-8">
         {sectionsWithContent.map((section, index) => (
-          <React.Fragment key={section.key}>
-            <MaterialSection
-              title={section.title}
-              materials={section.materials}
-              onItemClick={handleItemClick}
-            />
-            {index < sectionsWithContent.length - 1 && <Separator className="my-8" />}
-          </React.Fragment>
+          <Card key={section.key} className="overflow-hidden">
+            <CardHeader>
+              <CardTitle>{section.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <BookCarousel
+                items={section.materials}
+                getItemProps={(item: Material) => {
+                  if (isBook(item)) {
+                    return {
+                      id: item.id,
+                      title: item.title,
+                      subtitle: item.author,
+                      href: item.downloadUrl || '#',
+                      coverImageId: item.coverImageId,
+                    };
+                  }
+                  // Handle StudyMaterial
+                  return {
+                    id: item.id,
+                    title: item.title,
+                    subtitle: item.description,
+                    href: item.downloadUrl || '#',
+                  };
+                }}
+                onItemClick={handleItemClick}
+              />
+            </CardContent>
+          </Card>
         ))}
       </div>
     </div>
