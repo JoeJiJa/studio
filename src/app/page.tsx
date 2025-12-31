@@ -8,7 +8,7 @@ import { data } from '@/lib/data';
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6">
       <HomeHero />
       
       <InspirationalQuote />
