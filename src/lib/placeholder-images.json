@@ -175,30 +175,6 @@
       "imageHint": "study material"
     },
     {
-      "id": "grays-anatomy",
-      "description": "Cover of Gray's Anatomy for Students",
-      "imageUrl": "https://images.unsplash.com/photo-1761081478943-25e4f4b6354c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "anatomy textbook"
-    },
-    {
-      "id": "moore-anatomy",
-      "description": "Cover of Clinically Oriented Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1725398753340-aed25a0e534a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "anatomy textbook"
-    },
-    {
-      "id": "netter-atlas",
-      "description": "Cover of Atlas of Human Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1725399459286-c13790cecf80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmF0b215JTIwYXRsYXN8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "anatomy atlas"
-    },
-    {
-      "id": "rohen-atlas",
-      "description": "Cover of Color Atlas of Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1714929818864-48d3664c6c41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmF0b215JTIwYXRsYXN8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "anatomy atlas"
-    },
-    {
       "id": "bd-chaurasia-vol-1-cover",
       "description": "BD Chaurasia's Human Anatomy, Volume 1 Cover",
       "imageUrl": "https://prithvibooks.com/wp-content/uploads/2020/05/Untitled-design-15-1.png",
@@ -235,18 +211,6 @@
       "imageHint": "anatomy textbook"
     },
     {
-      "id": "sbd-general-anatomy",
-      "description": "SBD General Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1760029986477-5f25aa91ea49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmF0b215JTIwYm9va3xlbnwwfHx8fDE3NjcxOTMwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "anatomy book"
-    },
-    {
-      "id": "vishram-general-anatomy",
-      "description": "Vishram General Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1761081478984-b3719cce7aed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YW5hdG9teSUyMGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "anatomy book"
-    },
-    {
       "id": "bdc-general-anatomy-4e",
       "description": "BDC General Anatomy 4th Edition",
       "imageUrl": "https://rukminim2.flixcart.com/image/480/640/ki4w0i80-0/book/2/w/h/bd-chaurasia-s-handbook-of-general-anatomy-original-imafyy55wmyx9q7s.jpeg?q=90",
@@ -257,12 +221,6 @@
       "description": "Vishram Singh General Anatomy",
       "imageUrl": "https://m.media-amazon.com/images/I/51o2GaWwC+L.jpg",
       "imageHint": "anatomy textbook"
-    },
-    {
-      "id": "moores-clinically-oriented-detailed",
-      "description": "Moore's Clinically Oriented Anatomy Detailed",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNVbVxeptBmAF0HPTquI-riRJS6R67W0xSw&s",
-      "imageHint": "clinical anatomy"
     },
     {
       "id": "cunningham-head-neck",
@@ -283,16 +241,10 @@
       "imageHint": "dissection manual"
     },
     {
-      "id": "moores-clinically-oriented",
-      "description": "Moore's Clinically Oriented Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1565090567123-922c648b1adf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGluaWNhbCUyMGFuYXRvbXl8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "moores-clinically-oriented-detailed",
+      "description": "Moore's Clinically Oriented Anatomy Detailed",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNVbVxeptBmAF0HPTquI-riRJS6R67W0xSw&s",
       "imageHint": "clinical anatomy"
-    },
-    {
-      "id": "study-material-placeholder",
-      "description": "Placeholder for study material",
-      "imageUrl": "https://images.unsplash.com/photo-1748801583967-3038967d7279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkb2N1bWVudCUyMGljb258ZW58MHx8fHwxNzY3MTU2NDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document icon"
     },
     {
       "id": "vishrams-embryology",
@@ -335,42 +287,6 @@
       "description": "Clinical Atlas of Human Anatomy 7th Edition",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZknEE8GodW2w1oCTjPU4UP1SrrzCzfcEhg&s",
       "imageHint": "clinical atlas"
-    },
-    {
-      "id": "devita-cancer",
-      "description": "Cover of DeVita, Hellman, and Rosenberg's Cancer",
-      "imageUrl": "https://images.unsplash.com/photo-1641154748135-8032a61a3f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
-    },
-    {
-      "id": "abeloff-oncology",
-      "description": "Cover of Abeloff's Clinical Oncology",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
-    },
-    {
-      "id": "braunwald-heart",
-      "description": "Cover of Braunwald's Heart Disease",
-      "imageUrl": "https://images.unsplash.com/photo-1521123845560-14093637aa7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzA3NzQ1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
-    },
-    {
-      "id": "harrisons-cardiology",
-      "description": "Cover of Harrison's Cardiology",
-      "imageUrl": "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
-    },
-    {
-      "id": "katzung-pharma",
-      "description": "Cover of Basic and Clinical Pharmacology",
-      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
-    },
-    {
-      "id": "goodman-gilman-pharma",
-      "description": "Cover of Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
-      "imageUrl": "https://images.unsplash.com/photo-1528459105426-b9548367069b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MDc3NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book cover"
     },
     {
       "id": "inspirational-banner",
@@ -617,150 +533,6 @@
       "description": "Prepladder Dermatology X Edition",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/l9Jmt0PxC4nDMFkPehnA.png",
       "imageHint": "dermatology notes"
-    },
-    {
-      "id": "g-k-pal-physiology",
-      "description": "G K Pal Physiology",
-      "imageUrl": "https://d45jl3w9libvn.cloudfront.net/jaypee/static/books/9789386056979/9789386056979.png",
-      "imageHint": "physiology textbook"
-    },
-    {
-      "id": "senthamilselvi-physiology-notes",
-      "description": "Senthamilselvi Physiology Notes",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3QUur0j4_VXGz9dJeJQrFRRNB-VBEQoD-g&s",
-      "imageHint": "physiology notes"
-    },
-    {
-      "id": "k-sembulingam-essentials-of-medical-physiology",
-      "description": "K Sembulingam - Essentials of Medical Physiology",
-      "imageUrl": "https://m.media-amazon.com/images/I/8151ww8COEL._UF1000,1000_QL80_.jpg",
-      "imageHint": "physiology textbook"
-    },
-    {
-      "id": "ganongs-review-of-medical-physiology",
-      "description": "Ganongs Review of Medical Physiology",
-      "imageUrl": "https://m.media-amazon.com/images/I/71ZoZrkuKmL._UF1000,1000_QL80_.jpg",
-      "imageHint": "physiology textbook"
-    },
-    {
-      "id": "guyton-and-hall-textbook-of-medical-physiology",
-      "description": "Guyton and Hall Textbook_of_Medical_Physiology",
-      "imageUrl": "https://m.media-amazon.com/images/I/71n6+bDeUjL._UF1000,1000_QL80_.jpg",
-      "imageHint": "physiology textbook"
-    },
-    {
-      "id": "guyton-human-physiology-and-mechanisms-of-disease",
-      "description": "Guyton - Human Physiology and Mechanisms of Disease.",
-      "imageUrl": "https://secure-ecsd.elsevier.com/covers/80/Tango2/largest/9780323597128.jpg",
-      "imageHint": "physiology textbook"
-    },
-    {
-      "id": "selective-anatomy-prep-manual",
-      "description": "Selective Anatomy: Prep Manual",
-      "imageUrl": "https://m.media-amazon.com/images/I/71B1Qa31k8L._UF1000,1000_QL80_.jpg",
-      "imageHint": "anatomy textbook"
-    },
-    {
-      "id": "r-manjeshwar-prasad-biochemistry",
-      "description": "R Manjeshwar PRASAD Biochemistry",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGMv_6OOjlyDIeWZiqhSELLOC0uBhn9dokog&s",
-      "imageHint": "biochemistry textbook"
-    },
-    {
-      "id": "dm-vasudevan-biochemistry",
-      "description": "DM Vasudevan Biochemistry",
-      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/jx0prbk0/book/9/8/1/textbook-of-biochemistry-original-imafhkkzqnetezss.jpeg?q=20",
-      "imageHint": "biochemistry textbook"
-    },
-    {
-      "id": "pharmacology-clinical-cases",
-      "description": "Pharmacology Clinical Cases",
-      "imageUrl": "https://m.media-amazon.com/images/I/71wb4Q6YzML._UF1000,1000_QL80_.jpg",
-      "imageHint": "pharmacology clinical"
-    },
-    {
-      "id": "tara-pharmacology",
-      "description": "Tara Pharmacology",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfhDIHwoHIFOGr4zocMu9xEK4XZ9f2lC2fMA&s",
-      "imageHint": "pharmacology textbook"
-    },
-    {
-      "id": "kd-tripathi-drug-classification-pharm",
-      "description": "KD Tripathi DRUG classification pharm",
-      "imageUrl": "https://m.media-amazon.com/images/I/71XTpPEMz+L._UF1000,1000_QL80_.jpg",
-      "imageHint": "pharmacology textbook"
-    },
-    {
-      "id": "kd-tripathi",
-      "description": "KD Tripathi",
-      "imageUrl": "https://m.media-amazon.com/images/I/41gyxkHYxCL._UF1000,1000_QL80_.jpg",
-      "imageHint": "pharmacology textbook"
-    },
-    {
-      "id": "pathology-clinical-cases",
-      "description": "Pathology Clinical Cases",
-      "imageUrl": "https://m.media-amazon.com/images/I/71Vb3q1dpFL._UF1000,1000_QL80_.jpg",
-      "imageHint": "pathology clinical"
-    },
-    {
-      "id": "geetika-khanna-pathology",
-      "description": "Geetika Khanna Pathology",
-      "imageUrl": "https://m.media-amazon.com/images/I/81FriBx-rGL._UF1000,1000_QL80_.jpg",
-      "imageHint": "pathology textbook"
-    },
-    {
-      "id": "harsh-mohan-textbook-of-pathology-7th-ed",
-      "description": "Harsh Mohan Textbook of pathology",
-      "imageUrl": "https://booksjugaad.com/wp-content/uploads/2020/12/Textbook-of-Pathology-By-Harsh-Mohan-1.png",
-      "imageHint": "pathology textbook"
-    },
-    {
-      "id": "tejindar-singh-hematology-atlas",
-      "description": "Tejindar Singh Hematology - Atlas",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqJViYDlJD-nUROKD1mGS_xy2dGj6EjoFbQ&s",
-      "imageHint": "pathology textbook"
-    },
-    {
-      "id": "harsh-mohan-textbook-of-pathology-6th-ed",
-      "description": "Harsh Mohan - Textbook of Pathology",
-      "imageUrl": "https://m.media-amazon.com/images/I/71owLs+t70L._UF1000,1000_QL80_.jpg",
-      "imageHint": "pathology textbook"
-    },
-    {
-      "id": "robbins",
-      "description": "Robbins",
-      "imageUrl": "https://www.aibh.in/backend/images/products/cover-9780323531139.jpg",
-      "imageHint": "pathology textbook"
-    },
-    {
-      "id": "ramdas-nayak-pathology",
-      "description": "Ramdas Nayak Pathology",
-      "imageUrl": "https://m.media-amazon.com/images/I/91ZjUUTWTcL._UF1000,1000_QL80_.jpg",
-      "imageHint": "pathology textbook"
-    },
-    {
-      "id": "microbiology-clinical-cases",
-      "description": "Microbiology Clinical Cases",
-      "imageUrl": "https://m.media-amazon.com/images/I/710Z1si7VBL._UF1000,1000_QL80_.jpg",
-      "imageHint": "microbiology clinical"
-    },
-    {
-      "id": "apurba-sankar-sastry-essentials-of-medical-parasitology",
-      "description": "Apurba Sankar Sastry Essentials of Medical Parasitology",
-      "imageUrl": "https://rukminim2.flixcart.com/image/480/480/kndi4y80/book/7/q/l/essentials-of-medical-parasitology-original-imag22phgbnvjkhz.jpeg?q=90",
-      "imageHint": "microbiology textbook"
-    },
-    {
-      "id": "apurba-sankar-sastry-3rd-essentials-of-microbiology",
-      "description": "Apurba Sankar Sastry - 3rd Essentials of Microbiology",
-      "imageUrl": "https://m.media-amazon.com/images/I/81BNmVuMulL._UF1000,1000_QL80_.jpg",
-      "imageHint": "microbiology textbook"
-    },
-    {
-      "id": "micro-mcqs",
-      "description": "Micro MCQs",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZpxiOInp4Isghi7zlq8r1AGkMCB5Ka34-Q&s",
-      "imageHint": "microbiology mcqs"
     },
     {
       "id": "essentials-of-cm-a-practical-book",
