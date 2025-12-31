@@ -37,7 +37,7 @@ export function BookCarousel({
   getItemProps, 
   onItemClick, 
   isLoaded = true, 
-  loadingSkeletons = 4 
+  loadingSkeletons = 5
 }: BookCarouselProps) {
   
   if (!isLoaded) {
@@ -79,7 +79,7 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 pl-2 md:pl-4">
+            <CarouselItem key={id} className="basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7 pl-2 md:pl-4">
               <div className="p-1">
                 <Link 
                   href={href} 
@@ -96,7 +96,7 @@ export function BookCarousel({
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
-                            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+                            sizes="(max-width: 640px) 33vw, (max-width: 768px) 25vw, (max-width: 1024px) 20vw, (max-width: 1280px) 16vw, 14vw"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
