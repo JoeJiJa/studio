@@ -5,27 +5,27 @@
       "author": "William Osler"
     },
     {
-      "text": "Wherever the art of medicine is loved, there is also a love of humanity.",
+      "text": "Wherever the art of Medicine is loved, there is also a love of Humanity.",
       "author": "Hippocrates"
     },
     {
-      "text": "The chapter you are learning today is going to save someone's life tomorrow. Pay attention.",
-      "author": "Unknown"
+      "text": "The aim of medicine is to prevent disease and prolong life; the ideal of medicine is to eliminate the need for a physician.",
+      "author": "William J. Mayo"
     }
   ],
   "paretoBanner": {
-    "title": "The 80/20 Rule in Medicine",
-    "description": "Focus on the 20% of topics that appear 80% of the time in your exams. Master the high-yield concepts to maximize your score."
+    "title": "The 80/20 Rule in Medical Studies",
+    "description": "Focus on the 20% of topics that will likely cover 80% of your exam questions. Prioritize high-yield subjects and concepts to study smarter, not just harder. This allows for a more efficient and less stressful preparation."
   },
   "questionOfTheDay": {
-    "question": "Which of the following is the most common cause of community-acquired pneumonia?",
+    "question": "A 55-year-old man presents with crushing chest pain radiating to his left arm. An ECG shows ST-segment elevation in the anterior leads. Which coronary artery is most likely occluded?",
     "options": [
-      "Streptococcus pneumoniae",
-      "Haemophilus influenzae",
-      "Mycoplasma pneumoniae",
-      "Staphylococcus aureus"
+      "Right Coronary Artery (RCA)",
+      "Left Anterior Descending (LAD) Artery",
+      "Left Circumflex (LCx) Artery",
+      "Posterior Descending Artery (PDA)"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   "subjects": [
     {
@@ -53,45 +53,45 @@
         "textbooks": [
           {
             "id": "bd-chaurasia-vol-1",
-            "title": "BD Chaurasia Vol 1 Gross Anatomy",
-            "author": "10th Edition",
+            "title": "BD Chaurasia's Human Anatomy, Volume 1",
+            "author": "8th Edition",
             "coverImageId": "bd-chaurasia-vol-1-cover",
-            "downloadUrl": "https://www.febbox.com/share/K2aJpwDv"
+            "downloadUrl": "https://www.febbox.com/share/zU5sL5WJ"
           },
           {
             "id": "bd-chaurasia-vol-2",
-            "title": "BD Chaurasia Vol 2 Gross Anatomy",
-            "author": "10th Edition",
+            "title": "BD Chaurasia's Human Anatomy, Volume 2",
+            "author": "8th Edition",
             "coverImageId": "bd-chaurasia-vol-2-cover",
-            "downloadUrl": "https://www.febbox.com/share/L83xvpQO"
+            "downloadUrl": "https://www.febbox.com/share/uYmBv7nQ"
           },
           {
             "id": "bd-chaurasia-vol-3",
-            "title": "BD Chaurasia Vol 3 Gross Anatomy",
-            "author": "10th Edition",
+            "title": "BD Chaurasia's Human Anatomy, Volume 3",
+            "author": "8th Edition",
             "coverImageId": "bd-chaurasia-vol-3-cover",
-            "downloadUrl": "https://www.febbox.com/share/W1FFCCHF"
+            "downloadUrl": "https://www.febbox.com/share/w7s4zFqP"
           },
           {
             "id": "vishram-singh-vol-1",
-            "title": "Vishram Singh Vol 1 Gross Anatomy",
-            "author": "",
+            "title": "Vishram Singh's Gross Anatomy, Volume 1",
+            "author": "3rd Edition",
             "coverImageId": "vishram-singh-vol-1-cover",
-            "downloadUrl": "https://www.febbox.com/share/7fXisDdE"
+            "downloadUrl": "https://www.febbox.com/share/Yp4gE4gT"
           },
           {
             "id": "vishram-singh-vol-2",
-            "title": "Vishram Singh Vol 2 Gross Anatomy",
-            "author": "",
+            "title": "Vishram Singh's Gross Anatomy, Volume 2",
+            "author": "3rd Edition",
             "coverImageId": "vishram-singh-vol-2-cover",
-            "downloadUrl": "https://www.febbox.com/share/ZiXWOrBw"
+            "downloadUrl": "https://www.febbox.com/share/Yp4gE4gT"
           },
           {
             "id": "vishram-singh-vol-3",
-            "title": "Vishram Singh Vol 3 Gross Anatomy",
-            "author": "",
+            "title": "Vishram Singh's Gross Anatomy, Volume 3",
+            "author": "3rd Edition",
             "coverImageId": "vishram-singh-vol-3-cover",
-            "downloadUrl": "https://www.febbox.com/share/XCK9YUSY"
+            "downloadUrl": "https://www.febbox.com/share/Yp4gE4gT"
           }
         ],
         "dissection-manual": [
@@ -293,7 +293,7 @@
           {
             "id": "micro-mcqs",
             "title": "Micro MCQs",
-            "description": "Multiple choice questions for microbiology.",
+            "description": "",
             "downloadUrl": "https://www.febbox.com/share/2PRZC3Ys"
           }
         ]
@@ -303,7 +303,7 @@
       "id": "pharmacology",
       "name": "Pharmacology",
       "year": [2],
-      "description": "Pharmacology is a branch of medicine, biology and pharmaceutical sciences concerned with drug or medication action.",
+      "description": "Pharmacology is the branch of medicine and biology concerned with the study of drug action.",
       "materials": {}
     },
     {
@@ -378,7 +378,7 @@
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
       "year": [3],
-      "description": "Forensic medicine is the branch of medicine that applies medical knowledge to legal questions.",
+      "description": "Forensic medicine is a branch of medicine that applies the principles and knowledge of the medical sciences to problems in the field of law.",
       "materials": {
         "textbooks": [
           {
@@ -423,21 +423,21 @@
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
+      "description": "Otolaryngology is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
       "materials": {}
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis, treatment and prevention of diseases of the eye and visual system.",
+      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis and treatment of eye disorders.",
       "materials": {}
     },
     {
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "General medicine, or internal medicine, is the medical specialty dedicated to the diagnosis and medical treatment of adults.",
+      "description": "General medicine is the medical specialty dealing with the prevention, diagnosis, and non-surgical treatment of adult diseases.",
       "materials": {
         "textbooks": [
           {
@@ -504,15 +504,69 @@
     {
       "id": "general-surgery",
       "name": "General Surgery",
-      "year": [4],
+      "year": [3],
       "description": "General surgery is a surgical specialty that focuses on abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
-      "materials": {}
+      "materials": {
+        "textbooks": [
+          {
+            "id": "bailey-love-surgery",
+            "title": "Bailey & Love's Short Practice of Surgery",
+            "author": "",
+            "coverImageId": "bailey-love-surgery",
+            "downloadUrl": "https://www.febbox.com/share/wK0dkVg3"
+          },
+          {
+            "id": "manipal-surgery",
+            "title": "Manipal Manual Of Surgery",
+            "author": "5th Edition",
+            "coverImageId": "manipal-surgery",
+            "downloadUrl": "https://www.febbox.com/share/RjNgMPB4"
+          },
+          {
+            "id": "srb-surgery",
+            "title": "SRB's Manual of Surgery",
+            "author": "6th Edition",
+            "coverImageId": "srb-surgery",
+            "downloadUrl": "https://www.febbox.com/share/R1dflC0i"
+          },
+          {
+            "id": "sabiston-surgery",
+            "title": "Textbook of Surgery by Sabisten",
+            "author": "21st Edition",
+            "coverImageId": "sabiston-surgery",
+            "downloadUrl": "https://www.febbox.com/share/dtTK9lN0"
+          }
+        ],
+        "clinical-books": [
+          {
+            "id": "manual-clinical-surgery",
+            "title": "A Manual On Clinical Surgery",
+            "author": "13th Edition",
+            "coverImageId": "manual-clinical-surgery",
+            "downloadUrl": "https://www.febbox.com/share/Jczl5565"
+          },
+          {
+            "id": "long-cases-surgery",
+            "title": "Long Cases in General Surgery: Rajamahendran",
+            "author": "",
+            "coverImageId": "long-cases-surgery",
+            "downloadUrl": "https://www.febbox.com/share/PcfCr8r7"
+          },
+          {
+            "id": "short-cases-surgery",
+            "title": "Short Cases In Surgery: Rajamahendran",
+            "author": "",
+            "coverImageId": "short-cases-surgery",
+            "downloadUrl": "https://www.febbox.com/share/Bd4pG5GD"
+          }
+        ]
+      }
     },
     {
       "id": "obg",
-      "name": "Obstetrics & Gynaecology",
+      "name": "OBG",
       "year": [4],
-      "description": "Obstetrics and gynaecology is the medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynaecology (covering the health of the female reproductive system).",
+      "description": "Obstetrics and gynaecology is the medical specialty that encompasses the two subspecialties of obstetrics and gynaecology.",
       "materials": {}
     },
     {
@@ -526,14 +580,14 @@
       "id": "orthopedics",
       "name": "Orthopedics",
       "year": [4],
-      "description": "Orthopedic surgery is the branch of surgery concerned with conditions involving the musculoskeletal system.",
+      "description": "Orthopedic surgery or orthopedics is the branch of surgery concerned with conditions involving the musculoskeletal system.",
       "materials": {}
     },
     {
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
-      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
+      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals, including humans.",
       "materials": {}
     },
     {
@@ -554,7 +608,7 @@
       "id": "dermatology",
       "name": "Dermatology",
       "year": [4],
-      "description": "Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.",
+      "description": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
       "materials": {}
     }
   ],
