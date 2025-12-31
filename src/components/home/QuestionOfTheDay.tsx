@@ -33,7 +33,7 @@ export function QuestionOfTheDay() {
   }
 
   return (
-    <Card>
+    <Card className="h-full">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <HelpCircle className="text-primary" />
