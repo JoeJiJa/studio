@@ -1,6 +1,126 @@
 {
   "placeholderImages": [
     {
+      "id": "selective-anatomy-prep",
+      "description": "Selective Anatomy: Prep Manual",
+      "imageUrl": "https://m.media-amazon.com/images/I/71B1Qa31k8L._UF1000,1000_QL80_.jpg",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "manjeshwar-biochemistry",
+      "description": "R Manjeshwar PRASAD Biochemistry",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGMv_6OOjlyDIeWZiqhSELLOC0uBhn9dokog&s",
+      "imageHint": "biochemistry textbook"
+    },
+    {
+      "id": "vasudevan-biochemistry",
+      "description": "DM Vasudevan Biochemistry",
+      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/jx0prbk0/book/9/8/1/textbook-of-biochemistry-original-imafhkkzqnetezss.jpeg?q=20",
+      "imageHint": "biochemistry textbook"
+    },
+    {
+      "id": "pharma-clinical-cases",
+      "description": "Pharmacology Clinical Cases",
+      "imageUrl": "https://m.media-amazon.com/images/I/71wb4Q6YzML._UF1000,1000_QL80_.jpg",
+      "imageHint": "pharmacology book"
+    },
+    {
+      "id": "tara-pharmacology",
+      "description": "Tara Pharmacology 4th Edition",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfhDIHwoHIFOGr4zocMu9xEK4XZ9f2lC2fMA&s",
+      "imageHint": "pharmacology textbook"
+    },
+    {
+      "id": "kdt-drug-classification",
+      "description": "KD Tripathi DRUG classification pharm",
+      "imageUrl": "https://m.media-amazon.com/images/I/71XTpPEMz+L._UF1000,1000_QL80_.jpg",
+      "imageHint": "pharmacology textbook"
+    },
+    {
+      "id": "kdt-8th",
+      "description": "KD Tripathi 8th Edition",
+      "imageUrl": "https://m.media-amazon.com/images/I/41gyxkHYxCL._UF1000,1000_QL80_.jpg",
+      "imageHint": "pharmacology textbook"
+    },
+    {
+      "id": "essentials-of-cm-a-practical-book",
+      "description": "Essentials of CM-a-practical book",
+      "imageUrl": "https://m.media-amazon.com/images/I/8120yCbXBUL.jpg",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "sia-commed-textbook",
+      "description": "SIA Commed TEXTBOOK",
+      "imageUrl": "https://rukmini1.flixcart.com/image/300/300/xif0q/regionalbooks/s/a/2/preparatory-manual-of-preventive-and-social-medicine-3rd-revised-original-imah235emmezzsvj.jpeg",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "cm-falcon",
+      "description": "CM FALCON",
+      "imageUrl": "https://m.media-amazon.com/images/I/51xPiZTxUmL.jpg",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "review-book-vivek-jain-commed",
+      "description": "Review book Vivek Jain Commed",
+      "imageUrl": "https://m.media-amazon.com/images/I/91QshXYf2yL._UF1000,1000_QL80_.jpg",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "commed-notes-drshetty",
+      "description": "Commed Notes- drshetty",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQyJ8Ft-DWo8MIu2Q5mfX54Nv_uBMZ8fKWw&s",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "parks-textbook-of-psm",
+      "description": "Park's Textbook of PSM",
+      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/xif0q/book/l/i/n/parks-textbook-of-preventive-and-social-medicine-original-imah96sbgtyqbtva.jpeg?q=90",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "vivek-jain-exam-preparatory-manual",
+      "description": "Vivek jain exam preparatory manual",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81Mz2bWKOmL._AC_UL600_SR600,600_.jpg",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "ah-suryakantha",
+      "description": "AH Suryakantha",
+      "imageUrl": "https://m.media-amazon.com/images/I/81A4xoiHazL._UF1000,1000_QL80_.jpg",
+      "imageHint": "community medicine"
+    },
+    {
+      "id": "k-s-narayan-fm",
+      "description": "K.S.Narayan FM",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGwBvbfVb_zhH9wL7n4ZPuW2tYK5UhNQudQ&s",
+      "imageHint": "forensic medicine"
+    },
+    {
+      "id": "biswas-forensic-med",
+      "description": "Biswas Forensic Med",
+      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/xif0q/book/e/p/m/forensic-medicine-toxicology-for-medical-students-original-imagxu8agjfkpfqk.jpeg?q=90",
+      "imageHint": "forensic medicine"
+    },
+    {
+      "id": "vision-forensic-medicine",
+      "description": "Vision",
+      "imageUrl": "https://m.media-amazon.com/images/I/81M24lxDoSL._UF1000,1000_QL80_.jpg",
+      "imageHint": "forensic medicine"
+    },
+    {
+      "id": "v-v-pillay-modern-medical-toxicology",
+      "description": "V V Pillay modern medical toxicology",
+      "imageUrl": "https://m.media-amazon.com/images/I/916pbG3xRZL._UF1000,1000_QL80_.jpg",
+      "imageHint": "forensic medicine"
+    },
+    {
+      "id": "rajesh-principles-of-fm",
+      "description": "Rajesh - Principles of FM",
+      "imageUrl": "https://0.academia-photos.com/attachment_thumbnails/57595499/mini_magick20201005-19341-1tl4og0.png?1601942398",
+      "imageHint": "forensic medicine"
+    },
+    {
       "id": "dc-dutta-gynecology",
       "description": "Dc Dutta Textbook Of Gynecology",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/4psw1kWg1JY4G8RXE2tY.webp",
@@ -401,84 +521,6 @@
       "description": "Micro MCQs",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZpxiOInp4Isghi7zlq8r1AGkMCB5Ka34-Q&s",
       "imageHint": "microbiology questions"
-    },
-    {
-      "id": "essentials-of-cm-a-practical-book",
-      "description": "Essentials of CM-a-practical book",
-      "imageUrl": "https://m.media-amazon.com/images/I/8120yCbXBUL.jpg",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "sia-commed-textbook",
-      "description": "SIA Commed TEXTBOOK",
-      "imageUrl": "https://rukmini1.flixcart.com/image/300/300/xif0q/regionalbooks/s/a/2/preparatory-manual-of-preventive-and-social-medicine-3rd-revised-original-imah235emmezzsvj.jpeg",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "cm-falcon",
-      "description": "CM FALCON",
-      "imageUrl": "https://m.media-amazon.com/images/I/51xPiZTxUmL.jpg",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "review-book-vivek-jain-commed",
-      "description": "Review book Vivek Jain Commed",
-      "imageUrl": "https://m.media-amazon.com/images/I/91QshXYf2yL._UF1000,1000_QL80_.jpg",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "commed-notes-drshetty",
-      "description": "Commed Notes- drshetty",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQyJ8Ft-DWo8MIu2Q5mfX54Nv_uBMZ8fKWw&s",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "parks-textbook-of-psm",
-      "description": "Park's Textbook of PSM",
-      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/xif0q/book/l/i/n/parks-textbook-of-preventive-and-social-medicine-original-imah96sbgtyqbtva.jpeg?q=90",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "vivek-jain-exam-preparatory-manual",
-      "description": "Vivek jain exam preparatory manual",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81Mz2bWKOmL._AC_UL600_SR600,600_.jpg",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "ah-suryakantha",
-      "description": "AH Suryakantha",
-      "imageUrl": "https://m.media-amazon.com/images/I/81A4xoiHazL._UF1000,1000_QL80_.jpg",
-      "imageHint": "community medicine"
-    },
-    {
-      "id": "k-s-narayan-fm",
-      "description": "K.S.Narayan FM",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGwBvbfVb_zhH9wL7n4ZPuW2tYK5UhNQudQ&s",
-      "imageHint": "forensic medicine"
-    },
-    {
-      "id": "biswas-forensic-med",
-      "description": "Biswas Forensic Med",
-      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/xif0q/book/e/p/m/forensic-medicine-toxicology-for-medical-students-original-imagxu8agjfkpfqk.jpeg?q=90",
-      "imageHint": "forensic medicine"
-    },
-    {
-      "id": "vision-forensic-medicine",
-      "description": "Vision",
-      "imageUrl": "https://m.media-amazon.com/images/I/81M24lxDoSL._UF1000,1000_QL80_.jpg",
-      "imageHint": "forensic medicine"
-    },
-    {
-      "id": "v-v-pillay-modern-medical-toxicology",
-      "description": "V V Pillay modern medical toxicology",
-      "imageUrl": "https://m.media-amazon.com/images/I/916pbG3xRZL._UF1000,1000_QL80_.jpg",
-      "imageHint": "forensic medicine"
-    },
-    {
-      "id": "rajesh-principles-of-fm",
-      "description": "Rajesh - Principles of FM",
-      "imageUrl": "https://0.academia-photos.com/attachment_thumbnails/57595499/mini_magick20201005-19341-1tl4og0.png?1601942398",
-      "imageHint": "forensic medicine"
     },
     {
       "id": "marrow-gen-surgery-8th",
