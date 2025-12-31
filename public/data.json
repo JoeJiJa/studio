@@ -1,69 +1,37 @@
+
 {
   "inspirationalQuote": {
     "text": "The good physician treats the disease; the great physician treats the patient who has the disease.",
     "author": "William Osler"
   },
   "paretoBanner": {
-    "title": "The Pareto 80/20 Rule",
-    "description": "Focus on the 20% of study material that will yield 80% of the results. Prioritize high-yield topics to study smarter, not just harder."
+    "title": "Pareto Principle (80/20 Rule)",
+    "description": "Focus on the 20% of topics that will likely cover 80% of exam questions. Prioritize high-yield information."
   },
   "questionOfTheDay": {
-    "question": "Which of the following is the primary pacemaker of the heart?",
+    "question": "A 55-year-old male presents with chest pain that is relieved by rest. Which of the following is the most likely diagnosis?",
     "options": [
-      "Atrioventricular (AV) node",
-      "Sinoatrial (SA) node",
-      "Bundle of His",
-      "Purkinje fibers"
+      "Stable Angina",
+      "Unstable Angina",
+      "Myocardial Infarction",
+      "Pericarditis"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
-  "suggestedModules": ["anatomy", "oncology"],
   "subjects": [
     {
       "id": "anatomy",
       "name": "Anatomy",
-      "year": [1],
-      "description": "The study of the structure of the human body, from macroscopic to microscopic levels.",
+      "year": [1, 2],
+      "description": "The study of the structure of the human body. It is a foundational subject for all medical sciences.",
       "materials": {
         "textbooks": [
-          {
-            "id": "book-grays-anatomy",
-            "title": "Gray's Anatomy for Students",
-            "author": "Drake, Vogl, Mitchell",
-            "coverImageId": "grays-anatomy"
-          },
-          {
-            "id": "book-moore-anatomy",
-            "title": "Clinically Oriented Anatomy",
-            "author": "Moore, Dalley, Agur",
-            "coverImageId": "moore-anatomy"
-          }
+          { "id": "book-1", "title": "Gray's Anatomy for Students", "author": "Richard L. Drake", "coverImageId": "grays-anatomy" },
+          { "id": "book-2", "title": "Clinically Oriented Anatomy", "author": "Keith L. Moore", "coverImageId": "moore-anatomy" }
         ],
         "atlases": [
-          {
-            "id": "book-netter-atlas",
-            "title": "Atlas of Human Anatomy",
-            "author": "Frank H. Netter",
-            "coverImageId": "netter-atlas"
-          },
-          {
-            "id": "book-rohen-atlas",
-            "title": "Color Atlas of Anatomy",
-            "author": "Rohen, Yokochi, Lütjen-Drecoll",
-            "coverImageId": "rohen-atlas"
-          }
-        ],
-        "study-guides": [
-          {
-            "id": "guide-anatomy-mnemonics",
-            "title": "Anatomy Mnemonics",
-            "description": "A collection of helpful mnemonics for remembering complex anatomical structures."
-          },
-          {
-            "id": "guide-anatomy-flashcards",
-            "title": "Digital Flashcard Deck",
-            "description": "Anki deck for spaced repetition of key anatomical concepts."
-          }
+          { "id": "book-3", "title": "Atlas of Human Anatomy", "author": "Frank H. Netter", "coverImageId": "netter-atlas" },
+          { "id": "book-4", "title": "Rohen's Color Atlas of Anatomy", "author": "Johannes W. Rohen", "coverImageId": "rohen-atlas" }
         ]
       }
     },
@@ -71,57 +39,23 @@
       "id": "oncology",
       "name": "Oncology",
       "year": [3, 4],
-      "description": "The branch of medicine that deals with the prevention, diagnosis, and treatment of cancer.",
+      "description": "The study of cancer. This field covers diagnosis, treatment, and prevention of tumors.",
       "materials": {
         "textbooks": [
-          {
-            "id": "book-devita-cancer",
-            "title": "DeVita, Hellman, and Rosenberg's Cancer: Principles & Practice of Oncology",
-            "author": "DeVita, Lawrence, Rosenberg",
-            "coverImageId": "devita-cancer"
-          },
-          {
-            "id": "book-abeloff-oncology",
-            "title": "Abeloff's Clinical Oncology",
-            "author": "Niederhuber, Armitage, Doroshow",
-            "coverImageId": "abeloff-oncology"
-          }
-        ],
-        "clinical-guidelines": [
-          {
-            "id": "guide-nccn",
-            "title": "NCCN Guidelines",
-            "description": "National Comprehensive Cancer Network guidelines for cancer treatment."
-          }
+          { "id": "book-5", "title": "DeVita, Hellman, and Rosenberg's Cancer", "author": "Vincent T. DeVita Jr.", "coverImageId": "devita-cancer" },
+          { "id": "book-6", "title": "Abeloff's Clinical Oncology", "author": "John E. Niederhuber", "coverImageId": "abeloff-oncology" }
         ]
       }
     },
     {
       "id": "cardiology",
       "name": "Cardiology",
-      "year": [2, 3],
-      "description": "The study and treatment of disorders of the heart and the blood vessels.",
+      "year": [2, 3, 4],
+      "description": "The study of disorders of the heart and blood vessels. A core specialty in internal medicine.",
       "materials": {
         "textbooks": [
-          {
-            "id": "book-braunwald-heart",
-            "title": "Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine",
-            "author": "Zipes, Libby, Bonow",
-            "coverImageId": "braunwald-heart"
-          },
-          {
-            "id": "book-harrisons-cardiology",
-            "title": "Harrison's Cardiology and Aortic Disease",
-            "author": "Joseph Loscalzo",
-            "coverImageId": "harrisons-cardiology"
-          }
-        ],
-        "review-materials": [
-          {
-            "id": "guide-ecg-interpretation",
-            "title": "ECG Interpretation Made Incredibly Easy",
-            "description": "A simplified guide to understanding electrocardiograms."
-          }
+          { "id": "book-7", "title": "Braunwald's Heart Disease", "author": "Peter Libby", "coverImageId": "braunwald-heart" },
+          { "id": "book-8", "title": "Harrison's Cardiology", "author": "Eugene Braunwald", "coverImageId": "harrisons-cardiology" }
         ]
       }
     },
@@ -129,23 +63,14 @@
       "id": "pharmacology",
       "name": "Pharmacology",
       "year": [2],
-      "description": "The study of drug action, where a drug can be broadly defined as any man-made, natural, or endogenous molecule which exerts a biochemical or physiological effect on the cell, tissue, organ, or organism.",
+      "description": "The study of drug action, where a drug can be broadly defined as any man-made, natural, or endogenous molecule.",
       "materials": {
         "textbooks": [
-          {
-            "id": "book-katzung-pharma",
-            "title": "Basic and Clinical Pharmacology",
-            "author": "Bertram G. Katzung",
-            "coverImageId": "katzung-pharma"
-          },
-          {
-            "id": "book-goodman-gilman-pharma",
-            "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
-            "author": "Brunton, Knollmann, Hilal-Dandan",
-            "coverImageId": "goodman-gilman-pharma"
-          }
+          { "id": "book-9", "title": "Basic and Clinical Pharmacology", "author": "Bertram G. Katzung", "coverImageId": "katzung-pharma" },
+          { "id": "book-10", "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics", "author": "Laurence L. Brunton", "coverImageId": "goodman-gilman-pharma" }
         ]
       }
     }
-  ]
+  ],
+  "suggestedModules": ["anatomy", "cardiology", "pharmacology"]
 }
