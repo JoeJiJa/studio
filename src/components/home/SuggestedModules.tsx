@@ -28,13 +28,18 @@ export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
         <BookCarousel
             items={modules}
             getItemProps={(item) => {
-            const subject = item as Subject;
-            return {
-                id: subject.id,
-                title: subject.name,
-                href: `/theory/${subject.id}`,
-                coverImageId: (subject.materials.textbooks?.[0] as any)?.coverImageId || (subject.materials.atlases?.[0] as any)?.coverImageId || ''
-            };
+              const subject = item as Subject;
+              // Safely access materials and provide a fallback
+              const firstTextbook = subject.materials?.textbooks?.[0] as any;
+              const firstAtlas = subject.materials?.atlases?.[0] as any;
+              const coverImageId = firstTextbook?.coverImageId || firstAtlas?.coverImageId || 'study-material-placeholder';
+              
+              return {
+                  id: subject.id,
+                  title: subject.name,
+                  href: `/theory/${subject.id}`,
+                  coverImageId: coverImageId
+              };
             }}
         />
       </CardContent>
