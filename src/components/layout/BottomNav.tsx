@@ -1,16 +1,15 @@
-"use client";
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Store, Menu as MenuIcon } from 'lucide-react';
+import { Home, LayoutGrid, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
-  { href: '/theory', label: 'Theory', icon: BookOpen },
-  { href: '/store', label: 'Store', icon: Store },
-  { href: '/menu', label: 'Menu', icon: MenuIcon },
+  { href: '/theory', label: 'Theory', icon: LayoutGrid },
+  { href: '/menu', label: 'Profile', icon: User },
 ];
 
 export function BottomNav() {
@@ -22,17 +21,18 @@ export function BottomNav() {
         {navItems.map((item) => {
           const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
           return (
-            <Link key={item.href} href={item.href} className="flex flex-col items-center justify-center text-sm gap-1">
-              <item.icon className={cn(
-                "h-6 w-6 transition-colors",
-                isActive ? 'text-primary' : 'text-muted-foreground'
-              )} />
-              <span className={cn(
-                "text-xs font-medium transition-colors",
-                isActive ? 'text-primary' : 'text-muted-foreground'
-              )}>
-                {item.label}
-              </span>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                'flex items-center justify-center text-sm gap-2 px-4 py-2 rounded-lg transition-colors',
+                isActive
+                  ? 'bg-primary/10 text-primary font-semibold'
+                  : 'text-muted-foreground hover:bg-accent/50 hover:text-accent-foreground'
+              )}
+            >
+              <item.icon className="h-5 w-5" />
+              <span>{item.label}</span>
             </Link>
           );
         })}
