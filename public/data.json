@@ -6,25 +6,25 @@
       "author": "William Osler"
     },
     {
-      "text": "Wherever the art of Medicine is loved, there is also a love of Humanity.",
+      "text": "Wherever the art of medicine is loved, there is also a love of humanity.",
       "author": "Hippocrates"
     },
     {
-      "text": "The aim of medicine is to prevent disease and prolong life; the ideal of medicine is to eliminate the need for a physician.",
-      "author": "William J. Mayo"
+      "text": "The art of medicine consists of amusing the patient while nature cures the disease.",
+      "author": "Voltaire"
     }
   ],
   "paretoBanner": {
-    "title": "The Pareto Principle (80/20 Rule)",
-    "description": "Focus on the 20% of topics that will yield 80% of your exam results. Prioritize high-yield subjects and concepts to study smarter, not just harder. This focused approach will maximize your learning efficiency and retention."
+    "title": "Master the 80/20 Rule",
+    "description": "Focus on the 20% of topics that will likely cover 80% of your exam questions. Study smarter, not just harder."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old man presents with sudden-onset chest pain. An ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
+    "question": "A 55-year-old male presents with crushing chest pain radiating to his left arm. An ECG shows ST-segment elevation in leads V1-V4. Which coronary artery is most likely occluded?",
     "options": [
-      "Left Anterior Descending (LAD)",
       "Right Coronary Artery (RCA)",
-      "Left Circumflex (LCx)",
-      "Left Main Coronary Artery"
+      "Left Anterior Descending (LAD) Artery",
+      "Left Circumflex (LCX) Artery",
+      "Posterior Descending Artery (PDA)"
     ],
     "answerIndex": 1
   },
@@ -40,7 +40,7 @@
       "id": "anatomy",
       "name": "Anatomy",
       "year": [1],
-      "description": "Anatomy is the branch of biology concerned with the study of the structure of organisms and their parts. It is a cornerstone of medical education, providing the foundational knowledge needed to understand physiological functions and pathological processes.",
+      "description": "Anatomy is the branch of biology concerned with the study of the structure of organisms and their parts.",
       "materials": {
         "general-anatomy": [
           {
@@ -103,7 +103,7 @@
           }
         ],
         "dissection-manual": [
-          {
+           {
             "id": "cunningham-head-neck",
             "title": "Cunnigham's Head & Neck",
             "author": "14th Edition",
@@ -126,7 +126,7 @@
           }
         ],
         "clinical-books": [
-          {
+            {
             "id": "moores-clinically-oriented-detailed",
             "title": "MOORE’S CLINICALLY ORIENTED",
             "author": "",
@@ -134,94 +134,144 @@
             "downloadUrl": "https://www.febbox.com/share/SwJhLNBL"
           }
         ],
-        "study-materials": [],
-        "question-bank": [],
-        "atlases": [],
-        "others": []
+        "study-materials": [
+          {
+            "id": "selective-anatomy-prep-manual",
+            "title": "Selective Anatomy: Prep Manual",
+            "description": "A focused manual for exam preparation.",
+            "downloadUrl": "https://www.febbox.com/share/zM464nEu"
+          },
+          {
+            "id": "marrow-anatomy-8th",
+            "title": "Marrow Anatomy",
+            "description": "8th Edition notes.",
+            "downloadUrl": "https://www.febbox.com/share/n899b8X7"
+          }
+        ],
+        "atlases": [
+          {
+            "id": "netter-atlas",
+            "title": "Netter's Atlas of Human Anatomy",
+            "author": "Frank H. Netter",
+            "coverImageId": "netter-atlas",
+            "downloadUrl": "https://www.febbox.com/share/iNq5nNAK"
+          },
+          {
+            "id": "difiore-histology",
+            "title": "diFiore's Atlas of Histology",
+            "author": "Victor P. Eroschenko",
+            "coverImageId": "difiore-histology",
+            "downloadUrl": "https://www.febbox.com/share/2sX3Lw9g"
+          }
+        ],
+        "embryology": [
+          {
+            "id": "ib-singh-embryology",
+            "title": "IB Singh's Human Embryology",
+            "author": "V Subhadra Devi",
+            "coverImageId": "vishrams-embryology",
+            "downloadUrl": "https://www.febbox.com/share/E6aW3yqI"
+          },
+          {
+            "id": "langman-embryology",
+            "title": "Langman's Medical Embryology",
+            "author": "T.W. Sadler",
+            "coverImageId": "embryology-notes"
+          }
+        ],
+        "histology": [
+           {
+            "id": "ib-singh-histology",
+            "title": "IB Singh's Textbook of Histology",
+            "author": "IB Singh",
+            "coverImageId": "ib-singh-histology",
+            "downloadUrl": "https://www.febbox.com/share/Y1kGRf4r"
+          }
+        ]
       }
     },
     {
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "Physiology is the scientific study of functions and mechanisms in a living system. It focuses on how organisms, organ systems, individual organs, cells, and biomolecules carry out the chemical and physical functions in a living system.",
+      "description": "Physiology is the scientific study of functions and mechanisms in a living system.",
       "materials": {}
     },
     {
       "id": "biochemistry",
       "name": "Biochemistry",
       "year": [1],
-      "description": "Biochemistry is the study of chemical processes within and relating to living organisms. It's a laboratory-based science that brings together biology and chemistry.",
+      "description": "Biochemistry is the study of chemical processes within and relating to living organisms.",
       "materials": {}
     },
     {
       "id": "pathology",
       "name": "Pathology",
       "year": [2],
-      "description": "Pathology is the medical specialty concerned with the cause, origin, and nature of disease. It involves the examination of tissues, organs, bodily fluids, and autopsies in order to study and diagnose disease.",
+      "description": "Pathology is the study of the causes and effects of disease or injury.",
       "materials": {}
     },
     {
       "id": "pharmacology",
       "name": "Pharmacology",
       "year": [2],
-      "description": "Pharmacology is the study of how a medicine or drug affects the body. It involves understanding the sources, chemical properties, biological effects, and therapeutic uses of drugs.",
+      "description": "Pharmacology is the science of drug action on biological systems.",
       "materials": {}
     },
     {
       "id": "microbiology",
       "name": "Microbiology",
       "year": [2],
-      "description": "Microbiology is the scientific study of microorganisms, those being unicellular (single cell), multicellular (cell colony), or acellular (lacking cells).",
+      "description": "Microbiology is the scientific study of microorganisms, those being unicellular, multicellular, or acellular.",
       "materials": {}
     },
     {
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
       "year": [2],
-      "description": "Forensic medicine is the application of medical knowledge to legal questions. It is a key component in the investigation of crimes and is used to determine causes of injury or death.",
+      "description": "Forensic medicine is the application of medical knowledge to establish facts in civil or criminal legal cases.",
       "materials": {}
     },
     {
       "id": "community-medicine",
       "name": "Community Medicine",
       "year": [3],
-      "description": "Community medicine is a branch of medicine that is concerned with the health of the members of a community, municipality, or region. It focuses on the prevention of disease and the promotion of health in a population.",
+      "description": "Community medicine is a branch of medicine that is concerned with the health of the members of a community, municipality, or region.",
       "materials": {}
     },
     {
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology (ENT) is the surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
+      "description": "Otorhinolaryngology (ENT) is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
       "materials": {}
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "Ophthalmology is the branch of medicine that deals with the diagnosis and treatment of eye disorders.",
+      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis and treatment of eye disorders.",
       "materials": {}
     },
     {
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "General medicine is the medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases.",
+      "description": "General medicine is the medical specialty dedicated to the diagnosis and medical treatment of adults.",
       "materials": {}
     },
     {
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+      "description": "General surgery is a surgical specialty that focuses on abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
       "materials": {}
     },
     {
       "id": "obg",
-      "name": "OBG",
+      "name": "Obstetrics & Gynecology",
       "year": [4],
-      "description": "Obstetrics and gynaecology (or obstetrics and gynecology; often abbreviated to OB/GYN, O&G or Obs & Gynae) are the two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
+      "description": "Obstetrics and gynecology (OB/GYN) is the medical specialty that encompasses the two subspecialties of obstetrics and gynecology.",
       "materials": {}
     },
     {
@@ -263,8 +313,52 @@
       "id": "dermatology",
       "name": "Dermatology",
       "year": [4],
-      "description": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
+      "description": "Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.",
       "materials": {}
+    },
+    {
+      "id": "oncology",
+      "name": "Oncology",
+      "year": [1, 2, 3, 4],
+      "description": "Oncology is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "devita-cancer",
+            "title": "DeVita, Hellman, and Rosenberg's Cancer",
+            "author": "DeVita",
+            "coverImageId": "devita-cancer"
+          },
+          {
+            "id": "abeloff-oncology",
+            "title": "Abeloff's Clinical Oncology",
+            "author": "Abeloff",
+            "coverImageId": "abeloff-oncology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cardiology",
+      "name": "Cardiology",
+      "year": [3, 4],
+      "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "braunwald-heart",
+            "title": "Braunwald's Heart Disease",
+            "author": "Braunwald",
+            "coverImageId": "braunwald-heart"
+          },
+          {
+            "id": "harrisons-cardiology",
+            "title": "Harrison's Cardiology",
+            "author": "Harrison",
+            "coverImageId": "harrisons-cardiology"
+          }
+        ]
+      }
     }
   ]
 }
