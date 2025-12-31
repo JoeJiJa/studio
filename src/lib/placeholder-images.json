@@ -169,12 +169,6 @@
       "imageHint": "clinical medicine"
     },
     {
-      "id": "marrow-gen-med",
-      "description": "Marrow Gen Medicine",
-      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/GqBFXEbqoIvscsgSRjta.png",
-      "imageHint": "study material"
-    },
-    {
       "id": "bd-chaurasia-vol-1-cover",
       "description": "BD Chaurasia's Human Anatomy, Volume 1 Cover",
       "imageUrl": "https://prithvibooks.com/wp-content/uploads/2020/05/Untitled-design-15-1.png",
@@ -677,6 +671,12 @@
       "description": "Ramdas Nayak Pathology 4th Edition",
       "imageUrl": "https://m.media-amazon.com/images/I/91ZjUUTWTcL._UF1000,1000_QL80_.jpg",
       "imageHint": "pathology textbook"
+    },
+    {
+      "id": "embryology-notes-pims",
+      "description": "Embryology Notes: PIMS Seniors",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/CDUF3ofBC3KUA5R7mP1h.png",
+      "imageHint": "embryology notes"
     }
   ]
 }

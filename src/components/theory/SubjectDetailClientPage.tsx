@@ -110,3 +110,5 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     </div>
   );
 }
+
+    
