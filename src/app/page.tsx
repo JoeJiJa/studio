@@ -1,4 +1,4 @@
-import { ParetoBanner } from '@/components/home/ParetoBanner';
+import { InspirationalQuote } from '@/components/home/InspirationalQuote';
 import { QuestionOfTheDay } from '@/components/home/QuestionOfTheDay';
 import { RecentlyViewed } from '@/components/home/RecentlyViewed';
 import { StudyStreak } from '@/components/home/StudyStreak';
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col gap-8">
       <HomeHero />
       
-      <ParetoBanner />
+      <InspirationalQuote />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <StudyStreak />
