@@ -7,14 +7,13 @@ import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
 import { isBook } from '@/lib/types';
 import { MaterialSection } from './MaterialSection';
-import { TextbookCarouselSection } from './TextbookCarouselSection';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
 }
 
 const SECTIONS_CONFIG = [
-  { key: 'textbooks', title: 'Textbooks', isCarousel: true },
+  { key: 'textbooks', title: 'Textbooks' },
   { key: 'clinical-books', title: 'Clinical Books' },
   { key: 'study-materials', title: 'Study Materials' },
   { key: 'question-bank', title: 'Question Banks' },
@@ -54,26 +53,14 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
       </header>
 
       <div className="space-y-8">
-        {sectionsWithContent.map((section) => {
-          if (section.isCarousel) {
-            return (
-              <TextbookCarouselSection
-                key={section.key}
-                title={section.title}
-                materials={section.materials}
-                onItemClick={handleItemClick}
-              />
-            )
-          }
-          return (
+        {sectionsWithContent.map((section) => (
             <MaterialSection
               key={section.key}
               title={section.title}
               materials={section.materials}
               onItemClick={handleItemClick}
             />
-          )
-        })}
+        ))}
       </div>
     </div>
   );
