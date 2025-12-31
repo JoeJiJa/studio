@@ -209,6 +209,54 @@
       "description": "An abstract, inspiring medical background image",
       "imageUrl": "https://images.unsplash.com/photo-1650897492422-1a939d83e4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY3MTg4NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "medical abstract"
+    },
+    {
+      "id": "bailey-love-surgery",
+      "description": "Bailey & Love's Short Practice of Surgery",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/1cKM3jTDVpLFP2fjqYfi.webp",
+      "imageHint": "surgery textbook"
+    },
+    {
+      "id": "manipal-surgery",
+      "description": "Manipal Manual Of Surgery",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/JI3xJnMLwC8pSHy3tbtK.jpg",
+      "imageHint": "surgery textbook"
+    },
+    {
+      "id": "srb-surgery",
+      "description": "SRB's Manual of Surgery",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/8zHhKLqPMhUKNVfQgkU4.jpg",
+      "imageHint": "surgery textbook"
+    },
+    {
+      "id": "sabiston-surgery",
+      "description": "Textbook of Surgery by Sabiston",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/VCEAiJATZxsUhXqK5cCH.jpg",
+      "imageHint": "surgery textbook"
+    },
+    {
+      "id": "manual-clinical-surgery",
+      "description": "A Manual On Clinical Surgery",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/YLnh0qhVk9UwKU8JVEjH.jpg",
+      "imageHint": "clinical surgery"
+    },
+    {
+      "id": "long-cases-surgery",
+      "description": "Long Cases in General Surgery: Rajamahendran",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/wKa7Aut3zbogpIqsaOwM.jpg",
+      "imageHint": "clinical surgery"
+    },
+    {
+      "id": "short-cases-surgery",
+      "description": "Short Cases In Surgery: Rajamahendran",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/1xEEhqDgGUlrLDN2qmRN.jpg",
+      "imageHint": "clinical surgery"
+    },
+    {
+      "id": "dc-dutta-obstetrics",
+      "description": "DC Dutta Textbook of Obstetrics",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/cfaCyGPt7c71CxTUP5zq.webp",
+      "imageHint": "obstetrics textbook"
     }
   ]
 }
