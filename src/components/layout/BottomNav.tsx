@@ -3,13 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, LayoutGrid, User, Store } from 'lucide-react';
+import { Home, LayoutGrid, User, FileText } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/theory', label: 'Theory', icon: LayoutGrid },
-  { href: '/store', label: 'Store', icon: Store },
+  { href: '/exam-prep', label: 'Exam Prep', icon: FileText },
   { href: '/menu', label: 'Profile', icon: User },
 ];
 
