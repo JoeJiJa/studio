@@ -1,3 +1,4 @@
+
 // src/ai/flows/ai-assistant-guides-user.ts
 'use server';
 
@@ -11,6 +12,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import { data } from '@/lib/data';
 
 const AIAssistantGuidesUserInputSchema = z.object({
   year: z.string().describe('The year of study (1st, 2nd, 3rd, 4th).'),
@@ -37,9 +39,19 @@ const getRelevantContent = ai.defineTool(
     outputSchema: z.string(),
   },
   async (input) => {
-    // TODO: Implement the logic to fetch relevant content from data.json
-    // This is a placeholder implementation
-    return `Here are some learning materials for ${input.year} year, ${input.subject}: [PLACEHOLDER CONTENT]`;
+    const subject = data.subjects.find(s => s.name.toLowerCase() === input.subject.toLowerCase());
+    if (!subject) {
+      return `I couldn't find any materials for the subject: ${input.subject}. Please check the subject name and try again.`;
+    }
+
+    const materials = Object.values(subject.materials).flat();
+    if (materials.length === 0) {
+        return `There are no learning materials available for ${input.subject} yet. Please check back later.`;
+    }
+    
+    const materialTitles = materials.map(m => m.title).join(', ');
+    
+    return `For ${input.subject}, I found the following materials: ${materialTitles}. You can find them on the ${input.subject} page.`;
   }
 );
 
@@ -55,7 +67,10 @@ const aiAssistantGuidesUserPrompt = ai.definePrompt({
 
   The user has the following query: {{{query}}}
 
-  Use the getRelevantContent tool to find relevant learning materials based on the user's year and subject, if the query is related to study materials, otherwise provide general guidance.
+  Use the getRelevantContent tool to find relevant learning materials based on the user's year and subject, if the query is related to study materials.
+  If the user asks a general question, provide a helpful and encouraging response without using the tool.
+  If the tool returns a list of materials, present them clearly to the user.
+  If the tool says no materials were found, inform the user in a friendly way.
 `,
 });
 
