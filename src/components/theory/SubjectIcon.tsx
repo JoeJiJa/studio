@@ -2,10 +2,9 @@ import React from 'react';
 import {
   Heart,
   Brain,
-  Lungs,
   FlaskConical,
   Dna,
-  Micscope,
+  Microscope,
   Stethoscope,
   BookOpen,
   Scale,
@@ -21,6 +20,16 @@ import {
 } from 'lucide-react';
 
 // Custom SVG Icons
+
+const LungsIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M12 20c-3 0-5.5-2-5.5-5.5V9.5c0-1.2 1-2.4 2.3-3c.2-.1.4-.1.6-.1h5.2c.2 0 .4 0 .6.1C16.5 7.1 17.5 8.3 17.5 9.5v5c0 3.5-2.5 5.5-5.5 5.5z"/>
+        <path d="M12 6V2"/>
+        <path d="M12 20v2"/>
+        <path d="M18.5 14.5a5.5 5.5 0 1 0-11 0"/>
+    </svg>
+);
+
 
 const MortarPestleIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -56,7 +65,7 @@ const PetriDishIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const subjectIcons: { [key: string]: React.ElementType } = {
   anatomy: (props: any) => <div className="flex items-center justify-center gap-1"><Heart {...props} /><Brain {...props} /></div>,
-  physiology: Lungs,
+  physiology: LungsIcon,
   biochemistry: Dna,
   pathology: CellIcon,
   microbiology: PetriDishIcon,
