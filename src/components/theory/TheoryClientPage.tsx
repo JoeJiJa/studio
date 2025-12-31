@@ -29,7 +29,7 @@ export function TheoryClientPage({ subjects }: TheoryClientPageProps) {
   }, [selectedYear, subjects]);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div>
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
           <h1 className="text-4xl font-headline font-bold">Core subjects</h1>

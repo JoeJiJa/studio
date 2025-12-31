@@ -56,7 +56,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
   });
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div>
       <div className="flex items-center justify-between">
         <BackButton />
       </div>
