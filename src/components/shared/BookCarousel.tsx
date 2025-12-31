@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -70,8 +71,6 @@ export function BookCarousel({
 
           const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
             if (onItemClick) {
-              // The click handler from SubjectDetailClientPage will handle opening the link.
-              // We prevent default to let the handler manage it.
               e.preventDefault();
               onItemClick(item);
             }
