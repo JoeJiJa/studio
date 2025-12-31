@@ -29,11 +29,13 @@ export interface Subject {
   };
 }
 
+export interface Quote {
+  text: string;
+  author: string;
+}
+
 export interface AppData {
-  inspirationalQuote: {
-    text: string;
-    author: string;
-  };
+  inspirationalQuotes: Quote[];
   paretoBanner: {
     title: string;
     description: string;
