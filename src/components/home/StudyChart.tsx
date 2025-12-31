@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -15,7 +16,7 @@ const MOCK_DATA = [
 
 export function StudyChart() {
   return (
-    <div className="h-32 w-full">
+    <div className="h-20 w-full">
         <ResponsiveContainer width="100%" height="100%">
             <BarChart 
                 data={MOCK_DATA}
@@ -23,19 +24,19 @@ export function StudyChart() {
                     top: 5,
                     right: 0,
                     left: -20,
-                    bottom: 0,
+                    bottom: -5,
                 }}
             >
                 <XAxis
                     dataKey="day"
                     stroke="hsl(var(--muted-foreground))"
-                    fontSize={12}
+                    fontSize={10}
                     tickLine={false}
                     axisLine={false}
                 />
                 <YAxis 
                     stroke="hsl(var(--muted-foreground))"
-                    fontSize={12}
+                    fontSize={10}
                     tickLine={false}
                     axisLine={false}
                     tickFormatter={(value) => `${value}m`}

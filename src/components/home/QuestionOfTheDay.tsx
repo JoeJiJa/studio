@@ -35,15 +35,15 @@ export function QuestionOfTheDay() {
 
   return (
     <Card className="h-full">
-      <CardHeader className="p-3">
-        <CardTitle className="flex items-center gap-2 text-lg">
-          <HelpCircle className="text-primary h-5 w-5" />
+      <CardHeader className="p-2">
+        <CardTitle className="flex items-center gap-1.5 text-base">
+          <HelpCircle className="text-primary h-4 w-4" />
           Question of the Day
         </CardTitle>
         <CardDescription className="text-xs">{question}</CardDescription>
       </CardHeader>
-      <CardContent className="p-3 pt-0">
-        <div className="flex flex-col space-y-2">
+      <CardContent className="p-2 pt-0">
+        <div className="flex flex-col space-y-1.5">
           {options.map((option, index) => (
             <Button
               key={index}
@@ -54,7 +54,7 @@ export function QuestionOfTheDay() {
               disabled={isAnswered}
             >
               <div className="flex items-center w-full">
-                <span className="flex-1 py-1.5">{option}</span>
+                <span className="flex-1 py-1">{option}</span>
                 {isAnswered && index === answerIndex && <CheckCircle2 className="h-4 w-4 ml-2 shrink-0" />}
                 {isAnswered && index === selectedOption && index !== answerIndex && <XCircle className="h-4 w-4 ml-2 shrink-0" />}
               </div>

@@ -44,7 +44,7 @@ export function BookCarousel({
     return (
       <div className="flex space-x-4 pb-1">
         {[...Array(loadingSkeletons)].map((_, i) => (
-          <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/3 md:basis-1/5 lg:basis-1/6">
+          <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/4 md:basis-1/6 lg:basis-1/8">
             <div className="p-1">
               <Skeleton className="aspect-[3/4] w-full rounded-md" />
               <Skeleton className="h-4 mt-2 w-3/4" />
@@ -64,7 +64,7 @@ export function BookCarousel({
       }}
       className="w-full"
     >
-      <CarouselContent className="-ml-2">
+      <CarouselContent className="-ml-1">
         {items.map((item) => {
           const { id, title, subtitle, href, coverImageId } = getItemProps(item);
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
@@ -79,8 +79,8 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-[40%] sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/8 pl-2">
-              <div className="p-1">
+            <CarouselItem key={id} className="basis-[28%] sm:basis-1/5 md:basis-1/6 lg:basis-[12.5%] xl:basis-[10%] pl-1">
+              <div className="p-0.5">
                 <Link 
                   href={href} 
                   onClick={handleItemClick}
@@ -88,7 +88,7 @@ export function BookCarousel({
                   rel={isExternal ? "noopener noreferrer" : undefined}
                   className="group"
                 >
-                  <Card className="overflow-hidden transition-shadow duration-200 group-hover:shadow-lg group-hover:-translate-y-1">
+                  <Card className="overflow-hidden transition-shadow duration-200 group-hover:shadow-lg group-hover:-translate-y-0.5">
                     <CardContent className="p-0">
                       <div className="aspect-[3/4] w-full relative bg-secondary">
                         {placeholder ? (
@@ -96,7 +96,7 @@ export function BookCarousel({
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
-                            sizes="(max-width: 640px) 40vw, (max-width: 768px) 25vw, (max-width: 1024px) 20vw, (max-width: 1280px) 16vw, 12vw"
+                            sizes="(max-width: 640px) 28vw, (max-width: 768px) 20vw, (max-width: 1024px) 16vw, (max-width: 1280px) 12.5vw, 10vw"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
@@ -108,11 +108,11 @@ export function BookCarousel({
                       </div>
                     </CardContent>
                   </Card>
-                  <p className="text-xs font-medium mt-1.5 truncate group-hover:text-primary" title={title}>
+                  <p className="text-[11px] font-medium mt-1 truncate group-hover:text-primary" title={title}>
                     {title}
                   </p>
                   {subtitle && (
-                     <p className="text-xs text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
+                     <p className="text-[10px] text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
                   )}
                 </Link>
               </div>

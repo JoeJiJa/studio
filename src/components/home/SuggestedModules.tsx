@@ -24,13 +24,13 @@ export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
 
   return (
     <Card className="h-full">
-      <CardHeader className="p-3">
-        <CardTitle className="flex items-center gap-2 text-lg">
-            <BrainCircuit className="text-primary h-5 w-5"/>
+      <CardHeader className="p-2">
+        <CardTitle className="flex items-center gap-1.5 text-base">
+            <BrainCircuit className="text-primary h-4 w-4"/>
             Suggested Modules
         </CardTitle>
       </CardHeader>
-      <CardContent className="p-3 pt-0">
+      <CardContent className="p-2 pt-0">
         <BookCarousel
             items={modules}
             getItemProps={(item) => {

@@ -62,11 +62,11 @@ export function StudyStreak() {
   if (!isLoaded) {
     return (
         <Card>
-            <CardHeader className="p-3">
+            <CardHeader className="p-2">
                 <Skeleton className="h-5 w-28" />
                 <Skeleton className="h-3 w-40 mt-1" />
             </CardHeader>
-            <CardContent className="p-3 pt-0">
+            <CardContent className="p-2 pt-0">
                 <div className="flex justify-between items-end">
                     <div>
                         <Skeleton className="h-6 w-20" />
@@ -81,11 +81,11 @@ export function StudyStreak() {
 
   return (
     <Card className="h-full">
-        <CardHeader className="p-3">
+        <CardHeader className="p-2">
             <div className="flex flex-row items-center justify-between space-y-0">
-                <CardTitle className="text-lg">Your Progress</CardTitle>
-                <div className="flex items-center text-amber-500 font-bold text-sm">
-                    <Flame className="h-4 w-4 mr-1" />
+                <CardTitle className="text-base">Your Progress</CardTitle>
+                <div className="flex items-center text-amber-500 font-bold text-xs">
+                    <Flame className="h-3 w-3 mr-1" />
                     <span>{streak} Day Streak</span>
                 </div>
             </div>
@@ -93,7 +93,7 @@ export function StudyStreak() {
                 {streak > 1 ? 'Keep up the great work!' : 'Keep coming back to build your streak!'}
             </CardDescription>
         </CardHeader>
-        <CardContent className="p-3 pt-0">
+        <CardContent className="p-2 pt-0">
             <StudyChart />
         </CardContent>
     </Card>
