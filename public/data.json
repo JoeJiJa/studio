@@ -4,145 +4,130 @@
     "author": "William Osler"
   },
   "paretoBanner": {
-    "title": "The Pareto Principle in Medicine",
-    "description": "Focus on the 20% of topics that appear in 80% of exams. Prioritize high-yield subjects to maximize your score."
+    "title": "The Pareto Principle (80/20 Rule)",
+    "description": "Focus on the 20% of study materials that will yield 80% of the results. Prioritize high-yield topics and concepts to maximize your learning efficiency."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with sudden-onset chest pain radiating to his left arm. ECG shows ST-segment elevation in leads V1-V4. Which coronary artery is most likely occluded?",
+    "question": "A 55-year-old male presents with sudden-onset chest pain radiating to his left arm. An ECG shows ST-segment elevation in the anterior leads. What is the most likely diagnosis?",
     "options": [
-      "Right Coronary Artery (RCA)",
-      "Left Anterior Descending (LAD)",
-      "Left Circumflex (LCx)",
-      "Posterior Descending Artery (PDA)"
+      "Pericarditis",
+      "Aortic Dissection",
+      "Acute Myocardial Infarction",
+      "Pulmonary Embolism"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
-  "suggestedModules": ["anatomy", "physiology", "general-medicine"],
   "subjects": [
     {
       "id": "anatomy",
       "name": "Anatomy",
       "year": [1],
-      "description": "The study of the structure of the human body, from macroscopic to microscopic levels. Essential for all other medical fields.",
+      "description": "The study of the structure of the human body.",
       "materials": {
         "textbooks": [
           {
-            "id": "book-grays-anatomy",
-            "title": "Gray's Anatomy for Students",
-            "author": "Drake, Vogl, Mitchell",
-            "coverImageId": "grays-anatomy"
-          },
-          {
-            "id": "book-moore-anatomy",
-            "title": "Clinically Oriented Anatomy",
-            "author": "Moore, Dalley, Agur",
-            "coverImageId": "moore-anatomy"
-          },
-          {
-            "id": "book-bdc1",
-            "title": "BD Chaurasia's Human Anatomy, Vol 1: Upper Limb & Thorax",
-            "author": "B.D. Chaurasia",
+            "id": "bd-chaurasia-1",
+            "title": "BD Chaurasia's Human Anatomy, Volume 1",
+            "author": "8th Edition",
             "coverImageId": "bd-chaurasia-1"
           },
           {
-            "id": "book-bdc2",
-            "title": "BD Chaurasia's Human Anatomy, Vol 2: Lower Limb, Abdomen & Pelvis",
-            "author": "B.D. Chaurasia",
+            "id": "bd-chaurasia-2",
+            "title": "BD Chaurasia's Human Anatomy, Volume 2",
+            "author": "8th Edition",
             "coverImageId": "bd-chaurasia-2"
           },
           {
-            "id": "book-bdc3",
-            "title": "BD Chaurasia's Human Anatomy, Vol 3: Head, Neck & Brain",
-            "author": "B.D. Chaurasia",
+            "id": "bd-chaurasia-3",
+            "title": "BD Chaurasia's Human Anatomy, Volume 3",
+            "author": "8th Edition",
             "coverImageId": "bd-chaurasia-3"
           },
           {
-            "id": "book-vishram-anatomy",
-            "title": "Textbook of Anatomy",
-            "author": "Vishram Singh",
+            "id": "vishram-singh-anatomy",
+            "title": "Vishram Singh's Anatomy",
+            "author": "3rd Edition",
             "coverImageId": "vishram-singh-anatomy"
-          }
-        ],
-        "atlases": [
-          {
-            "id": "atlas-netter",
-            "title": "Atlas of Human Anatomy",
-            "author": "Frank H. Netter",
-            "coverImageId": "netter-atlas"
-          },
-          {
-            "id": "atlas-rohen",
-            "title": "Color Atlas of Anatomy",
-            "author": "Rohen, Yokochi, Lütjen-Drecoll",
-            "coverImageId": "rohen-atlas"
           }
         ],
         "general-anatomy": [
           {
-            "id": "book-sbd-gen-anat",
-            "title": "General Anatomy",
-            "author": "SBD",
+            "id": "sbd-general-anatomy",
+            "title": "SBD General Anatomy",
+            "author": "9th Edition",
             "coverImageId": "sbd-general-anatomy"
           },
           {
-            "id": "book-vishram-gen-anat",
-            "title": "General Anatomy",
-            "author": "Vishram Singh",
+            "id": "vishram-general-anatomy",
+            "title": "Vishram General Anatomy",
+            "author": "3rd Edition",
             "coverImageId": "vishram-general-anatomy"
+          }
+        ],
+        "atlases": [
+          {
+            "id": "netter-atlas",
+            "title": "Netter's Atlas of Human Anatomy",
+            "author": "8th Edition",
+            "coverImageId": "netter-atlas"
+          },
+          {
+            "id": "rohen-atlas",
+            "title": "Rohen's Color Atlas of Anatomy",
+            "author": "9th Edition",
+            "coverImageId": "rohen-atlas"
           }
         ],
         "clinical-books": [
           {
-            "id": "book-moore-clinical",
+            "id": "moores-clinically-oriented",
             "title": "Moore's Clinically Oriented Anatomy",
-            "author": "Keith L. Moore",
+            "author": "9th Edition",
             "coverImageId": "moores-clinically-oriented"
           }
         ],
-        "embryology": [
+        "study-materials": [
           {
-            "id": "book-vishram-embryo",
-            "title": "Textbook of Clinical Embryology",
-            "author": "Vishram Singh",
+            "id": "embryology-notes",
+            "title": "Embryology Notes",
+            "description": "Comprehensive notes on human embryology."
+          },
+          {
+            "id": "vishrams-embryology",
+            "title": "Vishram's Embryology",
+            "author": "3rd Edition",
             "coverImageId": "vishrams-embryology"
           },
           {
-            "id": "sm-embryo-notes",
-            "title": "Embryology Notes",
-            "description": "Quick revision notes for embryology."
-          }
-        ],
-        "histology": [
-          {
-            "id": "book-ib-singh-histo",
-            "title": "Textbook of Histology",
-            "author": "I.B. Singh",
+            "id": "ib-singh-histology",
+            "title": "IB Singh's Histology",
+            "author": "12th Edition",
             "coverImageId": "ib-singh-histology"
           },
           {
-            "id": "atlas-difiore-histo",
+            "id": "difiore-histology",
             "title": "diFiore's Atlas of Histology",
-            "author": "diFiore",
+            "author": "14th Edition",
             "coverImageId": "difiore-histology"
           }
         ],
         "dissection-manual": [
           {
-            "id": "book-cunningham-1",
-            "title": "Cunningham's Manual: Vol 1 - Head, Neck & Brain",
-            "author": "Cunningham",
+            "id": "cunningham-head-neck",
+            "title": "Cunningham's Manual: Head & Neck",
+            "author": "16th Edition",
             "coverImageId": "cunningham-head-neck"
           },
           {
-            "id": "book-cunningham-2",
-            "title": "Cunningham's Manual: Vol 2 - Thorax & Abdomen",
-            "author": "Cunningham",
+            "id": "cunningham-thorax-abdomen",
+            "title": "Cunningham's Manual: Thorax & Abdomen",
+            "author": "16th Edition",
             "coverImageId": "cunningham-thorax-abdomen"
           },
           {
-            "id": "book-cunningham-3",
-            "title": "Cunningham's Manual: Vol 3 - Limbs",
-            "author": "Cunningham",
+            "id": "cunningham-limbs",
+            "title": "Cunningham's Manual: Limbs",
+            "author": "16th Edition",
             "coverImageId": "cunningham-limbs"
           }
         ]
@@ -152,21 +137,21 @@
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "Understand the functions of the human body, from cellular mechanisms to the coordinated actions of organ systems.",
+      "description": "The study of the function of the human body.",
       "materials": {}
     },
     {
       "id": "biochemistry",
       "name": "Biochemistry",
       "year": [1],
-      "description": "Explore the chemical processes within and related to living organisms, forming the basis of life.",
+      "description": "The study of the chemical processes within and relating to living organisms.",
       "materials": {}
     },
     {
       "id": "pathology",
       "name": "Pathology",
       "year": [2],
-      "description": "The study of the causes and effects of disease or injury. The bridge between science and medicine.",
+      "description": "The study of the causes and effects of disease or injury.",
       "materials": {}
     },
     {
@@ -181,99 +166,115 @@
       "name": "Pharmacology",
       "year": [2],
       "description": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
-      "materials": {}
+      "materials": {
+        "textbooks": [
+          {
+            "id": "katzung-pharma",
+            "title": "Basic and Clinical Pharmacology",
+            "author": "15th Edition",
+            "coverImageId": "katzung-pharma"
+          },
+          {
+            "id": "goodman-gilman-pharma",
+            "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics",
+            "author": "14th Edition",
+            "coverImageId": "goodman-gilman-pharma"
+          }
+        ]
+      }
     },
     {
       "id": "community-medicine",
       "name": "Community Medicine",
       "year": [3],
-      "description": "Focuses on the health of populations, aiming to prevent disease and promote health at the community level.",
+      "description": "A branch of medicine that deals with the health of populations.",
       "materials": {}
     },
     {
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
       "year": [3],
-      "description": "Application of medical knowledge to the investigation of crime, particularly in establishing the causes of injury or death.",
+      "description": "The application of medical knowledge to the investigation of crime, particularly in establishing the causes of injury or death.",
       "materials": {}
     },
     {
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology: The study and treatment of diseases of the ear, nose, throat, and related structures of the head and neck.",
+      "description": "The branch of medicine and surgery specializing in the diagnosis and treatment of disorders of the head and neck.",
       "materials": {}
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "The branch of medicine that deals with the diagnosis and treatment of eye disorders.",
+      "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
       "materials": {}
     },
     {
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "The medical specialty dealing with the prevention, diagnosis, and nonsurgical treatment of adult diseases.",
+      "description": "The medical specialty dedicated to the diagnosis and medical treatment of adults.",
       "materials": {
         "textbooks": [
           {
-            "id": "book-davidsons",
+            "id": "davidsons-medicine",
             "title": "Davidson's Principles and Practice of Medicine",
-            "author": "23rd Edition",
+            "author": "24th Edition",
             "coverImageId": "davidsons-medicine"
           },
           {
-            "id": "book-harrisons",
-            "title": "Harrison's principles of internal medicine",
+            "id": "exam-prep-medicine",
+            "title": "Exam Prep Medicine Archith Boloor",
+            "author": "4th Edition",
+            "coverImageId": "exam-prep-medicine"
+          },
+          {
+            "id": "harrisons-medicine",
+            "title": "Harrison’s principles of internal medicine",
             "author": "21st Edition",
             "coverImageId": "harrisons-medicine"
           },
           {
-            "id": "book-exam-prep-med",
-            "title": "Exam Prep Medicine",
-            "author": "Archith Boloor",
-            "coverImageId": "exam-prep-medicine"
-          },
-          {
-            "id": "book-manipal-prep-med",
+            "id": "manipal-prep-medicine",
             "title": "Manipal Prep Manual of Medicine",
-            "author": "4th Edition",
+            "author": "5th Edition",
             "coverImageId": "manipal-prep-medicine"
           }
         ],
         "clinical-books": [
           {
-            "id": "book-clinical-med-boloor",
-            "title": "An Insight into Clinical Medicine",
-            "author": "Archith Boloor",
+            "id": "clinical-med-boloor",
+            "title": "Clinical Med Archith Boloor",
+            "author": "1st Edition",
             "coverImageId": "clinical-med-boloor"
           },
           {
-            "id": "book-hutchinsons",
+            "id": "hutchinsons-clinical",
             "title": "Hutchinson's Clinical Methods",
             "author": "25th Edition",
             "coverImageId": "hutchinsons-clinical"
           },
           {
-            "id": "book-macleods",
-            "title": "Macleod's clinical examination",
-            "author": "14th Edition",
+            "id": "macleods-clinical",
+            "title": "Macleods clinical examination",
+            "author": "14th edition",
             "coverImageId": "macleods-clinical"
           },
           {
-            "id": "book-alagappan",
+            "id": "alagappan-practical",
             "title": "Alagappan Manual of Practical Medicine Book",
-            "author": "R Alagappan",
+            "author": "8th edition",
             "coverImageId": "alagappan-practical"
           }
         ],
-        "study-materials": [
+        "others": [
           {
-            "id": "sm-marrow-gen-med",
-            "title": "Marrow General Medicine Edition 7",
-            "description": "Study notes from Marrow"
+            "id": "marrow-gen-med",
+            "title": "Marrow Gen Medicine",
+            "author": "8.5 Edition",
+            "coverImageId": "marrow-gen-med"
           }
         ]
       }
@@ -282,33 +283,33 @@
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "A surgical specialty that focuses on abdominal contents including esophagus, stomach, small bowel, colon, liver, pancreas, gallbladder, and often the thyroid gland.",
+      "description": "A surgical specialty that focuses on abdominal contents.",
       "materials": {
         "textbooks": [
           {
-            "id": "book-bailey-love",
+            "id": "bailey-love-surgery",
             "title": "Bailey & Love's Short Practice of Surgery",
-            "author": "27th Edition",
+            "author": "28th Edition",
             "coverImageId": "bailey-love-surgery",
             "downloadUrl": "https://www.febbox.com/share/wK0dkVg3"
           },
           {
-            "id": "book-manipal-surgery",
+            "id": "manipal-surgery",
             "title": "Manipal Manual Of Surgery",
             "author": "5th Edition",
             "coverImageId": "manipal-surgery",
             "downloadUrl": "https://www.febbox.com/share/RjNgMPB4"
           },
           {
-            "id": "book-srb-surgery",
+            "id": "srb-surgery",
             "title": "SRB's Manual of Surgery",
             "author": "6th Edition",
             "coverImageId": "srb-surgery",
             "downloadUrl": "https://www.febbox.com/share/R1dflC0i"
           },
           {
-            "id": "book-sabiston-surgery",
-            "title": "Textbook of Surgery by Sabisten",
+            "id": "sabiston-surgery",
+            "title": "Textbook of Surgery by Sabiston",
             "author": "21st Edition",
             "coverImageId": "sabiston-surgery",
             "downloadUrl": "https://www.febbox.com/share/dtTK9lN0"
@@ -316,23 +317,23 @@
         ],
         "clinical-books": [
           {
-            "id": "book-manual-clinical-surgery",
+            "id": "manual-clinical-surgery",
             "title": "A Manual On Clinical Surgery",
             "author": "13th Edition",
             "coverImageId": "manual-clinical-surgery",
             "downloadUrl": "https://www.febbox.com/share/Jczl5565"
           },
           {
-            "id": "book-long-cases-surgery",
+            "id": "long-cases-surgery",
             "title": "Long Cases in General Surgery: Rajamahendran",
-            "author": "Rajamahendran",
+            "author": "",
             "coverImageId": "long-cases-surgery",
             "downloadUrl": "https://www.febbox.com/share/PcfCr8r7"
           },
           {
-            "id": "book-short-cases-surgery",
+            "id": "short-cases-surgery",
             "title": "Short Cases In Surgery: Rajamahendran",
-            "author": "Rajamahendran",
+            "author": "",
             "coverImageId": "short-cases-surgery",
             "downloadUrl": "https://www.febbox.com/share/Bd4pG5GD"
           }
@@ -343,15 +344,43 @@
       "id": "obg",
       "name": "OBG",
       "year": [4],
-      "description": "Obstetrics and Gynaecology: Two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
+      "description": "Obstetrics and gynaecology.",
       "materials": {
         "textbooks": [
           {
-            "id": "book-dc-dutta-obs",
+            "id": "dc-dutta-obstetrics",
             "title": "DC Dutta Textbook of Obstetrics",
-            "author": "9th Edition",
+            "author": "10th Edition",
             "coverImageId": "dc-dutta-obstetrics",
             "downloadUrl": "https://www.febbox.com/share/aHhCKpo6"
+          },
+          {
+            "id": "dc-dutta-gynecology",
+            "title": "Dc Dutta Textbook Of Gynecology",
+            "author": "8th Edition",
+            "coverImageId": "dc-dutta-gynecology",
+            "downloadUrl": "https://www.febbox.com/share/OXJAQiJT"
+          },
+          {
+            "id": "mudaliar-menon-obstetrics",
+            "title": "Mudaliar And Menon's Clinical Obstetrics",
+            "author": "13th Edition",
+            "coverImageId": "mudaliar-menon-obstetrics",
+            "downloadUrl": "https://www.febbox.com/share/3zrD2Qxm"
+          },
+          {
+            "id": "shaws-gynecology",
+            "title": "Shaw's Textbook of Gynecology",
+            "author": "18th Edition",
+            "coverImageId": "shaws-gynecology",
+            "downloadUrl": "https://www.febbox.com/share/y6QEi7FS"
+          },
+          {
+            "id": "lakshmi-seshadri-gynecology",
+            "title": "Essentials of Gynecology: Lakshmi Seshadri",
+            "author": "3rd Edition",
+            "coverImageId": "lakshmi-seshadri-gynecology",
+            "downloadUrl": "https://www.febbox.com/share/UormZyrW"
           }
         ]
       }
@@ -360,59 +389,59 @@
       "id": "pediatrics",
       "name": "Pediatrics",
       "year": [4],
-      "description": "The branch of medicine that involves the medical care of infants, children, and adolescents.",
+      "description": "The branch of medicine dealing with children and their diseases.",
       "materials": {}
     },
     {
       "id": "orthopedics",
       "name": "Orthopedics",
       "year": [4],
-      "description": "The branch of surgery concerned with conditions involving the musculoskeletal system.",
+      "description": "The branch of medicine dealing with the correction of deformities of bones or muscles.",
       "materials": {}
     },
     {
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
-      "description": "The medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
+      "description": "The science dealing with X-rays and other high-energy radiation, especially the use of such radiation for the diagnosis and treatment of disease.",
       "materials": {}
     },
     {
       "id": "anesthesiology",
       "name": "Anesthesiology",
       "year": [4],
-      "description": "The medical specialty concerned with the total perioperative care of patients before, during and after surgery.",
+      "description": "The branch of medicine concerned with anaesthesia and anaesthetics.",
       "materials": {}
     },
     {
       "id": "psychiatry",
       "name": "Psychiatry",
       "year": [4],
-      "description": "The medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders.",
+      "description": "The study and treatment of mental illness, emotional disturbance, and abnormal behavior.",
       "materials": {}
     },
     {
       "id": "dermatology",
       "name": "Dermatology",
       "year": [4],
-      "description": "The branch of medicine dealing with the skin, nails, hair and its diseases.",
+      "description": "The branch of medicine concerned with the diagnosis and treatment of skin disorders.",
       "materials": {}
     },
     {
       "id": "oncology",
       "name": "Oncology",
       "year": [4],
-      "description": "A branch of medicine that deals with the prevention, diagnosis, and treatment of cancer.",
+      "description": "The study and treatment of tumors.",
       "materials": {
         "textbooks": [
           {
-            "id": "book-devita-cancer",
-            "title": "DeVita, Hellman, and Rosenberg's Cancer: Principles & Practice of Oncology",
-            "author": "11th Edition",
+            "id": "devita-cancer",
+            "title": "DeVita, Hellman, and Rosenberg's Cancer",
+            "author": "12th Edition",
             "coverImageId": "devita-cancer"
           },
           {
-            "id": "book-abeloff-oncology",
+            "id": "abeloff-oncology",
             "title": "Abeloff's Clinical Oncology",
             "author": "6th Edition",
             "coverImageId": "abeloff-oncology"
@@ -421,27 +450,27 @@
       }
     },
     {
-      "id": "cardiology",
-      "name": "Cardiology",
-      "year": [4],
-      "description": "A branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
+      "id": "thorax",
+      "name": "Thorax",
+      "year": [1],
+      "description": "Anatomy of the thorax.",
       "materials": {
         "textbooks": [
           {
-            "id": "book-braunwald-heart",
-            "title": "Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine",
-            "author": "11th Edition",
+            "id": "braunwald-heart",
+            "title": "Braunwald's Heart Disease",
+            "author": "12th Edition",
             "coverImageId": "braunwald-heart"
           },
           {
-            "id": "book-harrisons-cardiology",
+            "id": "harrisons-cardiology",
             "title": "Harrison's Cardiology",
-            "author": "3rd Edition",
+            "author": "4th Edition",
             "coverImageId": "harrisons-cardiology"
           }
         ]
       }
     }
-  ]
+  ],
+  "suggestedModules": ["oncology", "thorax", "general-medicine", "general-surgery", "obg"]
 }
-    

@@ -1,6 +1,30 @@
 {
   "placeholderImages": [
     {
+      "id": "dc-dutta-gynecology",
+      "description": "Dc Dutta Textbook Of Gynecology",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/4psw1kWg1JY4G8RXE2tY.webp",
+      "imageHint": "gynecology textbook"
+    },
+    {
+      "id": "mudaliar-menon-obstetrics",
+      "description": "Mudaliar And Menon's Clinical Obstetrics",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/gC1sE4H2smSXJnkw4yBS.jpg",
+      "imageHint": "obstetrics textbook"
+    },
+    {
+      "id": "shaws-gynecology",
+      "description": "Shaw's Textbook of Gynecology",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/2zdNPGYq9NPM77Jasy4l.jpg",
+      "imageHint": "gynecology textbook"
+    },
+    {
+      "id": "lakshmi-seshadri-gynecology",
+      "description": "Essentials of Gynecology: Lakshmi Seshadri",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/g3rghfsGtPvQCWn0aamK.jpg",
+      "imageHint": "gynecology textbook"
+    },
+    {
       "id": "davidsons-medicine",
       "description": "Davidson's Principles and Practice of Medicine",
       "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/Gw2bBPXe0UnmApT4ws0q.jpeg",
