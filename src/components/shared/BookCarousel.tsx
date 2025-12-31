@@ -15,9 +15,11 @@ import { getPlaceholderImage } from '@/lib/placeholder-images';
 import type { Book, Subject } from '@/lib/types';
 import { Skeleton } from '../ui/skeleton';
 
+type Item = Book | Subject | (Omit<Book, 'author'> & { author?: string });
+
 type BookCarouselProps = {
-  items: (Book | Subject)[];
-  getItemProps: (item: Book | Subject) => {
+  items: Item[];
+  getItemProps: (item: Item) => {
     id: string;
     title: string;
     href: string;
@@ -65,7 +67,7 @@ export function BookCarousel({
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : null;
 
           const handleItemClick = () => {
-            if (onItemClick && 'coverImageId' in item) {
+            if (onItemClick && 'coverImageId' in item && 'author' in item) {
               onItemClick(item as Book);
             }
           };

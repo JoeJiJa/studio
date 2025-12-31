@@ -14,9 +14,23 @@ interface MaterialSectionProps {
 }
 
 export function MaterialSection({ title, materials, category, onBookClick }: MaterialSectionProps) {
-  const isCarousel = ['textbooks', 'others'].includes(category);
+  const isCarousel = true; // Always use carousel
   const showSearch = ['textbooks', 'clinical-books', 'study-materials'].includes(category);
-  const showSeeAll = ['textbooks', 'others'].includes(category);
+  const showSeeAll = true; // Always show "See all"
+
+  // We need to handle items that might not be books for the carousel
+  const carouselItems = materials.map(item => {
+    if (isBook(item)) {
+      return item;
+    }
+    // Convert StudyMaterial to a Book-like structure for the carousel
+    return {
+      id: item.id,
+      title: item.title,
+      author: (item as any).description || '',
+      coverImageId: 'study-material-placeholder',
+    };
+  });
 
   return (
     <section>
@@ -34,7 +48,7 @@ export function MaterialSection({ title, materials, category, onBookClick }: Mat
       </div>
       {isCarousel ? (
         <BookCarousel
-          items={materials.filter(isBook)}
+          items={carouselItems}
           getItemProps={(item) => ({
             id: item.id,
             title: item.title,
