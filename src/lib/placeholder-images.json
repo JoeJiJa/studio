@@ -199,27 +199,39 @@
       "imageHint": "anatomy atlas"
     },
     {
-      "id": "bd-chaurasia-1",
-      "description": "BD Chaurasia's Human Anatomy, Volume 1",
-      "imageUrl": "https://images.unsplash.com/photo-1714929818864-48d3664c6c41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "bd-chaurasia-vol-1-cover",
+      "description": "BD Chaurasia's Human Anatomy, Volume 1 Cover",
+      "imageUrl": "https://prithvibooks.com/wp-content/uploads/2020/05/Untitled-design-15-1.png",
       "imageHint": "anatomy textbook"
     },
     {
-      "id": "bd-chaurasia-2",
-      "description": "BD Chaurasia's Human Anatomy, Volume 2",
-      "imageUrl": "https://images.unsplash.com/photo-1725399459296-935c0d72f04a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "bd-chaurasia-vol-2-cover",
+      "description": "BD Chaurasia's Human Anatomy, Volume 2 Cover",
+      "imageUrl": "https://www.cbspd.com/assets/images/ldn9bzAtngqBp1nQfTMr1732859467.png",
       "imageHint": "anatomy textbook"
     },
     {
-      "id": "bd-chaurasia-3",
-      "description": "BD Chaurasia's Human Anatomy, Volume 3",
-      "imageUrl": "https://images.unsplash.com/photo-1761081004966-edfc933addde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "bd-chaurasia-vol-3-cover",
+      "description": "BD Chaurasia's Human Anatomy, Volume 3 Cover",
+      "imageUrl": "https://www.cbspd.com/assets/images/ldn9bzAtngqBp1nQfTMr1732859467.png",
       "imageHint": "anatomy textbook"
     },
     {
-      "id": "vishram-singh-anatomy",
-      "description": "Vishram Singh's Anatomy",
-      "imageUrl": "https://images.unsplash.com/photo-1725398753340-aed25a0e534a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "vishram-singh-vol-1-cover",
+      "description": "Vishram Singh's Gross Anatomy, Volume 1 Cover",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422992570i/24819691.jpg",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "vishram-singh-vol-2-cover",
+      "description": "Vishram Singh's Gross Anatomy, Volume 2 Cover",
+      "imageUrl": "https://m.media-amazon.com/images/I/51udN%2BS7dFL._SY200_QL15_.jpg",
+      "imageHint": "anatomy textbook"
+    },
+    {
+      "id": "vishram-singh-vol-3-cover",
+      "description": "Vishram Singh's Gross Anatomy, Volume 3 Cover",
+      "imageUrl": "https://storeassets.im-cdn.com/media-manager/anandapublishersmedicalbook/YHZGAflYQDSYOfWzMR9O_Untitled-2%20(11)_400x346_webp.png",
       "imageHint": "anatomy textbook"
     },
     {
