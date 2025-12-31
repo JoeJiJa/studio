@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useMemo } from 'react';
@@ -17,15 +18,36 @@ interface TheoryClientPageProps {
 
 const years = ['All', '1', '2', '3', '4'];
 
+const subjectOrder: { [key: number]: string[] } = {
+  1: ['anatomy', 'physiology', 'biochemistry'],
+};
+
 export function TheoryClientPage({ subjects }: TheoryClientPageProps) {
   const [selectedYear, setSelectedYear] = useState('All');
 
   const filteredSubjects = useMemo(() => {
+    let yearSubjects: Subject[];
     if (selectedYear === 'All') {
-      return subjects;
+      yearSubjects = subjects;
+    } else {
+      const yearNum = parseInt(selectedYear, 10);
+      yearSubjects = subjects.filter(subject => subject.year.includes(yearNum));
+
+      const order = subjectOrder[yearNum];
+      if (order) {
+        yearSubjects.sort((a, b) => {
+          const indexA = order.indexOf(a.id);
+          const indexB = order.indexOf(b.id);
+          if (indexA !== -1 && indexB !== -1) {
+            return indexA - indexB;
+          }
+          if (indexA !== -1) return -1;
+          if (indexB !== -1) return 1;
+          return 0;
+        });
+      }
     }
-    const yearNum = parseInt(selectedYear, 10);
-    return subjects.filter(subject => subject.year.includes(yearNum));
+    return yearSubjects;
   }, [selectedYear, subjects]);
 
   return (

@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useMemo } from 'react';
@@ -30,6 +31,7 @@ export function MaterialSection({ title, materials, onItemClick, onSeeAllClick }
   }, [materials, searchTerm]);
   
   const visibleMaterials = filteredMaterials.slice(0, ITEMS_TO_SHOW);
+  const canSeeAll = materials.length > 0;
 
   if (materials.length === 0) {
     return null;
@@ -55,9 +57,11 @@ export function MaterialSection({ title, materials, onItemClick, onSeeAllClick }
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <Button variant="outline" onClick={onSeeAllClick}>
-            See all
-          </Button>
+          {canSeeAll && (
+            <Button variant="outline" onClick={onSeeAllClick}>
+              See all
+            </Button>
+          )}
         </div>
         <div className="space-y-3">
           {visibleMaterials.map(item => (
