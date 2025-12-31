@@ -61,7 +61,7 @@ export function BookCarousel({
       }}
       className="w-full"
     >
-      <CarouselContent className="-ml-1">
+      <CarouselContent>
         {items.map((item) => {
           const { id, title, href, coverImageId } = getItemProps(item);
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
