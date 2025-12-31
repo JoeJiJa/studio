@@ -32,7 +32,7 @@ export function TheoryClientPage({ subjects }: TheoryClientPageProps) {
     <div className="container mx-auto px-4 py-8">
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
-          <h1 className="text-4xl font-headline font-bold">Theory</h1>
+          <h1 className="text-4xl font-headline font-bold">Core subjects</h1>
           <p className="text-muted-foreground mt-1">Explore learning materials for all your subjects.</p>
         </div>
         <div className="flex items-center gap-2">
