@@ -20,7 +20,7 @@ type SheetData = {
 
 const SECTIONS_CONFIG = [
   { key: 'general-anatomy', title: 'General Anatomy' },
-  { key: 'textbooks', title: 'Gross Anatomy' },
+  { key: 'textbooks', title: 'Textbooks' },
   { key: 'dissection-manual', title: 'Dissection Manual' },
   { key: 'clinical-books', title: 'Clinical Books' },
   { key: 'embryology', title: 'Embryology' },
@@ -46,10 +46,18 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     }
   };
   
-  const sectionsWithContent = SECTIONS_CONFIG.map(section => ({
-    ...section,
-    materials: subject.materials[(section.key as keyof typeof subject.materials)] || [],
-  })).filter(section => section.materials.length > 0);
+  const sectionsWithContent = SECTIONS_CONFIG.map(section => {
+    let title = section.title;
+    if (section.key === 'textbooks' && subject.id === 'anatomy') {
+      title = 'Gross Anatomy';
+    }
+    
+    return {
+      ...section,
+      title,
+      materials: subject.materials[(section.key as keyof typeof subject.materials)] || [],
+    };
+  }).filter(section => section.materials.length > 0);
 
   const handleSeeAllClick = (title: string, materials: Material[]) => {
     setSheetData({ title, materials });
