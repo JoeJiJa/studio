@@ -47,7 +47,6 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
             <MaterialSection
               title={section.title}
               materials={section.materials}
-              category={section.key}
               onBookClick={handleBookClick}
             />
             {index < sectionsWithContent.length - 1 && <Separator className="my-8" />}
