@@ -1,7 +1,11 @@
 import appData from '../../public/data.json';
 import type { AppData, Subject, Book } from './types';
 
-export const data: AppData = appData;
+export const data: AppData = {
+  ...appData,
+  subjects: appData.subjects.filter(subject => subject.id !== 'anatomy')
+};
+
 
 export function getSubject(id: string): Subject | undefined {
   return data.subjects.find(subject => subject.id === id);
