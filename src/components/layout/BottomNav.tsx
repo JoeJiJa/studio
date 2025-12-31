@@ -3,12 +3,14 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen } from 'lucide-react';
+import { Home, BookOpen, Store, Menu as MenuIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/theory', label: 'Theory', icon: BookOpen },
+  { href: '/store', label: 'Store', icon: Store },
+  { href: '/menu', label: 'Menu', icon: MenuIcon },
 ];
 
 export function BottomNav() {
