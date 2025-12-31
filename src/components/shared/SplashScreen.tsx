@@ -12,6 +12,7 @@ export function SplashScreen() {
           src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/fRGo42eAcDofrKwh53zL/Dr%20Astro.jpg"
           alt="Dr Astro Logo"
           fill
+          sizes="12rem"
           priority
           className="object-contain"
         />
