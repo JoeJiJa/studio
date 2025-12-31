@@ -2,22 +2,16 @@
 
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import type { Subject, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
 import { isBook } from '@/lib/types';
 import { MaterialSection } from './MaterialSection';
-import { MaterialSheet } from './MaterialSheet';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
 }
-
-type SheetData = {
-  title: string;
-  materials: Material[];
-} | null;
 
 const SECTIONS_CONFIG = [
   { key: 'general-anatomy', title: 'General Anatomy' },
@@ -27,8 +21,8 @@ const SECTIONS_CONFIG = [
   { key: 'histology', title: 'Histology' },
   { key: 'obstetrics-textbooks', title: 'Obstetrics Textbooks' },
   { key: 'gynecology-textbooks', title: 'Gynecology Textbooks' },
-  { key: 'study-materials', title: 'Study Materials' },
   { key: 'embryology', title: 'Embryology' },
+  { key: 'study-materials', title: 'Study Materials' },
   { key: 'question-bank', title: 'Question Banks' },
   { key: 'atlases', title: 'Atlases' },
   { key: 'others', title: 'Others' },
@@ -36,8 +30,6 @@ const SECTIONS_CONFIG = [
 
 export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProps) {
   const { addItem: addRecentlyViewed } = useRecentlyViewed();
-  const [sheetData, setSheetData] = useState<SheetData>(null);
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const handleItemClick = (item: Material) => {
     if (item.downloadUrl) {
@@ -62,18 +54,6 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     };
   }).filter(section => section.materials.length > 0);
 
-  const handleSeeAllClick = (title: string, materials: Material[]) => {
-    setSheetData({ title, materials });
-    setIsSheetOpen(true);
-  };
-
-  const handleSheetOpenChange = (isOpen: boolean) => {
-    setIsSheetOpen(isOpen);
-    if (!isOpen) {
-      // Give a small delay for the sheet to close before clearing data
-      setTimeout(() => setSheetData(null), 150);
-    }
-  };
 
   return (
     <div>
@@ -93,22 +73,10 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
                 title={section.title}
                 materials={section.materials}
                 onItemClick={handleItemClick}
-                onSeeAllClick={() => handleSeeAllClick(section.title, section.materials)}
             />
         ))}
       </div>
       
-      {sheetData && (
-        <MaterialSheet
-          isOpen={isSheetOpen}
-          onOpenChange={handleSheetOpenChange}
-          title={sheetData.title}
-          materials={sheetData.materials}
-          onItemClick={handleItemClick}
-        />
-      )}
     </div>
   );
 }
-
-    
