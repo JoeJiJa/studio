@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Book, Material, isBook, StudyMaterial } from '@/lib/types';
+import { Material, isBook } from '@/lib/types';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
 import { Card } from '../ui/card';
 import { ChevronRight } from 'lucide-react';
@@ -45,17 +45,17 @@ export function MaterialListItem({ item, onItemClick }: MaterialListItemProps) {
       );
     }
     
-    const studyMaterial = item as StudyMaterial;
+    // Fallback for non-book materials
     return (
-        <>
-            <div className="w-16 h-20 relative mr-4 flex-shrink-0 bg-secondary rounded-md flex items-center justify-center p-2">
-               <span className="text-3xl font-bold text-primary text-center leading-none">Q</span>
-            </div>
-            <div className="flex-1">
-                <h3 className="font-semibold leading-tight">{studyMaterial.title}</h3>
-                <p className="text-sm text-muted-foreground">{studyMaterial.description}</p>
-            </div>
-        </>
+      <>
+        <div className="w-16 h-20 relative mr-4 flex-shrink-0 bg-secondary rounded-md flex items-center justify-center p-2">
+           <span className="text-3xl font-bold text-primary text-center leading-none">Q</span>
+        </div>
+        <div className="flex-1">
+            <h3 className="font-semibold leading-tight">{item.title}</h3>
+            {item.description && <p className="text-sm text-muted-foreground">{item.description}</p>}
+        </div>
+      </>
     )
   };
 
