@@ -1,6 +1,60 @@
 {
   "placeholderImages": [
     {
+      "id": "davidsons-medicine",
+      "description": "Davidson's Principles and Practice of Medicine",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/Gw2bBPXe0UnmApT4ws0q.jpeg",
+      "imageHint": "medicine textbook"
+    },
+    {
+      "id": "exam-prep-medicine",
+      "description": "Exam Prep Medicine Archith Boloor",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/zaGvKTDIUzoP3tfkT4T1.webp",
+      "imageHint": "medicine textbook"
+    },
+    {
+      "id": "harrisons-medicine",
+      "description": "Harrison’s principles of internal medicine",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/XUu5MYYMLFSnN1SrpW9P.jpg",
+      "imageHint": "medicine textbook"
+    },
+    {
+      "id": "manipal-prep-medicine",
+      "description": "Manipal Prep Manual of Medicine",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/2mvOkF8HpH6uFeLQNX5c.jpg",
+      "imageHint": "medicine textbook"
+    },
+    {
+      "id": "clinical-med-boloor",
+      "description": "Clinical Med Archith Boloor",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/KXd6WIUGVeTjOwEX2EL0.jpg",
+      "imageHint": "clinical medicine"
+    },
+    {
+      "id": "hutchinsons-clinical",
+      "description": "Hutchinson's Clinical Methods",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/2GssRSKi8PEoMQ6IQVUn.jpg",
+      "imageHint": "clinical medicine"
+    },
+    {
+      "id": "macleods-clinical",
+      "description": "Macleods clinical examination",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/IoxTKkOA0LOtRrmacs6Z.jpg",
+      "imageHint": "clinical medicine"
+    },
+    {
+      "id": "alagappan-practical",
+      "description": "Alagappan Manual of Practical Medicine Book",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/Tc2e0XDZhc6AmNGUKVqm.jpg",
+      "imageHint": "clinical medicine"
+    },
+    {
+      "id": "marrow-gen-med",
+      "description": "Marrow Gen Medicine",
+      "imageUrl": "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/GqBFXEbqoIvscsgSRjta.png",
+      "imageHint": "study material"
+    },
+    {
       "id": "grays-anatomy",
       "description": "Cover of Gray's Anatomy for Students",
       "imageUrl": "https://images.unsplash.com/photo-1761081478943-25e4f4b6354c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmF0b215JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY3MTkzMDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",

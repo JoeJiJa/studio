@@ -6,10 +6,10 @@ import { Button } from '../ui/button';
 interface MaterialSectionProps {
   title: string;
   materials: Material[];
-  onBookClick: (book: Book) => void;
+  onItemClick: (item: Material) => void;
 }
 
-export function MaterialSection({ title, materials, onBookClick }: MaterialSectionProps) {
+export function MaterialSection({ title, materials, onItemClick }: MaterialSectionProps) {
   // Convert all material types to a structure that BookCarousel can handle
   const carouselItems = materials.map(item => {
     if (isBook(item)) {
@@ -21,6 +21,7 @@ export function MaterialSection({ title, materials, onBookClick }: MaterialSecti
       title: item.title,
       author: (item as any).description || '',
       coverImageId: 'study-material-placeholder', // Use a generic placeholder
+      downloadUrl: item.downloadUrl,
     };
   });
 
@@ -35,10 +36,10 @@ export function MaterialSection({ title, materials, onBookClick }: MaterialSecti
         getItemProps={(item) => ({
           id: item.id,
           title: item.title,
-          href: '#', // The click is handled by onBookClick, href can be '#'
+          href: item.downloadUrl || '#',
           coverImageId: (item as Book).coverImageId
         })}
-        onItemClick={onBookClick}
+        onItemClick={onItemClick}
       />
     </section>
   );

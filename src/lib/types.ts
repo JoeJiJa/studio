@@ -3,12 +3,14 @@ export interface Book {
   title: string;
   author: string;
   coverImageId: string;
+  downloadUrl?: string;
 }
 
 export interface StudyMaterial {
   id: string;
   title: string;
   description: string;
+  downloadUrl?: string;
 }
 
 export type Material = Book | StudyMaterial;

@@ -4,38 +4,38 @@
     "author": "William Osler"
   },
   "paretoBanner": {
-    "title": "Pareto Principle (80/20 Rule)",
-    "description": "Focus on the 20% of study materials that will give you 80% of the results. Prioritize high-yield topics."
+    "title": "The Pareto Principle in Medicine",
+    "description": "Focus on the 20% of topics that appear in 80% of exams. Master high-yield concepts to maximize your scores."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old man presents with a 3-month history of progressive dysphagia for solids. What is the most likely diagnosis?",
+    "question": "A 55-year-old male presents with sudden-onset chest pain. An ECG reveals ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
     "options": [
-      "Gastroesophageal reflux disease (GERD)",
-      "Esophageal cancer",
-      "Achalasia",
-      "Eosinophilic esophagitis"
+      "Left Anterior Descending (LAD)",
+      "Right Coronary Artery (RCA)",
+      "Left Circumflex (LCX)",
+      "Left Main Coronary Artery (LMCA)"
     ],
     "answerIndex": 1
   },
-  "suggestedModules": ["pathology", "pharmacology", "general-medicine"],
+  "suggestedModules": ["physiology", "biochemistry", "pathology"],
   "subjects": [
     {
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "The study of how the human body works.",
+      "description": "The study of how the human body works. Explore the functions of organ systems, from cellular processes to the whole organism.",
       "materials": {
         "textbooks": [
-          { "id": "guyton-hall-physiology", "title": "Guyton and Hall Textbook of Medical Physiology", "author": "14th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "guyton-hall-physio", "title": "Guyton and Hall Textbook of Medical Physiology", "author": "14th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [
-          { "id": "costanzo-physiology", "title": "Costanzo Physiology", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "costanzo-physiology", "title": "Costanzo's Physiology", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "study-materials": [
-          { "id": "b-rs-physiology", "title": "BRS Physiology", "description": "Board Review Series" }
+          { "id": "brs-physiology", "title": "BRS Physiology", "description": "Board Review Series" }
         ],
         "question-bank": [
-          { "id": "amboss-physiology-qb", "title": "Amboss Qbank", "description": "Physiology Questions" }
+          { "id": "prepladder-physio-qb", "title": "PrepLadder QBank", "description": "Physiology Questions" }
         ]
       }
     },
@@ -43,40 +43,32 @@
       "id": "biochemistry",
       "name": "Biochemistry",
       "year": [1],
-      "description": "The study of chemical processes within and relating to living organisms.",
+      "description": "The study of chemical processes within and relating to living organisms. Understand the molecular basis of life.",
       "materials": {
         "textbooks": [
-          { "id": "lippincott-biochemistry", "title": "Lippincott's Illustrated Reviews: Biochemistry", "author": "8th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "lippincott-biochem", "title": "Lippincott's Illustrated Reviews: Biochemistry", "author": "8th Edition", "coverImageId": "study-material-placeholder" }
         ],
-        "clinical-books": [
-          { "id": "harper-biochemistry", "title": "Harper's Illustrated Biochemistry", "author": "31st Edition", "coverImageId": "study-material-placeholder" }
-        ],
+        "clinical-books": [],
         "study-materials": [
-          { "id": "kaplan-biochemistry", "title": "Kaplan Medical Biochemistry", "description": "USMLE Step 1 Lecture Notes" }
+          { "id": "satyanarayana-biochem", "title": "Satyanarayana's Biochemistry", "description": "6th Edition" }
         ],
-        "question-bank": [
-          { "id": "uworld-biochemistry-qb", "title": "UWorld Qbank", "description": "Biochemistry & Genetics" }
-        ]
+        "question-bank": []
       }
     },
     {
       "id": "pathology",
       "name": "Pathology",
       "year": [2],
-      "description": "The study of the causes and effects of disease or injury.",
+      "description": "The study of the causes and effects of disease or injury. Bridge the gap between basic science and clinical practice.",
       "materials": {
         "textbooks": [
           { "id": "robbins-pathology", "title": "Robbins & Cotran Pathologic Basis of Disease", "author": "10th Edition", "coverImageId": "study-material-placeholder" }
         ],
-        "clinical-books": [
-          { "id": "pathoma", "title": "Pathoma", "author": "Fundamentals of Pathology", "coverImageId": "study-material-placeholder" }
-        ],
+        "clinical-books": [],
         "study-materials": [
-          { "id": "goljan-pathology", "title": "Goljan Rapid Review Pathology", "description": "5th Edition" }
+          { "id": "pathoma", "title": "Pathoma", "description": "Fundamentals of Pathology" }
         ],
-        "question-bank": [
-          { "id": "amboss-pathology-qb", "title": "Amboss Qbank", "description": "Pathology Questions" }
-        ]
+        "question-bank": []
       }
     },
     {
@@ -86,17 +78,13 @@
       "description": "The study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa.",
       "materials": {
         "textbooks": [
-          { "id": "jawetz-microbiology", "title": "Jawetz, Melnick, & Adelberg's Medical Microbiology", "author": "28th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "jawetz-micro", "title": "Jawetz, Melnick, & Adelberg's Medical Microbiology", "author": "28th Edition", "coverImageId": "study-material-placeholder" }
         ],
-        "clinical-books": [
-          { "id": "clinical-microbiology-made-ridiculously-simple", "title": "Clinical Microbiology Made Ridiculously Simple", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
-        ],
+        "clinical-books": [],
         "study-materials": [
           { "id": "sketchy-micro", "title": "SketchyMicro", "description": "Visual learning for microbiology" }
         ],
-        "question-bank": [
-          { "id": "uworld-microbiology-qb", "title": "UWorld Qbank", "description": "Microbiology Questions" }
-        ]
+        "question-bank": []
       }
     },
     {
@@ -106,16 +94,16 @@
       "description": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
       "materials": {
         "textbooks": [
-          { "id": "katzung-pharmacology", "title": "Katzung & Trevor's Pharmacology: Examination & Board Review", "author": "12th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "katzung-pharma-dummy", "title": "Katzung's Basic & Clinical Pharmacology", "author": "15th Edition", "coverImageId": "katzung-pharma" }
         ],
         "clinical-books": [
-          { "id": "goodman-gilman-pharmacology", "title": "Goodman & Gilman's: The Pharmacological Basis of Therapeutics", "author": "13th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "goodman-gilman-pharma-dummy", "title": "Goodman & Gilman's The Pharmacological Basis of Therapeutics", "author": "13th Edition", "coverImageId": "goodman-gilman-pharma" }
         ],
         "study-materials": [
-          { "id": "sketchy-pharm", "title": "SketchyPharm", "description": "Visual learning for pharmacology" }
+          { "id": "sketchy-pharma", "title": "SketchyPharm", "description": "Visual learning for pharmacology" }
         ],
         "question-bank": [
-          { "id": "amboss-pharmacology-qb", "title": "Amboss Qbank", "description": "Pharmacology Questions" }
+          { "id": "usmle-rx-pharma", "title": "USMLE-Rx Qmax", "description": "Pharmacology Questions" }
         ]
       }
     },
@@ -123,18 +111,14 @@
       "id": "community-medicine",
       "name": "Community Medicine",
       "year": [3],
-      "description": "A branch of medicine that is concerned with the health of the members of a community, municipality, or region.",
+      "description": "Focuses on the health of populations, aiming to prevent disease and promote health at the community level.",
       "materials": {
         "textbooks": [
-          { "id": "parks-textbook-preventive-social-medicine", "title": "Park's Textbook of Preventive and Social Medicine", "author": "25th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "park-comm-med", "title": "Park's Textbook of Preventive and Social Medicine", "author": "25th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
-        "study-materials": [
-          { "id": "vivek-jain-psm", "title": "Review of Preventive & Social Medicine", "description": "12th Edition" }
-        ],
-        "question-bank": [
-          { "id": "prepladder-psm-qb", "title": "PrepLadder Qbank", "description": "Community Medicine" }
-        ]
+        "study-materials": [],
+        "question-bank": []
       }
     },
     {
@@ -144,12 +128,10 @@
       "description": "The application of medical knowledge to the investigation of crime, particularly in establishing the causes of injury or death.",
       "materials": {
         "textbooks": [
-          { "id": "reddy-forensic-medicine", "title": "The Essentials of Forensic Medicine and Toxicology", "author": "34th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "reddy-forensic", "title": "The Essentials of Forensic Medicine and Toxicology", "author": "34th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
-        "study-materials": [
-          { "id": "across-forensic-medicine", "title": "ACROSS-Review of Forensic Medicine and Toxicology", "description": "6th Edition" }
-        ],
+        "study-materials": [],
         "question-bank": []
       }
     },
@@ -157,16 +139,14 @@
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "The branch of medicine and surgery specializing in the diagnosis and treatment of disorders of the head and neck.",
+      "description": "The branch of medicine that specializes in the diagnosis and treatment of ear, nose, throat, and head & neck disorders.",
       "materials": {
         "textbooks": [
-          { "id": "dhingra-ent", "title": "Diseases of Ear, Nose and Throat & Head and Neck Surgery", "author": "8th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "dhingra-ent", "title": "Dhingra's Diseases of Ear, Nose and Throat", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
-        "question-bank": [
-          { "id": "amboss-ent-qb", "title": "Amboss Qbank", "description": "ENT Questions" }
-        ]
+        "question-bank": []
       }
     },
     {
@@ -176,13 +156,11 @@
       "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
       "materials": {
         "textbooks": [
-          { "id": "khurana-ophthalmology", "title": "Comprehensive Ophthalmology", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "khurana-ophtha", "title": "Comprehensive Ophthalmology by A. K. Khurana", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
-        "question-bank": [
-          { "id": "amboss-ophthalmology-qb", "title": "Amboss Qbank", "description": "Ophthalmology Questions" }
-        ]
+        "question-bank": []
       }
     },
     {
@@ -192,33 +170,37 @@
       "description": "The medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases.",
       "materials": {
         "textbooks": [
-          { "id": "harrisons-internal-medicine", "title": "Harrison's Principles of Internal Medicine", "author": "21st Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "davidsons-principles-and-practice-of-medicine", "title": "Davidson's Principles and Practice of Medicine", "author": "24th Edition", "coverImageId": "davidsons-medicine", "downloadUrl": "https://drive.google.com/file/d/1Yt6i8DdqKqebx2GMSqXsgbC41zCD4sld/view?usp=sharing" },
+          { "id": "exam-prep-medicine-archith-boloor", "title": "Exam Prep Medicine Archith Boloor", "author": "4th Edition", "coverImageId": "exam-prep-medicine", "downloadUrl": "https://www.febbox.com/share/XYM7ysu6" },
+          { "id": "harrisons-principles-of-internal-medicine", "title": "Harrison’s principles of internal medicine", "author": "21st edition", "coverImageId": "harrisons-medicine", "downloadUrl": "https://www.febbox.com/share/AArLGEQ4" },
+          { "id": "manipal-prep-manual-of-medicine", "title": "Manipal Prep Manual of Medicine", "author": "3rd Edition", "coverImageId": "manipal-prep-medicine", "downloadUrl": "https://www.febbox.com/share/1dPnuhXl" }
         ],
         "clinical-books": [
-          { "id": "step-up-to-medicine", "title": "Step-Up to Medicine", "author": "5th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "clinical-med-archith-boloor", "title": "Clinical Med Archith Boloor", "author": "", "coverImageId": "clinical-med-boloor", "downloadUrl": "https://www.febbox.com/share/lFELTFPG" },
+          { "id": "hutchinsons-clinical-methods", "title": "Hutchinson's Clinical Methods", "author": "24th Edition", "coverImageId": "hutchinsons-clinical", "downloadUrl": "https://www.febbox.com/share/w9qsudwi" },
+          { "id": "macleods-clinical-examination", "title": "Macleods clinical examination", "author": "", "coverImageId": "macleods-clinical", "downloadUrl": "https://www.febbox.com/share/PtNa4lZ8" },
+          { "id": "alagappan-manual-of-practical-medicine-book", "title": "Alagappan Manual of Practical Medicine Book", "author": "", "coverImageId": "alagappan-practical", "downloadUrl": "https://www.febbox.com/share/HrfR1CHh" }
         ],
         "study-materials": [
-          { "id": "mksap-19", "title": "MKSAP 19", "description": "Medical Knowledge Self-Assessment Program" }
+          { "id": "marrow-gen-medicine", "title": "Marrow Gen Medicine", "author": "8th Edition", "coverImageId": "marrow-gen-med", "downloadUrl": "https://www.febbox.com/share/dmeATGGH" }
         ],
-        "question-bank": [
-          { "id": "uworld-step2-ck", "title": "UWorld Qbank", "description": "Step 2 CK" }
-        ]
+        "question-bank": []
       }
     },
     {
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "A surgical specialty that focuses on abdominal contents including esophagus, stomach, small bowel, colon, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+      "description": "A surgical specialty that focuses on abdominal contents, including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
       "materials": {
         "textbooks": [
-          { "id": "bailey-love-surgery", "title": "Bailey & Love's Short Practice of Surgery", "author": "28th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "bailey-love-surgery", "title": "Bailey & Love's Short Practice of Surgery", "author": "27th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [
           { "id": "sabiston-surgery", "title": "Sabiston Textbook of Surgery", "author": "21st Edition", "coverImageId": "study-material-placeholder" }
         ],
         "study-materials": [
-          { "id": "Pestana-s-Surgery-Notes", "title": "Pestana's Surgery Notes", "description": "5th Edition" }
+          { "id": "pestanas-surgery-notes", "title": "Pestana's Surgery Notes", "description": "5th Edition" }
         ],
         "question-bank": [
           { "id": "amboss-surgery-qb", "title": "Amboss Qbank", "description": "Surgery Questions" }
@@ -229,18 +211,16 @@
       "id": "obg",
       "name": "Obstetrics & Gynaecology",
       "year": [4],
-      "description": "The two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
+      "description": "The medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynaecology (covering the health of the female reproductive system).",
       "materials": {
         "textbooks": [
           { "id": "williams-obstetrics", "title": "Williams Obstetrics", "author": "26th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [
-          { "id": "dutta-gynaecology", "title": "DC Dutta's Textbook of Gynaecology", "author": "8th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "dc-dutta-gynae", "title": "DC Dutta's Textbook of Gynecology", "author": "8th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "study-materials": [],
-        "question-bank": [
-          { "id": "amboss-obgyn-qb", "title": "Amboss Qbank", "description": "OB/GYN Questions" }
-        ]
+        "question-bank": []
       }
     },
     {
@@ -254,9 +234,7 @@
         ],
         "clinical-books": [],
         "study-materials": [],
-        "question-bank": [
-          { "id": "amboss-pediatrics-qb", "title": "Amboss Qbank", "description": "Pediatrics Questions" }
-        ]
+        "question-bank": []
       }
     },
     {
@@ -266,7 +244,7 @@
       "description": "The branch of surgery concerned with conditions involving the musculoskeletal system.",
       "materials": {
         "textbooks": [
-          { "id": "maheshwari-orthopedics", "title": "Essential Orthopaedics", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "maheshwari-ortho", "title": "Essential Orthopaedics by J Maheshwari", "author": "6th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
@@ -277,10 +255,10 @@
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
-      "description": "A medical specialty that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
+      "description": "The medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
       "materials": {
         "textbooks": [
-          { "id": "sutton-radiology", "title": "Textbook of Radiology and Imaging", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "sutton-radiology", "title": "Textbook of Radiology and Imaging by David Sutton", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
@@ -294,7 +272,7 @@
       "description": "The medical specialty concerned with the total perioperative care of patients before, during and after surgery.",
       "materials": {
         "textbooks": [
-          { "id": "morgan-mikhail-anesthesiology", "title": "Morgan & Mikhail's Clinical Anesthesiology", "author": "7th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "morgan-anesthesia", "title": "Morgan & Mikhail's Clinical Anesthesiology", "author": "6th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
@@ -308,7 +286,7 @@
       "description": "The medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders.",
       "materials": {
         "textbooks": [
-          { "id": "kaplan-sadock-psychiatry", "title": "Kaplan and Sadock's Synopsis of Psychiatry", "author": "12th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "kaplan-sadock-psych", "title": "Kaplan & Sadock's Synopsis of Psychiatry", "author": "12th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
@@ -322,7 +300,7 @@
       "description": "The branch of medicine dealing with the skin, nails, hair and its diseases.",
       "materials": {
         "textbooks": [
-          { "id": "fitzpatrick-dermatology", "title": "Fitzpatrick's Dermatology in General Medicine", "author": "9th Edition", "coverImageId": "study-material-placeholder" }
+          { "id": "bolognia-dermatology", "title": "Dermatology by Bolognia", "author": "4th Edition", "coverImageId": "study-material-placeholder" }
         ],
         "clinical-books": [],
         "study-materials": [],
