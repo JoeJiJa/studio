@@ -24,7 +24,7 @@ export function HomeHero() {
         <h1 className="text-xl sm:text-2xl font-bold font-headline text-primary">
           Welcome Back, Doctor!
         </h1>
-        <p className="mt-0.5 text-sm text-muted-foreground max-w-2xl mx-auto">
+        <p className="mt-0.5 text-xs text-muted-foreground max-w-2xl mx-auto">
           Your journey to medical mastery continues. What will you learn today?
         </p>
         <div className="mt-1.5 flex flex-col sm:flex-row gap-1.5 sm:gap-2 justify-center">
