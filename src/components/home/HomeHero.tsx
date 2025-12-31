@@ -9,7 +9,7 @@ export function HomeHero() {
   const inspirationalImage = getPlaceholderImage('inspirational-banner');
 
   return (
-    <div className="relative text-center bg-card p-6 rounded-lg overflow-hidden">
+    <div className="relative text-center bg-card p-4 sm:p-6 rounded-lg overflow-hidden">
       {inspirationalImage && (
         <Image
           src={inspirationalImage.imageUrl}
@@ -21,13 +21,13 @@ export function HomeHero() {
         />
       )}
       <div className="relative">
-        <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-headline text-primary">
           Welcome Back, Doctor!
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="mt-2 sm:mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
           Your journey to medical mastery continues. What will you learn today?
         </p>
-        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
           <Button asChild size="lg">
             <Link href="/theory">Explore Subjects</Link>
           </Button>
