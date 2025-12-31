@@ -6,8 +6,7 @@ import type { Subject, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
 import { isBook } from '@/lib/types';
-import { BookCarousel } from '../shared/BookCarousel';
-import { Button } from '../ui/button';
+import { MaterialSection } from './MaterialSection';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
@@ -55,29 +54,12 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
 
       <div className="space-y-8">
         {sectionsWithContent.map((section) => (
-            <section key={section.key}>
-                <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-2xl font-bold font-headline">{section.title}</h2>
-                    {section.materials.length > 4 && <Button variant="link">See all</Button>}
-                </div>
-                <BookCarousel
-                    items={section.materials}
-                    getItemProps={(item) => {
-                        const book = item as any;
-                        const coverImageId = isBook(item) ? item.coverImageId : undefined;
-                        const subtitle = isBook(item) ? item.author : item.description;
-
-                        return {
-                            id: item.id,
-                            title: item.title,
-                            subtitle: subtitle,
-                            href: item.downloadUrl || '#',
-                            coverImageId: coverImageId,
-                        };
-                    }}
-                    onItemClick={handleItemClick}
-                />
-            </section>
+            <MaterialSection
+                key={section.key}
+                title={section.title}
+                materials={section.materials}
+                onItemClick={handleItemClick}
+            />
         ))}
       </div>
     </div>
