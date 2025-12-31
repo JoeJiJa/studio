@@ -20,12 +20,13 @@ type SheetData = {
 
 const SECTIONS_CONFIG = [
   { key: 'textbooks', title: 'Textbooks' },
+  { key: 'gross-anatomy', title: 'Gross Anatomy' },
   { key: 'clinical-books', title: 'Clinical Books' },
   { key: 'study-materials', title: 'Study Materials' },
   { key: 'question-bank', title: 'Question Banks' },
   { key: 'atlases', title: 'Atlases' },
   { key: 'general-anatomy', title: 'General Anatomy' },
-  { key: 'others', title: 'Others' },
+  { key_:"others", title: 'Others' },
   { key: 'dissection-manual', title: 'Dissection Manual' },
 ];
 
