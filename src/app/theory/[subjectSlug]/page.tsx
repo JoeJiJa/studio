@@ -9,9 +9,11 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return data.subjects.map((subject) => ({
-    subjectSlug: subject.id,
-  }));
+  return data.subjects
+    .filter(subject => subject.id !== 'anatomy')
+    .map((subject) => ({
+      subjectSlug: subject.id,
+    }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
