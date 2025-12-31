@@ -14,8 +14,8 @@
     }
   ],
   "paretoBanner": {
-    "title": "Master the 80/20 Rule",
-    "description": "Focus on the 20% of topics that will give you 80% of the results. Prioritize high-yield subjects to study smarter, not just harder."
+    "title": "The 80/20 Rule in Medicine",
+    "description": "Focus on the 20% of topics that appear 80% of the time in your exams. Master the high-yield concepts to maximize your score."
   },
   "questionOfTheDay": {
     "question": "Which of the following is the most common cause of community-acquired pneumonia?",
@@ -27,24 +27,23 @@
     ],
     "answerIndex": 0
   },
-  "suggestedModules": ["anatomy", "pathology", "pharmacology", "general-medicine"],
   "subjects": [
     {
       "id": "anatomy",
       "name": "Anatomy",
       "year": [1],
-      "description": "Anatomy is the cornerstone of medical science. It is the study of the structure of the human body, from the macroscopic to the microscopic level. A thorough understanding of anatomy is essential for diagnosing and treating diseases.",
+      "description": "Anatomy is the branch of biology concerned with the study of the structure of organisms and their parts.",
       "materials": {
         "general-anatomy": [
           {
-            "id": "bdc-gen-anatomy-4e",
+            "id": "bdc-general-anatomy-4e",
             "title": "BDC General Anatomy",
             "author": "4th Edition",
             "coverImageId": "bdc-general-anatomy-4e",
             "downloadUrl": "https://www.febbox.com/share/kgODmydR"
           },
           {
-            "id": "vishram-gen-anatomy",
+            "id": "vishram-singh-general-anatomy",
             "title": "Vishram General Anatomy",
             "author": "",
             "coverImageId": "vishram-singh-general-anatomy",
@@ -120,7 +119,7 @@
         ],
         "clinical-books": [
           {
-            "id": "moore-clinical-anatomy",
+            "id": "moores-clinically-oriented-detailed",
             "title": "MOORE’S CLINICALLY ORIENTED",
             "author": "",
             "coverImageId": "moores-clinically-oriented-detailed",
@@ -129,7 +128,7 @@
         ],
         "embryology": [
           {
-            "id": "vishram-embryology",
+            "id": "vishrams-embryology",
             "title": "Vishram's Embryology",
             "author": "",
             "coverImageId": "vishrams-embryology",
@@ -159,8 +158,6 @@
             "downloadUrl": "https://www.febbox.com/share/vxfQYPw5"
           }
         ],
-        "study-materials": [],
-        "question-bank": [],
         "atlases": [
           {
             "id": "anatomy-360-guide",
@@ -183,43 +180,89 @@
             "coverImageId": "clinical-atlas-human-anatomy",
             "downloadUrl": "https://www.febbox.com/share/oTzT668X"
           }
-        ],
-        "others": []
+        ]
       }
     },
     {
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "Physiology is the study of how the human body works. It explores the mechanical, physical, and biochemical functions of living organisms. Understanding physiology is crucial for grasping the mechanisms of health and disease.",
+      "description": "Physiology is the scientific study of functions and mechanisms in a living system.",
       "materials": {}
     },
     {
       "id": "biochemistry",
       "name": "Biochemistry",
       "year": [1],
-      "description": "Biochemistry delves into the chemical processes within and related to living organisms. It's a laboratory-based science that brings together biology and chemistry, providing a molecular-level understanding of life.",
+      "description": "Biochemistry is the study of chemical processes within and relating to living organisms.",
       "materials": {}
     },
     {
       "id": "pathology",
       "name": "Pathology",
       "year": [2],
-      "description": "Pathology is the study of the causes and effects of disease or injury. It bridges the gap between science and medicine, underpinning every aspect of patient care, from diagnostic testing and treatment advice to using cutting-edge genetic technologies.",
-      "materials": {}
-    },
-    {
-      "id": "pharmacology",
-      "name": "Pharmacology",
-      "year": [2],
-      "description": "Pharmacology is the science of drugs and their effects on living systems. It explores how drugs work, how they are processed by the body, and how they can be used to treat diseases.",
-      "materials": {}
+      "description": "Pathology is the study of the causes and effects of disease or injury.",
+      "materials": {
+        "clinical-books": [
+          {
+            "id": "pathology-clinical-cases",
+            "title": "Pathology Clinical Cases",
+            "author": "",
+            "coverImageId": "pathology-clinical-cases",
+            "downloadUrl": "https://www.febbox.com/share/cX603dXp"
+          }
+        ],
+        "textbooks": [
+          {
+            "id": "geetika-khanna-pathology",
+            "title": "Geetika Khanna Pathology",
+            "author": "",
+            "coverImageId": "geetika-khanna-pathology",
+            "downloadUrl": "https://www.febbox.com/share/iqhm5qK9"
+          },
+          {
+            "id": "harsh-mohan-7th",
+            "title": "Harsh Mohan Textbook of pathology",
+            "author": "7th Ed",
+            "coverImageId": "harsh-mohan-7th",
+            "downloadUrl": "https://www.febbox.com/share/lFq2aImQ"
+          },
+          {
+            "id": "tejindar-singh-hematology",
+            "title": "Tejindar Singh Hematology - Atlas",
+            "author": "",
+            "coverImageId": "tejindar-singh-hematology",
+            "downloadUrl": "https://www.febbox.com/share/wb96FIDx"
+          },
+          {
+            "id": "harsh-mohan-6th",
+            "title": "Harsh Mohan - Textbook of Pathology",
+            "author": "6th Ed",
+            "coverImageId": "harsh-mohan-6th",
+            "downloadUrl": "https://www.febbox.com/share/WQLgcfKH"
+          },
+          {
+            "id": "robbins-10th",
+            "title": "Robbins",
+            "author": "10th Ed",
+            "coverImageId": "robbins-10th",
+            "downloadUrl": "https://www.febbox.com/share/fIRZozyT"
+          },
+          {
+            "id": "ramdas-nayak-pathology",
+            "title": "Ramdas Nayak Pathology",
+            "author": "4th Edition",
+            "coverImageId": "ramdas-nayak-pathology",
+            "downloadUrl": "https://www.febbox.com/share/0laUbNv7"
+          }
+        ]
+      }
     },
     {
       "id": "microbiology",
       "name": "Microbiology",
       "year": [2],
-      "description": "Microbiology is the study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa. This discipline includes fundamental research on the biochemistry, physiology, cell biology, ecology, evolution and clinical aspects of microorganisms, including the host response to these agents.",
+      "description": "Microbiology is the scientific study of microorganisms, those being unicellular (single cell), multicellular (cell colony), or acellular (lacking cells).",
       "materials": {
         "clinical-books": [
           {
@@ -240,76 +283,38 @@
           },
           {
             "id": "sastry-microbiology",
-            "title": "Apurba Sankar Sastry - 3rd Essentials of Microbiology",
+            "title": "Apurba Sankar Sastry - 3rd Essentials of  Microbiology",
             "author": "",
             "coverImageId": "sastry-microbiology",
             "downloadUrl": "https://www.febbox.com/share/kbA8Yn6i"
           }
         ],
         "study-materials": [
-           {
+          {
             "id": "micro-mcqs",
             "title": "Micro MCQs",
-            "description": "Collection of multiple choice questions.",
+            "description": "Multiple choice questions for microbiology.",
             "downloadUrl": "https://www.febbox.com/share/2PRZC3Ys"
           }
         ]
       }
     },
     {
-      "id": "forensic-medicine",
-      "name": "Forensic Medicine",
+      "id": "pharmacology",
+      "name": "Pharmacology",
       "year": [2],
-      "description": "Forensic medicine is a branch of medicine that applies medical knowledge to legal questions. It is a critical component of the justice system, helping to solve crimes and resolve legal disputes.",
-      "materials": {
-        "textbooks": [
-          {
-            "id": "ks-narayan-fm",
-            "title": "K.S.Narayan FM",
-            "author": "33 Ed",
-            "coverImageId": "k-s-narayan-fm",
-            "downloadUrl": "https://www.febbox.com/share/rgrQO8k3"
-          },
-          {
-            "id": "biswas-forensic-med",
-            "title": "Biswas Forensic Med",
-            "author": "3 Ed",
-            "coverImageId": "biswas-forensic-med",
-            "downloadUrl": "https://www.febbox.com/share/P2zwVZAa"
-          },
-          {
-            "id": "vision-fm",
-            "title": "Vision",
-            "author": "4th Ed",
-            "coverImageId": "vision-forensic-medicine",
-            "downloadUrl": "https://www.febbox.com/share/2Cj0vAfS"
-          },
-          {
-            "id": "vv-pillay-toxicology",
-            "title": "V V Pillay modern medical toxicology",
-            "author": "",
-            "coverImageId": "v-v-pillay-modern-medical-toxicology",
-            "downloadUrl": "https://www.febbox.com/share/aV5H2Qdh"
-          },
-          {
-            "id": "rajesh-principles-fm",
-            "title": "Rajesh - Principles of FM",
-            "author": "",
-            "coverImageId": "rajesh-principles-of-fm",
-            "downloadUrl": "https://www.febbox.com/share/JKJKxR5i"
-          }
-        ]
-      }
+      "description": "Pharmacology is a branch of medicine, biology and pharmaceutical sciences concerned with drug or medication action.",
+      "materials": {}
     },
     {
       "id": "community-medicine",
       "name": "Community Medicine",
       "year": [3],
-      "description": "Community medicine is a branch of medicine that is concerned with the health of the members of a community, municipality, or region. It focuses on the prevention of disease and the promotion of health in a population.",
+      "description": "Community medicine is a branch of medicine that is concerned with the health of the members of a community, municipality, or region.",
       "materials": {
         "clinical-books": [
           {
-            "id": "essentials-cm-practical",
+            "id": "essentials-of-cm-a-practical-book",
             "title": "Essentials of CM-a-practical book",
             "author": "",
             "coverImageId": "essentials-of-cm-a-practical-book",
@@ -318,7 +323,7 @@
         ],
         "textbooks": [
           {
-            "id": "sia-commed",
+            "id": "sia-commed-textbook",
             "title": "SIA Commed TEXTBOOK",
             "author": "",
             "coverImageId": "sia-commed-textbook",
@@ -332,7 +337,7 @@
             "downloadUrl": "https://www.febbox.com/share/ON1COGX1"
           },
           {
-            "id": "review-vivek-jain-commed",
+            "id": "review-book-vivek-jain-commed",
             "title": "Review book Vivek Jain Commed",
             "author": "7 Ed",
             "coverImageId": "review-book-vivek-jain-commed",
@@ -346,14 +351,14 @@
             "downloadUrl": "https://www.febbox.com/share/UGqO1EQT"
           },
           {
-            "id": "parks-psm",
+            "id": "parks-textbook-of-psm",
             "title": "Park's Textbook of PSM",
             "author": "30 Ed",
             "coverImageId": "parks-textbook-of-psm",
             "downloadUrl": "https://www.febbox.com/share/Ur4WqfI0"
           },
           {
-            "id": "vivek-jain-exam-prep",
+            "id": "vivek-jain-exam-preparatory-manual",
             "title": "Vivek jain exam preparatory manual",
             "author": "3rd edition",
             "coverImageId": "vivek-jain-exam-preparatory-manual",
@@ -370,66 +375,165 @@
       }
     },
     {
+      "id": "forensic-medicine",
+      "name": "Forensic Medicine",
+      "year": [3],
+      "description": "Forensic medicine is the branch of medicine that applies medical knowledge to legal questions.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "k-s-narayan-fm",
+            "title": "K.S.Narayan FM",
+            "author": "33 Ed",
+            "coverImageId": "k-s-narayan-fm",
+            "downloadUrl": "https://www.febbox.com/share/rgrQO8k3"
+          },
+          {
+            "id": "biswas-forensic-med",
+            "title": "Biswas Forensic Med",
+            "author": "3 Ed",
+            "coverImageId": "biswas-forensic-med",
+            "downloadUrl": "https://www.febbox.com/share/P2zwVZAa"
+          },
+          {
+            "id": "vision-forensic-medicine",
+            "title": "Vision",
+            "author": "4th Ed",
+            "coverImageId": "vision-forensic-medicine",
+            "downloadUrl": "https://www.febbox.com/share/2Cj0vAfS"
+          },
+          {
+            "id": "v-v-pillay-modern-medical-toxicology",
+            "title": "V V Pillay modern medical toxicology",
+            "author": "",
+            "coverImageId": "v-v-pillay-modern-medical-toxicology",
+            "downloadUrl": "https://www.febbox.com/share/aV5H2Qdh"
+          },
+          {
+            "id": "rajesh-principles-of-fm",
+            "title": "Rajesh - Principles of FM",
+            "author": "",
+            "coverImageId": "rajesh-principles-of-fm",
+            "downloadUrl": "https://www.febbox.com/share/JKJKxR5i"
+          }
+        ]
+      }
+    },
+    {
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology (ENT) is the surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck. Doctors who specialize in this area are called otorhinolaryngologists, otolaryngologists, head and neck surgeons, or ENT surgeons or physicians.",
+      "description": "Otorhinolaryngology is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
       "materials": {}
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis, treatment, and prevention of diseases of the eye and visual system. An ophthalmologist is a medical doctor who specializes in eye and vision care.",
+      "description": "Ophthalmology is a branch of medicine that deals with the diagnosis, treatment and prevention of diseases of the eye and visual system.",
       "materials": {}
     },
     {
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "General medicine, or internal medicine, is the medical specialty dedicated to the diagnosis and medical treatment of adults. A general physician's primary role is to provide long-term, comprehensive care, managing both common and complex illnesses.",
-      "materials": {}
+      "description": "General medicine, or internal medicine, is the medical specialty dedicated to the diagnosis and medical treatment of adults.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "davidsons-medicine",
+            "title": "Davidson's Principles and Practice of Medicine",
+            "author": "24th Edition",
+            "coverImageId": "davidsons-medicine",
+            "downloadUrl": "https://drive.google.com/file/d/1Yt6i8DdqKqebx2GMSqXsgbC41zCD4sld/view?usp=sharing"
+          },
+          {
+            "id": "exam-prep-medicine",
+            "title": "Exam Prep Medicine Archith Boloor",
+            "author": "4th Edition",
+            "coverImageId": "exam-prep-medicine",
+            "downloadUrl": "https://www.febbox.com/share/XYM7ysu6"
+          },
+          {
+            "id": "harrisons-medicine",
+            "title": "Harrison’s principles of internal medicine",
+            "author": "21st edition",
+            "coverImageId": "harrisons-medicine",
+            "downloadUrl": "https://www.febbox.com/share/AArLGEQ4"
+          },
+          {
+            "id": "manipal-prep-medicine",
+            "title": "Manipal Prep Manual of Medicine",
+            "author": "3rd Edition",
+            "coverImageId": "manipal-prep-medicine",
+            "downloadUrl": "https://www.febbox.com/share/1dPnuhXl"
+          }
+        ],
+        "clinical-books": [
+          {
+            "id": "clinical-med-boloor",
+            "title": "Clinical Med Archith Boloor",
+            "author": "",
+            "coverImageId": "clinical-med-boloor",
+            "downloadUrl": "https://www.febbox.com/share/lFELTFPG"
+          },
+          {
+            "id": "hutchinsons-clinical",
+            "title": "Hutchinson's Clinical Methods",
+            "author": "24th Edition",
+            "coverImageId": "hutchinsons-clinical",
+            "downloadUrl": "https://www.febbox.com/share/w9qsudwi"
+          },
+          {
+            "id": "macleods-clinical",
+            "title": "Macleods clinical examination",
+            "author": "",
+            "coverImageId": "macleods-clinical",
+            "downloadUrl": "https://www.febbox.com/share/PtNa4lZ8"
+          },
+          {
+            "id": "alagappan-practical",
+            "title": "Alagappan Manual of Practical Medicine Book",
+            "author": "",
+            "coverImageId": "alagappan-practical",
+            "downloadUrl": "https://www.febbox.com/share/HrfR1CHh"
+          }
+        ]
+      }
     },
     {
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+      "description": "General surgery is a surgical specialty that focuses on abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
       "materials": {}
     },
     {
       "id": "obg",
-      "name": "Obstetrics and Gynecology",
+      "name": "Obstetrics & Gynaecology",
       "year": [4],
-      "description": "Obstetrics and gynecology (OB/GYN) is the medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynecology (covering the health of the female reproductive system).",
+      "description": "Obstetrics and gynaecology is the medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynaecology (covering the health of the female reproductive system).",
       "materials": {}
     },
     {
       "id": "pediatrics",
       "name": "Pediatrics",
       "year": [4],
-      "description": "Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. A pediatrician is a child's physician who provides not only medical care for children who are acutely or chronically ill but also preventive health services for healthy children.",
+      "description": "Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents.",
       "materials": {}
     },
     {
       "id": "orthopedics",
       "name": "Orthopedics",
       "year": [4],
-      "description": "Orthopedics is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders.",
+      "description": "Orthopedic surgery is the branch of surgery concerned with conditions involving the musculoskeletal system.",
       "materials": {}
     },
     {
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
-      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans. A variety of imaging techniques such as X-ray radiography, ultrasound, computed tomography (CT), nuclear medicine including positron emission tomography (PET), and magnetic resonance imaging (MRI) are used to diagnose or treat diseases.",
-      "materials": {}
-    },
-    {
-      "id": "dermatology",
-      "name": "Dermatology",
-      "year": [4,"final-year"],
-      "description": "Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects. A dermatologist is a specialist medical doctor who manages diseases related to skin, hair, nails, and some cosmetic problems.",
+      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
       "materials": {}
     },
     {
@@ -445,6 +549,14 @@
       "year": [4],
       "description": "Psychiatry is the medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders. These include various maladaptations related to mood, behaviour, cognition, and perceptions.",
       "materials": {}
+    },
+    {
+      "id": "dermatology",
+      "name": "Dermatology",
+      "year": [4],
+      "description": "Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.",
+      "materials": {}
     }
-  ]
+  ],
+  "suggestedModules": ["anatomy", "physiology", "biochemistry", "pathology", "pharmacology"]
 }
