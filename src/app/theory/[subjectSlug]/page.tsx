@@ -1,6 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { data, getSubject, getAnatomyMaterials } from '@/lib/data';
+import { data, getSubject } from '@/lib/data';
 import type { Metadata } from 'next';
 import { SubjectDetailClientPage } from '@/components/theory/SubjectDetailClientPage';
 
