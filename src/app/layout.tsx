@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import { BottomNav, SideNav } from '@/components/layout/BottomNav';
+import { BottomNav } from '@/components/layout/BottomNav';
 import { Toaster } from '@/components/ui/toaster';
 import { AIChat } from '@/components/layout/AIChat';
 
@@ -24,8 +24,7 @@ export default function RootLayout({
       </head>
       <body className={cn("font-body antialiased", "min-h-screen bg-background")}>
         <div className="flex min-h-screen">
-          <SideNav />
-          <main className="flex-grow pb-16 md:pb-0 md:pl-64">
+          <main className="flex-grow pb-16">
             {children}
           </main>
         </div>
