@@ -3,12 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, LayoutGrid, User } from 'lucide-react';
+import { Home, LayoutGrid, User, Store } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/theory', label: 'Theory', icon: LayoutGrid },
+  { href: '/store', label: 'Store', icon: Store },
   { href: '/menu', label: 'Profile', icon: User },
 ];
 
@@ -25,9 +26,9 @@ export function BottomNav() {
               key={item.href}
               href={item.href}
               className={cn(
-                'flex items-center justify-center text-sm gap-2 px-4 py-2 rounded-lg transition-colors',
+                'flex flex-col items-center justify-center text-xs gap-1 px-2 py-1 rounded-lg transition-colors w-16',
                 isActive
-                  ? 'bg-primary/10 text-primary font-semibold'
+                  ? 'text-primary font-semibold'
                   : 'text-muted-foreground hover:bg-accent/50 hover:text-accent-foreground'
               )}
             >
