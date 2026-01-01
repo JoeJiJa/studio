@@ -51,7 +51,7 @@
     {
       "id": "sia-commed-textbook",
       "description": "SIA Commed TEXTBOOK",
-      "imageUrl": "https://rukmini1.flixcart.com/image/300/300/xif0q/regionalbooks/s/a/2/preparatory-manual-of-preventive-and-social-medicine-3rd-revised-original-imah235emmezzsvj.jpeg",
+      "imageUrl": "https://rukmini1.flixcart.com/image/300/300/regionalbooks/s/a/2/preparatory-manual-of-preventive-and-social-medicine-3rd-revised-original-imah235emmezzsvj.jpeg",
       "imageHint": "community medicine"
     },
     {
@@ -791,6 +791,12 @@
       "description": "Practical ENT Vikas Sinha 3rd Ed.",
       "imageUrl": "https://m.media-amazon.com/images/I/71qbvpoxwML._UF1000,1000_QL80_.jpg",
       "imageHint": "clinical ent"
+    },
+    {
+      "id": "sakshi-arora-hans-ent-6th",
+      "description": "Sakshi Arora Hans - ENT 6th edition",
+      "imageUrl": "https://m.media-amazon.com/images/I/81zaoni4krL._AC_UF1000,1000_QL80_.jpg",
+      "imageHint": "ent textbook"
     }
   ]
 }
