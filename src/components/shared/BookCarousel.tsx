@@ -79,7 +79,7 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-1/2 pl-1">
+            <CarouselItem key={id} className="basis-1/2 md:basis-1/3 lg:basis-1/4 pl-1">
               <div className="p-0.5">
                 <Link 
                   href={href} 
@@ -96,7 +96,7 @@ export function BookCarousel({
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
-                            sizes="(max-width: 640px) 20vw, (max-width: 768px) 12.5vw, (max-width: 1024px) 10vw, (max-width: 1280px) 8.33vw, 7.14vw"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
