@@ -79,7 +79,7 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-1/5 sm:basis-1/7 md:basis-1/9 lg:basis-1/11 xl:basis-1/13 pl-1">
+            <CarouselItem key={id} className="basis-1/4 sm:basis-1/6 md:basis-1/8 lg:basis-1/10 xl:basis-1/12 pl-1">
               <div className="p-0.5">
                 <Link 
                   href={href} 
