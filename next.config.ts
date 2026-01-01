@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpshttps',
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
@@ -128,6 +128,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'www.kenhub.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.febbox.com',
         port: '',
         pathname: '/**',
       },
