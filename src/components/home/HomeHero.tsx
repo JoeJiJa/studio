@@ -21,7 +21,7 @@ export function HomeHero() {
             data-ai-hint={inspirationalImage.imageHint}
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/20 dark:via-background/90 dark:to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/10"></div>
         </>
       )}
       <div className="relative z-10 text-left container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
