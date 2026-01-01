@@ -65,7 +65,7 @@ const PetriDishIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 const subjectIcons: { [key: string]: React.ElementType } = {
-  anatomy: Bone,
+  anatomy: Brain,
   physiology: LungsIcon,
   biochemistry: CellIcon,
   pathology: Microscope,
