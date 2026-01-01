@@ -1,4 +1,3 @@
-
 {
   "inspirationalQuotes": [
     {
@@ -10,13 +9,17 @@
       "author": "Hippocrates"
     },
     {
-      "text": "The art of medicine consists of amusing the patient while nature cures the disease.",
-      "author": "Voltaire"
+      "text": "The chapter you are learning today is going to save someone's life tomorrow. Pay attention.",
+      "author": "Unknown"
+    },
+    {
+      "text": "Medicine is a science of uncertainty and an art of probability.",
+      "author": "William Osler"
     }
   ],
   "paretoBanner": {
-    "title": "Pareto Principle in Medicine",
-    "description": "Focus on the 20% of topics that appear in 80% of your exams. Master high-yield concepts for maximum results."
+    "title": "Master the 80/20 Rule",
+    "description": "Focus on the 20% of high-yield topics that will cover 80% of your exam questions. Study smarter, not just harder."
   },
   "questionOfTheDay": {
     "question": "Which of the following is the most common cause of community-acquired pneumonia?",
@@ -30,77 +33,199 @@
   },
   "caseStudies": [
     {
-      "id": "case-001",
-      "title": "Case of the Short-of-Breath Smoker",
-      "scenario": "A 65-year-old male with a 40-pack-year smoking history presents with a chronic cough, progressive shortness of breath, and wheezing. On examination, he has a barrel chest and pursed-lip breathing.",
-      "question": "What is the most likely diagnosis?",
+      "id": "case-1",
+      "title": "65-Year-Old with Chest Pain",
+      "scenario": "A 65-year-old male with a history of hypertension and smoking presents to the emergency department with a 2-hour history of crushing substernal chest pain radiating to his left arm.",
+      "question": "An ECG is performed and shows ST-segment elevation in leads II, III, and aVF. What is the most likely diagnosis?",
       "options": [
-        "Asthma",
-        "Chronic Obstructive Pulmonary Disease (COPD)",
-        "Pulmonary Fibrosis",
-        "Lung Cancer"
+        "Acute Pericarditis",
+        "Pulmonary Embolism",
+        "Inferior Wall Myocardial Infarction",
+        "Aortic Dissection"
       ],
-      "correctAnswer": 1,
-      "explanation": "The patient's age, extensive smoking history, and classic symptoms (chronic cough, dyspnea) and signs (barrel chest, pursed-lip breathing) are hallmark features of COPD."
-    },
-    {
-        "id": "case-002",
-        "title": "The Anxious Young Woman",
-        "scenario": "A 24-year-old female presents to the emergency department with palpitations, sweating, and a feeling of impending doom that started 20 minutes ago. She has no significant past medical history. An ECG and initial blood work are normal.",
-        "question": "What is the most likely diagnosis?",
-        "options": [
-          "Myocardial Infarction",
-          "Pulmonary Embolism",
-          "Panic Attack",
-          "Thyroid Storm"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Given her age, the acute onset of classic autonomic arousal symptoms (palpitations, sweating), the psychological component ('impending doom'), and normal initial workup, a panic attack is the most likely diagnosis. While other serious conditions must be ruled out, her presentation is classic for panic disorder."
-      }
+      "correctAnswer": 2,
+      "explanation": "ST-segment elevation in leads II, III, and aVF is the classic sign of an inferior wall myocardial infarction, typically caused by occlusion of the right coronary artery."
+    }
+  ],
+  "suggestedModules": [
+    "anatomy",
+    "physiology",
+    "biochemistry",
+    "pharmacology",
+    "pathology"
   ],
   "subjects": [
     {
       "id": "anatomy",
       "name": "Anatomy",
       "year": [1],
-      "description": "The study of the structure of the human body.",
+      "description": "The study of the structure and relationship between body parts.",
       "materials": {
         "textbooks": [
-          { "id": "bdc-vol-1", "title": "BD Chaurasia's Human Anatomy, Volume 1: Upper Limb & Thorax", "author": "B. D. Chaurasia", "coverImageId": "bd-chaurasia-vol-1-cover", "downloadUrl": "https://t.me/DrAstroLibrary/2" },
-          { "id": "bdc-vol-2", "title": "BD Chaurasia's Human Anatomy, Volume 2: Lower Limb, Abdomen & Pelvis", "author": "B. D. Chaurasia", "coverImageId": "bd-chaurasia-vol-2-cover", "downloadUrl": "https://t.me/DrAstroLibrary/3" },
-          { "id": "bdc-vol-3", "title": "BD Chaurasia's Human Anatomy, Volume 3: Head, Neck & Brain", "author": "B. D. Chaurasia", "coverImageId": "bd-chaurasia-vol-3-cover", "downloadUrl": "https://t.me/DrAstroLibrary/4" },
-          { "id": "vs-vol-1", "title": "Vishram Singh's Gross Anatomy, Volume 1", "author": "Vishram Singh", "coverImageId": "vishram-singh-vol-1-cover", "downloadUrl": "https://t.me/DrAstroLibrary/5" },
-          { "id": "vs-vol-2", "title": "Vishram Singh's Gross Anatomy, Volume 2", "author": "Vishram Singh", "coverImageId": "vishram-singh-vol-2-cover", "downloadUrl": "https://t.me/DrAstroLibrary/6" },
-          { "id": "vs-vol-3", "title": "Vishram Singh's Gross Anatomy, Volume 3", "author": "Vishram Singh", "coverImageId": "vishram-singh-vol-3-cover", "downloadUrl": "https://t.me/DrAstroLibrary/7" }
+          {
+            "id": "bd-chaurasia-vol-1",
+            "title": "BD Chaurasia Vol 1",
+            "author": "B.D. Chaurasia",
+            "coverImageId": "bd-chaurasia-vol-1-cover"
+          },
+          {
+            "id": "bd-chaurasia-vol-2",
+            "title": "BD Chaurasia Vol 2",
+            "author": "B.D. Chaurasia",
+            "coverImageId": "bd-chaurasia-vol-2-cover"
+          },
+          {
+            "id": "bd-chaurasia-vol-3",
+            "title": "BD Chaurasia Vol 3",
+            "author": "B.D. Chaurasia",
+            "coverImageId": "bd-chaurasia-vol-3-cover"
+          },
+          {
+            "id": "vishram-singh-vol-1",
+            "title": "Vishram Singh Vol 1",
+            "author": "Vishram Singh",
+            "coverImageId": "vishram-singh-vol-1-cover"
+          },
+          {
+            "id": "vishram-singh-vol-2",
+            "title": "Vishram Singh Vol 2",
+            "author": "Vishram Singh",
+            "coverImageId": "vishram-singh-vol-2-cover"
+          },
+          {
+            "id": "vishram-singh-vol-3",
+            "title": "Vishram Singh Vol 3",
+            "author": "Vishram Singh",
+            "coverImageId": "vishram-singh-vol-3-cover"
+          }
         ],
         "general-anatomy": [
-          { "id": "bdc-gen-anat", "title": "BDC General Anatomy 4th Edition", "author": "B. D. Chaurasia", "coverImageId": "bdc-general-anatomy-4e", "downloadUrl": "https://t.me/DrAstroLibrary/8" },
-          { "id": "vs-gen-anat", "title": "Vishram Singh General Anatomy", "author": "Vishram Singh", "coverImageId": "vishram-singh-general-anatomy", "downloadUrl": "https://t.me/DrAstroLibrary/9" }
+          {
+            "id": "bdc-general-anatomy-4e",
+            "title": "BDC General Anatomy 4th Edition",
+            "author": "B.D. Chaurasia",
+            "coverImageId": "bdc-general-anatomy-4e",
+            "downloadUrl": "https://www.febbox.com/share/kgODmydR"
+          },
+          {
+            "id": "vishram-singh-general-anatomy",
+            "title": "Vishram Singh General Anatomy",
+            "author": "Vishram Singh",
+            "coverImageId": "vishram-singh-general-anatomy",
+            "downloadUrl": "https://www.febbox.com/share/HbUqwQK5"
+          }
         ],
         "dissection-manual": [
-          { "id": "cunningham-head-neck", "title": "Cunningham's Manual of Practical Anatomy: Head & Neck", "author": "G.J. Romanes", "coverImageId": "cunningham-head-neck", "downloadUrl": "https://t.me/DrAstroLibrary/10" },
-          { "id": "cunningham-thorax-abdomen", "title": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen", "author": "G.J. Romanes", "coverImageId": "cunningham-thorax-abdomen", "downloadUrl": "https://t.me/DrAstroLibrary/11" },
-          { "id": "cunningham-limbs", "title": "Cunningham's Manual of Practical Anatomy: Limbs", "author": "G.J. Romanes", "coverImageId": "cunningham-limbs", "downloadUrl": "https://t.me/DrAstroLibrary/12" }
+          {
+            "id": "cunningham-head-neck",
+            "title": "Cunningham's Manual of Practical Anatomy: Head & Neck",
+            "author": "G.J. Romanes",
+            "coverImageId": "cunningham-head-neck",
+            "downloadUrl": "https://www.febbox.com/share/RrGrgcty"
+          },
+          {
+            "id": "cunningham-thorax-abdomen",
+            "title": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen",
+            "author": "G.J. Romanes",
+            "coverImageId": "cunningham-thorax-abdomen",
+            "downloadUrl": "https://www.febbox.com/share/ZwrWRoIY"
+          },
+          {
+            "id": "cunningham-limbs",
+            "title": "Cunningham's Manual of Practical Anatomy: Limbs",
+            "author": "G.J. Romanes",
+            "coverImageId": "cunningham-limbs",
+            "downloadUrl": "https://www.febbox.com/share/Yi7QvQ7S"
+          }
         ],
         "clinical-books": [
-          { "id": "moore-clinically-oriented-anatomy", "title": "Moore's Clinically Oriented Anatomy Detailed", "author": "Keith L. Moore", "coverImageId": "moores-clinically-oriented-detailed", "downloadUrl": "https://t.me/DrAstroLibrary/13" }
+          {
+            "id": "moores-clinically-oriented-detailed",
+            "title": "MOORE’S CLINICALLY ORIENTED",
+            "author": "Keith L. Moore",
+            "coverImageId": "moores-clinically-oriented-detailed",
+            "downloadUrl": "https://www.febbox.com/share/SwJhLNBL"
+          }
         ],
         "embryology": [
-          { "id": "vishram-embryology", "title": "Vishram's Embryology", "author": "Vishram Singh", "coverImageId": "vishrams-embryology", "downloadUrl": "https://t.me/DrAstroLibrary/14" },
-          { "id": "embryology-notes-pims", "title": "Embryology Notes", "author": "PIMS Seniors", "coverImageId": "embryology-notes-pims", "downloadUrl": "https://t.me/DrAstroLibrary/15" },
-          { "id": "embryology-notes", "title": "Embryology Notes", "author": "Unknown", "coverImageId": "embryology-notes", "downloadUrl": "https://t.me/DrAstroLibrary/16" }
+          {
+            "id": "vishrams-embryology",
+            "title": "Vishram's Embryology",
+            "author": "Vishram Singh",
+            "coverImageId": "vishrams-embryology",
+            "downloadUrl": "https://www.febbox.com/share/mXLoBdUu"
+          },
+          {
+            "id": "embryology-notes-pims",
+            "title": "Embryology Notes PIMS Seniors",
+            "author": "PIMS",
+            "coverImageId": "embryology-notes-pims"
+          },
+          {
+            "id": "embryology-notes",
+            "title": "Embryology Notes",
+            "author": "Misc",
+            "coverImageId": "embryology-notes",
+            "downloadUrl": "https://www.febbox.com/share/az6meS80"
+          }
         ],
         "histology": [
-          { "id": "ib-singh-histology", "title": "IB Singh's Histology", "author": "I. B. Singh", "coverImageId": "ib-singh-histology", "downloadUrl": "https://t.me/DrAstroLibrary/17" },
-          { "id": "pawlina-histology-atlas", "title": "Histology: A Text and Atlas", "author": "Wojciech Pawlina", "coverImageId": "pawlina-histology-atlas", "downloadUrl": "https://t.me/DrAstroLibrary/18" }
+          {
+            "id": "ib-singh-histology",
+            "title": "IB Singh's Histology",
+            "author": "I.B. Singh",
+            "coverImageId": "ib-singh-histology",
+            "downloadUrl": "https://www.febbox.com/share/p4ynoHwa"
+          },
+          {
+            "id": "pawlina-histology-atlas",
+            "title": "Histology: A Text and Atlas With Correlated Cell and Molecular Biology",
+            "author": "Wojciech Pawlina",
+            "coverImageId": "pawlina-histology-atlas",
+            "downloadUrl": "https://www.febbox.com/share/vxfQYPw5"
+          }
         ],
         "atlases": [
-          { "id": "anatomy-360", "title": "Anatomy 360", "author": "Dr. Jamie Ro", "coverImageId": "anatomy-360-guide", "downloadUrl": "https://t.me/DrAstroLibrary/19" },
-          { "id": "anatomy-cadaveric-atlas", "title": "Anatomy Cadaveric Atlas", "author": "Various", "coverImageId": "anatomy-cadaveric-atlas", "downloadUrl": "https://t.me/DrAstroLibrary/20" },
-          { "id": "clinical-atlas-human-anatomy", "title": "Clinical Atlas of Human Anatomy", "author": "Peter Abrahams", "coverImageId": "clinical-atlas-human-anatomy", "downloadUrl": "https://t.me/DrAstroLibrary/21" }
+          {
+            "id": "anatomy-360-guide",
+            "title": "Anatomy 360 - The Ultimate Visual Guide to the Human Body",
+            "author": "Dr. Jamie Roebuck",
+            "coverImageId": "anatomy-360-guide"
+          },
+          {
+            "id": "anatomy-cadaveric-atlas",
+            "title": "Anatomy Cadaveric Atlas",
+            "author": "Misc",
+            "coverImageId": "anatomy-cadaveric-atlas"
+          },
+          {
+            "id": "clinical-atlas-human-anatomy",
+            "title": "Clinical Atlas of Human Anatomy 7th Edition",
+            "author": "Peter H. Abrahams",
+            "coverImageId": "clinical-atlas-human-anatomy"
+          }
         ],
-        "question-bank": [
-          { "id": "selective-anatomy-prep-manual", "title": "Selective Anatomy: Prep Manual", "author": "Vishram Singh", "coverImageId": "selective-anatomy-prep", "downloadUrl": "https://t.me/DrAstroLibrary/22" }
+        "study-materials": [
+          {
+            "id": "selective-anatomy-prep",
+            "title": "Selective Anatomy: Prep Manual",
+            "author": "Vishram Singh",
+            "coverImageId": "selective-anatomy-prep",
+            "downloadUrl": "https://www.febbox.com/share/Ffgv3Anl"
+          },
+          {
+            "id": "marrow-anatomy-8th",
+            "title": "Marrow Anatomy 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-anatomy-8th",
+            "downloadUrl": "https://www.febbox.com/share/AgwtUL7T"
+          },
+          {
+            "id": "prepladder-anatomy-x",
+            "title": "Prepladder Anatomy X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-anatomy-x"
+          }
         ]
       }
     },
@@ -108,19 +233,59 @@
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "The study of the function of the human body.",
+      "description": "The study of how the human body works.",
       "materials": {
         "textbooks": [
-          { "id": "gk-pal-physiology", "title": "G K Pal Physiology", "author": "G K Pal", "coverImageId": "gk-pal-physiology", "downloadUrl": "https://t.me/DrAstroLibrary/24" },
-          { "id": "sembulingam-physiology", "title": "Essentials of Medical Physiology", "author": "K. Sembulingam", "coverImageId": "sembulingam-physiology", "downloadUrl": "https://t.me/DrAstroLibrary/26" },
-          { "id": "ganongs-physiology", "title": "Ganong's Review of Medical Physiology", "author": "Kim E. Barrett", "coverImageId": "ganongs-physiology", "downloadUrl": "https://t.me/DrAstroLibrary/27" },
-          { "id": "guyton-hall-physiology", "title": "Guyton and Hall Textbook of Medical Physiology", "author": "John E. Hall", "coverImageId": "guyton-hall-physiology", "downloadUrl": "https://t.me/DrAstroLibrary/28" }
-        ],
-        "clinical-books": [
-          { "id": "guyton-human-physiology", "title": "Guyton - Human Physiology and Mechanisms of Disease", "author": "Arthur C. Guyton", "coverImageId": "guyton-human-physiology", "downloadUrl": "https://t.me/DrAstroLibrary/29" }
+          {
+            "id": "guyton-hall-physiology",
+            "title": "Guyton and Hall Textbook of Medical Physiology",
+            "author": "John E. Hall",
+            "coverImageId": "guyton-hall-physiology"
+          },
+          {
+            "id": "ganongs-physiology",
+            "title": "Ganongs Review of Medical Physiology",
+            "author": "Kim E. Barrett",
+            "coverImageId": "ganongs-physiology"
+          },
+          {
+            "id": "sembulingam-physiology",
+            "title": "K Sembulingam - Essentials of Medical Physiology",
+            "author": "K. Sembulingam",
+            "coverImageId": "sembulingam-physiology"
+          },
+          {
+            "id": "gk-pal-physiology",
+            "title": "G K Pal Physiology",
+            "author": "G K Pal",
+            "coverImageId": "gk-pal-physiology"
+          },
+          {
+            "id": "guyton-human-physiology",
+            "title": "Guyton - Human Physiology and Mechanisms of Disease",
+            "author": "Arthur C. Guyton",
+            "coverImageId": "guyton-human-physiology"
+          }
         ],
         "study-materials": [
-          { "id": "senthamilselvi-physiology-notes", "title": "Senthamilselvi Physiology Notes", "author": "Dr. Senthamilselvi", "coverImageId": "senthamilselvi-physiology", "downloadUrl": "https://t.me/DrAstroLibrary/25" }
+          {
+            "id": "senthamilselvi-physiology",
+            "title": "Senthamilselvi Physiology Notes",
+            "author": "Senthamilselvi",
+            "coverImageId": "senthamilselvi-physiology"
+          },
+          {
+            "id": "marrow-physiology-8th",
+            "title": "Marrow Physiology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-physiology-8th"
+          },
+          {
+            "id": "prepladder-physiology-x",
+            "title": "Prepladder Physiology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-physiology-x"
+          }
         ]
       }
     },
@@ -131,31 +296,32 @@
       "description": "The study of chemical processes within and relating to living organisms.",
       "materials": {
         "textbooks": [
-          { "id": "vasudevan-biochemistry", "title": "DM Vasudevan Biochemistry", "author": "D. M. Vasudevan", "coverImageId": "vasudevan-biochemistry", "downloadUrl": "https://t.me/DrAstroLibrary/31" },
-          { "id": "manjeshwar-biochemistry", "title": "R Manjeshwar PRASAD Biochemistry", "author": "R. Manjeshwar Prasad", "coverImageId": "manjeshwar-biochemistry", "downloadUrl": "https://t.me/DrAstroLibrary/30" }
-        ]
-      }
-    },
-    {
-      "id": "pathology",
-      "name": "Pathology",
-      "year": [2],
-      "description": "The study of the causes and effects of disease or injury.",
-      "materials": {
-        "textbooks": [
-          { "id": "harsh-mohan-7th", "title": "Harsh Mohan Textbook of pathology 7th Ed", "author": "Harsh Mohan", "coverImageId": "harsh-mohan-7th", "downloadUrl": "https://t.me/DrAstroLibrary/36" },
-          { "id": "harsh-mohan-6th", "title": "Harsh Mohan - Textbook of Pathology 6th Ed", "author": "Harsh Mohan", "coverImageId": "harsh-mohan-6th", "downloadUrl": "https://t.me/DrAstroLibrary/38" },
-          { "id": "robbins-10th", "title": "Robbins 10th Ed", "author": "Vinay Kumar", "coverImageId": "robbins-10th", "downloadUrl": "https://t.me/DrAstroLibrary/39" },
-          { "id": "ramdas-nayak-pathology", "title": "Ramdas Nayak Pathology 4th Edition", "author": "Ramdas Nayak", "coverImageId": "ramdas-nayak-pathology", "downloadUrl": "https://t.me/DrAstroLibrary/40" }
+          {
+            "id": "vasudevan-biochemistry",
+            "title": "DM Vasudevan Biochemistry",
+            "author": "D. M. Vasudevan",
+            "coverImageId": "vasudevan-biochemistry"
+          },
+          {
+            "id": "manjeshwar-biochemistry",
+            "title": "R Manjeshwar PRASAD Biochemistry",
+            "author": "R. Manjeshwar",
+            "coverImageId": "manjeshwar-biochemistry"
+          }
         ],
-        "clinical-books": [
-          { "id": "pathology-clinical-cases", "title": "Pathology Clinical Cases", "author": "Unknown", "coverImageId": "pathology-clinical-cases", "downloadUrl": "https://t.me/DrAstroLibrary/34" }
-        ],
-        "atlases": [
-          { "id": "tejindar-singh-hematology", "title": "Tejindar Singh Hematology - Atlas", "author": "Tejindar Singh", "coverImageId": "tejindar-singh-hematology", "downloadUrl": "https://t.me/DrAstroLibrary/37" }
-        ],
-        "question-bank": [
-          { "id": "geetika-khanna-pathology", "title": "Geetika Khanna Pathology", "author": "Geetika Khanna", "coverImageId": "geetika-khanna-pathology", "downloadUrl": "https://t.me/DrAstroLibrary/35" }
+        "study-materials": [
+          {
+            "id": "marrow-biochemistry-8th",
+            "title": "Marrow Biochemistry 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-biochemistry-8th"
+          },
+          {
+            "id": "prepladder-biochemistry-x",
+            "title": "Prepladder Biochemistry X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-biochemistry-x"
+          }
         ]
       }
     },
@@ -163,17 +329,119 @@
       "id": "pharmacology",
       "name": "Pharmacology",
       "year": [2],
-      "description": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
+      "description": "The study of drugs and their effects on the body.",
       "materials": {
         "textbooks": [
-          { "id": "kdt-8th", "title": "KD Tripathi 8th Edition", "author": "K. D. Tripathi", "coverImageId": "kdt-8th", "downloadUrl": "https://t.me/DrAstroLibrary/45" }
+          {
+            "id": "kdt-8th",
+            "title": "KD Tripathi 8th Edition",
+            "author": "K.D. Tripathi",
+            "coverImageId": "kdt-8th"
+          },
+          {
+            "id": "tara-pharmacology",
+            "title": "Tara Pharmacology 4th Edition",
+            "author": "Tara V. Shanbhag",
+            "coverImageId": "tara-pharmacology"
+          }
         ],
-        "clinical-books": [
-          { "id": "pharma-clinical-cases", "title": "Pharmacology Clinical Cases", "author": "Unknown", "coverImageId": "pharma-clinical-cases", "downloadUrl": "https://t.me/DrAstroLibrary/42" }
+        "clinical-cases": [
+          {
+            "id": "pharma-clinical-cases",
+            "title": "Pharmacology Clinical Cases",
+            "author": "Misc",
+            "coverImageId": "pharma-clinical-cases"
+          }
         ],
-        "others": [
-          { "id": "tara-pharmacology", "title": "Tara Pharmacology 4th Edition", "author": "Tara V. Shanbhag", "coverImageId": "tara-pharmacology", "downloadUrl": "https://t.me/DrAstroLibrary/43" },
-          { "id": "kdt-drug-classification", "title": "KD Tripathi DRUG classification pharm", "author": "K. D. Tripathi", "coverImageId": "kdt-drug-classification", "downloadUrl": "https://t.me/DrAstroLibrary/44" }
+        "study-materials": [
+          {
+            "id": "kdt-drug-classification",
+            "title": "KD Tripathi DRUG classification pharm",
+            "author": "K.D. Tripathi",
+            "coverImageId": "kdt-drug-classification"
+          },
+          {
+            "id": "marrow-pharmacology-8th",
+            "title": "Marrow Pharmacology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-pharmacology-8th"
+          },
+          {
+            "id": "prepladder-pharmacology-x",
+            "title": "Prepladder Pharmacology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-pharmacology-x"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pathology",
+      "name": "Pathology",
+      "year": [2],
+      "description": "The study of the causes and effects of disease.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "robbins-10th",
+            "title": "Robbins 10th Ed",
+            "author": "Vinay Kumar",
+            "coverImageId": "robbins-10th"
+          },
+          {
+            "id": "harsh-mohan-7th",
+            "title": "Harsh Mohan Textbook of pathology 7th Ed",
+            "author": "Harsh Mohan",
+            "coverImageId": "harsh-mohan-7th"
+          },
+          {
+            "id": "harsh-mohan-6th",
+            "title": "Harsh Mohan - Textbook of Pathology 6th Ed",
+            "author": "Harsh Mohan",
+            "coverImageId": "harsh-mohan-6th"
+          },
+          {
+            "id": "ramdas-nayak-pathology",
+            "title": "Ramdas Nayak Pathology 4th Edition",
+            "author": "Ramdas Nayak",
+            "coverImageId": "ramdas-nayak-pathology"
+          },
+          {
+            "id": "geetika-khanna-pathology",
+            "title": "Geetika Khanna Pathology",
+            "author": "Geetika Khanna",
+            "coverImageId": "geetika-khanna-pathology"
+          }
+        ],
+        "clinical-cases": [
+          {
+            "id": "pathology-clinical-cases",
+            "title": "Pathology Clinical Cases",
+            "author": "Misc",
+            "coverImageId": "pathology-clinical-cases"
+          }
+        ],
+        "atlases": [
+          {
+            "id": "tejindar-singh-hematology",
+            "title": "Tejindar Singh Hematology - Atlas",
+            "author": "Tejindar Singh",
+            "coverImageId": "tejindar-singh-hematology"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-pathology-8th",
+            "title": "Marrow Pathology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-pathology-8th"
+          },
+          {
+            "id": "prepladder-pathology-x",
+            "title": "Prepladder Pathology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-pathology-x"
+          }
         ]
       }
     },
@@ -181,19 +449,109 @@
       "id": "microbiology",
       "name": "Microbiology",
       "year": [2],
-      "description": "The study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa.",
+      "description": "The study of microscopic organisms.",
       "materials": {
         "textbooks": [
-          { "id": "sastry-microbiology", "title": "Apurba Sankar Sastry - 3rd Essentials of Microbiology", "author": "Apurba Sankar Sastry", "coverImageId": "sastry-microbiology", "downloadUrl": "https://t.me/DrAstroLibrary/49" }
+          {
+            "id": "sastry-microbiology",
+            "title": "Apurba Sankar Sastry - 3rd Essentials of Microbiology",
+            "author": "Apurba Sankar Sastry",
+            "coverImageId": "sastry-microbiology"
+          }
         ],
-        "clinical-books": [
-          { "id": "microbiology-clinical-cases", "title": "Microbiology Clinical Cases", "author": "Unknown", "coverImageId": "microbiology-clinical-cases", "downloadUrl": "https://t.me/DrAstroLibrary/47" }
+        "parasitology": [
+          {
+            "id": "sastry-parasitology",
+            "title": "Apurba Sankar Sastry Essentials of Medical Parasitology",
+            "author": "Apurba Sankar Sastry",
+            "coverImageId": "sastry-parasitology"
+          }
         ],
-        "others": [
-          { "id": "sastry-parasitology", "title": "Apurba Sankar Sastry Essentials of Medical Parasitology", "author": "Apurba Sankar Sastry", "coverImageId": "sastry-parasitology", "downloadUrl": "https://t.me/DrAstroLibrary/48" }
+        "question-banks": [
+          {
+            "id": "micro-mcqs",
+            "title": "Micro MCQs",
+            "author": "Misc",
+            "coverImageId": "micro-mcqs"
+          }
         ],
-        "question-bank": [
-          { "id": "micro-mcqs", "title": "Micro MCQs", "author": "Unknown", "coverImageId": "micro-mcqs", "downloadUrl": "https://t.me/DrAstroLibrary/50" }
+        "clinical-cases": [
+          {
+            "id": "microbiology-clinical-cases",
+            "title": "Microbiology Clinical Cases",
+            "author": "Misc",
+            "coverImageId": "microbiology-clinical-cases"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-microbiology-8th",
+            "title": "Marrow Microbiology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-microbiology-8th"
+          },
+          {
+            "id": "prepladder-microbiology-x",
+            "title": "Prepladder Microbiology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-microbiology-x"
+          }
+        ]
+      }
+    },
+    {
+      "id": "forensic-medicine",
+      "name": "Forensic Medicine",
+      "year": [2],
+      "description": "The application of medical knowledge to legal questions.",
+      "materials": {
+        "textbooks": [
+          {
+            "id": "k-s-narayan-fm",
+            "title": "K.S.Narayan FM",
+            "author": "K.S. Narayan Reddy",
+            "coverImageId": "k-s-narayan-fm"
+          },
+          {
+            "id": "biswas-forensic-med",
+            "title": "Biswas Forensic Med",
+            "author": "G. Biswas",
+            "coverImageId": "biswas-forensic-med"
+          },
+          {
+            "id": "v-v-pillay-modern-medical-toxicology",
+            "title": "V V Pillay modern medical toxicology",
+            "author": "V.V. Pillay",
+            "coverImageId": "v-v-pillay-modern-medical-toxicology"
+          },
+          {
+            "id": "rajesh-principles-of-fm",
+            "title": "Rajesh - Principles of FM",
+            "author": "Rajesh Bardale",
+            "coverImageId": "rajesh-principles-of-fm"
+          }
+        ],
+        "question-banks": [
+          {
+            "id": "vision-forensic-medicine",
+            "title": "Vision",
+            "author": "Misc",
+            "coverImageId": "vision-forensic-medicine"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-forensic-medicine-8th",
+            "title": "Marrow Forensic Medicine 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-forensic-medicine-8th"
+          },
+          {
+            "id": "prepladder-forensic-medicine-x",
+            "title": "Prepladder Forensic Medicine X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-forensic-medicine-x"
+          }
         ]
       }
     },
@@ -201,81 +559,179 @@
       "id": "community-medicine",
       "name": "Community Medicine",
       "year": [3],
-      "description": "A branch of medicine that deals with the health of populations.",
+      "description": "The study of health and disease in populations.",
       "materials": {
         "textbooks": [
-          { "id": "parks-textbook-of-psm", "title": "Park's Textbook of PSM", "author": "K. Park", "coverImageId": "parks-textbook-of-psm", "downloadUrl": "https://t.me/DrAstroLibrary/56" },
-          { "id": "ah-suryakantha", "title": "AH Suryakantha", "author": "A. H. Suryakantha", "coverImageId": "ah-suryakantha", "downloadUrl": "https://tme/DrAstroLibrary/58" }
+          {
+            "id": "parks-textbook-of-psm",
+            "title": "Park's Textbook of PSM",
+            "author": "K. Park",
+            "coverImageId": "parks-textbook-of-psm"
+          },
+          {
+            "id": "sia-commed-textbook",
+            "title": "SIA Commed TEXTBOOK",
+            "author": "SIA",
+            "coverImageId": "sia-commed-textbook"
+          },
+          {
+            "id": "vivek-jain-exam-preparatory-manual",
+            "title": "Vivek jain exam preparatory manual",
+            "author": "Vivek Jain",
+            "coverImageId": "vivek-jain-exam-preparatory-manual"
+          },
+          {
+            "id": "ah-suryakantha",
+            "title": "AH Suryakantha",
+            "author": "A.H. Suryakantha",
+            "coverImageId": "ah-suryakantha"
+          }
         ],
-        "question-bank": [
-          { "id": "sia-commed-textbook", "title": "SIA Commed TEXTBOOK", "author": "SIA", "coverImageId": "sia-commed-textbook", "downloadUrl": "https://t.me/DrAstroLibrary/52" }
+        "question-banks": [
+          {
+            "id": "review-book-vivek-jain-commed",
+            "title": "Review book Vivek Jain Commed",
+            "author": "Vivek Jain",
+            "coverImageId": "review-book-vivek-jain-commed"
+          }
         ],
         "study-materials": [
-          { "id": "cm-falcon", "title": "CM FALCON", "author": "Falcon", "coverImageId": "cm-falcon", "downloadUrl": "https://t.me/DrAstroLibrary/53" },
-          { "id": "review-book-vivek-jain-commed", "title": "Review book Vivek Jain Commed", "author": "Vivek Jain", "coverImageId": "review-book-vivek-jain-commed", "downloadUrl": "https://t.me/DrAstroLibrary/54" },
-          { "id": "commed-notes-drshetty", "title": "Commed Notes- drshetty", "author": "Dr. Shetty", "coverImageId": "commed-notes-drshetty", "downloadUrl": "https://t.me/DrAstroLibrary/55" }
-        ],
-        "others": [
-          { "id": "essentials-of-cm-a-practical-book", "title": "Essentials of CM-a-practical book", "author": "Unknown", "coverImageId": "essentials-of-cm-a-practical-book", "downloadUrl": "https://t.me/DrAstroLibrary/51" },
-          { "id": "vivek-jain-exam-preparatory-manual", "title": "Vivek jain exam preparatory manual", "author": "Vivek Jain", "coverImageId": "vivek-jain-exam-preparatory-manual", "downloadUrl": "https://t.me/DrAstroLibrary/57" }
-        ]
-      }
-    },
-    {
-      "id": "forensic-medicine",
-      "name": "Forensic Medicine",
-      "year": [3],
-      "description": "Application of medical knowledge to the investigation of crime.",
-      "materials": {
-        "textbooks": [
-          { "id": "k-s-narayan-fm", "title": "K.S.Narayan FM", "author": "K.S. Narayan Reddy", "coverImageId": "k-s-narayan-fm", "downloadUrl": "https://t.me/DrAstroLibrary/59" },
-          { "id": "biswas-forensic-med", "title": "Biswas Forensic Med", "author": "Goutam Biswas", "coverImageId": "biswas-forensic-med", "downloadUrl": "https://t.me/DrAstroLibrary/60" },
-          { "id": "rajesh-principles-of-fm", "title": "Rajesh - Principles of FM", "author": "Rajesh", "coverImageId": "rajesh-principles-of-fm", "downloadUrl": "https://t.me/DrAstroLibrary/63" }
-        ],
-        "question-bank": [
-          { "id": "vision-forensic-medicine", "title": "Vision", "author": "Vision", "coverImageId": "vision-forensic-medicine", "downloadUrl": "https://t.me/DrAstroLibrary/61" }
-        ],
-        "others": [
-          { "id": "v-v-pillay-modern-medical-toxicology", "title": "V V Pillay modern medical toxicology", "author": "V. V. Pillay", "coverImageId": "v-v-pillay-modern-medical-toxicology", "downloadUrl": "https://t.me/DrAstroLibrary/62" }
+          {
+            "id": "cm-falcon",
+            "title": "CM FALCON",
+            "author": "Falcon",
+            "coverImageId": "cm-falcon"
+          },
+          {
+            "id": "commed-notes-drshetty",
+            "title": "Commed Notes- drshetty",
+            "author": "Dr. Shetty",
+            "coverImageId": "commed-notes-drshetty"
+          },
+          {
+            "id": "essentials-of-cm-a-practical-book",
+            "title": "Essentials of CM-a-practical book",
+            "author": "Misc",
+            "coverImageId": "essentials-of-cm-a-practical-book"
+          },
+          {
+            "id": "marrow-community-medicine-8th",
+            "title": "Marrow Community Medicine 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-community-medicine-8th"
+          },
+          {
+            "id": "prepladder-community-medicine-x",
+            "title": "Prepladder Community Medicine X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-community-medicine-x"
+          }
         ]
       }
     },
     {
       "id": "ent",
       "name": "ENT",
-      "year": [4],
-      "description": "The branch of medicine and surgery specializing in the diagnosis and treatment of disorders of the head and neck.",
+      "year": [3],
+      "description": "The study of diseases of the ear, nose, and throat.",
       "materials": {
         "textbooks": [
-          { "id": "dhingra-ent", "title": "Diseases of Ear, Nose and Throat: Dhingra", "author": "P. L. Dhingra", "coverImageId": "dhingra-ent", "downloadUrl": "https://t.me/DrAstroLibrary/76" }
+          {
+            "id": "dhingra-ent",
+            "title": "Diseases of Ear, Nose and Throat: Dhingra",
+            "author": "P.L. Dhingra",
+            "coverImageId": "dhingra-ent"
+          }
         ],
-        "question-bank": [
-          { "id": "manisha-ent-entrance", "title": "ENT for Entrance Exam: Manisha", "author": "Manisha Sinha", "coverImageId": "manisha-ent-entrance", "downloadUrl": "https://t.me/DrAstroLibrary/77" },
-          { "id": "mcq-ent-dhingra", "title": "MCQ in ENT: Dhingra", "author": "P. L. Dhingra", "coverImageId": "mcq-ent-dhingra", "downloadUrl": "https://t.me/DrAstroLibrary/78" }
+        "question-banks": [
+          {
+            "id": "mcq-ent-dhingra",
+            "title": "MCQ in ENT: Dhingra",
+            "author": "P.L. Dhingra",
+            "coverImageId": "mcq-ent-dhingra"
+          },
+          {
+            "id": "manisha-ent-entrance",
+            "title": "ENT for Entrance Exam: Manisha",
+            "author": "Manisha Sinha",
+            "coverImageId": "manisha-ent-entrance"
+          }
         ],
         "clinical-books": [
-          { "id": "neha-shah-clinical-ent", "title": "Neha shah Clinical ENT", "author": "Neha Shah", "coverImageId": "neha-shah-clinical-ent", "downloadUrl": "https://t.me/DrAstroLibrary/79" }
+          {
+            "id": "neha-shah-clinical-ent",
+            "title": "Neha shah Clinical ENT",
+            "author": "Neha Shah",
+            "coverImageId": "neha-shah-clinical-ent"
+          }
         ],
         "study-materials": [
-          { "id": "ent-agam-notes", "title": "ENT Agam Notes", "author": "Agam", "coverImageId": "ent-agam-notes", "downloadUrl": "https://t.me/DrAstroLibrary/80" }
+          {
+            "id": "ent-agam-notes",
+            "title": "ENT Agam Notes",
+            "author": "Agam",
+            "coverImageId": "ent-agam-notes"
+          },
+          {
+            "id": "marrow-ent-8th",
+            "title": "Marrow ENT 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-ent-8th"
+          },
+          {
+            "id": "prepladder-ent-x",
+            "title": "Prepladder ENT X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-ent-x"
+          }
         ]
       }
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
-      "year": [4],
-      "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
+      "year": [3],
+      "description": "The study of diseases of the eye.",
       "materials": {
         "textbooks": [
-          { "id": "khurana-ophthalmology", "title": "Comprehensive Ophthalmology: Ak Khurana", "author": "A. K. Khurana", "coverImageId": "khurana-ophthalmology", "downloadUrl": "https://t.me/DrAstroLibrary/81" },
-          { "id": "parsons-eye-disease", "title": "Parsons' Diseases of the Eye", "author": "Sir John Herbert Parsons", "coverImageId": "parsons-eye-disease", "downloadUrl": "https://t.me/DrAstroLibrary/82" }
-        ],
-        "question-bank": [
-          { "id": "soch-simplified-ophthalmology", "title": "SOCH SIMPLIFIED OPHTHALMOLOGY", "author": "SOCH", "coverImageId": "soch-simplified-ophthalmology", "downloadUrl": "https://t.me/DrAstroLibrary/83" }
+          {
+            "id": "khurana-ophthalmology",
+            "title": "Comprehensive Ophthalmology: Ak Khurana",
+            "author": "A.K. Khurana",
+            "coverImageId": "khurana-ophthalmology"
+          },
+          {
+            "id": "parsons-eye-disease",
+            "title": "Parsons' Diseases of the Eye",
+            "author": "Radhika Tandon",
+            "coverImageId": "parsons-eye-disease"
+          }
         ],
         "study-materials": [
-          { "id": "ophthalmology-agam-notes", "title": "Ophthalmology Agam Notes", "author": "Agam", "coverImageId": "ophthalmology-agam-notes", "downloadUrl": "https://t.me/DrAstroLibrary/84" }
+          {
+            "id": "soch-simplified-ophthalmology",
+            "title": "SOCH SIMPLIFIED OPHTHALMOLOGY",
+            "author": "SOCH",
+            "coverImageId": "soch-simplified-ophthalmology"
+          },
+          {
+            "id": "ophthalmology-agam-notes",
+            "title": "Ophthalmology Agam Notes",
+            "author": "Agam",
+            "coverImageId": "ophthalmology-agam-notes"
+          },
+          {
+            "id": "marrow-ophthalmology-8th",
+            "title": "Marrow Ophthalmology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-ophthalmology-8th"
+          },
+          {
+            "id": "prepladder-ophthalmology-x",
+            "title": "Prepladder Ophthalmology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-ophthalmology-x"
+          }
         ]
       }
     },
@@ -283,22 +739,73 @@
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "The medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases.",
+      "description": "The diagnosis and nonsurgical treatment of diseases.",
       "materials": {
         "textbooks": [
-          { "id": "davidsons-medicine", "title": "Davidson's Principles and Practice of Medicine", "author": "Stanley Davidson", "coverImageId": "davidsons-medicine", "downloadUrl": "https://t.me/DrAstroLibrary/86" },
-          { "id": "exam-prep-medicine", "title": "Exam Prep Medicine Archith Boloor", "author": "Archith Boloor", "coverImageId": "exam-prep-medicine", "downloadUrl": "https://t.me/DrAstroLibrary/87" },
-          { "id": "harrisons-medicine", "title": "Harrison’s principles of internal medicine", "author": "Tinsley R. Harrison", "coverImageId": "harrisons-medicine", "downloadUrl": "https://t.me/DrAstroLibrary/88" },
-          { "id": "manipal-prep-medicine", "title": "Manipal Prep Manual of Medicine", "author": "Manipal", "coverImageId": "manipal-prep-medicine", "downloadUrl": "https://t.me/DrAstroLibrary/89" }
+          {
+            "id": "davidsons-medicine",
+            "title": "Davidson's Principles and Practice of Medicine",
+            "author": "Stuart H. Ralston",
+            "coverImageId": "davidsons-medicine"
+          },
+          {
+            "id": "harrisons-medicine",
+            "title": "Harrison’s principles of internal medicine",
+            "author": "J. Larry Jameson",
+            "coverImageId": "harrisons-medicine"
+          },
+          {
+            "id": "manipal-prep-medicine",
+            "title": "Manipal Prep Manual of Medicine",
+            "author": "K. V. Shenoy",
+            "coverImageId": "manipal-prep-medicine"
+          },
+          {
+            "id": "exam-prep-medicine",
+            "title": "Exam Prep Medicine Archith Boloor",
+            "author": "Archith Boloor",
+            "coverImageId": "exam-prep-medicine"
+          }
         ],
         "clinical-books": [
-          { "id": "clinical-med-boloor", "title": "Clinical Med Archith Boloor", "author": "Archith Boloor", "coverImageId": "clinical-med-boloor", "downloadUrl": "https://t.me/DrAstroLibrary/90" },
-          { "id": "hutchinsons-clinical", "title": "Hutchinson's Clinical Methods", "author": "Robert Hutchinson", "coverImageId": "hutchinsons-clinical", "downloadUrl": "https://t.me/DrAstroLibrary/91" },
-          { "id": "macleods-clinical", "title": "Macleods clinical examination", "author": "John Macleod", "coverImageId": "macleods-clinical", "downloadUrl": "https://t.me/DrAstroLibrary/92" },
-          { "id": "alagappan-practical", "title": "Alagappan Manual of Practical Medicine Book", "author": "R. Alagappan", "coverImageId": "alagappan-practical", "downloadUrl": "https://t.me/DrAstroLibrary/93" }
+          {
+            "id": "macleods-clinical",
+            "title": "Macleods clinical examination",
+            "author": "J. Alastair Innes",
+            "coverImageId": "macleods-clinical"
+          },
+          {
+            "id": "hutchinsons-clinical",
+            "title": "Hutchinson's Clinical Methods",
+            "author": "William M. Drake",
+            "coverImageId": "hutchinsons-clinical"
+          },
+          {
+            "id": "clinical-med-boloor",
+            "title": "Clinical Med Archith Boloor",
+            "author": "Archith Boloor",
+            "coverImageId": "clinical-med-boloor"
+          },
+          {
+            "id": "alagappan-practical",
+            "title": "Alagappan Manual of Practical Medicine Book",
+            "author": "R. Alagappan",
+            "coverImageId": "alagappan-practical"
+          }
         ],
         "study-materials": [
-          { "id": "marrow-gen-med-8th", "title": "Marrow Gen Medicine 8th Edition", "author": "Marrow", "coverImageId": "marrow-gen-med-8th", "downloadUrl": "https://t.me/DrAstroLibrary/85" }
+          {
+            "id": "marrow-gen-med-8th",
+            "title": "Marrow Gen Medicine 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-gen-med-8th"
+          },
+          {
+            "id": "prepladder-gen-medicine-x",
+            "title": "Prepladder Gen Medicine X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-gen-medicine-x"
+          }
         ]
       }
     },
@@ -306,18 +813,67 @@
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "A surgical specialty that focuses on abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+      "description": "The surgical treatment of a wide range of diseases.",
       "materials": {
         "textbooks": [
-          { "id": "bailey-love-surgery", "title": "Bailey & Love's Short Practice of Surgery", "author": "Hamilton Bailey", "coverImageId": "bailey-love-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/95" },
-          { "id": "manipal-surgery", "title": "Manipal Manual Of Surgery", "author": "K Rajgopal Shenoy", "coverImageId": "manipal-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/96" },
-          { "id": "srb-surgery", "title": "SRB's Manual of Surgery", "author": "S. R. B.", "coverImageId": "srb-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/97" },
-          { "id": "sabiston-surgery", "title": "Textbook of Surgery by Sabiston", "author": "David C. Sabiston", "coverImageId": "sabiston-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/98" }
+          {
+            "id": "bailey-love-surgery",
+            "title": "Bailey & Love's Short Practice of Surgery",
+            "author": "Norman S. Williams",
+            "coverImageId": "bailey-love-surgery"
+          },
+          {
+            "id": "sabiston-surgery",
+            "title": "Textbook of Surgery by Sabiston",
+            "author": "Courtney M. Townsend Jr.",
+            "coverImageId": "sabiston-surgery"
+          },
+          {
+            "id": "srb-surgery",
+            "title": "SRB's Manual of Surgery",
+            "author": "Sriram Bhat M",
+            "coverImageId": "srb-surgery"
+          },
+          {
+            "id": "manipal-surgery",
+            "title": "Manipal Manual Of Surgery",
+            "author": "K Rajgopal Shenoy",
+            "coverImageId": "manipal-surgery"
+          }
         ],
         "clinical-books": [
-          { "id": "manual-clinical-surgery", "title": "A Manual On Clinical Surgery", "author": "S. Das", "coverImageId": "manual-clinical-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/99" },
-          { "id": "long-cases-surgery", "title": "Long Cases in General Surgery: Rajamahendran", "author": "R. Rajamahendran", "coverImageId": "long-cases-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/100" },
-          { "id": "short-cases-surgery", "title": "Short Cases In Surgery: Rajamahendran", "author": "R. Rajamahendran", "coverImageId": "short-cases-surgery", "downloadUrl": "https://t.me/DrAstroLibrary/101" }
+          {
+            "id": "manual-clinical-surgery",
+            "title": "A Manual On Clinical Surgery",
+            "author": "S. Das",
+            "coverImageId": "manual-clinical-surgery"
+          },
+          {
+            "id": "long-cases-surgery",
+            "title": "Long Cases in General Surgery: Rajamahendran",
+            "author": "R. Rajamahendran",
+            "coverImageId": "long-cases-surgery"
+          },
+          {
+            "id": "short-cases-surgery",
+            "title": "Short Cases In Surgery: Rajamahendran",
+            "author": "R. Rajamahendran",
+            "coverImageId": "short-cases-surgery"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-gen-surgery-8th",
+            "title": "Marrow Gen Surgery 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-gen-surgery-8th"
+          },
+          {
+            "id": "prepladder-gen-surgery-x",
+            "title": "Prepladder  Gen Surgery X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-gen-surgery-x"
+          }
         ]
       }
     },
@@ -325,19 +881,63 @@
       "id": "obg",
       "name": "OBG",
       "year": [4],
-      "description": "The medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynecology (covering the health of the female reproductive system).",
+      "description": "Obstetrics and gynaecology.",
       "materials": {
         "obstetrics-textbooks": [
-          { "id": "dc-dutta-obstetrics", "title": "DC Dutta Textbook of Obstetrics", "author": "D. C. Dutta", "coverImageId": "dc-dutta-obstetrics", "downloadUrl": "https://t.me/DrAstroLibrary/64" },
-          { "id": "mudaliar-menon-obstetrics", "title": "Mudaliar And Menon's Clinical Obstetrics", "author": "A. L. Mudaliar", "coverImageId": "mudaliar-menon-obstetrics", "downloadUrl": "https://t.me/DrAstroLibrary/66" }
+          {
+            "id": "dc-dutta-obstetrics",
+            "title": "DC Dutta Textbook of Obstetrics",
+            "author": "Hiralal Konar",
+            "coverImageId": "dc-dutta-obstetrics"
+          },
+          {
+            "id": "mudaliar-menon-obstetrics",
+            "title": "Mudaliar And Menon's Clinical Obstetrics",
+            "author": "C. S. Dawn",
+            "coverImageId": "mudaliar-menon-obstetrics"
+          }
         ],
         "gynecology-textbooks": [
-          { "id": "dc-dutta-gynecology", "title": "Dc Dutta Textbook Of Gynecology", "author": "D. C. Dutta", "coverImageId": "dc-dutta-gynecology", "downloadUrl": "https://t.me/DrAstroLibrary/65" },
-          { "id": "shaws-gynecology", "title": "Shaw's Textbook of Gynecology", "author": "Wilfred Shaw", "coverImageId": "shaws-gynecology", "downloadUrl": "https://t.me/DrAstroLibrary/67" },
-          { "id": "lakshmi-seshadri-gynecology", "title": "Essentials of Gynecology: Lakshmi Seshadri", "author": "Lakshmi Seshadri", "coverImageId": "lakshmi-seshadri-gynecology", "downloadUrl": "https://t.me/DrAstroLibrary/68" }
+          {
+            "id": "dc-dutta-gynecology",
+            "title": "Dc Dutta Textbook Of Gynecology",
+            "author": "Hiralal Konar",
+            "coverImageId": "dc-dutta-gynecology"
+          },
+          {
+            "id": "shaws-gynecology",
+            "title": "Shaw's Textbook of Gynecology",
+            "author": "V. G. Padubidri",
+            "coverImageId": "shaws-gynecology"
+          },
+          {
+            "id": "lakshmi-seshadri-gynecology",
+            "title": "Essentials of Gynecology: Lakshmi Seshadri",
+            "author": "Lakshmi Seshadri",
+            "coverImageId": "lakshmi-seshadri-gynecology"
+          }
         ],
         "clinical-books": [
-          { "id": "clinical-obg-sharmila-babu", "title": "Clinical Obstetrics and Gynecology : Sharmila Arun Babu", "author": "Sharmila Arun Babu", "coverImageId": "clinical-obg-sharmila-babu", "downloadUrl": "https://t.me/DrAstroLibrary/69" }
+          {
+            "id": "clinical-obg-sharmila-babu",
+            "title": "Clinical Obstetrics and Gynecology : Sharmila Arun Babu",
+            "author": "Sharmila Arun Babu",
+            "coverImageId": "clinical-obg-sharmila-babu"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-obg-8th",
+            "title": "Marrow OBG 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-obg-8th"
+          },
+          {
+            "id": "prepladder-obg-x",
+            "title": "Prepladder OBG X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-obg-x"
+          }
         ]
       }
     },
@@ -345,14 +945,43 @@
       "id": "pediatrics",
       "name": "Pediatrics",
       "year": [4],
-      "description": "The branch of medicine that involves the medical care of infants, children, and adolescents.",
+      "description": "The branch of medicine dealing with children and their diseases.",
       "materials": {
         "textbooks": [
-          { "id": "ghai-essential-pediatrics", "title": "GHAI Essential Pediatrics", "author": "O. P. Ghai", "coverImageId": "ghai-essential-pediatrics", "downloadUrl": "https://t.me/DrAstroLibrary/70" },
-          { "id": "pediatrics-for-medical-arun-babu", "title": "Pediatrics for Medical: Arun Babu", "author": "Arun Babu", "coverImageId": "pediatrics-for-medical-arun-babu", "downloadUrl": "https://t.me/DrAstroLibrary/71" }
+          {
+            "id": "ghai-essential-pediatrics",
+            "title": "GHAI Essential Pediatrics",
+            "author": "O.P. Ghai",
+            "coverImageId": "ghai-essential-pediatrics"
+          },
+          {
+            "id": "pediatrics-for-medical-arun-babu",
+            "title": "Pediatrics for Medical: Arun Babu",
+            "author": "Arun Babu",
+            "coverImageId": "pediatrics-for-medical-arun-babu"
+          }
         ],
         "clinical-books": [
-          { "id": "clinical-pediatrics-aruchamy", "title": "Clinical Pediatrics by Aruchamy", "author": "S. Aruchamy", "coverImageId": "clinical-pediatrics-aruchamy", "downloadUrl": "https://t.me/DrAstroLibrary/72" }
+          {
+            "id": "clinical-pediatrics-aruchamy",
+            "title": "Clinical Pediatrics by Aruchamy",
+            "author": "S. Aruchamy",
+            "coverImageId": "clinical-pediatrics-aruchamy"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-pediatrics-8th",
+            "title": "Marrow Pediatrics 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-pediatrics-8th"
+          },
+          {
+            "id": "prepladder-pediatrics-x",
+            "title": "Prepladder Pediatrics X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-pediatrics-x"
+          }
         ]
       }
     },
@@ -360,10 +989,29 @@
       "id": "orthopedics",
       "name": "Orthopedics",
       "year": [4],
-      "description": "The branch of surgery concerned with conditions involving the musculoskeletal system.",
+      "description": "The branch of medicine dealing with the correction of deformities of bones or muscles.",
       "materials": {
         "textbooks": [
-          { "id": "maheshwar-orthopaedics", "title": "Essential Orthopaedics: Maheshwar", "author": "J. Maheshwari", "coverImageId": "maheshwar-orthopaedics", "downloadUrl": "https://t.me/DrAstroLibrary/85" }
+          {
+            "id": "maheshwar-orthopaedics",
+            "title": "Essential Orthopaedics: Maheshwar",
+            "author": "J. Maheshwari",
+            "coverImageId": "maheshwar-orthopaedics"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-orthopedics-8th",
+            "title": "Marrow Orthopedics 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-orthopedics-8th"
+          },
+          {
+            "id": "prepladder-orthopedics-x",
+            "title": "Prepladder Orthopedics X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-orthopedics-x"
+          }
         ]
       }
     },
@@ -371,36 +1019,65 @@
       "id": "psychiatry",
       "name": "Psychiatry",
       "year": [4],
-      "description": "The medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders.",
-      "materials": {}
+      "description": "The study and treatment of mental illness, emotional disturbance, and abnormal behavior.",
+      "materials": {
+        "study-materials": [
+          {
+            "id": "prepladder-psychiatry-x",
+            "title": "Prepladder Psychiatry X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-psychiatry-x"
+          }
+        ]
+      }
     },
     {
       "id": "dermatology",
       "name": "Dermatology",
       "year": [4],
-      "description": "The branch of medicine dealing with the skin, nails, hair and its diseases.",
-      "materials": {}
+      "description": "The branch of medicine concerned with the diagnosis and treatment of skin disorders.",
+      "materials": {
+        "study-materials": [
+          {
+            "id": "prepladder-dermatology-x",
+            "title": "Prepladder Dermatology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-dermatology-x"
+          }
+        ]
+      }
     },
     {
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
-      "description": "The medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
-      "materials": {}
+      "description": "The science dealing with X-rays and other high-energy radiation, especially for the diagnosis and treatment of disease.",
+      "materials": {
+        "study-materials": [
+          {
+            "id": "prepladder-radiology-x",
+            "title": "Prepladder Radiology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-radiology-x"
+          }
+        ]
+      }
     },
     {
       "id": "anesthesiology",
       "name": "Anesthesiology",
       "year": [4],
-      "description": "The medical specialty concerned with the total perioperative care of patients before, during and after surgery.",
-      "materials": {}
+      "description": "The branch of medicine concerned with anesthesia and anesthetics.",
+      "materials": {
+        "study-materials": [
+          {
+            "id": "prepladder-anesthesia-x",
+            "title": "Prepladder Anesthesia X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-anesthesia-x"
+          }
+        ]
+      }
     }
-  ],
-  "suggestedModules": [
-    "anatomy",
-    "physiology",
-    "biochemistry",
-    "pathology",
-    "pharmacology"
   ]
 }
