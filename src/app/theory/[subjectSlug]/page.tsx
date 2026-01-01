@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { data, getSubject } from '@/lib/data';
@@ -29,8 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function SubjectDetailPage({ params }: Props) {
-  const subject = getSubject(params.subjectSlug);
+export default async function SubjectDetailPage({ params }: Props) {
+  const awaitedParams = await params;
+  const subject = getSubject(awaitedParams.subjectSlug);
 
   if (!subject) {
     notFound();
