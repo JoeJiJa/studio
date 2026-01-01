@@ -75,7 +75,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
       </div>
       
       <Card>
-        <CardContent className="p-4 md:p-6">
+        <CardContent className="p-2 md:p-6">
             <header className="mb-6 md:mb-8 text-center">
               <div className="inline-block p-4 rounded-full bg-secondary mb-4">
                   <SubjectIcon subjectId={subject.id} className="w-12 h-12 text-primary" />
