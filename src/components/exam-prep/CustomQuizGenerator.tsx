@@ -1,14 +1,40 @@
 
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { data } from '@/lib/data';
 import { BrainCircuit } from 'lucide-react';
+import { useQuizPerformance } from '@/hooks/use-quiz-performance';
+import { useToast } from '@/hooks/use-toast';
 
 export function CustomQuizGenerator() {
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
+  const { logQuizResult } = useQuizPerformance();
+  const { toast } = useToast();
+
+  const handleStartQuiz = () => {
+    if (!selectedSubject) {
+        toast({
+            title: "No Subject Selected",
+            description: "Please select a subject to start a quiz.",
+            variant: "destructive"
+        });
+        return;
+    }
+    
+    const subjectName = data.subjects.find(s => s.id === selectedSubject)?.name || 'Unknown Subject';
+    const randomScore = Math.floor(Math.random() * 41) + 60; // Score between 60 and 100
+    logQuizResult(subjectName, randomScore);
+
+    toast({
+        title: "Quiz Completed!",
+        description: `You scored ${randomScore}% in ${subjectName}. Your dashboard has been updated.`,
+    });
+  };
+
   return (
     <Card>
       <CardHeader>
@@ -22,7 +48,7 @@ export function CustomQuizGenerator() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-2">
             <label htmlFor="subject-select" className="text-sm font-medium">Subject</label>
-            <Select>
+            <Select onValueChange={setSelectedSubject}>
               <SelectTrigger id="subject-select">
                 <SelectValue placeholder="Select a subject" />
               </SelectTrigger>
@@ -37,7 +63,7 @@ export function CustomQuizGenerator() {
           </div>
           <div className="space-y-2">
             <label htmlFor="questions-select" className="text-sm font-medium">Number of Questions</label>
-            <Select>
+            <Select defaultValue="25">
               <SelectTrigger id="questions-select">
                 <SelectValue placeholder="Select number" />
               </SelectTrigger>
@@ -51,7 +77,7 @@ export function CustomQuizGenerator() {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full sm:w-auto">Start Quiz</Button>
+        <Button className="w-full sm:w-auto" onClick={handleStartQuiz}>Start Quiz</Button>
       </CardFooter>
     </Card>
   );
