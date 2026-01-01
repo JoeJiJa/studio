@@ -21,11 +21,11 @@ export function HomeHero() {
             data-ai-hint={inspirationalImage.imageHint}
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent"></div>
         </>
       )}
       <div className="relative z-10 text-left container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
-        <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary-foreground drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary drop-shadow-lg">
           Welcome Back, Doctor!
         </h1>
         <p className="mt-4 text-lg text-primary-foreground/90 drop-shadow-md max-w-2xl">
