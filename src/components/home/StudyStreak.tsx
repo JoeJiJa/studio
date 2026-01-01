@@ -6,6 +6,7 @@ import { Flame } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { StudyChart } from './StudyChart';
+import { useStudyTime } from '@/hooks/use-study-time';
 
 const STREAK_KEY = 'studyStreak';
 
@@ -16,7 +17,8 @@ interface StreakData {
 
 export function StudyStreak() {
   const [streak, setStreak] = useState<number>(0);
-  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+  const [isStreakLoaded, setIsStreakLoaded] = useState<boolean>(false);
+  const { logStudyTime, isLoaded: isChartLoaded } = useStudyTime();
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
@@ -46,6 +48,9 @@ export function StudyStreak() {
       
       if (data.lastVisit !== today) {
         localStorage.setItem(STREAK_KEY, JSON.stringify({ count: currentStreak, lastVisit: today }));
+        // Log a random amount of study time for today
+        const randomMinutes = Math.floor(Math.random() * 60) + 15;
+        logStudyTime(randomMinutes);
       }
       setStreak(currentStreak);
 
@@ -56,10 +61,10 @@ export function StudyStreak() {
       localStorage.setItem(STREAK_KEY, JSON.stringify({ count: 1, lastVisit: today }));
     }
     
-    setIsLoaded(true);
-  }, []);
+    setIsStreakLoaded(true);
+  }, [logStudyTime]);
 
-  if (!isLoaded) {
+  if (!isStreakLoaded) {
     return (
         <Card>
             <CardHeader className="p-2">
@@ -67,13 +72,7 @@ export function StudyStreak() {
                 <Skeleton className="h-3 w-40 mt-1" />
             </CardHeader>
             <CardContent className="p-2 pt-0">
-                <div className="flex justify-between items-end">
-                    <div>
-                        <Skeleton className="h-6 w-20" />
-                        <Skeleton className="h-3 w-28 mt-1" />
-                    </div>
-                    <Skeleton className="h-16 w-full max-w-xs" />
-                </div>
+                <Skeleton className="h-20 w-full" />
             </CardContent>
       </Card>
     );

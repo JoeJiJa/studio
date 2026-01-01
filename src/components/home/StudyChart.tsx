@@ -3,23 +3,36 @@
 
 import * as React from "react"
 import { Bar, BarChart, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts"
-
-const MOCK_DATA = [
-  { day: "Mon", minutes: Math.floor(Math.random() * 180) + 30 },
-  { day: "Tue", minutes: Math.floor(Math.random() * 180) + 30 },
-  { day: "Wed", minutes: Math.floor(Math.random() * 180) + 30 },
-  { day: "Thu", minutes: Math.floor(Math.random() * 180) + 30 },
-  { day: "Fri", minutes: Math.floor(Math.random() * 180) + 30 },
-  { day: "Sat", minutes: Math.floor(Math.random() * 180) + 30 },
-  { day: "Sun", minutes: Math.floor(Math.random() * 180) + 30 },
-]
+import { useStudyTime } from "@/hooks/use-study-time";
+import { format, subDays } from 'date-fns';
+import { Skeleton } from "../ui/skeleton";
 
 export function StudyChart() {
+  const { weeklyData, isLoaded } = useStudyTime();
+
+  const chartData = React.useMemo(() => {
+    const today = new Date();
+    return Array.from({ length: 7 }).map((_, i) => {
+      const date = subDays(today, 6 - i);
+      const day = format(date, 'EEE');
+      const dateString = format(date, 'yyyy-MM-dd');
+      const studyDay = weeklyData.find(d => d.date === dateString);
+      return {
+        day,
+        minutes: studyDay ? studyDay.minutes : 0,
+      };
+    });
+  }, [weeklyData]);
+
+  if (!isLoaded) {
+      return <Skeleton className="h-20 w-full" />;
+  }
+
   return (
     <div className="h-20 w-full">
         <ResponsiveContainer width="100%" height="100%">
             <BarChart 
-                data={MOCK_DATA}
+                data={chartData}
                 margin={{
                     top: 5,
                     right: 0,
