@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import type { Subject, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
@@ -40,28 +40,15 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
   const { addItem: addRecentlyViewed } = useRecentlyViewed();
   const [sheetState, setSheetState] = useState<SheetState | null>(null);
 
-  const handleItemClick = (item: Material) => {
+  const handleItemClick = useCallback((item: Material) => {
     if (isBook(item)) {
        addRecentlyViewed(item);
     }
-    if (item.downloadUrl) {
-      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
-    }
-  };
+  }, [addRecentlyViewed]);
 
   const handleShowMoreClick = (title: string, materials: Material[]) => {
     setSheetState({ title, materials });
   };
-
-  const handleSheetItemClick = (item: Material) => {
-    if (isBook(item)) {
-      addRecentlyViewed(item);
-    }
-    
-    if (item.downloadUrl) {
-      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
-    }
-  }
   
   const sectionsWithContent = useMemo(() => SECTIONS_CONFIG.map(section => {
     let title = section.title;
@@ -130,7 +117,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
           onOpenChange={(isOpen) => !isOpen && setSheetState(null)}
           title={sheetState.title}
           materials={sheetState.materials}
-          onItemClick={handleSheetItemClick}
+          onItemClick={handleItemClick}
         />
       )}
     </>

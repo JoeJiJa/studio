@@ -6,9 +6,10 @@ import type { Book } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BookCarousel } from '../shared/BookCarousel';
 import { History } from 'lucide-react';
+import { isBook } from '@/lib/types';
 
 export function RecentlyViewed() {
-  const { items, isLoaded } = useRecentlyViewed();
+  const { items, isLoaded, addItem } = useRecentlyViewed();
 
   if (isLoaded && items.length === 0) {
     return null; // Don't show the section if there's nothing to show

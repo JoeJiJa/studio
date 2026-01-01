@@ -11,11 +11,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
 import type { Book, Subject, Material } from '@/lib/types';
 import { Skeleton } from '../ui/skeleton';
-import { cn } from '@/lib/utils';
 
 type Item = Book | Subject | Material | (Omit<Book, 'author'> & { author?: string });
 
@@ -28,7 +26,6 @@ type BookCarouselProps = {
     href: string;
     coverImageId?: string;
   };
-  onItemClick?: (item: Item) => void;
   isLoaded?: boolean;
   loadingSkeletons?: number;
 };
@@ -36,7 +33,6 @@ type BookCarouselProps = {
 export function BookCarousel({ 
   items, 
   getItemProps, 
-  onItemClick, 
   isLoaded = true, 
   loadingSkeletons = 6
 }: BookCarouselProps) {
@@ -60,31 +56,27 @@ export function BookCarousel({
         dragFree: true,
         slidesToScroll: 'auto',
       }}
-      className="w-full"
+      className="w-full relative group"
     >
       <CarouselContent className="-ml-2 md:-ml-4">
         {items.map((item, index) => {
           const { id, title, href, coverImageId } = getItemProps(item);
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
 
-          const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-            if (onItemClick) {
-              onItemClick(item);
-            }
-          };
-          
           const isExternal = href.startsWith('http');
 
           return (
             <CarouselItem key={`${id}-${index}`} className="basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7 pl-2 md:pl-4">
                 <Link 
                   href={href} 
-                  onClick={handleItemClick}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
-                  className="group block"
+                  className="group/item block"
+                  onClick={(e) => {
+                    if (href === '#') e.preventDefault();
+                  }}
                 >
-                  <div className="aspect-[2/3] w-full relative rounded-md overflow-hidden bg-secondary transition-transform duration-300 ease-in-out group-hover:scale-105">
+                  <div className="aspect-[2/3] w-full relative rounded-md overflow-hidden bg-secondary transition-transform duration-300 ease-in-out group-hover/item:scale-105">
                     {placeholder ? (
                       <Image
                         src={placeholder.imageUrl}
@@ -99,9 +91,9 @@ export function BookCarousel({
                         <span className="text-center text-xs text-muted-foreground">{title}</span>
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-black/10 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300" />
                   </div>
-                   <p className="text-sm font-medium mt-2 truncate text-foreground group-hover:text-primary" title={title}>
+                   <p className="text-sm font-medium mt-2 truncate text-foreground group-hover/item:text-primary" title={title}>
                     {title}
                   </p>
                 </Link>
@@ -109,8 +101,8 @@ export function BookCarousel({
           );
         })}
       </CarouselContent>
-      <CarouselPrevious className="absolute left-[-1rem] top-1/2 -translate-y-1/2 hidden md:flex" />
-      <CarouselNext className="absolute right-[-1rem] top-1/2 -translate-y-1/2 hidden md:flex" />
+      <CarouselPrevious className="absolute left-[-1rem] top-1/2 -translate-y-1/2 hidden md:flex opacity-0 group-hover:opacity-100 transition-opacity" />
+      <CarouselNext className="absolute right-[-1rem] top-1/2 -translate-y-1/2 hidden md:flex opacity-0 group-hover:opacity-100 transition-opacity" />
     </Carousel>
   );
 }

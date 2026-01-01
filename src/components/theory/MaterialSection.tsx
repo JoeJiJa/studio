@@ -6,6 +6,7 @@ import type { Material, Book } from '@/lib/types';
 import { BookCarousel } from '../shared/BookCarousel';
 import { Button } from '../ui/button';
 import { ChevronRight } from 'lucide-react';
+import { isBook } from '@/lib/types';
 
 interface MaterialSectionProps {
   title: string;
@@ -30,7 +31,10 @@ export function MaterialSection({ title, materials, onItemClick, onShowMoreClick
       <BookCarousel
         items={materials}
         getItemProps={(item) => {
-          const book = item as Book;
+          const book = item as Book; // Cast to Book to access properties
+          if (isBook(book)) {
+            onItemClick(book);
+          }
           return {
             id: book.id,
             title: book.title,
@@ -39,7 +43,6 @@ export function MaterialSection({ title, materials, onItemClick, onShowMoreClick
             coverImageId: book.coverImageId,
           };
         }}
-        onItemClick={onItemClick}
         isLoaded={true}
       />
     </section>
