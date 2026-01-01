@@ -15,8 +15,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const subject = getSubject(params.subjectSlug);
+export async function generateMetadata({ params: { subjectSlug } }: Props): Promise<Metadata> {
+  const subject = getSubject(subjectSlug);
   
   if (!subject) {
     return {
@@ -30,9 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function SubjectDetailPage({ params }: Props) {
-  const awaitedParams = await params;
-  const subject = getSubject(awaitedParams.subjectSlug);
+export default function SubjectDetailPage({ params: { subjectSlug } }: Props) {
+  const subject = getSubject(subjectSlug);
 
   if (!subject) {
     notFound();
