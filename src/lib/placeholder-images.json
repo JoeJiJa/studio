@@ -3,7 +3,7 @@
     {
       "id": "selective-anatomy-prep",
       "description": "Selective Anatomy: Prep Manual",
-      "imageUrl": "https://m.media-amazon.com/images/I/71B1Qa31k8L._UF1000,1000_QL80_.jpg",
+      "imageUrl": "https://www.febbox.com/share/Ffgv3Anl",
       "imageHint": "anatomy textbook"
     },
     {
@@ -321,7 +321,7 @@
     {
       "id": "bdc-general-anatomy-4e",
       "description": "BDC General Anatomy 4th Edition",
-      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/ki4w0i80-0/book/2/w/h/bd-chaurasia-s-handbook-of-general-anatomy-original-imafyy55wmyx9q7s.jpeg?q=90",
+      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/ki4w0i80-0/book/2/w/h/bd-chaurasia-s-handbook-of-general-anatomy-original-imafyyd5wmyx9q7s.jpeg?q=90",
       "imageHint": "anatomy textbook"
     },
     {
@@ -755,6 +755,18 @@
       "description": "Guyton - Human Physiology and Mechanisms of Disease",
       "imageUrl": "https://secure-ecsd.elsevier.com/covers/80/Tango2/largest/9780323597128.jpg",
       "imageHint": "physiology textbook"
+    },
+    {
+      "id": "basic-ophthalmology-jogi-renu",
+      "description": "Basic Ophthalmology by Jogi Renu",
+      "imageUrl": "https://rukminim2.flixcart.com/image/480/640/kidgnm80-0/book/m/5/p/basic-ophthalmology-original-imafy6paazhzrxr8.jpeg?q=90",
+      "imageHint": "ophthalmology textbook"
+    },
+    {
+      "id": "ophthal-cases-identification",
+      "description": "Ophthal Cases Identification points",
+      "imageUrl": "https://prithvibooks.com/wp-content/uploads/2020/09/agarwal.jpg",
+      "imageHint": "ophthalmology clinical"
     }
   ]
 }
