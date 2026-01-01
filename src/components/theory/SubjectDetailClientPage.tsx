@@ -44,7 +44,9 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     if (isBook(item)) {
        addRecentlyViewed(item);
     }
-    // No need to open window here, as the Link component will handle it.
+    if (item.downloadUrl) {
+      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
+    }
   };
 
   const handleShowMoreClick = (title: string, materials: Material[]) => {
