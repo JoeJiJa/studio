@@ -5,14 +5,16 @@ import React from 'react';
 import type { Material, Book } from '@/lib/types';
 import { Card, CardContent } from '../ui/card';
 import { BookCarousel } from '../shared/BookCarousel';
+import { Button } from '../ui/button';
 
 interface MaterialSectionProps {
   title: string;
   materials: Material[];
   onItemClick: (item: Material) => void;
+  onShowMoreClick: (title: string, materials: Material[]) => void;
 }
 
-export function MaterialSection({ title, materials, onItemClick }: MaterialSectionProps) {
+export function MaterialSection({ title, materials, onItemClick, onShowMoreClick }: MaterialSectionProps) {
   if (materials.length === 0) {
     return null;
   }
@@ -23,6 +25,11 @@ export function MaterialSection({ title, materials, onItemClick }: MaterialSecti
         <h2 className="text-xl font-bold font-headline flex items-center gap-2">
           {title}
         </h2>
+        {materials.length > 5 && (
+            <Button variant="link" className="pr-0" onClick={() => onShowMoreClick(title, materials)}>
+                Show more
+            </Button>
+        )}
       </div>
       <Card>
         <CardContent className="p-2">

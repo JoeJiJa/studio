@@ -1,7 +1,7 @@
 
 "use client";
 
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import type { Subject, Material } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BackButton } from '../shared/BackButton';
@@ -10,10 +10,16 @@ import { MaterialSection } from './MaterialSection';
 import { SubjectIcon } from './SubjectIcon';
 import { Card, CardContent } from '../ui/card';
 import { Badge } from '../ui/badge';
+import { MaterialSheet } from './MaterialSheet';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
 }
+
+type SheetState = {
+  title: string;
+  materials: Material[];
+};
 
 const SECTIONS_CONFIG = [
   { key: 'textbooks', title: 'Textbooks' },
@@ -32,6 +38,7 @@ const SECTIONS_CONFIG = [
 
 export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProps) {
   const { addItem: addRecentlyViewed } = useRecentlyViewed();
+  const [sheetState, setSheetState] = useState<SheetState | null>(null);
 
   const handleItemClick = (item: Material) => {
     if (item.downloadUrl) {
@@ -42,8 +49,12 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
        addRecentlyViewed(item);
     }
   };
+
+  const handleShowMoreClick = (title: string, materials: Material[]) => {
+    setSheetState({ title, materials });
+  };
   
-  const sectionsWithContent = SECTIONS_CONFIG.map(section => {
+  const sectionsWithContent = useMemo(() => SECTIONS_CONFIG.map(section => {
     let title = section.title;
     if (section.key === 'textbooks' && subject.id === 'anatomy') {
       title = 'Gross Anatomy';
@@ -54,11 +65,11 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
       title,
       materials: subject.materials[(section.key as keyof typeof subject.materials)] || [],
     };
-  }).filter(section => section.materials.length > 0);
+  }).filter(section => section.materials.length > 0), [subject]);
 
 
   return (
-    <div className="max-w-sm mx-auto">
+    <>
       <div className="flex items-center justify-between mb-4">
         <BackButton />
       </div>
@@ -85,12 +96,22 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
                         title={section.title}
                         materials={section.materials}
                         onItemClick={handleItemClick}
+                        onShowMoreClick={handleShowMoreClick}
                     />
                 ))}
             </div>
         </CardContent>
       </Card>
       
-    </div>
+      {sheetState && (
+        <MaterialSheet
+          isOpen={!!sheetState}
+          onOpenChange={(isOpen) => !isOpen && setSheetState(null)}
+          title={sheetState.title}
+          materials={sheetState.materials}
+          onItemClick={handleItemClick}
+        />
+      )}
+    </>
   );
 }
