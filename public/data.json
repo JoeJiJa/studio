@@ -6,33 +6,75 @@
       "author": "William Osler"
     },
     {
-      "text": "Wherever the art of Medicine is loved, there is also a love of Humanity.",
+      "text": "Wherever the art of medicine is loved, there is also a love of humanity.",
       "author": "Hippocrates"
     },
     {
-      "text": "The chapter you are learning today is going to save someone's life tomorrow. Pay attention.",
-      "author": "Unknown"
+      "text": "The art of medicine consists of amusing the patient while nature cures the disease.",
+      "author": "Voltaire"
+    },
+    {
+      "text": "Medicine is a science of uncertainty and an art of probability.",
+      "author": "William Osler"
     }
   ],
   "paretoBanner": {
-    "title": "The 80/20 Principle in Your Studies",
-    "description": "Focus on the 20% of materials that will give you 80% of the results. Prioritize high-yield topics to study smarter, not just harder."
+    "title": "Focus on the 20%",
+    "description": "The Pareto principle states that 80% of consequences come from 20% of the causes. We help you find the 20% of topics that will yield 80% of your exam results."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with crushing chest pain. An ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
+    "question": "Which of the following is the most common cause of community-acquired pneumonia?",
     "options": [
-      "Left Anterior Descending (LAD)",
-      "Right Coronary Artery (RCA)",
-      "Left Circumflex (LCX)",
-      "Left Main Coronary Artery (LMCA)"
+      "Streptococcus pneumoniae",
+      "Haemophilus influenzae",
+      "Mycoplasma pneumoniae",
+      "Legionella pneumophila"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
-  "suggestedModules": [
-    "anatomy",
-    "physiology",
-    "biochemistry",
-    "pathology"
+  "caseStudies": [
+    {
+      "id": "case1",
+      "title": "An Unexpected Collapse",
+      "scenario": "A 65-year-old male with a history of hypertension and smoking presents to the ER after a sudden collapse at home. He is conscious but confused. His wife reports he was complaining of a 'tearing' chest pain that radiated to his back before he fell.",
+      "question": "On examination, you find a significant difference in blood pressure between his right and left arms. What is the most likely diagnosis?",
+      "options": [
+        "Myocardial Infarction",
+        "Aortic Dissection",
+        "Pulmonary Embolism",
+        "Esophageal Rupture"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The classic presentation of 'tearing' chest pain radiating to the back, combined with a blood pressure differential between the arms, is highly suggestive of an acute aortic dissection. This is a medical emergency requiring immediate intervention."
+    },
+    {
+      "id": "case2",
+      "title": "A Young Woman with a Rash",
+      "scenario": "A 22-year-old female presents with a two-week history of fatigue, joint pain, and a distinctive rash on her cheeks that worsens with sun exposure. She also reports a low-grade fever.",
+      "question": "Given the classic malar 'butterfly' rash and systemic symptoms, what is the most probable autoimmune condition?",
+      "options": [
+        "Rheumatoid Arthritis",
+        "Dermatomyositis",
+        "Systemic Lupus Erythematosus (SLE)",
+        "Scleroderma"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The combination of a photosensitive malar rash, arthralgia (joint pain), and systemic symptoms like fatigue and fever are hallmark signs of Systemic Lupus Erythematosus (SLE). This diagnosis is often confirmed with autoantibody testing (e.g., ANA, anti-dsDNA)."
+    },
+    {
+      "id": "case3",
+      "title": "The Confused Elderly Patient",
+      "scenario": "An 82-year-old resident of a nursing home is brought to the clinic due to a sudden change in mental status. Over the past 24 hours, she has become increasingly agitated and confused. She has no focal neurological deficits but is running a temperature of 38.5°C (101.3°F).",
+      "question": "What is the most important initial investigation to perform in this patient?",
+      "options": [
+        "CT scan of the head",
+        "Urinalysis and urine culture",
+        "Lumbar puncture",
+        "Thyroid function tests"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In an elderly patient presenting with acute delirium or confusion, a urinary tract infection (UTI) is one of the most common and easily treatable causes. A urinalysis is a quick, non-invasive test that can provide strong evidence for a UTI, which would then be confirmed with a culture."
+    }
   ],
   "subjects": [
     {
@@ -41,170 +83,178 @@
       "year": [
         1
       ],
-      "description": "Anatomy is the cornerstone of medical science, exploring the intricate structure of the human body. This course covers everything from gross anatomy to microanatomy, providing the foundational knowledge for all clinical practice.",
+      "description": "The study of the structure of the human body, from macroscopic to microscopic levels. The cornerstone of medical science.",
       "materials": {
         "textbooks": [
           {
             "id": "bd-chaurasia-vol-1",
-            "title": "BD Chaurasia's Human Anatomy, Volume 1",
+            "title": "BD Chaurasia's Human Anatomy, Volume 1: Upper Limb & Thorax",
             "author": "B.D. Chaurasia",
             "coverImageId": "bd-chaurasia-vol-1-cover",
-            "downloadUrl": "https://www.febbox.com/file/f-Vy4dO7y8"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/16"
           },
           {
             "id": "bd-chaurasia-vol-2",
-            "title": "BD Chaurasia's Human Anatomy, Volume 2",
+            "title": "BD Chaurasia's Human Anatomy, Volume 2: Lower Limb, Abdomen, and Pelvis",
             "author": "B.D. Chaurasia",
             "coverImageId": "bd-chaurasia-vol-2-cover",
-            "downloadUrl": "https://www.febbox.com/file/f-gK8GZ5rP"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/17"
           },
           {
             "id": "bd-chaurasia-vol-3",
-            "title": "BD Chaurasia's Human Anatomy, Volume 3",
+            "title": "BD Chaurasia's Human Anatomy, Volume 3: Head-Neck, and Brain",
             "author": "B.D. Chaurasia",
             "coverImageId": "bd-chaurasia-vol-3-cover",
-            "downloadUrl": "https://www.febbox.com/file/f-wQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/18"
           },
           {
             "id": "vishram-singh-vol-1",
-            "title": "Vishram Singh's Gross Anatomy, Volume 1",
+            "title": "Vishram Singh's Gross Anatomy, Volume 1: Upper Limb & Thorax",
             "author": "Vishram Singh",
             "coverImageId": "vishram-singh-vol-1-cover",
-            "downloadUrl": "https://www.febbox.com/file/f-PKADgXrq"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/19"
           },
           {
             "id": "vishram-singh-vol-2",
-            "title": "Vishram Singh's Gross Anatomy, Volume 2",
+            "title": "Vishram Singh's Gross Anatomy, Volume 2: Abdomen And Lower Limb",
             "author": "Vishram Singh",
             "coverImageId": "vishram-singh-vol-2-cover",
-            "downloadUrl": "https://www.febbox.com/file/f-2lXbYw1B"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/20"
           },
           {
             "id": "vishram-singh-vol-3",
-            "title": "Vishram Singh's Gross Anatomy, Volume 3",
+            "title": "Vishram Singh's Gross Anatomy, Volume 3: Head And Neck",
             "author": "Vishram Singh",
             "coverImageId": "vishram-singh-vol-3-cover",
-            "downloadUrl": "https://www.febbox.com/file/f-v2kYVlPq"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/21"
           }
         ],
         "general-anatomy": [
           {
-            "id": "bdc-general-anatomy-4e-book",
-            "title": "BDC General Anatomy 4th Edition",
+            "id": "bdc-gen-anatomy",
+            "title": "BDC Handbook Of General Anatomy",
             "author": "B.D. Chaurasia",
             "coverImageId": "bdc-general-anatomy-4e",
-            "downloadUrl": "https://www.febbox.com/file/f-9Pnj5wY6"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/15"
           },
           {
-            "id": "vishram-singh-general-anatomy-book",
-            "title": "Vishram Singh General Anatomy",
+            "id": "vs-gen-anatomy",
+            "title": "General Anatomy by Vishram Singh",
             "author": "Vishram Singh",
             "coverImageId": "vishram-singh-general-anatomy",
-            "downloadUrl": "https://www.febbox.com/file/f-qlp4wL9p"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/22"
           }
         ],
         "dissection-manual": [
           {
-            "id": "cunningham-head-neck-book",
+            "id": "cunningham-head-neck",
             "title": "Cunningham's Manual of Practical Anatomy: Head & Neck",
             "author": "G.J. Romanes",
             "coverImageId": "cunningham-head-neck",
-            "downloadUrl": "https://www.febbox.com/file/f-vQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/24"
           },
           {
-            "id": "cunningham-thorax-abdomen-book",
+            "id": "cunningham-thorax-abdomen",
             "title": "Cunningham's Manual of Practical Anatomy: Thorax & Abdomen",
             "author": "G.J. Romanes",
             "coverImageId": "cunningham-thorax-abdomen",
-            "downloadUrl": "https://www.febbox.com/file/f-vQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/25"
           },
           {
-            "id": "cunningham-limbs-book",
+            "id": "cunningham-limbs",
             "title": "Cunningham's Manual of Practical Anatomy: Limbs",
             "author": "G.J. Romanes",
             "coverImageId": "cunningham-limbs",
-            "downloadUrl": "https://www.febbox.com/file/f-vQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/23"
           }
         ],
         "clinical-books": [
           {
-            "id": "moores-clinically-oriented-detailed-book",
+            "id": "moores-anatomy-detailed",
             "title": "Moore's Clinically Oriented Anatomy Detailed",
             "author": "Keith L. Moore",
             "coverImageId": "moores-clinically-oriented-detailed",
-            "downloadUrl": "https://www.febbox.com/file/f-L4ADgXrq"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/26"
           }
         ],
         "embryology": [
           {
-            "id": "vishrams-embryology-book",
+            "id": "vishrams-embryology",
             "title": "Vishram's Embryology",
             "author": "Vishram Singh",
             "coverImageId": "vishrams-embryology",
-            "downloadUrl": "https://www.febbox.com/file/f-W4n0ZzKA"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/27"
           },
           {
-            "id": "embryology-notes-s",
+            "id": "embryology-notes",
             "title": "Embryology Notes",
-            "author": "PIMS Seniors",
+            "author": "Dr. Astro",
             "coverImageId": "embryology-notes",
-            "downloadUrl": "https://www.febbox.com/file/f-jL4bYw1B"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/33"
           }
         ],
         "histology": [
           {
-            "id": "ib-singh-histology-book",
+            "id": "ib-singh-histology",
             "title": "IB Singh's Histology",
             "author": "I.B. Singh",
             "coverImageId": "ib-singh-histology",
-            "downloadUrl": "https://www.febbox.com/file/f-Rz5pL6p"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/28"
           },
           {
-            "id": "pawlina-histology-atlas-book",
-            "title": "Histology: A Text and Atlas With Correlated Cell and Molecular Biology",
+            "id": "pawlina-histology-atlas",
+            "title": "Histology: A Text and Atlas",
             "author": "Wojciech Pawlina",
             "coverImageId": "pawlina-histology-atlas",
-            "downloadUrl": "https://www.febbox.com/file/f-zL4bYw1B"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/29"
           }
         ],
         "atlases": [
           {
-            "id": "anatomy-360-guide-atlas",
-            "title": "Anatomy 360 - The Ultimate Visual Guide to the Human Body",
-            "author": "Dr. Jamie Ro",
+            "id": "anatomy-360-guide",
+            "title": "Anatomy 360 - The Ultimate Visual Guide",
+            "author": "Dr. Jamie Roebuck",
             "coverImageId": "anatomy-360-guide",
-            "downloadUrl": "https://www.febbox.com/file/f-vQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/30"
           },
           {
-            "id": "anatomy-cadaveric-atlas-atlas",
+            "id": "anatomy-cadaveric-atlas",
             "title": "Anatomy Cadaveric Atlas",
-            "author": "N.A.",
+            "author": "Various",
             "coverImageId": "anatomy-cadaveric-atlas",
-            "downloadUrl": "https://www.febbox.com/file/f-vQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/31"
           },
           {
-            "id": "clinical-atlas-human-anatomy-atlas",
+            "id": "clinical-atlas-human-anatomy",
             "title": "Clinical Atlas of Human Anatomy 7th Edition",
-            "author": "Peter Abrahams",
+            "author": "Various",
             "coverImageId": "clinical-atlas-human-anatomy",
-            "downloadUrl": "https://www.febbox.com/file/f-vQpXwL9L"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/32"
           }
         ],
-        "question-bank": [],
         "study-materials": [
           {
-            "id": "marrow-anatomy-8th-sm",
-            "title": "Marrow Anatomy",
-            "author": "8th Edition",
+            "id": "marrow-anatomy-8th",
+            "title": "Marrow Anatomy 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-anatomy-8th",
-            "downloadUrl": "https://www.febbox.com/share/AgwtUL7T"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/55"
           },
           {
-            "id": "prepladder-anatomy-x-sm",
-            "title": "Prepladder Anatomy",
-            "author": "X Edition",
+            "id": "prepladder-anatomy-x",
+            "title": "Prepladder Anatomy X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-anatomy-x",
-            "downloadUrl": null
+            "downloadUrl": "https://t.me/Dr_Astro_Official/74"
+          }
+        ],
+        "question-bank": [
+          {
+            "id": "selective-anatomy-prep-manual",
+            "title": "Selective Anatomy: Prep Manual for Undergraduates",
+            "author": "Vishram Singh",
+            "coverImageId": "selective-anatomy-prep",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/14"
           }
         ]
       }
@@ -215,66 +265,66 @@
       "year": [
         1
       ],
-      "description": "Physiology is the study of how the human body functions. This subject delves into the mechanisms of life, from the molecular level to the integrated function of whole systems.",
+      "description": "The science of how the human body functions in health, exploring the mechanics of cells, organs, and systems.",
       "materials": {
         "textbooks": [
           {
-            "id": "gk-pal-physiology-tb",
+            "id": "gk-pal-physiology",
             "title": "G K Pal Physiology",
-            "author": "G K Pal",
+            "author": "G.K. Pal",
             "coverImageId": "gk-pal-physiology",
-            "downloadUrl": "https://www.febbox.com/share/2sRxldyF"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/85"
           },
           {
-            "id": "senthamilselvi-physiology-tb",
-            "title": "Senthamilselvi Physiology Notes",
-            "author": "Dr. Senthamilselvi",
-            "coverImageId": "senthamilselvi-physiology",
-            "downloadUrl": "https://www.febbox.com/share/2TuqTIoB"
-          },
-          {
-            "id": "sembulingam-physiology-tb",
-            "title": "K Sembulingam - Essentials of Medical Physiology",
-            "author": "6th Edition",
+            "id": "sembulingam-physiology",
+            "title": "Essentials of Medical Physiology",
+            "author": "K. Sembulingam",
             "coverImageId": "sembulingam-physiology",
-            "downloadUrl": "https://www.febbox.com/share/KljmmEn1"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/87"
           },
           {
-            "id": "ganongs-physiology-tb",
-            "title": "Ganongs Review of Medical Physiology",
-            "author": "25th Edition",
+            "id": "ganongs-physiology",
+            "title": "Ganong's Review of Medical Physiology",
+            "author": "Kim E. Barrett",
             "coverImageId": "ganongs-physiology",
-            "downloadUrl": "https://www.febbox.com/share/15qy5bRK"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/88"
           },
           {
-            "id": "guyton-hall-physiology-tb",
+            "id": "guyton-hall-physiology",
             "title": "Guyton and Hall Textbook of Medical Physiology",
-            "author": "Guyton and Hall",
+            "author": "John E. Hall",
             "coverImageId": "guyton-hall-physiology",
-            "downloadUrl": "https://www.febbox.com/share/9nmX3d8J"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/89"
           },
           {
-            "id": "guyton-human-physiology-tb",
-            "title": "Guyton - Human Physiology and Mechanisms of Disease",
-            "author": "Guyton",
+            "id": "guyton-human-physiology",
+            "title": "Human Physiology and Mechanisms of Disease",
+            "author": "Arthur C. Guyton",
             "coverImageId": "guyton-human-physiology",
-            "downloadUrl": "https://www.febbox.com/share/eL17L8EA"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/90"
           }
         ],
         "study-materials": [
           {
-            "id": "marrow-physiology-8th-sm",
-            "title": "Marrow Physiology",
-            "author": "8th Edition",
-            "coverImageId": "marrow-physiology-8th",
-            "downloadUrl": "https://www.febbox.com/share/DPnRrFcp"
+            "id": "senthamilselvi-physiology",
+            "title": "Senthamilselvi Physiology Notes",
+            "author": "Dr. Senthamilselvi",
+            "coverImageId": "senthamilselvi-physiology",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/86"
           },
           {
-            "id": "prepladder-physiology-x-sm",
-            "title": "Prepladder Physiology",
-            "author": "X Edition",
+            "id": "marrow-physiology-8th",
+            "title": "Marrow Physiology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-physiology-8th",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/56"
+          },
+          {
+            "id": "prepladder-physiology-x",
+            "title": "Prepladder Physiology X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-physiology-x",
-            "downloadUrl": "https://www.febbox.com/share/7QvTdcLe"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/75"
           }
         ]
       }
@@ -285,23 +335,38 @@
       "year": [
         1
       ],
-      "description": "Biochemistry bridges the gap between biology and chemistry, focusing on the chemical processes within and related to living organisms. It's essential for understanding health and disease at a molecular level.",
+      "description": "The study of chemical processes within and relating to living organisms. Bridge between biology and chemistry.",
       "materials": {
-        "textbooks": [],
-        "study-materials": [
+        "textbooks": [
           {
-            "id": "marrow-biochemistry-8th-sm",
-            "title": "Marrow Biochemistry",
-            "author": "8th Edition",
-            "coverImageId": "marrow-biochemistry-8th",
-            "downloadUrl": "https://www.febbox.com/share/OG1lnYI3"
+            "id": "manjeshwar-biochemistry",
+            "title": "R Manjeshwar PRASAD Biochemistry",
+            "author": "R Manjeshwar Prasad",
+            "coverImageId": "manjeshwar-biochemistry",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/35"
           },
           {
-            "id": "prepladder-biochemistry-x-sm",
-            "title": "Prepladder Biochemistry",
-            "author": "X Edition",
+            "id": "vasudevan-biochemistry",
+            "title": "DM Vasudevan Biochemistry",
+            "author": "DM Vasudevan",
+            "coverImageId": "vasudevan-biochemistry",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/34"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-biochemistry-8th",
+            "title": "Marrow Biochemistry 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-biochemistry-8th",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/57"
+          },
+          {
+            "id": "prepladder-biochemistry-x",
+            "title": "Prepladder Biochemistry X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-biochemistry-x",
-            "downloadUrl": "https://www.febbox.com/share/nh4oMus9"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/76"
           }
         ]
       }
@@ -312,75 +377,77 @@
       "year": [
         2
       ],
-      "description": "Pathology is the study of the causes and effects of disease or injury. It involves the examination of tissues, organs, bodily fluids, and autopsies in order to study and diagnose disease.",
+      "description": "The study of the causes and effects of disease, and the bridge between science and medicine.",
       "materials": {
         "textbooks": [
           {
-            "id": "geetika-khanna-pathology-tb",
+            "id": "geetika-khanna-pathology",
             "title": "Geetika Khanna Pathology",
             "author": "Geetika Khanna",
             "coverImageId": "geetika-khanna-pathology",
-            "downloadUrl": "https://www.febbox.com/share/iqhm5qK9"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/100"
           },
           {
-            "id": "harsh-mohan-7th-tb",
-            "title": "Harsh Mohan Textbook of pathology",
-            "author": "7th Ed",
+            "id": "harsh-mohan-7th",
+            "title": "Harsh Mohan Textbook of pathology 7th Ed",
+            "author": "Harsh Mohan",
             "coverImageId": "harsh-mohan-7th",
-            "downloadUrl": "https://www.febbox.com/share/lFq2aImQ"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/101"
           },
           {
-            "id": "tejindar-singh-hematology-tb",
-            "title": "Tejindar Singh Hematology - Atlas",
-            "author": "Tejindar Singh",
-            "coverImageId": "tejindar-singh-hematology",
-            "downloadUrl": "https://www.febbox.com/share/wb96FIDx"
-          },
-          {
-            "id": "harsh-mohan-6th-tb",
-            "title": "Harsh Mohan - Textbook of Pathology",
-            "author": "6th Ed",
+            "id": "harsh-mohan-6th",
+            "title": "Harsh Mohan - Textbook of Pathology 6th Ed",
+            "author": "Harsh Mohan",
             "coverImageId": "harsh-mohan-6th",
-            "downloadUrl": "https://www.febbox.com/share/WQLgcfKH"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/103"
           },
           {
-            "id": "robbins-10th-tb",
-            "title": "Robbins",
-            "author": "10th Ed",
+            "id": "robbins-10th",
+            "title": "Robbins 10th Ed",
+            "author": "Vinay Kumar",
             "coverImageId": "robbins-10th",
-            "downloadUrl": "https://www.febbox.com/share/fIRZozyT"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/104"
           },
           {
-            "id": "ramdas-nayak-pathology-tb",
-            "title": "Ramdas Nayak Pathology",
-            "author": "4th Edition",
+            "id": "ramdas-nayak-pathology",
+            "title": "Ramdas Nayak Pathology 4th Edition",
+            "author": "Ramdas Nayak",
             "coverImageId": "ramdas-nayak-pathology",
-            "downloadUrl": "https://www.febbox.com/share/0laUbNv7"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/105"
           }
         ],
         "clinical-books": [
           {
-            "id": "pathology-clinical-cases-cb",
+            "id": "pathology-clinical-cases",
             "title": "Pathology Clinical Cases",
-            "author": "N.A.",
+            "author": "Various",
             "coverImageId": "pathology-clinical-cases",
-            "downloadUrl": "https://www.febbox.com/share/cX603dXp"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/99"
+          }
+        ],
+        "atlases": [
+          {
+            "id": "tejindar-singh-hematology",
+            "title": "Tejindar Singh Hematology - Atlas",
+            "author": "Tejindar Singh",
+            "coverImageId": "tejindar-singh-hematology",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/102"
           }
         ],
         "study-materials": [
           {
-            "id": "marrow-pathology-8th-sm",
-            "title": "Marrow Pathology",
-            "author": "8th Edition",
+            "id": "marrow-pathology-8th",
+            "title": "Marrow Pathology 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-pathology-8th",
-            "downloadUrl": "https://www.febbox.com/share/kDnvzQtb"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/59"
           },
           {
-            "id": "prepladder-pathology-x-sm",
-            "title": "Prepladder Pathology",
-            "author": "X Edition",
+            "id": "prepladder-pathology-x",
+            "title": "Prepladder Pathology X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-pathology-x",
-            "downloadUrl": "https://www.febbox.com/share/WjAklXtV"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/78"
           }
         ]
       }
@@ -391,54 +458,56 @@
       "year": [
         2
       ],
-      "description": "Microbiology is the study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa. This discipline includes fundamental research on the biochemistry, physiology, cell biology, ecology, evolution and clinical aspects of microorganisms.",
+      "description": "The study of microscopic organisms, such as bacteria, viruses, archaea, fungi and protozoa.",
       "materials": {
         "textbooks": [
           {
-            "id": "sastry-parasitology-tb",
+            "id": "sastry-parasitology",
             "title": "Apurba Sankar Sastry Essentials of Medical Parasitology",
             "author": "Apurba Sankar Sastry",
             "coverImageId": "sastry-parasitology",
-            "downloadUrl": "https://www.febbox.com/share/ErvlySs0"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/107"
           },
           {
-            "id": "sastry-microbiology-tb",
+            "id": "sastry-microbiology",
             "title": "Apurba Sankar Sastry - 3rd Essentials of Microbiology",
             "author": "Apurba Sankar Sastry",
             "coverImageId": "sastry-microbiology",
-            "downloadUrl": "https://www.febbox.com/share/kbA8Yn6i"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/108"
           }
         ],
         "clinical-books": [
           {
-            "id": "microbiology-clinical-cases-cb",
+            "id": "microbiology-clinical-cases",
             "title": "Microbiology Clinical Cases",
-            "author": "N.A.",
+            "author": "Various",
             "coverImageId": "microbiology-clinical-cases",
-            "downloadUrl": "https://www.febbox.com/share/UXMnN8eK"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/106"
+          }
+        ],
+        "question-bank": [
+          {
+            "id": "micro-mcqs",
+            "title": "Micro MCQs",
+            "author": "Various",
+            "coverImageId": "micro-mcqs",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/109"
           }
         ],
         "study-materials": [
           {
-            "id": "micro-mcqs-sm",
-            "title": "Micro MCQs",
-            "author": "N.A.",
-            "coverImageId": "micro-mcqs",
-            "downloadUrl": "https://www.febbox.com/share/2PRZC3Ys"
-          },
-          {
-            "id": "marrow-microbiology-8th-sm",
-            "title": "Marrow Microbiology",
-            "author": "8th Edition",
+            "id": "marrow-microbiology-8th",
+            "title": "Marrow Microbiology 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-microbiology-8th",
-            "downloadUrl": "https://www.febbox.com/share/VbrDJ71S"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/60"
           },
           {
-            "id": "prepladder-microbiology-x-sm",
-            "title": "Prepladder Microbiology",
-            "author": "X Edition",
+            "id": "prepladder-microbiology-x",
+            "title": "Prepladder Microbiology X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-microbiology-x",
-            "downloadUrl": null
+            "downloadUrl": "https://t.me/Dr_Astro_Official/79"
           }
         ]
       }
@@ -449,23 +518,54 @@
       "year": [
         2
       ],
-      "description": "Pharmacology is the science of drugs and their effect on living systems. This subject explores how drugs work, their therapeutic uses, and their potential side effects, providing a crucial foundation for prescribing medication.",
+      "description": "The branch of medicine concerned with the uses, effects, and modes of action of drugs.",
       "materials": {
-        "textbooks": [],
-        "study-materials": [
+        "textbooks": [
           {
-            "id": "marrow-pharmacology-8th-sm",
-            "title": "Marrow Pharmacology",
-            "author": "8th Edition",
-            "coverImageId": "marrow-pharmacology-8th",
-            "downloadUrl": "https://www.febbox.com/share/WnlVn2Vi"
+            "id": "kdt-8th",
+            "title": "KD Tripathi 8th Edition",
+            "author": "K.D. Tripathi",
+            "coverImageId": "kdt-8th",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/36"
           },
           {
-            "id": "prepladder-pharmacology-x-sm",
-            "title": "Prepladder Pharmacology",
-            "author": "X Edition",
+            "id": "kdt-drug-classification",
+            "title": "KD Tripathi DRUG classification pharm",
+            "author": "K.D. Tripathi",
+            "coverImageId": "kdt-drug-classification",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/37"
+          },
+          {
+            "id": "tara-pharmacology",
+            "title": "Tara Pharmacology 4th Edition",
+            "author": "Tara V. Shanbhag",
+            "coverImageId": "tara-pharmacology",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/38"
+          }
+        ],
+        "clinical-books": [
+          {
+            "id": "pharma-clinical-cases",
+            "title": "Pharmacology Clinical Cases",
+            "author": "Various",
+            "coverImageId": "pharma-clinical-cases",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/39"
+          }
+        ],
+        "study-materials": [
+          {
+            "id": "marrow-pharmacology-8th",
+            "title": "Marrow Pharmacology 8th Edition",
+            "author": "Marrow",
+            "coverImageId": "marrow-pharmacology-8th",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/58"
+          },
+          {
+            "id": "prepladder-pharmacology-x",
+            "title": "Prepladder Pharmacology X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-pharmacology-x",
-            "downloadUrl": null
+            "downloadUrl": "https://t.me/Dr_Astro_Official/77"
           }
         ]
       }
@@ -476,82 +576,80 @@
       "year": [
         3
       ],
-      "description": "Community Medicine focuses on the health of populations. It covers epidemiology, preventive medicine, and public health, aiming to prevent disease and promote health at the community level.",
+      "description": "Focuses on the health of populations, aiming to prevent disease and promote health at a community level.",
       "materials": {
         "textbooks": [
           {
-            "id": "parks-textbook-of-psm-tb",
+            "id": "parks-textbook-of-psm",
             "title": "Park's Textbook of PSM",
             "author": "K. Park",
             "coverImageId": "parks-textbook-of-psm",
-            "downloadUrl": "https://www.febbox.com/share/r7V273XN"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/40"
           },
           {
-            "id": "ah-suryakantha-tb",
+            "id": "ah-suryakantha",
             "title": "AH Suryakantha",
             "author": "A.H. Suryakantha",
             "coverImageId": "ah-suryakantha",
-            "downloadUrl": "https://www.febbox.com/share/B4P2X4mS"
-          }
-        ],
-        "clinical-books": [
+            "downloadUrl": "https://t.me/Dr_Astro_Official/41"
+          },
           {
-            "id": "essentials-of-cm-a-practical-book-cb",
-            "title": "Essentials of CM-a-practical book",
-            "author": "N.A",
-            "coverImageId": "essentials-of-cm-a-practical-book",
-            "downloadUrl": "https://www.febbox.com/share/3W9lRzWk"
+            "id": "vivek-jain-exam-preparatory-manual",
+            "title": "Vivek Jain exam preparatory manual",
+            "author": "Vivek Jain",
+            "coverImageId": "vivek-jain-exam-preparatory-manual",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/42"
+          },
+          {
+            "id": "review-book-vivek-jain-commed",
+            "title": "Review book Vivek Jain Commed",
+            "author": "Vivek Jain",
+            "coverImageId": "review-book-vivek-jain-commed",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/44"
           }
         ],
         "study-materials": [
           {
-            "id": "sia-commed-textbook-sm",
-            "title": "SIA Commed TEXTBOOK",
-            "author": "N.A",
-            "coverImageId": "sia-commed-textbook",
-            "downloadUrl": "https://www.febbox.com/share/7V1gZ2F6"
-          },
-          {
-            "id": "cm-falcon-sm",
+            "id": "cm-falcon",
             "title": "CM FALCON",
-            "author": "N.A",
+            "author": "Falcon",
             "coverImageId": "cm-falcon",
-            "downloadUrl": "https://www.febbox.com/share/3XoK1m9U"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/45"
           },
           {
-            "id": "review-book-vivek-jain-commed-sm",
-            "title": "Review book Vivek Jain Commed",
-            "author": "Vivek Jain",
-            "coverImageId": "review-book-vivek-jain-commed",
-            "downloadUrl": "https://www.febbox.com/share/Fj5X0v1m"
+            "id": "sia-commed-textbook",
+            "title": "SIA Commed TEXTBOOK",
+            "author": "SIA",
+            "coverImageId": "sia-commed-textbook",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/46"
           },
           {
-            "id": "commed-notes-drshetty-sm",
+            "id": "essentials-of-cm-a-practical-book",
+            "title": "Essentials of CM-a-practical book",
+            "author": "Various",
+            "coverImageId": "essentials-of-cm-a-practical-book",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/47"
+          },
+          {
+            "id": "commed-notes-drshetty",
             "title": "Commed Notes- drshetty",
             "author": "Dr. Shetty",
             "coverImageId": "commed-notes-drshetty",
-            "downloadUrl": "https://www.febbox.com/share/vVlT3E6K"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/43"
           },
           {
-            "id": "vivek-jain-exam-preparatory-manual-sm",
-            "title": "Vivek jain exam preparatory manual",
-            "author": "Vivek Jain",
-            "coverImageId": "vivek-jain-exam-preparatory-manual",
-            "downloadUrl": "https://www.febbox.com/share/Fj5X0v1m"
-          },
-          {
-            "id": "marrow-community-medicine-8th-sm",
-            "title": "Marrow Community Medicine",
-            "author": "8th Edition",
+            "id": "marrow-community-medicine-8th",
+            "title": "Marrow Community Medicine 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-community-medicine-8th",
-            "downloadUrl": null
+            "downloadUrl": "https://t.me/Dr_Astro_Official/61"
           },
           {
-            "id": "prepladder-community-medicine-x-sm",
-            "title": "Prepladder Community Medicine",
-            "author": "X Edition",
+            "id": "prepladder-community-medicine-x",
+            "title": "Prepladder Community Medicine X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-community-medicine-x",
-            "downloadUrl": "https://www.febbox.com/share/2xBr5JX3"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/80"
           }
         ]
       }
@@ -560,63 +658,61 @@
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
       "year": [
-        2
+        3
       ],
-      "description": "Forensic Medicine applies medical knowledge to legal questions. It's a critical field for investigating the cause of death, injury, and disease in legal contexts.",
+      "description": "Application of medical knowledge to legal questions, often in relation to crime and death investigation.",
       "materials": {
         "textbooks": [
           {
-            "id": "biswas-forensic-med-tb",
-            "title": "Biswas Forensic Med",
-            "author": "G. Biswas",
-            "coverImageId": "biswas-forensic-med",
-            "downloadUrl": "https://www.febbox.com/share/uOQz0h5d"
-          },
-          {
-            "id": "v-v-pillay-modern-medical-toxicology-tb",
-            "title": "V V Pillay modern medical toxicology",
-            "author": "V V Pillay",
-            "coverImageId": "v-v-pillay-modern-medical-toxicology",
-            "downloadUrl": "https://www.febbox.com/share/lXQ2sP5f"
-          },
-          {
-            "id": "rajesh-principles-of-fm-tb",
-            "title": "Rajesh - Principles of FM",
-            "author": "Rajesh",
-            "coverImageId": "rajesh-principles-of-fm",
-            "downloadUrl": "https://www.febbox.com/share/gR1yC8qI"
-          }
-        ],
-        "clinical-books": [
-          {
-            "id": "k-s-narayan-fm-cb",
+            "id": "k-s-narayan-fm",
             "title": "K.S.Narayan FM",
-            "author": "K.S. Narayan",
+            "author": "K.S. Narayan Reddy",
             "coverImageId": "k-s-narayan-fm",
-            "downloadUrl": "https://www.febbox.com/share/1OQz0h5d"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/48"
+          },
+          {
+            "id": "biswas-forensic-med",
+            "title": "Biswas Forensic Med",
+            "author": "Gautam Biswas",
+            "coverImageId": "biswas-forensic-med",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/49"
+          },
+          {
+            "id": "rajesh-principles-of-fm",
+            "title": "Rajesh - Principles of FM",
+            "author": "Rajesh Bardale",
+            "coverImageId": "rajesh-principles-of-fm",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/52"
+          },
+          {
+            "id": "v-v-pillay-modern-medical-toxicology",
+            "title": "V V Pillay modern medical toxicology",
+            "author": "V.V. Pillay",
+            "coverImageId": "v-v-pillay-modern-medical-toxicology",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/51"
           }
         ],
         "study-materials": [
           {
-            "id": "vision-forensic-medicine-sm",
+            "id": "vision-forensic-medicine",
             "title": "Vision",
-            "author": "N.A.",
+            "author": "Vision",
             "coverImageId": "vision-forensic-medicine",
-            "downloadUrl": "https://www.febbox.com/share/927sP5f"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/50"
           },
           {
-            "id": "marrow-forensic-medicine-8th-sm",
-            "title": "Marrow Forensic Medicine",
-            "author": "8th Edition",
+            "id": "marrow-forensic-medicine-8th",
+            "title": "Marrow Forensic Medicine 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-forensic-medicine-8th",
-            "downloadUrl": "https://www.febbox.com/share/2RiO9iUd"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/62"
           },
           {
-            "id": "prepladder-forensic-medicine-x-sm",
-            "title": "Prepladder Forensic Medicine",
-            "author": "X Edition",
+            "id": "prepladder-forensic-medicine-x",
+            "title": "Prepladder Forensic Medicine X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-forensic-medicine-x",
-            "downloadUrl": "https://www.febbox.com/share/vtDffOr8"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/81"
           }
         ]
       }
@@ -625,63 +721,65 @@
       "id": "ent",
       "name": "ENT",
       "year": [
-        3
+        4
       ],
-      "description": "ENT (Ear, Nose, and Throat), or otolaryngology, specializes in the diagnosis and treatment of disorders of the head and neck.",
+      "description": "Otorhinolaryngology, the study of diseases of the ear, nose, throat, and related structures of the head and neck.",
       "materials": {
         "textbooks": [
           {
-            "id": "dhingra-ent-tb",
+            "id": "dhingra-ent",
             "title": "Diseases of Ear, Nose and Throat: Dhingra",
             "author": "P.L. Dhingra",
             "coverImageId": "dhingra-ent",
-            "downloadUrl": "https://www.febbox.com/share/FPJrbZta"
-          },
+            "downloadUrl": "https://t.me/Dr_Astro_Official/91"
+          }
+        ],
+        "question-bank": [
           {
-            "id": "manisha-ent-entrance-tb",
-            "title": "ENT for Entrance Exam: Manisha",
-            "author": "Manisha Sinha",
-            "coverImageId": "manisha-ent-entrance",
-            "downloadUrl": "https://www.febbox.com/share/Oe4kmiTd"
+            "id": "mcq-ent-dhingra",
+            "title": "MCQ in ENT: Dhingra",
+            "author": "P.L. Dhingra",
+            "coverImageId": "mcq-ent-dhingra",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/93"
           }
         ],
         "clinical-books": [
           {
-            "id": "neha-shah-clinical-ent-cb",
+            "id": "neha-shah-clinical-ent",
             "title": "Neha shah Clinical ENT",
             "author": "Neha Shah",
             "coverImageId": "neha-shah-clinical-ent",
-            "downloadUrl": "https://www.febbox.com/share/vJk1avun"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/94"
           }
         ],
         "study-materials": [
           {
-            "id": "mcq-ent-dhingra-sm",
-            "title": "MCQ in ENT: Dhingra",
-            "author": "P.L. Dhingra",
-            "coverImageId": "mcq-ent-dhingra",
-            "downloadUrl": "https://www.febbox.com/share/uifrPRMo"
+            "id": "manisha-ent-entrance",
+            "title": "ENT for Entrance Exam: Manisha",
+            "author": "Manisha Sinha",
+            "coverImageId": "manisha-ent-entrance",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/92"
           },
           {
-            "id": "ent-agam-notes-sm",
+            "id": "ent-agam-notes",
             "title": "ENT Agam Notes",
             "author": "Agam",
             "coverImageId": "ent-agam-notes",
-            "downloadUrl": "https://www.febbox.com/share/0eVWUIb8"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/95"
           },
           {
-            "id": "marrow-ent-8th-sm",
-            "title": "Marrow ENT",
-            "author": "8th Edition",
+            "id": "marrow-ent-8th",
+            "title": "Marrow ENT 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-ent-8th",
-            "downloadUrl": "https://www.febbox.com/share/jqrAdI4u"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/54"
           },
           {
-            "id": "prepladder-ent-x-sm",
-            "title": "Prepladder ENT",
-            "author": "X Edition",
+            "id": "prepladder-ent-x",
+            "title": "Prepladder ENT X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-ent-x",
-            "downloadUrl": "https://www.febbox.com/share/WkLhRgam"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/84"
           }
         ]
       }
@@ -690,54 +788,54 @@
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [
-        3
+        4
       ],
-      "description": "Ophthalmology is the branch of medicine that deals with the anatomy, physiology, and diseases of the eyeball and orbit.",
+      "description": "The branch of medicine that deals with the diagnosis, treatment, and prevention of diseases of the eye and visual system.",
       "materials": {
         "textbooks": [
           {
-            "id": "khurana-ophthalmology-tb",
+            "id": "khurana-ophthalmology",
             "title": "Comprehensive Ophthalmology: Ak Khurana",
             "author": "A.K. Khurana",
             "coverImageId": "khurana-ophthalmology",
-            "downloadUrl": "https://www.febbox.com/share/d4ZjJmeB"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/96"
           },
           {
-            "id": "parsons-eye-disease-tb",
+            "id": "parsons-eye-disease",
             "title": "Parsons' Diseases of the Eye",
             "author": "Sir John Herbert Parsons",
             "coverImageId": "parsons-eye-disease",
-            "downloadUrl": "https://www.febbox.com/share/n2qtb2X3"
-          },
-          {
-            "id": "soch-simplified-ophthalmology-tb",
-            "title": "SOCH SIMPLIFIED OPHTHALMOLOGY",
-            "author": "Dr. Soch",
-            "coverImageId": "soch-simplified-ophthalmology",
-            "downloadUrl": "https://www.febbox.com/share/CNMyeai0"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/97"
           }
         ],
         "study-materials": [
           {
-            "id": "ophthalmology-agam-notes-sm",
+            "id": "soch-simplified-ophthalmology",
+            "title": "SOCH SIMPLIFIED OPHTHALMOLOGY",
+            "author": "Dr. Soch",
+            "coverImageId": "soch-simplified-ophthalmology",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/98"
+          },
+          {
+            "id": "ophthalmology-agam-notes",
             "title": "Ophthalmology Agam Notes",
             "author": "Agam",
             "coverImageId": "ophthalmology-agam-notes",
-            "downloadUrl": "https://www.febbox.com/share/pr0Z4Ky6"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/95"
           },
           {
-            "id": "marrow-ophthalmology-8th-sm",
-            "title": "Marrow Ophthalmology",
-            "author": "8th Edition",
+            "id": "marrow-ophthalmology-8th",
+            "title": "Marrow Ophthalmology 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-ophthalmology-8th",
-            "downloadUrl": "https://www.febbox.com/share/RGbyhgqW"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/53"
           },
           {
-            "id": "prepladder-ophthalmology-x-sm",
-            "title": "Prepladder Ophthalmology",
-            "author": "X Edition",
+            "id": "prepladder-ophthalmology-x",
+            "title": "Prepladder Ophthalmology X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-ophthalmology-x",
-            "downloadUrl": "https://www.febbox.com/share/IdKcSlM0"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/83"
           }
         ]
       }
@@ -748,82 +846,82 @@
       "year": [
         4
       ],
-      "description": "General Medicine is the medical specialty dedicated to the diagnosis and medical treatment of adults. A general physician's primary role is to provide comprehensive care and manage complex illnesses.",
+      "description": "The medical specialty dedicated to the diagnosis and medical treatment of adults.",
       "materials": {
         "textbooks": [
           {
-            "id": "davidsons-medicine-tb",
+            "id": "davidsons-medicine",
             "title": "Davidson's Principles and Practice of Medicine",
-            "author": "24th Edition",
+            "author": "Stanley Davidson",
             "coverImageId": "davidsons-medicine",
-            "downloadUrl": "https://drive.google.com/file/d/1Yt6i8DdqKqebx2GMSqXsgbC41zCD4sld/view?usp=sharing"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/110"
           },
           {
-            "id": "exam-prep-medicine-tb",
-            "title": "Exam Prep Medicine Archith Boloor",
-            "author": "4th Edition",
-            "coverImageId": "exam-prep-medicine",
-            "downloadUrl": "https://www.febbox.com/share/XYM7ysu6"
-          },
-          {
-            "id": "harrisons-medicine-tb",
+            "id": "harrisons-medicine",
             "title": "Harrison’s principles of internal medicine",
-            "author": "21st edition",
+            "author": "Tinsley R. Harrison",
             "coverImageId": "harrisons-medicine",
-            "downloadUrl": "https://www.febbox.com/share/AArLGEQ4"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/112"
           },
           {
-            "id": "manipal-prep-medicine-tb",
+            "id": "exam-prep-medicine",
+            "title": "Exam Prep Medicine Archith Boloor",
+            "author": "Archith Boloor",
+            "coverImageId": "exam-prep-medicine",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/111"
+          },
+          {
+            "id": "manipal-prep-medicine",
             "title": "Manipal Prep Manual of Medicine",
-            "author": "3rd Edition",
+            "author": "Manipal",
             "coverImageId": "manipal-prep-medicine",
-            "downloadUrl": "https://www.febbox.com/share/1dPnuhXl"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/113"
           }
         ],
         "clinical-books": [
           {
-            "id": "clinical-med-boloor-cb",
+            "id": "clinical-med-boloor",
             "title": "Clinical Med Archith Boloor",
             "author": "Archith Boloor",
             "coverImageId": "clinical-med-boloor",
-            "downloadUrl": "https://www.febbox.com/share/lFELTFPG"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/114"
           },
           {
-            "id": "hutchinsons-clinical-cb",
+            "id": "hutchinsons-clinical",
             "title": "Hutchinson's Clinical Methods",
-            "author": "24th Edition",
+            "author": "Robert Hutchinson",
             "coverImageId": "hutchinsons-clinical",
-            "downloadUrl": "https://www.febbox.com/share/w9qsudwi"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/115"
           },
           {
-            "id": "macleods-clinical-cb",
-            "title": "Macleods clinical examination",
-            "author": "N.A.",
+            "id": "macleods-clinical",
+            "title": "Macleod's clinical examination",
+            "author": "John Macleod",
             "coverImageId": "macleods-clinical",
-            "downloadUrl": "https://www.febbox.com/share/PtNa4lZ8"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/116"
           },
           {
-            "id": "alagappan-practical-cb",
+            "id": "alagappan-practical",
             "title": "Alagappan Manual of Practical Medicine Book",
             "author": "R. Alagappan",
             "coverImageId": "alagappan-practical",
-            "downloadUrl": "https://www.febbox.com/share/HrfR1CHh"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/117"
           }
         ],
         "study-materials": [
           {
-            "id": "marrow-gen-med-8th-sm",
-            "title": "Marrow Gen Medicine",
-            "author": "8th Edition",
+            "id": "marrow-gen-med-8th",
+            "title": "Marrow Gen Medicine 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-gen-med-8th",
-            "downloadUrl": "https://www.febbox.com/share/dmeATGGH"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/63"
           },
           {
-            "id": "prepladder-gen-medicine-x-sm",
-            "title": "Prepladder Gen Medicine",
-            "author": "X Edition",
+            "id": "prepladder-gen-medicine-x",
+            "title": "Prepladder Gen Medicine X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-gen-medicine-x",
-            "downloadUrl": "https://www.febbox.com/share/FbDLMKxv"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/64"
           }
         ]
       }
@@ -834,156 +932,149 @@
       "year": [
         4
       ],
-      "description": "General Surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
+      "description": "A surgical specialty that focuses on abdominal contents and often the thyroid gland.",
       "materials": {
         "textbooks": [
           {
-            "id": "bailey-love-surgery-tb",
+            "id": "bailey-love-surgery",
             "title": "Bailey & Love's Short Practice of Surgery",
-            "author": "N.A.",
+            "author": "Bailey & Love",
             "coverImageId": "bailey-love-surgery",
-            "downloadUrl": "https://www.febbox.com/share/wK0dkVg3"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/118"
           },
           {
-            "id": "manipal-surgery-tb",
+            "id": "manipal-surgery",
             "title": "Manipal Manual Of Surgery",
-            "author": "5th Edition",
+            "author": "K. Rajgopal Shenoy",
             "coverImageId": "manipal-surgery",
-            "downloadUrl": "https://www.febbox.com/share/RjNgMPB4"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/119"
           },
           {
-            "id": "srb-surgery-tb",
+            "id": "srb-surgery",
             "title": "SRB's Manual of Surgery",
-            "author": "6th Edition",
+            "author": "S.R. Bhatt",
             "coverImageId": "srb-surgery",
-            "downloadUrl": "https://www.febbox.com/share/R1dflC0i"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/120"
           },
           {
-            "id": "sabiston-surgery-tb",
+            "id": "sabiston-surgery",
             "title": "Textbook of Surgery by Sabiston",
-            "author": "21st Edition",
+            "author": "Sabiston",
             "coverImageId": "sabiston-surgery",
-            "downloadUrl": "https://www.febbox.com/share/dtTK9lN0"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/121"
           }
         ],
         "clinical-books": [
           {
-            "id": "manual-clinical-surgery-cb",
+            "id": "manual-clinical-surgery",
             "title": "A Manual On Clinical Surgery",
-            "author": "13th Edition",
+            "author": "S. Das",
             "coverImageId": "manual-clinical-surgery",
-            "downloadUrl": "https://www.febbox.com/share/Jczl5565"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/122"
           },
           {
-            "id": "long-cases-surgery-cb",
+            "id": "long-cases-surgery",
             "title": "Long Cases in General Surgery: Rajamahendran",
-            "author": "Rajamahendran",
+            "author": "R. Rajamahendran",
             "coverImageId": "long-cases-surgery",
-            "downloadUrl": "https://www.febbox.com/share/PcfCr8r7"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/123"
           },
           {
-            "id": "short-cases-surgery-cb",
+            "id": "short-cases-surgery",
             "title": "Short Cases In Surgery: Rajamahendran",
-            "author": "Rajamahendran",
+            "author": "R. Rajamahendran",
             "coverImageId": "short-cases-surgery",
-            "downloadUrl": "https://www.febbox.com/share/Bd4pG5GD"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/124"
           }
         ],
         "study-materials": [
           {
-            "id": "marrow-gen-surgery-8th-sm",
-            "title": "Marrow Gen Surgery",
-            "author": "8th Edition",
+            "id": "marrow-gen-surgery-8th",
+            "title": "Marrow Gen Surgery 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-gen-surgery-8th",
-            "downloadUrl": "https://www.febbox.com/share/Emhi8CW0"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/65"
           },
           {
-            "id": "prepladder-gen-surgery-x-sm",
-            "title": "Prepladder Gen Surgery",
-            "author": "X Edition",
+            "id": "prepladder-gen-surgery-x",
+            "title": "Prepladder Gen Surgery X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-gen-surgery-x",
-            "downloadUrl": "https://www.febbox.com/share/j59BLhCJ"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/66"
           }
         ]
       }
     },
     {
       "id": "obg",
-      "name": "OBG",
+      "name": "Obstetrics & Gynaecology",
       "year": [
         4
       ],
-      "description": "Obstetrics and Gynecology (OBG) is the medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynecology (covering the health of the female reproductive system).",
+      "description": "Two surgical-medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state.",
       "materials": {
         "obstetrics-textbooks": [
           {
-            "id": "dc-dutta-obstetrics-tb",
+            "id": "dc-dutta-obstetrics",
             "title": "DC Dutta Textbook of Obstetrics",
             "author": "D.C. Dutta",
             "coverImageId": "dc-dutta-obstetrics",
-            "downloadUrl": "https://www.febbox.com/share/aHhCKpo6"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/125"
           },
           {
-            "id": "mudaliar-menon-obstetrics-tb",
+            "id": "mudaliar-menon-obstetrics",
             "title": "Mudaliar And Menon's Clinical Obstetrics",
-            "author": "13th Edition",
+            "author": "Mudaliar & Menon",
             "coverImageId": "mudaliar-menon-obstetrics",
-            "downloadUrl": "https://www.febbox.com/share/3zrD2Qxm"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/127"
           }
         ],
         "gynecology-textbooks": [
           {
-            "id": "dc-dutta-gynecology-tb",
+            "id": "dc-dutta-gynecology",
             "title": "Dc Dutta Textbook Of Gynecology",
             "author": "D.C. Dutta",
             "coverImageId": "dc-dutta-gynecology",
-            "downloadUrl": "https://www.febbox.com/share/OXJAQiJT"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/126"
           },
           {
-            "id": "shaws-gynecology-tb",
+            "id": "shaws-gynecology",
             "title": "Shaw's Textbook of Gynecology",
-            "author": "N.A.",
+            "author": "Shaw",
             "coverImageId": "shaws-gynecology",
-            "downloadUrl": "https://www.febbox.com/share/y6QEi7FS"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/128"
           },
           {
-            "id": "lakshmi-seshadri-gynecology-tb",
+            "id": "lakshmi-seshadri-gynecology",
             "title": "Essentials of Gynecology: Lakshmi Seshadri",
             "author": "Lakshmi Seshadri",
             "coverImageId": "lakshmi-seshadri-gynecology",
-            "downloadUrl": "https://www.febbox.com/share/UormZyrW"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/129"
+          }
+        ],
+        "clinical-books": [
+          {
+            "id": "clinical-obg-sharmila-babu",
+            "title": "Clinical Obstetrics and Gynecology : Sharmila Arun Babu",
+            "author": "Sharmila Arun Babu",
+            "coverImageId": "clinical-obg-sharmila-babu",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/130"
           }
         ],
         "study-materials": [
           {
-            "id": "clinical-obg-sharmila-babu-sm",
-            "title": "Clinical Obstetrics and Gynecology : Sharmila Arun Babu",
-            "author": "Sharmila Arun Babu",
-            "coverImageId": "clinical-obg-sharmila-babu",
-            "downloadUrl": "https://www.febbox.com/share/mwbdzob3"
-          },
-          {
-            "id": "marrow-obg-8th-sm",
-            "title": "Marrow OBG",
-            "author": "8th Edition",
+            "id": "marrow-obg-8th",
+            "title": "Marrow OBG 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-obg-8th",
-            "downloadUrl": "https://www.febbox.com/share/rnnlaUsq"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/67"
           },
           {
-            "id": "prepladder-obg-x-sm",
-            "title": "Prepladder OBG",
-            "author": "X Edition",
+            "id": "prepladder-obg-x",
+            "title": "Prepladder OBG X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-obg-x",
-            "downloadUrl": "https://www.febbox.com/share/mYO9Sd0w"
-          }
-        ],
-        "embryology": [
-          {
-            "id": "embryology-notes-pims-sm",
-            "title": "Embryology Notes: PIMS Seniors",
-            "author": "PIMS Seniors",
-            "coverImageId": "embryology-notes-pims",
-            "downloadUrl": "https://www.febbox.com/share/YPEz2Y8z"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/68"
           }
         ]
       }
@@ -994,47 +1085,47 @@
       "year": [
         4
       ],
-      "description": "Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people be under pediatric care up to the age of 21.",
+      "description": "The branch of medicine that involves the medical care of infants, children, and adolescents.",
       "materials": {
         "textbooks": [
           {
-            "id": "ghai-essential-pediatrics-tb",
+            "id": "ghai-essential-pediatrics",
             "title": "GHAI Essential Pediatrics",
-            "author": "10th Edition",
+            "author": "O.P. Ghai",
             "coverImageId": "ghai-essential-pediatrics",
-            "downloadUrl": "https://www.febbox.com/share/29MrB9z1"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/131"
           },
           {
-            "id": "pediatrics-for-medical-arun-babu-tb",
+            "id": "pediatrics-for-medical-arun-babu",
             "title": "Pediatrics for Medical: Arun Babu",
             "author": "Arun Babu",
             "coverImageId": "pediatrics-for-medical-arun-babu",
-            "downloadUrl": "https://www.febbox.com/share/B5LbSK1k"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/132"
           }
         ],
         "clinical-books": [
           {
-            "id": "clinical-pediatrics-aruchamy-cb",
+            "id": "clinical-pediatrics-aruchamy",
             "title": "Clinical Pediatrics by Aruchamy",
             "author": "Aruchamy",
             "coverImageId": "clinical-pediatrics-aruchamy",
-            "downloadUrl": "https://www.febbox.com/share/Evzk3A8d"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/133"
           }
         ],
         "study-materials": [
           {
-            "id": "marrow-pediatrics-8th-sm",
-            "title": "Marrow Pediatrics",
-            "author": "8th Edition",
+            "id": "marrow-pediatrics-8th",
+            "title": "Marrow Pediatrics 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-pediatrics-8th",
-            "downloadUrl": "https://www.febbox.com/share/paTwP63h"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/69"
           },
           {
-            "id": "prepladder-pediatrics-x-sm",
-            "title": "Prepladder Pediatrics",
-            "author": "X Edition",
+            "id": "prepladder-pediatrics-x",
+            "title": "Prepladder Pediatrics X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-pediatrics-x",
-            "downloadUrl": "https://www.febbox.com/share/PrcthRON"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/70"
           }
         ]
       }
@@ -1045,69 +1136,31 @@
       "year": [
         4
       ],
-      "description": "Orthopedics is the field of medicine concerned with the study and treatment of the musculoskeletal system, particularly the spine, joints, and muscles.",
+      "description": "The branch of surgery concerned with conditions involving the musculoskeletal system.",
       "materials": {
         "textbooks": [
           {
-            "id": "maheshwar-orthopaedics-tb",
+            "id": "maheshwar-orthopaedics",
             "title": "Essential Orthopaedics: Maheshwar",
             "author": "J. Maheshwari",
             "coverImageId": "maheshwar-orthopaedics",
-            "downloadUrl": "https://www.febbox.com/share/2ZIw7ss3"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/134"
           }
         ],
         "study-materials": [
           {
-            "id": "marrow-orthopedics-8th-sm",
-            "title": "Marrow Orthopedics",
-            "author": "8th Edition",
+            "id": "marrow-orthopedics-8th",
+            "title": "Marrow Orthopedics 8th Edition",
+            "author": "Marrow",
             "coverImageId": "marrow-orthopedics-8th",
-            "downloadUrl": "https://www.febbox.com/share/ToBJXH10"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/63"
           },
           {
-            "id": "prepladder-orthopedics-x-sm",
-            "title": "Prepladder Orthopedics",
-            "author": "X Edition",
+            "id": "prepladder-orthopedics-x",
+            "title": "Prepladder Orthopedics X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-orthopedics-x",
-            "downloadUrl": "https://www.febbox.com/share/gVciGgHn"
-          }
-        ]
-      }
-    },
-    {
-      "id": "radiology",
-      "name": "Radiology",
-      "year": [
-        4
-      ],
-      "description": "Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
-      "materials": {
-        "study-materials": [
-          {
-            "id": "prepladder-radiology-x-sm",
-            "title": "Prepladder Radiology",
-            "author": "X Edition",
-            "coverImageId": "prepladder-radiology-x",
-            "downloadUrl": "https://www.febbox.com/share/iDnzVkGL"
-          }
-        ]
-      }
-    },
-    {
-      "id": "anesthesiology",
-      "name": "Anesthesiology",
-      "year": [
-        4
-      ],
-      "description": "Anesthesiology is the medical specialty concerned with the total perioperative care of patients before, during and after surgery.",
-      "materials": {
-        "study-materials": [
-          {
-            "id": "prepladder-anesthesia-x-sm",
-            "title": "Prepladder Anesthesia",
-            "author": "X Edition",
-            "coverImageId": "prepladder-anesthesia-x",
-            "downloadUrl": "https://www.febbox.com/share/JkYj4Sf2"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/82"
           }
         ]
       }
@@ -1118,15 +1171,53 @@
       "year": [
         4
       ],
-      "description": "Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders.",
+      "description": "The medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders.",
       "materials": {
         "study-materials": [
           {
-            "id": "prepladder-psychiatry-x-sm",
-            "title": "Prepladder Psychiatry",
-            "author": "X Edition",
+            "id": "prepladder-psychiatry-x",
+            "title": "Prepladder Psychiatry X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-psychiatry-x",
-            "downloadUrl": "https://www.febbox.com/share/M4sZGeJE"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/71"
+          }
+        ]
+      }
+    },
+    {
+      "id": "radiology",
+      "name": "Radiology",
+      "year": [
+        4
+      ],
+      "description": "The medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
+      "materials": {
+        "study-materials": [
+          {
+            "id": "prepladder-radiology-x",
+            "title": "Prepladder Radiology X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-radiology-x",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/72"
+          }
+        ]
+      }
+    },
+    {
+      "id": "anesthesiology",
+      "name": "Anesthesiology",
+      "year": [
+        4
+      ],
+      "description": "The medical specialty concerned with the total perioperative care of patients before, during and after surgery.",
+      "materials": {
+        "study-materials": [
+          {
+            "id": "prepladder-anesthesia-x",
+            "title": "Prepladder Anesthesia X Edition",
+            "author": "Prepladder",
+            "coverImageId": "prepladder-anesthesia-x",
+            "downloadUrl": "https://t.me/Dr_Astro_Official/73"
           }
         ]
       }
@@ -1137,18 +1228,25 @@
       "year": [
         4
       ],
-      "description": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
+      "description": "The branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.",
       "materials": {
         "study-materials": [
           {
-            "id": "prepladder-dermatology-x-sm",
-            "title": "Prepladder Dermatology",
-            "author": "X Edition",
+            "id": "prepladder-dermatology-x",
+            "title": "Prepladder Dermatology X Edition",
+            "author": "Prepladder",
             "coverImageId": "prepladder-dermatology-x",
-            "downloadUrl": "https://www.febbox.com/share/4vnQc6RI"
+            "downloadUrl": "https://t.me/Dr_Astro_Official/74"
           }
         ]
       }
     }
+  ],
+  "suggestedModules": [
+    "anatomy",
+    "physiology",
+    "biochemistry",
+    "pathology",
+    "pharmacology"
   ]
 }

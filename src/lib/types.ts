@@ -1,3 +1,4 @@
+
 export interface Book {
   id: string;
   title: string;
@@ -34,6 +35,16 @@ export interface Quote {
   author: string;
 }
 
+export interface CaseStudy {
+  id: string;
+  title: string;
+  scenario: string;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+}
+
 export interface AppData {
   inspirationalQuotes: Quote[];
   paretoBanner: {
@@ -45,6 +56,7 @@ export interface AppData {
     options: string[];
     answerIndex: number;
   };
+  caseStudies: CaseStudy[];
   subjects: Subject[];
   suggestedModules: string[];
 }
