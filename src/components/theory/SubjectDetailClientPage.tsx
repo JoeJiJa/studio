@@ -58,7 +58,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
 
 
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-sm mx-auto">
       <div className="flex items-center justify-between mb-4">
         <BackButton />
       </div>
