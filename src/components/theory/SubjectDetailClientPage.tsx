@@ -10,25 +10,24 @@ import { MaterialSection } from './MaterialSection';
 import { SubjectIcon } from './SubjectIcon';
 import { Card, CardContent } from '../ui/card';
 import { Badge } from '../ui/badge';
-import { MaterialListSection } from './MaterialListSection';
 
 interface SubjectDetailClientPageProps {
   subject: Subject;
 }
 
 const SECTIONS_CONFIG = [
-  { key: 'textbooks', title: 'Textbooks', view: 'list' },
-  { key: 'question-bank', title: 'Question Banks', view: 'list' },
-  { key: 'general-anatomy', title: 'General Anatomy', view: 'carousel' },
-  { key: 'dissection-manual', title: 'Dissection Manual', view: 'carousel' },
-  { key: 'clinical-books', title: 'Clinical Books', view: 'carousel' },
-  { key: 'histology', title: 'Histology', view: 'carousel' },
-  { key: 'obstetrics-textbooks', title: 'Obstetrics Textbooks', view: 'carousel' },
-  { key: 'gynecology-textbooks', title: 'Gynecology Textbooks', view: 'carousel' },
-  { key: 'embryology', title: 'Embryology', view: 'carousel' },
-  { key: 'study-materials', title: 'Study Materials', view: 'carousel' },
-  { key: 'atlases', title: 'Atlases', view: 'carousel' },
-  { key: 'others', title: 'Others', view: 'carousel' },
+  { key: 'textbooks', title: 'Textbooks' },
+  { key: 'question-bank', title: 'Question Banks' },
+  { key: 'general-anatomy', title: 'General Anatomy' },
+  { key: 'dissection-manual', title: 'Dissection Manual' },
+  { key: 'clinical-books', title: 'Clinical Books' },
+  { key: 'histology', title: 'Histology' },
+  { key: 'obstetrics-textbooks', title: 'Obstetrics Textbooks' },
+  { key: 'gynecology-textbooks', title: 'Gynecology Textbooks' },
+  { key: 'embryology', title: 'Embryology' },
+  { key: 'study-materials', title: 'Study Materials' },
+  { key: 'atlases', title: 'Atlases' },
+  { key: 'others', title: 'Others' },
 ];
 
 export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProps) {
@@ -59,51 +58,35 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
 
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-md mx-auto">
       <div className="flex items-center justify-between mb-4">
         <BackButton />
       </div>
       
       <Card>
         <CardContent className="p-4 md:p-6">
-            <header className="mb-6 md:mb-8">
-              <div className="flex items-start gap-4">
-                <div className="hidden sm:block p-3 rounded-lg bg-secondary">
-                  <SubjectIcon subjectId={subject.id} className="w-8 h-8 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-1">
-                     {subject.year.map(y => (
-                      <Badge key={y} variant="secondary">Year {y}</Badge>
-                    ))}
-                  </div>
-                  <h1 className="text-3xl md:text-4xl font-headline font-bold">{subject.name}</h1>
-                  <p className="text-muted-foreground mt-2">{subject.description}</p>
-                </div>
+            <header className="mb-6 md:mb-8 text-center">
+              <div className="inline-block p-4 rounded-full bg-secondary mb-4">
+                  <SubjectIcon subjectId={subject.id} className="w-12 h-12 text-primary" />
               </div>
+              <h1 className="text-3xl md:text-4xl font-headline font-bold">{subject.name}</h1>
+              <div className="flex flex-wrap justify-center items-center gap-2 mt-2">
+                  {subject.year.map(y => (
+                  <Badge key={y} variant="secondary">Year {y}</Badge>
+                ))}
+              </div>
+              <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{subject.description}</p>
             </header>
 
             <div className="space-y-8">
-                {sectionsWithContent.map((section) => {
-                    if (section.view === 'list') {
-                        return (
-                             <MaterialListSection
-                                key={section.key}
-                                title={section.title}
-                                materials={section.materials}
-                                onItemClick={handleItemClick}
-                            />
-                        );
-                    }
-                    return (
-                        <MaterialSection
-                            key={section.key}
-                            title={section.title}
-                            materials={section.materials}
-                            onItemClick={handleItemClick}
-                        />
-                    );
-                })}
+                {sectionsWithContent.map((section) => (
+                    <MaterialSection
+                        key={section.key}
+                        title={section.title}
+                        materials={section.materials}
+                        onItemClick={handleItemClick}
+                    />
+                ))}
             </div>
         </CardContent>
       </Card>
