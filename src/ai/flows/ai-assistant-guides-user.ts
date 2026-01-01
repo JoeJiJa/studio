@@ -13,6 +13,7 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 import { data } from '@/lib/data';
+import { googleAI } from '@genkit-ai/google-genai';
 
 const AIAssistantGuidesUserInputSchema = z.object({
   year: z.string().describe('The year of study (1st, 2nd, 3rd, 4th).'),
@@ -60,6 +61,7 @@ const aiAssistantGuidesUserPrompt = ai.definePrompt({
   tools: [getRelevantContent],
   input: {schema: AIAssistantGuidesUserInputSchema},
   output: {schema: AIAssistantGuidesUserOutputSchema},
+  model: googleAI.model('gemini-1.5-flash-latest'),
   prompt: `You are Dr. Astro, a helpful AI assistant for medical students. Your role is to guide users through the website's content based on their year of study and subject of interest.
 
   The student is in year: {{{year}}}
