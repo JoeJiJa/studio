@@ -1,11 +1,9 @@
+
 "use client";
 
-import React, { useState } from 'react';
-import { Bot, Loader2, Send } from 'lucide-react';
-import { z } from 'zod';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { aiAssistantGuidesUser } from '@/ai/flows/ai-assistant-guides-user';
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { Bot, Book, ChevronLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -14,167 +12,147 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
-  DialogFooter,
 } from '@/components/ui/dialog';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { Textarea } from '@/components/ui/textarea';
 import { data } from '@/lib/data';
+import type { Subject } from '@/lib/types';
+import { cn } from '@/lib/utils';
 import { ScrollArea } from '../ui/scroll-area';
 
-const formSchema = z.object({
-  year: z.string().min(1, 'Please select your year.'),
-  subject: z.string().min(1, 'Please select a subject.'),
-  query: z.string().min(10, 'Please enter a query of at least 10 characters.'),
-});
+type Stage = 'year' | 'subject';
 
-type FormValues = z.infer<typeof formSchema>;
-
-const studyYears = ["1st", "2nd", "3rd", "4th"];
+const studyYears = [1, 2, 3, 4];
+const subjectOrder: { [key: number]: string[] } = {
+  1: ['anatomy', 'physiology', 'biochemistry'],
+};
 
 export function AIChat() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [aiResponse, setAiResponse] = useState('');
+  const [stage, setStage] = useState<Stage>('year');
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [subjects, setSubjects] = useState<Subject[]>([]);
+  const router = useRouter();
+  const [isAnimating, setIsAnimating] = useState(true);
 
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      year: '',
-      subject: '',
-      query: '',
-    },
-  });
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimating(false);
+    }, 4000); // Animation duration
+    return () => clearTimeout(timer);
+  }, []);
 
-  const onSubmit = async (values: FormValues) => {
-    setIsLoading(true);
-    setAiResponse('');
-    try {
-      const result = await aiAssistantGuidesUser(values);
-      setAiResponse(result.response);
-    } catch (error) {
-      console.error('AI assistant error:', error);
-      setAiResponse('Sorry, something went wrong. Please try again.');
-    } finally {
-      setIsLoading(false);
+  const handleYearSelect = (year: number) => {
+    const yearSubjects = data.subjects.filter(subject => subject.year.includes(year));
+
+    const order = subjectOrder[year];
+    if (order) {
+      yearSubjects.sort((a, b) => {
+        const indexA = order.indexOf(a.id);
+        const indexB = order.indexOf(b.id);
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.name.localeCompare(b.name);
+      });
+    } else {
+        yearSubjects.sort((a, b) => a.name.localeCompare(b.name));
     }
+
+    setSubjects(yearSubjects);
+    setSelectedYear(year);
+    setStage('subject');
   };
 
+  const handleSubjectSelect = (subject: Subject) => {
+    router.push(`/theory/${subject.id}`);
+    setIsOpen(false);
+    // Reset state for next time
+    setTimeout(() => {
+        setStage('year');
+        setSelectedYear(null);
+    }, 300);
+  };
+
+  const handleBack = () => {
+    setStage('year');
+    setSelectedYear(null);
+    setSubjects([]);
+  };
+
+  const handleOpenChange = (open: boolean) => {
+    if (!open) {
+        // Reset state when closing dialog
+        setTimeout(() => {
+            setStage('year');
+            setSelectedYear(null);
+        }, 300);
+    }
+    setIsOpen(open);
+  }
+
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         <Button
           size="icon"
-          className="fixed bottom-20 right-4 md:bottom-6 md:right-6 rounded-full w-14 h-14 shadow-lg z-50"
+          className={cn(
+            "fixed bottom-20 right-4 md:bottom-6 md:right-6 rounded-full w-14 h-14 shadow-lg z-50",
+            isAnimating && "animate-jiggle"
+          )}
         >
           <Bot className="h-6 w-6" />
           <span className="sr-only">Open AI Assistant</span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] md:max-w-lg">
+      <DialogContent className="sm:max-w-sm md:max-w-md">
         <DialogHeader>
           <DialogTitle className="font-headline flex items-center gap-2">
             <Bot /> Dr. Astro Assistant
           </DialogTitle>
           <DialogDescription>
-            Ask me anything about your studies. I'll help you find the right resources.
+            {stage === 'year'
+              ? "What year are you interested in?"
+              : `Showing subjects for Year ${selectedYear}.`}
           </DialogDescription>
         </DialogHeader>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <FormField
-                control={form.control}
-                name="year"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Year</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select year" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        {studyYears.map(year => (
-                          <SelectItem key={year} value={year}>{year} Year</SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="subject"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Subject</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select subject" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                         <ScrollArea className="h-48">
-                          {data.subjects.map(subject => (
-                            <SelectItem key={subject.id} value={subject.name}>{subject.name}</SelectItem>
+
+        <div className="mt-4">
+            {stage === 'year' ? (
+                <div className="grid grid-cols-2 gap-3">
+                    {studyYears.map(year => (
+                        <Button
+                            key={year}
+                            variant="outline"
+                            className="h-16 text-lg"
+                            onClick={() => handleYearSelect(year)}
+                        >
+                            Year {year}
+                        </Button>
+                    ))}
+                </div>
+            ) : (
+                <div>
+                    <Button variant="ghost" size="sm" onClick={handleBack} className="mb-2">
+                        <ChevronLeft className="mr-2" />
+                        Back to years
+                    </Button>
+                    <ScrollArea className="h-64">
+                      <div className="space-y-2 pr-4">
+                          {subjects.map(subject => (
+                              <Button
+                                  key={subject.id}
+                                  variant="outline"
+                                  className="w-full justify-start text-left h-auto"
+                                  onClick={() => handleSubjectSelect(subject)}
+                              >
+                                  <Book className="mr-2 shrink-0" />
+                                  <span className="flex-1 whitespace-normal">{subject.name}</span>
+                              </Button>
                           ))}
-                        </ScrollArea>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-            <FormField
-              control={form.control}
-              name="query"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Your Question</FormLabel>
-                  <FormControl>
-                    <Textarea placeholder="e.g., 'What are the best resources to start with for anatomy?'" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-             <DialogFooter>
-                <Button type="submit" disabled={isLoading}>
-                {isLoading ? (
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                ) : (
-                    <Send className="mr-2 h-4 w-4" />
-                )}
-                Ask Dr. Astro
-                </Button>
-            </DialogFooter>
-          </form>
-        </Form>
-        { (isLoading || aiResponse) && (
-            <div className="mt-4 space-y-2">
-                <h4 className="font-semibold">Dr. Astro's Response:</h4>
-                {isLoading && !aiResponse && <p className="text-sm text-muted-foreground">Thinking...</p>}
-                {aiResponse && <div className="p-4 bg-secondary rounded-md text-sm">{aiResponse}</div>}
-            </div>
-        )}
+                      </div>
+                    </ScrollArea>
+                </div>
+            )}
+        </div>
       </DialogContent>
     </Dialog>
   );
