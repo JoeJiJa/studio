@@ -78,7 +78,7 @@ const subjectIcons: { [key: string]: React.ElementType } = {
   'general-medicine': Stethoscope,
   'general-surgery': Scissors,
   obg: Baby,
-  pediatrics: Baby,
+  pediatrics: Stethoscope,
   orthopedics: Bone,
   radiology: Activity,
   anesthesiology: Pill,
