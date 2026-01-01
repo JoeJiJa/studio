@@ -73,7 +73,7 @@ export default function RootLayout({
           </div>
           <div className="flex min-h-screen">
             <main className="flex-grow pb-16">
-              <div className="container mx-auto px-4 sm:px-6 py-8 max-w-2xl lg:max-w-4xl">
+              <div className="container mx-auto px-4 sm:px-6 py-8 max-w-xl">
                 {children}
               </div>
             </main>
