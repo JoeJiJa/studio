@@ -69,7 +69,8 @@ export function BookCarousel({
 
           const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
             if (onItemClick) {
-              e.preventDefault();
+              // This was causing issues. The link's default behavior should be sufficient.
+              // e.preventDefault(); 
               onItemClick(item);
             }
           };

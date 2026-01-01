@@ -35,7 +35,7 @@ export function MaterialSection({ title, materials, onItemClick, onShowMoreClick
             id: book.id,
             title: book.title,
             subtitle: book.author,
-            href: '#', 
+            href: item.downloadUrl || '#', 
             coverImageId: book.coverImageId,
           };
         }}

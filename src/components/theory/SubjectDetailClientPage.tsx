@@ -44,15 +44,22 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     if (isBook(item)) {
        addRecentlyViewed(item);
     }
-    
-    if (item.downloadUrl) {
-      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
-    }
+    // No need to open window here, as the Link component will handle it.
   };
 
   const handleShowMoreClick = (title: string, materials: Material[]) => {
     setSheetState({ title, materials });
   };
+
+  const handleSheetItemClick = (item: Material) => {
+    if (isBook(item)) {
+      addRecentlyViewed(item);
+    }
+    
+    if (item.downloadUrl) {
+      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
+    }
+  }
   
   const sectionsWithContent = useMemo(() => SECTIONS_CONFIG.map(section => {
     let title = section.title;
@@ -121,7 +128,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
           onOpenChange={(isOpen) => !isOpen && setSheetState(null)}
           title={sheetState.title}
           materials={sheetState.materials}
-          onItemClick={handleItemClick}
+          onItemClick={handleSheetItemClick}
         />
       )}
     </>
