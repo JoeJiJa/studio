@@ -767,6 +767,30 @@
       "description": "Ophthal Cases Identification points",
       "imageUrl": "https://prithvibooks.com/wp-content/uploads/2020/09/agarwal.jpg",
       "imageHint": "ophthalmology clinical"
+    },
+    {
+      "id": "mohan-bansal-ent",
+      "description": "Mohan bansal - Diseases of Ear, Nose and Throat With Head and Neck Surgery 2nd Edition",
+      "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT2PFcZ4YdWr_aNgGjTT9f_TfjKOeaK0DaBs7Dmgdd41LHzkIWpdm4imrzbzEzhaS61dbIGydPn5i-UxZHHmKrtaObOCAfq",
+      "imageHint": "ent textbook"
+    },
+    {
+      "id": "sakshi-arora-ent",
+      "description": "Sakshi Arora Hans - ENT 6th edition",
+      "imageUrl": "https://m.media-amazon.com/images/I/81zaoni4krL._AC_UF1000,1000_QL80_.jpg",
+      "imageHint": "ent textbook"
+    },
+    {
+      "id": "hazarika-ent",
+      "description": "Hazarika ENT 3rd Edition",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8HnOojQdFKgOutlHRU7QYVjA1zqagaaLysA&s",
+      "imageHint": "clinical ent"
+    },
+    {
+      "id": "practical-ent-vikas-sinha",
+      "description": "Practical ENT Vikas Sinha 3rd Ed.",
+      "imageUrl": "https://m.media-amazon.com/images/I/71qbvpoxwML._UF1000,1000_QL80_.jpg",
+      "imageHint": "clinical ent"
     }
   ]
 }
