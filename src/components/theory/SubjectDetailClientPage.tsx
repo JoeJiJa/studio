@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import React from 'react';
@@ -56,7 +55,7 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
 
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-3xl mx-auto">
       <div className="flex items-center justify-between mb-4">
         <BackButton />
       </div>
