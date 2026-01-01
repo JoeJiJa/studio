@@ -32,7 +32,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="icon" href="https://storage.googleapis.com/pai-images/051381394a14434293a527f4d7f5b331.png" />
+          <link rel="icon" href="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/fRGo42eAcDofrKwh53zL/Dr%20Astro.jpg" />
           <link rel="manifest" href="/manifest.json" />
         </head>
         <body className={cn("font-body antialiased", "min-h-screen bg-background")}>
@@ -55,7 +55,7 @@ export default function RootLayout({
         <title>Dr Astro</title>
         <meta name="description" content="Your personal medical study companion." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="https://storage.googleapis.com/pai-images/051381394a14434293a527f4d7f5b331.png" />
+        <link rel="icon" href="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/fRGo42eAcDofrKwh53zL/Dr%20Astro.jpg" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
