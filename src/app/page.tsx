@@ -10,7 +10,7 @@ import { BrainCircuit, History } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 md:gap-12">
+    <div className="flex flex-col gap-8 md:gap-12 -mt-20">
       <HomeHero />
       
       <div className="space-y-8">

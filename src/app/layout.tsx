@@ -34,7 +34,7 @@ export default function RootLayout({
           <link rel="icon" href="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/fRGo42eAcDofrKwh53zL/Dr%20Astro.jpg" />
           <link rel="manifest" href="/manifest.json" />
         </head>
-        <body className={cn("font-body antialiased", "min-h-screen bg-background")}>
+        <body className={cn("font-body antialiased", "min-h-screen bg-black")}>
            <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -68,7 +68,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="flex-grow pt-24 container mx-auto px-4 sm:px-6 lg:px-8">
+          <main className="flex-grow pt-20 container mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </main>
           <AIChat />
