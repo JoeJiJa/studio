@@ -44,7 +44,7 @@ export function BookCarousel({
     return (
       <div className="flex space-x-4 pb-1">
         {[...Array(loadingSkeletons)].map((_, i) => (
-          <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/5 md:basis-1/7 lg:basis-1/9">
+          <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7">
             <div className="p-1">
               <Skeleton className="aspect-[2/3] w-full rounded-md" />
               <Skeleton className="h-4 mt-2 w-3/4" />
@@ -79,7 +79,7 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-2/5 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 pl-1">
+            <CarouselItem key={id} className="basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7 pl-1">
               <div className="p-0.5">
                 <Link 
                   href={href} 
