@@ -2,18 +2,19 @@
 "use client";
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { data } from '@/lib/data';
 import { BrainCircuit } from 'lucide-react';
-import { useQuizPerformance } from '@/hooks/use-quiz-performance';
 import { useToast } from '@/hooks/use-toast';
 
 export function CustomQuizGenerator() {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
-  const { logQuizResult } = useQuizPerformance();
+  const [selectedCount, setSelectedCount] = useState<string>("25");
   const { toast } = useToast();
+  const router = useRouter();
 
   const handleStartQuiz = () => {
     if (!selectedSubject) {
@@ -25,14 +26,7 @@ export function CustomQuizGenerator() {
         return;
     }
     
-    const subjectName = data.subjects.find(s => s.id === selectedSubject)?.name || 'Unknown Subject';
-    const randomScore = Math.floor(Math.random() * 41) + 60; // Score between 60 and 100
-    logQuizResult(subjectName, randomScore);
-
-    toast({
-        title: "Quiz Completed!",
-        description: `You scored ${randomScore}% in ${subjectName}. Your dashboard has been updated.`,
-    });
+    router.push(`/exam-prep/quiz?subject=${selectedSubject}&count=${selectedCount}`);
   };
 
   return (
@@ -63,7 +57,7 @@ export function CustomQuizGenerator() {
           </div>
           <div className="space-y-2">
             <label htmlFor="questions-select" className="text-sm font-medium">Number of Questions</label>
-            <Select defaultValue="25">
+            <Select value={selectedCount} onValueChange={setSelectedCount}>
               <SelectTrigger id="questions-select">
                 <SelectValue placeholder="Select number" />
               </SelectTrigger>
