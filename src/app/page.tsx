@@ -11,10 +11,10 @@ import { BrainCircuit, History } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col-reverse md:flex-col gap-8 md:gap-12">
-      
+    <div className="flex flex-col gap-8 md:gap-12">
+      <HomeHero />
+
       <div className="space-y-8">
-        <SuggestedModules moduleIds={data.suggestedModules} />
         <RecentlyViewed />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -23,9 +23,10 @@ export default function Home() {
         </div>
 
         <InspirationalQuote />
+        
+        <SuggestedModules moduleIds={data.suggestedModules} />
       </div>
 
-      <HomeHero />
     </div>
   );
 }
