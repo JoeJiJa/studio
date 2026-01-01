@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Bot } from 'lucide-react';
@@ -19,7 +19,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto">
+    <header className="fixed bottom-4 md:top-4 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto">
         <div className="flex items-center justify-center bg-black/50 backdrop-blur-md rounded-full shadow-lg p-2 gap-2 md:gap-4">
             <Link href="/" className="flex items-center gap-2 font-headline text-lg font-bold text-primary flex-shrink-0 pr-2">
               <Bot />

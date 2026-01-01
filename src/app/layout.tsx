@@ -68,7 +68,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="flex-grow pt-20 container mx-auto px-4 sm:px-6 lg:px-8">
+          <main className="flex-grow pt-8 pb-24 md:pt-20 md:pb-8 container mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </main>
           <AIChat />
