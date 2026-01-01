@@ -60,7 +60,7 @@ export function BookCarousel({
         dragFree: true,
         slidesToScroll: 'auto',
       }}
-      className="w-full relative"
+      className="w-full"
     >
       <CarouselContent className="-ml-2 md:-ml-4">
         {items.map((item, index) => {
