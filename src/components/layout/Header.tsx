@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <header className="fixed bottom-4 md:top-4 left-1/2 -translate-x-1/2 z-50 w-[90vw] md:w-auto">
-        <div className="flex items-center justify-center bg-black/50 backdrop-blur-md rounded-full shadow-lg p-2 gap-2 md:gap-4">
+        <div className="flex items-center justify-center bg-card/50 backdrop-blur-md rounded-full shadow-lg p-2 gap-2 md:gap-4">
             <Link href="/" className="flex items-center gap-2 font-headline text-lg font-bold text-primary flex-shrink-0 pr-2">
               <Bot />
             </Link>
@@ -35,7 +35,7 @@ export function Header() {
                       'text-sm font-medium transition-colors rounded-full px-3 py-1 flex-shrink-0',
                       isActive
                         ? 'bg-primary text-primary-foreground'
-                        : 'text-white/80 hover:text-white hover:bg-white/10'
+                        : 'text-card-foreground/80 hover:text-card-foreground hover:bg-accent/50'
                     )}
                   >
                     {item.label}
