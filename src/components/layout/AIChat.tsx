@@ -110,8 +110,8 @@ export function AIChat() {
           </DialogTitle>
           <DialogDescription>
             {stage === 'year'
-              ? "What year are you interested in?"
-              : `Showing subjects for Year ${selectedYear}.`}
+              ? "Welcome! I can help you navigate the subjects. Which year are you interested in exploring?"
+              : `Great! Showing subjects for Year ${selectedYear}.`}
           </DialogDescription>
         </DialogHeader>
 
