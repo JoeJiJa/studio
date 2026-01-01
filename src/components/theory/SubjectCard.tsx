@@ -1,33 +1,43 @@
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 import type { Subject } from '@/lib/types';
 import { SubjectIcon } from './SubjectIcon';
+import Image from 'next/image';
+import { getPlaceholderImage } from '@/lib/placeholder-images';
 
 interface SubjectCardProps {
   subject: Subject;
 }
 
 export function SubjectCard({ subject }: SubjectCardProps) {
+  const firstTextbook = subject.materials?.textbooks?.[0] as any;
+  const firstAtlas = subject.materials?.atlases?.[0] as any;
+  const coverImageId = firstTextbook?.coverImageId || firstAtlas?.coverImageId;
+  const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : null;
+
   return (
-    <Link href={`/theory/${subject.id}`} className="h-full group">
-      <Card className="h-full flex flex-col justify-between text-center bg-card hover:border-primary transition-colors hover:shadow-lg">
-        <CardHeader className="flex-grow flex flex-col justify-center items-center p-4">
-          <div className="w-24 h-24 mb-4 rounded-full bg-secondary flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-            <SubjectIcon subjectId={subject.id} className="w-12 h-12 text-foreground" />
-          </div>
-          <h3 className="font-headline text-lg">{subject.name}</h3>
-        </CardHeader>
-        <CardContent className="p-4 pt-0">
-           <div className="flex flex-wrap gap-1 justify-center">
-            {subject.year.map(y => (
-              <Badge key={y} variant="secondary">Year {y}</Badge>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+    <Link href={`/theory/${subject.id}`} className="group block">
+      <div className="aspect-[2/3] w-full relative rounded-md overflow-hidden bg-secondary transition-transform duration-300 ease-in-out group-hover:scale-105">
+        {placeholder ? (
+            <Image
+              src={placeholder.imageUrl}
+              alt={subject.name}
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+              className="object-cover"
+              data-ai-hint={placeholder.imageHint}
+            />
+        ) : (
+            <div className="flex flex-col items-center justify-center h-full p-4 text-center">
+                <SubjectIcon subjectId={subject.id} className="w-12 h-12 text-muted-foreground" />
+                <h3 className="font-headline text-lg mt-4 text-foreground">{subject.name}</h3>
+            </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 flex flex-col justify-end">
+            <h3 className="font-headline text-lg text-white font-bold">{subject.name}</h3>
+        </div>
+      </div>
     </Link>
   );
 }

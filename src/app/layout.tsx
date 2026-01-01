@@ -5,12 +5,11 @@ import React, { useState, useEffect } from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import { BottomNav } from '@/components/layout/BottomNav';
 import { Toaster } from '@/components/ui/toaster';
 import { AIChat } from '@/components/layout/AIChat';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
-import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 import { SplashScreen } from '@/components/shared/SplashScreen';
+import { Header } from '@/components/layout/Header';
 
 export default function RootLayout({
   children,
@@ -68,17 +67,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed top-4 right-4 z-50">
-            <ThemeSwitcher />
-          </div>
-          <div className="flex min-h-screen">
-            <main className="flex-grow pb-16">
-              <div className="container mx-auto px-4 sm:px-6 py-8 max-w-md lg:max-w-7xl">
-                {children}
-              </div>
-            </main>
-          </div>
-          <BottomNav />
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
           <AIChat />
           <Toaster />
         </ThemeProvider>

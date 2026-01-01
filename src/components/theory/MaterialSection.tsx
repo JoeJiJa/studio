@@ -3,9 +3,9 @@
 
 import React from 'react';
 import type { Material, Book } from '@/lib/types';
-import { Card, CardContent } from '../ui/card';
 import { BookCarousel } from '../shared/BookCarousel';
 import { Button } from '../ui/button';
+import { ChevronRight } from 'lucide-react';
 
 interface MaterialSectionProps {
   title: string;
@@ -21,35 +21,27 @@ export function MaterialSection({ title, materials, onItemClick, onShowMoreClick
 
   return (
     <section>
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-xl font-bold font-headline flex items-center gap-2">
-          {title}
-        </h2>
-        {materials.length > 5 && (
-            <Button variant="link" className="pr-0" onClick={() => onShowMoreClick(title, materials)}>
-                Show more
-            </Button>
-        )}
+      <div className="flex items-center justify-between mb-4">
+         <Button variant="link" className="p-0 text-2xl font-bold font-headline h-auto hover:no-underline text-foreground" onClick={() => onShowMoreClick(title, materials)}>
+            {title}
+            <ChevronRight className="w-6 h-6 ml-1" />
+        </Button>
       </div>
-      <Card>
-        <CardContent className="p-2">
-          <BookCarousel
-            items={materials}
-            getItemProps={(item) => {
-              const book = item as Book;
-              return {
-                id: book.id,
-                title: book.title,
-                subtitle: book.author,
-                href: '#', 
-                coverImageId: book.coverImageId,
-              };
-            }}
-            onItemClick={onItemClick}
-            isLoaded={true}
-          />
-        </CardContent>
-      </Card>
+      <BookCarousel
+        items={materials}
+        getItemProps={(item) => {
+          const book = item as Book;
+          return {
+            id: book.id,
+            title: book.title,
+            subtitle: book.author,
+            href: '#', 
+            coverImageId: book.coverImageId,
+          };
+        }}
+        onItemClick={onItemClick}
+        isLoaded={true}
+      />
     </section>
   );
 }

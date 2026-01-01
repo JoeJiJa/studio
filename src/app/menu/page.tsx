@@ -1,4 +1,5 @@
 import React from 'react';
+import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 
 export default function MenuPage() {
   return (

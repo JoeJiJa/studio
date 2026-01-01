@@ -5,7 +5,6 @@ import React from 'react';
 import { getSubject } from '@/lib/data';
 import type { Subject } from '@/lib/types';
 import { BookCarousel } from '../shared/BookCarousel';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { BrainCircuit } from 'lucide-react';
 
 interface SuggestedModulesProps {
@@ -17,20 +16,16 @@ export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
     .map(id => getSubject(id))
     .filter((s): s is Subject => {
       if (!s) return false;
-      // Ensure the subject has some materials to be displayed.
       const hasMaterials = s.materials && Object.values(s.materials).some(m => m.length > 0);
       return hasMaterials;
     });
 
   return (
-    <Card className="h-full">
-      <CardHeader className="p-2">
-        <CardTitle className="flex items-center gap-1.5 text-base">
-            <BrainCircuit className="text-primary h-4 w-4"/>
+    <div>
+        <h2 className="text-2xl font-bold font-headline flex items-center gap-2 mb-4">
+            <BrainCircuit className="text-primary h-6 w-6"/>
             Suggested Modules
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="p-2 pt-0">
+        </h2>
         <BookCarousel
             items={modules}
             getItemProps={(item) => {
@@ -49,7 +44,6 @@ export function SuggestedModules({ moduleIds }: SuggestedModulesProps) {
               };
             }}
         />
-      </CardContent>
-    </Card>
+    </div>
   );
 }

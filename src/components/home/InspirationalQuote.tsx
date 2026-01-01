@@ -10,9 +10,12 @@ export function InspirationalQuote() {
 
   useEffect(() => {
     if (data.inspirationalQuotes && data.inspirationalQuotes.length > 0) {
-      const interval = setInterval(() => {
-        setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % data.inspirationalQuotes.length);
-      }, 5 * 60 * 1000); // 5 minutes
+        // Set a random quote on initial load
+        setCurrentQuoteIndex(Math.floor(Math.random() * data.inspirationalQuotes.length));
+      
+        const interval = setInterval(() => {
+            setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % data.inspirationalQuotes.length);
+        }, 30 * 1000); // 30 seconds
 
       return () => clearInterval(interval);
     }
@@ -31,16 +34,10 @@ export function InspirationalQuote() {
   const { text, author } = quote;
 
   return (
-    <div className="bg-accent/10 border-l-4 border-accent text-accent-foreground p-1 rounded-md" role="alert">
-      <div className="flex">
-        <div className="py-1">
-          <Quote className="h-3 w-3 text-accent mr-2" />
-        </div>
-        <div>
-          <p className="text-sm font-semibold font-headline">{`"${text}"`}</p>
-          <p className="text-xs text-right w-full mt-0.5">- {author}</p>
-        </div>
-      </div>
+    <div className="bg-card text-center p-8 rounded-lg" role="alert">
+        <Quote className="h-8 w-8 text-primary mx-auto mb-4" />
+        <p className="text-xl md:text-2xl font-semibold font-headline italic">{`"${text}"`}</p>
+        <p className="text-md text-muted-foreground mt-4">- {author}</p>
     </div>
   );
 }

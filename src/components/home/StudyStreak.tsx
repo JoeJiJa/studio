@@ -18,7 +18,7 @@ interface StreakData {
 export function StudyStreak() {
   const [streak, setStreak] = useState<number>(0);
   const [isStreakLoaded, setIsStreakLoaded] = useState<boolean>(false);
-  const { logStudyTime, isLoaded: isChartLoaded } = useStudyTime();
+  const { logStudyTime } = useStudyTime();
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
@@ -48,7 +48,6 @@ export function StudyStreak() {
       
       if (data.lastVisit !== today) {
         localStorage.setItem(STREAK_KEY, JSON.stringify({ count: currentStreak, lastVisit: today }));
-        // Log a random amount of study time for today
         const randomMinutes = Math.floor(Math.random() * 60) + 15;
         logStudyTime(randomMinutes);
       }
@@ -65,26 +64,16 @@ export function StudyStreak() {
   }, [logStudyTime]);
 
   if (!isStreakLoaded) {
-    return (
-        <Card>
-            <CardHeader className="p-2">
-                <Skeleton className="h-5 w-28" />
-                <Skeleton className="h-3 w-40 mt-1" />
-            </CardHeader>
-            <CardContent className="p-2 pt-0">
-                <Skeleton className="h-20 w-full" />
-            </CardContent>
-      </Card>
-    );
+    return <Skeleton className="h-full w-full min-h-[200px]" />;
   }
 
   return (
     <Card className="h-full">
-        <CardHeader className="p-2">
+        <CardHeader>
             <div className="flex flex-row items-center justify-between space-y-0">
-                <CardTitle className="text-base">Your Progress</CardTitle>
+                <CardTitle className="text-lg font-headline">Your Progress</CardTitle>
                 <div className="flex items-center text-amber-500 font-bold text-sm">
-                    <Flame className="h-3 w-3 mr-1" />
+                    <Flame className="h-4 w-4 mr-1" />
                     <span>{streak} Day Streak</span>
                 </div>
             </div>
@@ -92,7 +81,7 @@ export function StudyStreak() {
                 {streak > 1 ? 'Keep up the great work!' : 'Keep coming back to build your streak!'}
             </CardDescription>
         </CardHeader>
-        <CardContent className="p-2 pt-0">
+        <CardContent>
             <StudyChart />
         </CardContent>
     </Card>

@@ -54,7 +54,7 @@ export function TheoryClientPage({ subjects }: TheoryClientPageProps) {
     <div>
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
         <div>
-          <h1 className="text-4xl font-headline font-bold">Core subjects</h1>
+          <h1 className="text-3xl md:text-4xl font-headline font-bold">Core subjects</h1>
           <p className="text-muted-foreground mt-1">Explore learning materials for all your subjects.</p>
         </div>
         <div className="flex items-center gap-2">
@@ -73,7 +73,7 @@ export function TheoryClientPage({ subjects }: TheoryClientPageProps) {
           </Select>
         </div>
       </header>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
         {filteredSubjects.map(subject => (
           <SubjectCard key={subject.id} subject={subject} />
         ))}

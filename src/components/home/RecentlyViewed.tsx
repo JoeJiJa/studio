@@ -5,7 +5,6 @@ import React from 'react';
 import type { Book } from '@/lib/types';
 import { useRecentlyViewed } from '@/hooks/use-recently-viewed';
 import { BookCarousel } from '../shared/BookCarousel';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { History } from 'lucide-react';
 
 export function RecentlyViewed() {
@@ -16,14 +15,11 @@ export function RecentlyViewed() {
   }
 
   return (
-    <Card>
-      <CardHeader className="p-2">
-        <CardTitle className="flex items-center gap-1.5 text-base">
-            <History className="text-primary h-4 w-4" />
+    <div>
+        <h2 className="text-2xl font-bold font-headline flex items-center gap-2 mb-4">
+            <History className="text-primary h-6 w-6" />
             Recently Viewed
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="p-2 pt-0">
+        </h2>
         <BookCarousel
           items={items}
           getItemProps={(item) => {
@@ -37,7 +33,6 @@ export function RecentlyViewed() {
           }}
           isLoaded={isLoaded}
         />
-      </CardContent>
-    </Card>
+    </div>
   );
 }

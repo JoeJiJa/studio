@@ -15,6 +15,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
 import type { Book, Subject, Material } from '@/lib/types';
 import { Skeleton } from '../ui/skeleton';
+import { cn } from '@/lib/utils';
 
 type Item = Book | Subject | Material | (Omit<Book, 'author'> & { author?: string });
 
@@ -37,7 +38,7 @@ export function BookCarousel({
   getItemProps, 
   onItemClick, 
   isLoaded = true, 
-  loadingSkeletons = 5
+  loadingSkeletons = 6
 }: BookCarouselProps) {
   
   if (!isLoaded) {
@@ -45,11 +46,7 @@ export function BookCarousel({
       <div className="flex space-x-4 pb-1">
         {[...Array(loadingSkeletons)].map((_, i) => (
           <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6">
-            <div className="p-1">
-              <Skeleton className="aspect-[2/3] w-full rounded-md" />
-              <Skeleton className="h-4 mt-2 w-3/4" />
-              <Skeleton className="h-3 mt-1 w-1/2" />
-            </div>
+            <Skeleton className="aspect-[2/3] w-full rounded-md" />
           </div>
         ))}
       </div>
@@ -61,12 +58,13 @@ export function BookCarousel({
       opts={{
         align: 'start',
         dragFree: true,
+        slidesToScroll: 'auto',
       }}
-      className="w-full"
+      className="w-full relative"
     >
-      <CarouselContent className="-ml-1">
-        {items.map((item) => {
-          const { id, title, subtitle, href, coverImageId } = getItemProps(item);
+      <CarouselContent className="-ml-2 md:-ml-4">
+        {items.map((item, index) => {
+          const { id, title, href, coverImageId } = getItemProps(item);
           const placeholder = coverImageId ? getPlaceholderImage(coverImageId) : getPlaceholderImage('study-material-placeholder');
 
           const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -79,49 +77,41 @@ export function BookCarousel({
           const isExternal = href.startsWith('http');
 
           return (
-            <CarouselItem key={id} className="basis-2/5 md:basis-1/3 lg:basis-1/4 pl-1">
-              <div className="p-0.5">
+            <CarouselItem key={`${id}-${index}`} className="basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7 pl-2 md:pl-4">
                 <Link 
                   href={href} 
                   onClick={handleItemClick}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
-                  className="group"
+                  className="group block"
                 >
-                  <Card className="overflow-hidden transition-shadow duration-200 group-hover:shadow-lg group-hover:-translate-y-0.5">
-                    <CardContent className="p-0">
-                      <div className="aspect-[2/3] w-full relative bg-secondary">
-                        {placeholder ? (
-                          <Image
-                            src={placeholder.imageUrl}
-                            alt={placeholder.description}
-                            fill
-                            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                            className="object-cover"
-                            data-ai-hint={placeholder.imageHint}
-                          />
-                        ) : (
-                          <div className="flex items-center justify-center h-full p-4">
-                            <span className="text-center text-sm text-muted-foreground">{title}</span>
-                          </div>
-                        )}
+                  <div className="aspect-[2/3] w-full relative rounded-md overflow-hidden bg-secondary transition-transform duration-300 ease-in-out group-hover:scale-105">
+                    {placeholder ? (
+                      <Image
+                        src={placeholder.imageUrl}
+                        alt={title}
+                        fill
+                        sizes="(max-width: 640px) 33vw, (max-width: 768px) 25vw, (max-width: 1024px) 20vw, 16vw"
+                        className="object-cover"
+                        data-ai-hint={placeholder.imageHint}
+                      />
+                    ) : (
+                      <div className="flex items-center justify-center h-full p-2">
+                        <span className="text-center text-xs text-muted-foreground">{title}</span>
                       </div>
-                    </CardContent>
-                  </Card>
-                  <p className="text-xs font-medium mt-1 truncate group-hover:text-primary" title={title}>
+                    )}
+                    <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                   <p className="text-sm font-medium mt-2 truncate text-foreground group-hover:text-primary" title={title}>
                     {title}
                   </p>
-                  {subtitle && (
-                     <p className="text-xs text-muted-foreground truncate" title={subtitle}>{subtitle}</p>
-                  )}
                 </Link>
-              </div>
             </CarouselItem>
           );
         })}
       </CarouselContent>
-      <CarouselPrevious className="hidden sm:flex" />
-      <CarouselNext className="hidden sm:flex" />
+      <CarouselPrevious className="absolute left-[-1rem] top-1/2 -translate-y-1/2 hidden md:flex" />
+      <CarouselNext className="absolute right-[-1rem] top-1/2 -translate-y-1/2 hidden md:flex" />
     </Carousel>
   );
 }

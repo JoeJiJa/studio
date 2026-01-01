@@ -4,35 +4,39 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
+import { PlayCircle, Info } from 'lucide-react';
 
 export function HomeHero() {
   const inspirationalImage = getPlaceholderImage('inspirational-banner');
 
   return (
-    <div className="relative text-center bg-card py-4 px-2 rounded-lg overflow-hidden">
+    <div className="relative h-[50vh] md:h-[70vh] w-full flex items-center justify-center text-white -mt-16">
       {inspirationalImage && (
-        <Image
-          src={inspirationalImage.imageUrl}
-          alt={inspirationalImage.description}
-          fill
-          className="object-cover opacity-10"
-          data-ai-hint={inspirationalImage.imageHint}
-          priority
-        />
+        <>
+          <Image
+            src={inspirationalImage.imageUrl}
+            alt={inspirationalImage.description}
+            fill
+            className="object-cover"
+            data-ai-hint={inspirationalImage.imageHint}
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+        </>
       )}
-      <div className="relative">
-        <h1 className="text-xl sm:text-2xl font-bold font-headline text-primary">
+      <div className="relative z-10 text-left container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+        <h1 className="text-4xl md:text-6xl font-bold font-headline">
           Welcome Back, Doctor!
         </h1>
-        <p className="mt-1 text-sm text-muted-foreground max-w-2xl mx-auto">
+        <p className="mt-4 text-lg text-foreground/80 max-w-2xl">
           Your journey to medical mastery continues. What will you learn today?
         </p>
-        <div className="mt-3 flex flex-col sm:flex-row gap-1.5 sm:gap-2 justify-center">
-          <Button asChild size="sm" className="h-7">
-            <Link href="/theory">Explore Subjects</Link>
+        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          <Button asChild size="lg" className="h-12 text-lg">
+            <Link href="/theory"><PlayCircle className="mr-2 h-6 w-6"/> Explore Subjects</Link>
           </Button>
-          <Button asChild size="sm" variant="outline" className="h-7">
-            <Link href="/menu">Review Flashcards</Link>
+          <Button asChild size="lg" variant="secondary" className="h-12 text-lg bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white">
+            <Link href="/menu"><Info className="mr-2 h-6 w-6"/> Review Flashcards</Link>
           </Button>
         </div>
       </div>
