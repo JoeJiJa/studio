@@ -30,8 +30,10 @@ export function InteractiveCaseStudy() {
   }, [currentCase]);
 
   useEffect(() => {
-    getNewCase();
-  }, [getNewCase]);
+    if (!currentCase) {
+        getNewCase();
+    }
+  }, [getNewCase, currentCase]);
 
   const handleOptionClick = (index: number) => {
     if (showResult) return;
