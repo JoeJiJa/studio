@@ -58,6 +58,18 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
     let title = section.title;
     if (section.key === 'textbooks' && subject.id === 'anatomy') {
       title = 'Gross Anatomy';
+    } else if (section.key === 'textbooks' && subject.id === 'ophthalmology') {
+        title = 'Ophthalmology Textbook';
+    } else if (section.key === 'clinical-books' && subject.id === 'ophthalmology') {
+        title = 'Ophthalmology Clinical Book';
+    } else if (section.key === 'study-materials' && subject.id === 'ophthalmology') {
+        title = 'Ophthalmology Study Materials';
+    } else if (section.key === 'textbooks' && subject.id === 'ent') {
+        title = 'ENT Textbook';
+    } else if (section.key === 'clinical-books' && subject.id === 'ent') {
+        title = 'ENT Clinical Book';
+    } else if (section.key === 'study-materials' && subject.id === 'ent') {
+        title = 'ENT Study Materials';
     }
     
     return {

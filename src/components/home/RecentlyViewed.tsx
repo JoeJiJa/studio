@@ -27,7 +27,7 @@ export function RecentlyViewed() {
             return {
               id: book.id,
               title: book.title,
-              href: '#', 
+              href: book.downloadUrl || '#', 
               coverImageId: book.coverImageId,
             };
           }}
