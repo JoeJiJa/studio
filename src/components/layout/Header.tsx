@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Bot, Home, LayoutGrid, FileText, User } from 'lucide-react';
+import { Bot } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 
@@ -17,31 +17,14 @@ const navItems = [
 
 export function Header() {
   const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-background/95 backdrop-blur-sm' : 'bg-transparent'
-      )}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center gap-2 font-headline text-lg font-bold text-primary">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+        <div className="flex items-center justify-center bg-black/50 backdrop-blur-md rounded-full shadow-lg p-2 gap-4">
+            <Link href="/" className="flex items-center gap-2 font-headline text-lg font-bold text-primary flex-shrink-0 pr-2">
               <Bot />
-              <span>Dr. Astro</span>
             </Link>
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="flex items-center gap-2">
               {navItems.map((item) => {
                 const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
                 return (
@@ -49,10 +32,10 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      'text-sm font-medium transition-colors',
+                      'text-sm font-medium transition-colors rounded-full px-4 py-1',
                       isActive
-                        ? 'text-primary'
-                        : 'text-muted-foreground hover:text-foreground'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                     )}
                   >
                     {item.label}
@@ -60,12 +43,10 @@ export function Header() {
                 );
               })}
             </nav>
-          </div>
-          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 flex-shrink-0 pl-2">
              <ThemeSwitcher />
           </div>
         </div>
-      </div>
     </header>
   );
 }

@@ -10,7 +10,7 @@ export function HomeHero() {
   const inspirationalImage = getPlaceholderImage('inspirational-banner');
 
   return (
-    <div className="relative h-[50vh] md:h-[70vh] w-full flex items-center justify-center text-white -mt-16">
+    <div className="relative h-[50vh] md:h-[70vh] w-full flex items-center justify-center text-white -mt-24 -mx-4 sm:-mx-6 lg:-mx-8">
       {inspirationalImage && (
         <>
           <Image
