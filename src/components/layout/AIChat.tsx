@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Bot, Book, ChevronLeft, Send } from 'lucide-react';
+import { Bot, ChevronLeft, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -22,16 +22,16 @@ import { Input } from '../ui/input';
 type Stage = 'year' | 'subject';
 
 const studyYears = [
-    { id: '1', label: 'Year 1' },
-    { id: '2', label: 'Year 2' },
-    { id: '3', label: 'Year 3' },
-    { id: '4', label: 'Year 4' },
+    { id: '1', label: '1st Year (Pre-Clinical)' },
+    { id: '2', label: '2nd Year (Para-Clinical)' },
+    { id: '3', label: '3rd Year (Clinical)' },
+    { id: '4', label: '4th Year (Major Clinical)' },
 ];
 
 export function AIChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [stage, setStage] = useState<Stage>('year');
-  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [selectedYear, setSelectedYear] = useState<{ id: string; label: string } | null>(null);
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const router = useRouter();
   const [isAnimating, setIsAnimating] = useState(true);
@@ -43,8 +43,9 @@ export function AIChat() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleYearSelect = (year: number) => {
-    const yearSubjects = data.subjects.filter(subject => subject.year.includes(year));
+  const handleYearSelect = (year: { id: string; label: string }) => {
+    const yearNum = parseInt(year.id, 10);
+    const yearSubjects = data.subjects.filter(subject => subject.year.includes(yearNum));
     setSubjects(yearSubjects);
     setSelectedYear(year);
     setStage('subject');
@@ -96,7 +97,7 @@ export function AIChat() {
         </DialogHeader>
 
         <ScrollArea className="flex-1 px-4">
-            <div className="space-y-4">
+            <div className="space-y-4 py-4">
                 {/* Initial Greeting */}
                 <div className="flex items-start gap-3">
                     <Avatar className="w-8 h-8 border">
@@ -105,7 +106,7 @@ export function AIChat() {
                     </Avatar>
                     <div className="bg-muted rounded-lg p-3 max-w-[80%]">
                         <p className="text-sm">
-                            Welcome! I'm Dr. Astro. How can I help you? Let's start by finding the right study materials.
+                            Welcome! I'm Dr. Astro. How can I help you today?
                         </p>
                     </div>
                 </div>
@@ -129,7 +130,7 @@ export function AIChat() {
                                 key={year.id}
                                 variant="outline"
                                 size="sm"
-                                onClick={() => handleYearSelect(parseInt(year.id))}
+                                onClick={() => handleYearSelect(year)}
                             >
                                 {year.label}
                             </Button>
@@ -143,7 +144,7 @@ export function AIChat() {
                     <>
                         <div className="flex items-end gap-3 flex-row-reverse">
                             <div className="bg-primary text-primary-foreground rounded-lg p-3 max-w-[80%]">
-                                <p className="text-sm">Year {selectedYear}</p>
+                                <p className="text-sm">{selectedYear.label}</p>
                             </div>
                         </div>
 
@@ -154,7 +155,7 @@ export function AIChat() {
                             </Avatar>
                             <div className="bg-muted rounded-lg p-3 max-w-[80%]">
                                 <p className="text-sm">
-                                    Great! Here are the subjects for Year {selectedYear}. Which one would you like to see?
+                                    Great! Here are the subjects for {selectedYear.label}. Which one would you like to see?
                                 </p>
                             </div>
                         </div>
@@ -193,3 +194,5 @@ export function AIChat() {
     </Dialog>
   );
 }
+
+    
