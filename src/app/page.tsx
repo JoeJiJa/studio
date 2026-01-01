@@ -1,3 +1,4 @@
+
 import { HomeHero } from '@/components/home/HomeHero';
 import { SuggestedModules } from '@/components/home/SuggestedModules';
 import { RecentlyViewed } from '@/components/home/RecentlyViewed';
@@ -10,8 +11,7 @@ import { BrainCircuit, History } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 md:gap-12">
-      <HomeHero />
+    <div className="flex flex-col-reverse md:flex-col gap-8 md:gap-12">
       
       <div className="space-y-8">
         <SuggestedModules moduleIds={data.suggestedModules} />
@@ -25,6 +25,7 @@ export default function Home() {
         <InspirationalQuote />
       </div>
 
+      <HomeHero />
     </div>
   );
 }
