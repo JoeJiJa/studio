@@ -41,12 +41,12 @@ export function SubjectDetailClientPage({ subject }: SubjectDetailClientPageProp
   const [sheetState, setSheetState] = useState<SheetState | null>(null);
 
   const handleItemClick = (item: Material) => {
-    if (item.downloadUrl) {
-      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
-    }
-    
     if (isBook(item)) {
        addRecentlyViewed(item);
+    }
+    
+    if (item.downloadUrl) {
+      window.open(item.downloadUrl, '_blank', 'noopener,noreferrer');
     }
   };
 
