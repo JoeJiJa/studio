@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "inspirational-banner",
+      "description": "An inspirational image of a medical professional looking thoughtfully out a window.",
+      "imageUrl": "https://images.unsplash.com/photo-1666886573699-f1964bcc9ebe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWVkaWNhbCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjcyODc5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical professional"
+    },
+    {
+      "id": "study-material-placeholder",
+      "description": "A generic placeholder for a study material cover.",
+      "imageUrl": "https://images.unsplash.com/photo-1629992101753-56d196c8aabb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzY3MzMxMjIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "book cover"
+    }
+  ]
 }
