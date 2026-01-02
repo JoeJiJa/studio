@@ -1,14 +1,13 @@
 
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { AIChat } from '@/components/layout/AIChat';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
-import { SplashScreen } from '@/components/shared/SplashScreen';
 import { Header } from '@/components/layout/Header';
 
 export default function RootLayout({
@@ -16,38 +15,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Splash screen will be visible for 2 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return (
-      <html lang="en" suppressHydrationWarning>
-        <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="icon" href="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/jogRQQ7NL14vh4LDNK8n/pub/fRGo42eAcDofrKwh53zL/Dr%20Astro.jpg" />
-          <link rel="manifest" href="/manifest.json" />
-        </head>
-        <body className={cn("font-body antialiased", "min-h-screen bg-black")}>
-           <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <SplashScreen />
-          </ThemeProvider>
-        </body>
-      </html>
-    );
-  }
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
