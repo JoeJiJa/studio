@@ -1,3 +1,4 @@
+
 {
   "inspirationalQuotes": [
     {
@@ -5,39 +6,56 @@
       "author": "William Osler"
     },
     {
-      "text": "Wherever the art of medicine is loved, there is also a love of humanity.",
+      "text": "Wherever the art of Medicine is loved, there is also a love of Humanity.",
       "author": "Hippocrates"
     },
-    { "text": "The art of medicine consists of amusing the patient while nature cures the disease.", "author": "Voltaire" }
+    {
+      "text": "The art of healing comes from nature, not from the physician. Therefore the physician must start from nature, with an open mind.",
+      "author": "Paracelsus"
+    }
   ],
   "paretoBanner": {
-    "title": "Master the 20%",
-    "description": "Focus on the high-yield topics that make up 80% of your exams."
+    "title": "The 80/20 Rule in Medicine",
+    "description": "Focus on the 20% of topics that appear in 80% of your exams. High-yield studying is smart studying."
   },
   "questionOfTheDay": {
-    "question": "A 55-year-old male presents with sudden-onset chest pain radiating to his left arm. ECG shows ST-segment elevation in leads V1-V4. Which coronary artery is most likely occluded?",
+    "question": "A 55-year-old male presents with crushing substernal chest pain. ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely occluded?",
     "options": [
-      "Right Coronary Artery (RCA)",
       "Left Anterior Descending (LAD)",
+      "Right Coronary Artery (RCA)",
       "Left Circumflex (LCx)",
-      "Posterior Descending Artery (PDA)"
+      "Left Main Coronary Artery"
     ],
     "answerIndex": 1
   },
   "caseStudies": [
     {
-      "id": "cs001",
-      "title": "A Case of Persistent Cough",
-      "scenario": "A 68-year-old male with a 40-pack-year smoking history presents with a persistent cough for the past 3 months, accompanied by weight loss and occasional hemoptysis.",
-      "question": "What is the most important initial investigation?",
+      "id": "case-1",
+      "title": "An Unexpected Diagnosis",
+      "scenario": "A 45-year-old woman presents with a 3-month history of fatigue, weight loss, and a persistent cough. She is a non-smoker with no significant past medical history. A chest X-ray reveals a solitary pulmonary nodule in the right upper lobe.",
+      "question": "What is the most appropriate next step in management?",
       "options": [
-        "Spirometry",
-        "Chest X-ray",
-        "Sputum Culture",
-        "Bronchoscopy"
+        "Initiate empiric antibiotic therapy",
+        "Obtain a CT scan of the chest",
+        "Perform a bronchoscopy with biopsy",
+        "Reassure the patient and repeat X-ray in 6 months"
       ],
       "correctAnswer": 1,
-      "explanation": "A Chest X-ray is the most crucial initial step to evaluate for potential lung malignancy in a patient with these risk factors and symptoms."
+      "explanation": "A CT scan is crucial for better characterization of the nodule (size, borders, calcification) and to guide further investigation, such as a biopsy, if warranted. While a biopsy may eventually be needed, CT is the standard next step."
+    },
+    {
+      "id": "case-2",
+      "title": "A Young Patient with Joint Pain",
+      "scenario": "A 22-year-old female presents with a 2-week history of migratory polyarthritis, a low-grade fever, and a new skin rash. On examination, you note a malar (butterfly) rash on her face and swollen, tender joints in her hands and knees.",
+      "question": "Which autoantibody is most specific for the suspected diagnosis?",
+      "options": [
+        "Rheumatoid Factor (RF)",
+        "Anti-nuclear Antibody (ANA)",
+        "Anti-dsDNA Antibody",
+        "Anti-CCP Antibody"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The clinical presentation is highly suggestive of Systemic Lupus Erythematosus (SLE). While ANA is sensitive for SLE, Anti-dsDNA is highly specific and is part of the diagnostic criteria."
     }
   ],
   "subjects": [
@@ -45,144 +63,126 @@
       "id": "anatomy",
       "name": "Anatomy",
       "year": [1],
-      "description": "The study of the structure of the human body, from macroscopic to microscopic levels.",
-      "materials": {}
+      "description": "The study of the structure of the human body.",
+      "materials": {
+        "textbooks": [],
+        "general-anatomy": [],
+        "dissection-manual": [],
+        "clinical-books": [],
+        "histology": [],
+        "embryology": [],
+        "atlases": [],
+        "others": []
+      }
     },
     {
       "id": "physiology",
       "name": "Physiology",
       "year": [1],
-      "description": "The science of the function of living systems. It explores how organisms, organ systems, organs, cells, and biomolecules carry out the chemical or physical functions that exist in a living system.",
-      "materials": {}
+      "description": "The study of the function of the human body.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "biochemistry",
       "name": "Biochemistry",
       "year": [1],
-      "description": "The study of chemical processes within and relating to living organisms. A sub-discipline of both chemistry and biology, biochemistry may be divided into three fields: structural biology, enzymology and metabolism.",
-      "materials": {}
+      "description": "The study of chemical processes within and relating to living organisms.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "pathology",
       "name": "Pathology",
       "year": [2],
-      "description": "The study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of biology research fields and medical practices.",
-      "materials": {}
+      "description": "The study of the causes and effects of disease or injury.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "microbiology",
       "name": "Microbiology",
       "year": [2],
-      "description": "The scientific study of microorganisms, those being unicellular (single cell), multicellular (cell colony), or acellular (lacking cells).",
-      "materials": {}
+      "description": "The study of microscopic organisms.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "pharmacology",
       "name": "Pharmacology",
       "year": [2],
-      "description": "A branch of medicine, biology and pharmaceutical sciences concerned with drug or medication action, where a drug may be defined as any artificial, natural, or endogenous molecule which exerts a biochemical or physiological effect on the cell, tissue, organ, or organism.",
-      "materials": {}
+      "description": "The study of drug action.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "community-medicine",
       "name": "Community Medicine",
       "year": [3],
-      "description": "A branch of medicine that is concerned with the health of the members of a community, municipality, or region. It focuses on the prevention of disease and the promotion of health in a population.",
-      "materials": {}
+      "description": "A branch of medicine dealing with public health issues.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "forensic-medicine",
       "name": "Forensic Medicine",
       "year": [3],
-      "description": "The application of medical knowledge to the investigation of crime, particularly in establishing the causes of injury or death.",
-      "materials": {}
+      "description": "The application of medical knowledge to legal questions.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "ent",
       "name": "ENT",
       "year": [3],
-      "description": "Otorhinolaryngology (ENT) is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.",
-      "materials": {}
+      "description": "The branch of medicine that specializes in the diagnosis and treatment of ear, nose, throat.",
+      "materials": {
+        "textbooks": [],
+        "clinical-books": [],
+        "study-materials": []
+      }
     },
     {
       "id": "ophthalmology",
       "name": "Ophthalmology",
       "year": [3],
-      "description": "A branch of medicine that deals with the diagnosis and treatment of eye disorders.",
-      "materials": {}
+      "description": "The branch of medicine concerned with the study and treatment of disorders and diseases of the eye.",
+      "materials": {
+        "textbooks": [],
+        "clinical-books": [],
+        "study-materials": []
+      }
     },
     {
       "id": "general-medicine",
       "name": "General Medicine",
       "year": [4],
-      "description": "The medical specialty dealing with the prevention, diagnosis, and treatment of adult diseases.",
+      "description": "The medical specialty dedicated to the diagnosis and medical treatment of adults.",
       "materials": {
         "textbooks": [
-          {
-            "id": "gm-tb-01",
-            "title": "Dummy Textbook 1",
-            "author": "Author A",
-            "coverImageId": "study-material-placeholder",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "gm-tb-02",
-            "title": "Dummy Textbook 2",
-            "author": "Author B",
-            "coverImageId": "study-material-placeholder",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "gm-tb-03",
-            "title": "Dummy Textbook 3",
-            "author": "Author C",
-            "coverImageId": "study-material-placeholder",
-            "downloadUrl": "#"
-          }
+          { "id": "gm-tb-1", "title": "Harrison's Principles of Internal Medicine", "author": "J. Larry Jameson et al.", "coverImageId": "dummy-book-cover" },
+          { "id": "gm-tb-2", "title": "Davidson's Principles and Practice of Medicine", "author": "Stuart H. Ralston et al.", "coverImageId": "dummy-book-cover" },
+          { "id": "gm-tb-3", "title": "Kumar & Clark's Clinical Medicine", "author": "Parveen Kumar & Michael Clark", "coverImageId": "dummy-book-cover" }
         ],
         "clinical-books": [
-          {
-            "id": "gm-cb-01",
-            "title": "Dummy Clinical Book 1",
-            "author": "Author D",
-            "coverImageId": "study-material-placeholder",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "gm-cb-02",
-            "title": "Dummy Clinical Book 2",
-            "author": "Author E",
-            "coverImageId": "study-material-placeholder",
-            "downloadUrl": "#"
-          }
+          { "id": "gm-cb-1", "title": "Macleod's Clinical Examination", "author": "Graham Douglas et al.", "coverImageId": "dummy-book-cover" },
+          { "id": "gm-cb-2", "title": "Hutchison's Clinical Methods", "author": "Michael Glynn & William M. Drake", "coverImageId": "dummy-book-cover" },
+          { "id": "gm-cb-3", "title": "Bates' Guide to Physical Examination and History Taking", "author": "Lynn S. Bickley", "coverImageId": "dummy-book-cover" }
         ],
         "study-materials": [
-          {
-            "id": "gm-sm-01",
-            "title": "Dummy Study Material 1",
-            "description": "A great resource for studying.",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "gm-sm-02",
-            "title": "Dummy Study Material 2",
-            "description": "Another helpful guide.",
-            "downloadUrl": "#"
-          }
+          { "id": "gm-sm-1", "title": "Step-Up to Medicine", "author": "Steven S. Agabegi", "coverImageId": "dummy-book-cover" },
+          { "id": "gm-sm-2", "title": "First Aid for the USMLE Step 2 CK", "author": "Tao Le et al.", "coverImageId": "dummy-book-cover" }
         ],
         "question-bank": [
-          {
-            "id": "gm-qb-01",
-            "title": "Dummy Question Bank 1",
-            "description": "Practice questions for exams.",
-            "downloadUrl": "#"
-          },
-          {
-            "id": "gm-qb-02",
-            "title": "Dummy Question Bank 2",
-            "description": "More practice questions.",
-            "downloadUrl": "#"
-          }
+          { "id": "gm-qb-1", "title": "MKSAP for Students", "author": "ACP", "coverImageId": "dummy-book-cover" },
+          { "id": "gm-qb-2", "title": "Pre-test Medicine", "author": "McGraw-Hill", "coverImageId": "dummy-book-cover" }
         ]
       }
     },
@@ -190,58 +190,83 @@
       "id": "general-surgery",
       "name": "General Surgery",
       "year": [4],
-      "description": "A surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
-      "materials": {}
+      "description": "A surgical specialty that focuses on abdominal contents.",
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "obg",
       "name": "Obstetrics & Gynaecology",
       "year": [4],
-      "description": "The medical specialty that encompasses the two subspecialties of obstetrics (covering pregnancy, childbirth, and the postpartum period) and gynecology (covering the health of the female reproductive system).",
-      "materials": {}
+      "description": "The two surgical–medical specialties dealing with the female reproductive organs in their pregnant and non-pregnant state, respectively.",
+      "materials": {
+        "obstetrics-textbooks": [],
+        "gynecology-textbooks": [],
+        "clinical-books": []
+      }
     },
     {
       "id": "pediatrics",
       "name": "Pediatrics",
       "year": [4],
       "description": "The branch of medicine that involves the medical care of infants, children, and adolescents.",
-      "materials": {}
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "orthopedics",
       "name": "Orthopedics",
       "year": [4],
       "description": "The branch of surgery concerned with conditions involving the musculoskeletal system.",
-      "materials": {}
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "radiology",
       "name": "Radiology",
       "year": [4],
       "description": "The medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.",
-      "materials": {}
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "anesthesiology",
       "name": "Anesthesiology",
       "year": [4],
       "description": "The medical specialty concerned with the total perioperative care of patients before, during and after surgery.",
-      "materials": {}
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "psychiatry",
       "name": "Psychiatry",
       "year": [4],
       "description": "The medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders.",
-      "materials": {}
+      "materials": {
+        "textbooks": []
+      }
     },
     {
       "id": "dermatology",
       "name": "Dermatology",
       "year": [4],
-      "description": "The branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.",
-      "materials": {}
+      "description": "The branch of medicine dealing with the skin.",
+      "materials": {
+        "textbooks": []
+      }
     }
   ],
-  "suggestedModules": ["anatomy", "physiology", "pathology", "general-medicine"]
+  "suggestedModules": [
+    "anatomy",
+    "physiology",
+    "general-medicine",
+    "pathology",
+    "pharmacology",
+    "obg"
+  ]
 }
