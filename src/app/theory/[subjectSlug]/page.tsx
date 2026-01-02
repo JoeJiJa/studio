@@ -9,12 +9,6 @@ type Props = {
   params: { subjectSlug: string };
 };
 
-export async function generateStaticParams() {
-  return data.subjects.map((subject) => ({
-    subjectSlug: subject.id,
-  }));
-}
-
 export async function generateMetadata({ params: { subjectSlug } }: Props): Promise<Metadata> {
   const subject = getSubject(subjectSlug);
   
